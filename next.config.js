@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  publicRuntimeConfig: "http://localhost:3000",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

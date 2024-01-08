@@ -1,0 +1,36 @@
+button {
+  cursor: pointer !important;
+}
+.purple-btn {
+  border-radius: 6px;
+  border: 1px solid #8512e0;
+  background: #8512e0;
+  min-height: 48px;
+}
+.green-btn {
+  background: #77ffa0;
+}
+.purple-outline {
+  border-radius: 6px;
+  color: var(--Clarity-Colors-Violet-0, #8512e0);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 12px 26px;
+  line-height: 28px; /* 155.556% */
+  height: 52px;
+  border: 2px solid var(--Clarity-Colors-Violet-0, #8512e0);
+}
+.purple-without {
+  color: var(--Clarity-Colors-Violet-0, #8512e0);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 155.556% */
+  padding: 12px 26px;
+  height: 52px;
+  background-color: transparent;
+}
+.cta-section {
+  padding: 120px 0px;
+}
