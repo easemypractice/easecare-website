@@ -1,5 +1,10 @@
 "use client";
 import RootLayout from "@/app/layout";
+import Analytics from "@/component/features/analytics";
+import Calendar from "@/component/features/calendar";
+import ClinicManagement from "@/component/features/clinicManagement";
+import FeaturesBanner from "@/component/features/featuresBanner";
+import PatientManagement from "@/component/features/patientManagement";
 import HomeBanner from "@/component/home/banner";
 import CommitmentSection from "@/component/home/commitment";
 import CtaSection from "@/component/home/cta";
@@ -14,6 +19,11 @@ import React from "react";
 const FeaturesLayout = () => {
   return (
     <RootLayout>
+      <FeaturesBanner />
+      <PatientManagement />
+      <ClinicManagement />
+      <Analytics />
+      <Calendar />
       <CtaSection />
     </RootLayout>
   );

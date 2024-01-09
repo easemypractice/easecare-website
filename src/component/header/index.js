@@ -28,13 +28,13 @@ const HeaderLayout = () => {
               <div className={`menu ${isMenuOpen ? "showMenu" : ""}`}>
                 <ul className={"navLinks"}>
                   <li>
-                    <Link href="/">Features</Link>
+                    <Link href="/features">Features</Link>
                   </li>
                   <li>
-                    <Link href="/about">About us</Link>
+                    <Link href="/">About us</Link>
                   </li>
                   <li>
-                    <Link href="/about">Pricing</Link>
+                    <Link href="/">Pricing</Link>
                   </li>
                   {/* Add more navigation links as needed */}
                 </ul>
