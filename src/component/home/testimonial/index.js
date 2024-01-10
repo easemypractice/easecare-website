@@ -6,6 +6,7 @@ import {
   Tabs,
   TabsContent,
   TabsList,
+  TabsTrigger,
   Text,
 } from "@radix-ui/themes";
 import Image from "next/image";
@@ -23,9 +24,9 @@ const Testimonail = () => {
         <Box className="tab-box">
           <Tabs.Root defaultValue="Orthopedics">
             <TabsList>
-              <Tabs.Trigger value="Orthopedics">Orthopedics</Tabs.Trigger>
-              <Tabs.Trigger value="Physiotheraphy">Physiotheraphy</Tabs.Trigger>
-              <Tabs.Trigger value="Pediatrician">Pediatrician</Tabs.Trigger>
+              <TabsTrigger value="Orthopedics">Orthopedics</TabsTrigger>
+              <TabsTrigger value="Physiotheraphy">Physiotheraphy</TabsTrigger>
+              <TabsTrigger value="Pediatrician">Pediatrician</TabsTrigger>
             </TabsList>
 
             <Box px="4" pt="3" pb="2" className="tabbox-content">
@@ -51,13 +52,14 @@ const Testimonail = () => {
                 <Text size="2">Access and update your documents.</Text>
               </TabsContent>
               <TabsContent value="Pediatrician">
-                <Text size="2"> 
+                <Text size="2">
                   Edit your profile or update contact information.
                 </Text>
               </TabsContent>
             </Box>
           </Tabs.Root>
         </Box>
+     
       </Box>
     </Box>
   );

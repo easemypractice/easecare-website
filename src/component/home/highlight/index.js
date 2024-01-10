@@ -26,6 +26,16 @@ const HighlightLayout = () => {
       content: "I Assign issue to me",
       KeyboardImage: KeyOne,
     },
+    {
+      title: "I Assign issue to me",
+      content: "I Assign issue to me",
+      KeyboardImage: KeyOne,
+    },
+    {
+      title: "I Assign issue to me",
+      content: "I Assign issue to me",
+      KeyboardImage: KeyOne,
+    },
     // Add more tabs as needed
   ];
   return (

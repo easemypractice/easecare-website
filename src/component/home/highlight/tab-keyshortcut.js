@@ -23,7 +23,9 @@ const TabComponent = ({ tabs }) => {
         {tabs.map((tab, index) => (
           <button
             key={index}
-            className={`tab ${index === activeTab ? "active-key" : "deactive-key"}`}
+            className={`tab ${
+              index === activeTab ? "active-key" : "deactive-key"
+            }`}
             onClick={() => handleTabClick(index)}
           >
             {tab.title}
@@ -35,7 +37,7 @@ const TabComponent = ({ tabs }) => {
           <div
             key={index}
             className={`tab-pane ${index === activeTab ? "active" : ""}`}
-            style={{ display: index === activeTab ? "block" : "none" }}
+            style={{ display: index === activeTab ? "flex" : "none" }}
           >
             {/* {tab.content} */}
             <Image

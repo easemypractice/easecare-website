@@ -1,8 +1,9 @@
 @import "../styles/buttons.css";
 .container {
-  max-width: 1200px;
+  max-width: 1220px;
   width: 100%;
   margin: auto;
+  padding: 0px 20px;
 }
 body {
   min-height: 100vh;
@@ -1559,7 +1560,7 @@ header nav {
     rgba(255, 255, 255, 0.5) 100%
   );
   backdrop-filter: blur(12px);
-  border-bottom: 1px dashed #EBEFF2;
+  border-bottom: 1px dashed #ebeff2;
   border-top: 0px;
 }
 .box-shadow-none {
@@ -1569,16 +1570,66 @@ header nav {
   box-shadow: none;
   border-bottom: 0px !important;
 }
-.pricing-sec th ,.pricing-sec td{
+.pricing-sec th,
+.pricing-sec td {
   box-shadow: none;
-  border-bottom: 1px dashed #EBEFF2;
+  border-bottom: 1px dashed #ebeff2;
 }
-.table-sub-head th, .table-sub-head td{
+.table-sub-head th,
+.table-sub-head td {
   border-bottom: 0px !important;
 }
-.table-sub-head .border-b-pricing{
+.table-sub-head .border-b-pricing {
   border-radius: 0px 0px 12px 12px;
-border-bottom: 1px solid var(--Clarity-Colors-Caper, #CBE7A3)!important;
-background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.50) 85.42%, rgba(255, 255, 255, 0.50) 100%);
-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--Clarity-Colors-Caper, #cbe7a3) !important;
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.5) 85.42%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  backdrop-filter: blur(12px);
+}
+.mobile-pricing-tab {
+  display: none;
+}
+
+@media (min-width: 240px) and (max-width: 540px) {
+  .mobile-pricing-tab {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .mob-none {
+    display: none;
+  }
+  .mob-tab-visible {
+    display: table-cell;
+  }
+  .plan-btn {
+    margin-top: 15px;
+    background-color: #fbfcff;
+    min-height: 48px;
+    color: var(--Clarity-Colors-Trout, #505766);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    padding: 5px 12px 5px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--Clarity-Colors-Trout, #505766);
+  }
+  .active-plan-btn {
+    margin-top: 15px;
+    min-height: 48px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    padding: 5px 12px 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #8512e0;
+    background: #8512e0;
+  }
 }

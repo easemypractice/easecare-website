@@ -31,10 +31,10 @@ const HeaderLayout = () => {
                     <Link href="/features">Features</Link>
                   </li>
                   <li>
-                    <Link href="/">About us</Link>
+                    <Link href="/about">About us</Link>
                   </li>
                   <li>
-                    <Link href="/">Pricing</Link>
+                    <Link href="/pricing">Pricing</Link>
                   </li>
                   {/* Add more navigation links as needed */}
                 </ul>
