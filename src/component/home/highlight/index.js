@@ -9,22 +9,31 @@ import ImageAni from "@/images/ico-ani.svg";
 import CommandLine from "./commandline";
 import TabComponent from "./tab-keyshortcut";
 import KeyOne from "@/images/keyone.png";
+import AddAppointmentImage from "@/images/addappointment.png";
+import AddPaitentImage from "@/images/addpatient.svg";
+import HelpCenterImage from "@/images/helpcenter.svg";
+import AddfilterImage from "@/images/addfilter.svg";
 const HighlightLayout = () => {
   const tabs = [
     {
-      title: "I Assign issue to me",
-      content: "I Assign issue to me",
+      title: "? Help Center",
+      KeyboardImage: HelpCenterImage,
+    },
+    {
+      title: "F Add Filter",
+      KeyboardImage: AddfilterImage,
+    },
+    {
+      title: "Cmd + K Opens Spotlight",
       KeyboardImage: KeyOne,
     },
     {
-      title: "⌃K Opens command line",
-      content: "⌃K Opens command line",
-      KeyboardImage: KeyOne,
+      title: "P Add Patient",
+      KeyboardImage: AddPaitentImage,
     },
     {
-      title: "I Assign issue to me",
-      content: "I Assign issue to me",
-      KeyboardImage: KeyOne,
+      title: "A Add Appointment",
+      KeyboardImage: AddAppointmentImage,
     },
     // Add more tabs as needed
   ];

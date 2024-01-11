@@ -38,7 +38,10 @@ const HomeBanner = () => {
           allowTransparency
           allowFullScreen
         ></iframe> */}
+        <div className="banner-image">
         <Image src={HeroImag} alt={HeroImag} />
+        </div>
+       
       </div>
     </div>
   );
