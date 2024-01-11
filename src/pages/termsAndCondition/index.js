@@ -1,11 +1,11 @@
-import RootLayout from "@/app/layout";
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
+import { Layout } from "../../app/layout";
 
 const TermsAndCondition = () => {
   return (
-    <RootLayout>
+    <Layout>
       <Box className="heading-box">
         <Box className="container-privacy">
           <Heading as="h3">Terms & Conditions</Heading>
@@ -160,7 +160,7 @@ const TermsAndCondition = () => {
           </Box>
         </Box>
       </Box>
-    </RootLayout>
+    </Layout>
   );
 };
 

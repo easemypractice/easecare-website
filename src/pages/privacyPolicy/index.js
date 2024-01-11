@@ -1,11 +1,11 @@
-import RootLayout from "@/app/layout";
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
+import { Layout } from "../../app/layout";
 
 const PrivacyPolicy = () => {
   return (
-    <RootLayout>
+    <Layout>
       <Box className="heading-box">
         <Box className="container-privacy">
           <Heading as="h3">Privacy Policy</Heading>
@@ -167,7 +167,7 @@ const PrivacyPolicy = () => {
           </Box>
         </Box>
       </Box>
-    </RootLayout>
+    </Layout>
   );
 };
 

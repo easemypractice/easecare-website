@@ -1,5 +1,4 @@
 "use client";
-import RootLayout from "@/app/layout";
 import Analytics from "@/component/features/analytics";
 import Calendar from "@/component/features/calendar";
 import ClinicManagement from "@/component/features/clinicManagement";
@@ -15,17 +14,18 @@ import IntegrationsMigrations from "@/component/home/integrations-migrations";
 import Testimonail from "@/component/home/testimonial";
 import { Box } from "@radix-ui/themes";
 import React from "react";
+import { Layout } from "../../app/layout";
 
 const FeaturesLayout = () => {
   return (
-    <RootLayout>
+    <Layout>
       <FeaturesBanner />
       <PatientManagement />
       <ClinicManagement />
       <Analytics />
       <Calendar />
       <CtaSection />
-    </RootLayout>
+    </Layout>
   );
 };
 

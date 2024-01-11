@@ -4,15 +4,16 @@ import ClarityHospital from "@/component/pricing/clarityHospital";
 import PricingBanner from "@/component/pricing/pricingBanner";
 import PricingTable from "@/component/pricing/pricingTable";
 import React from "react";
+import { Layout } from "../../app/layout";
 
 const Pricing = () => {
   return (
-    <RootLayout>
+    <Layout>
       <PricingBanner />
       <ClarityHospital />
       <PricingTable />
       <CtaSection />
-    </RootLayout>
+    </Layout>
   );
 };
 
