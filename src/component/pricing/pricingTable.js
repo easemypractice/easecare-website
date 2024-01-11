@@ -26,20 +26,31 @@ const PricingTable = () => {
       <Box className="container">
         <Box className="pricing-grid">
           <Box className="mobile-pricing-tab">
-            <Button onClick={() => handlePlanButtonClick("Free")}   className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "active-plan-btn" : "plan-btn"
-                  )}>Free</Button>
-            <Button onClick={() => handlePlanButtonClick("Essential")}  className={clsx(
-                    ``,
-                    selectedPlan === "Essential" ? "active-plan-btn" : "plan-btn"
-                  )}>
+            <Button
+              onClick={() => handlePlanButtonClick("Free")}
+              className={clsx(
+                ``,
+                selectedPlan === "Free" ? "active-plan-btn" : "plan-btn"
+              )}
+            >
+              Free
+            </Button>
+            <Button
+              onClick={() => handlePlanButtonClick("Essential")}
+              className={clsx(
+                ``,
+                selectedPlan === "Essential" ? "active-plan-btn" : "plan-btn"
+              )}
+            >
               Essential
             </Button>
-            <Button onClick={() => handlePlanButtonClick("Growth")}  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "active-plan-btn" : "plan-btn"
-                  )}>
+            <Button
+              onClick={() => handlePlanButtonClick("Growth")}
+              className={clsx(
+                ``,
+                selectedPlan === "Growth" ? "active-plan-btn" : "plan-btn"
+              )}
+            >
               Growth
             </Button>
           </Box>
@@ -931,7 +942,12 @@ const PricingTable = () => {
                 <TableRowHeaderCell>
                   Money collection and SMS reports
                 </TableRowHeaderCell>
-                <TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
                   <div className="table-flexalign">
                     <Icon
                       icon="simple-line-icons:check"
@@ -941,7 +957,14 @@ const PricingTable = () => {
                     Unlimited
                   </div>
                 </TableCell>
-                <TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
                   <div className="table-flexalign">
                     <Icon
                       icon="simple-line-icons:check"
@@ -951,7 +974,12 @@ const PricingTable = () => {
                     Unlimited
                   </div>
                 </TableCell>
-                <TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
                   <div className="table-flexalign">
                     <Icon
                       icon="simple-line-icons:check"

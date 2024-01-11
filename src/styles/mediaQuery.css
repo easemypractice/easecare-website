@@ -1,0 +1,642 @@
+@media (min-width: 240px) and (max-width: 599px) {
+  .home-green-btn {
+    min-height: 36px;
+    font-size: 14px;
+  }
+  .home-heading {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .home-banner {
+    padding: 60px 0px 60px 0px;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-description {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0px 0px;
+  }
+  .mobile-pricing-tab {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .mob-none {
+    display: none;
+  }
+  .mob-tab-visible {
+    display: table-cell;
+  }
+  .plan-btn {
+    margin-top: 15px;
+    background-color: #fbfcff;
+    min-height: 38px;
+    color: var(--Clarity-Colors-Trout, #505766);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    padding: 5px 12px 5px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--Clarity-Colors-Trout, #505766);
+  }
+  .active-plan-btn {
+    margin-top: 15px;
+    min-height: 38px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    padding: 5px 12px 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #8512e0;
+    background: #8512e0;
+  }
+  .sub-heading {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .ehr-section {
+    padding: 45px 0px;
+  }
+  .heighlight {
+    padding: 60px 0px 60px;
+  }
+  .sub-heading-description {
+    padding: 10px 0% 40px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .w-40 {
+    width: 100%;
+  }
+  .w-60 {
+    width: 100%;
+  }
+  .w-70 {
+    width: 100%;
+  }
+  .w-30 {
+    width: 100%;
+  }
+  .keyboard-shortcut {
+    padding: 30px 16px 30px;
+  }
+  .keyboard-shortcut h3 {
+    font-size: 20px;
+  }
+  .keyboard-shortcut p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .breathtaking h3 {
+    font-size: 20px;
+  }
+  .breathtaking p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .breathtaking {
+    padding: 25px 20px 28.95px 20px;
+  }
+  .healthcare-access {
+    padding: 0px 20px 20px;
+  }
+  .built-keyboard h2 {
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+  .big-paragraph {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .download-btns img {
+    width: 100%;
+  }
+  .heading-24 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .text-24 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .healthcare-teams::after {
+    height: 181px;
+    width: 181px;
+  }
+  .healthcare-teams {
+    padding: 25px 20px 100px 20px;
+  }
+  .meet-command {
+    flex-wrap: wrap;
+  }
+  .command-line {
+    padding: 25px 20px 28.95px;
+  }
+  .ehr-section .sub-heading-description {
+    padding: 10px 0% 40px;
+  }
+  .ehr-cards-outer {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-img {
+    padding: 20px 0% 0px;
+  }
+  .box-img .flex-align {
+    flex-wrap: wrap;
+  }
+  .integration-inner {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .integration-heading {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .headingup-16 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  .data-security-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .dr-security {
+    padding-right: 0px;
+  }
+  .big-paragraph-green {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .purple-outline {
+    font-size: 16px;
+    padding: 12px 15px;
+    line-height: 28px;
+    height: 40px;
+  }
+  .data-security-right {
+    gap: 10px;
+  }
+  .CommitmentSection.py-20 {
+    padding: 10px 0px 50px;
+  }
+  .testimonail-heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+  }
+  .testimonail-heading {
+    display: flex;
+    flex-direction: column;
+  }
+  .heart-head svg {
+    width: 33px;
+    height: 33px;
+    margin-right: 6px;
+  }
+  .tab-box .rt-TabsList {
+    gap: 8px;
+  }
+  .testi-description {
+    padding: 0px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .tabbox-content {
+    padding: 40px 0px;
+  }
+  .cta-section h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .cta-section {
+    padding: 60px 0px;
+  }
+  .footer-top {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .footer-middle {
+    gap: 20px;
+    flex-direction: column;
+    padding: 32px 0px 48px;
+  }
+  /* .flex-logo-inner {
+   flex-direction: column;
+} */
+  .footer-logo-section {
+    flex-direction: column;
+  }
+  .footer-middle ul {
+    gap: 8px;
+  }
+  .hidemenu {
+    display: none;
+  }
+  .ehr-cards h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .testimonail {
+    padding: 40px 0px;
+  }
+  .chip-emr-specific p {
+    font-size: 16px;
+  }
+  .rt-Box.chip-emr-specific img {
+    width: 27px;
+  }
+  .chip-emr-specific {
+    gap: 15px;
+    height: 36px;
+  }
+  .feature-banner h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .feature-banner {
+    padding: 60px 0px;
+  }
+  .upcase-small {
+    padding: 16px 0px 14px;
+  }
+  .feature-b-desc {
+    margin: 15px auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .patient-management h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .patient-management {
+    padding: 40px 0px;
+  }
+  .patient-management .desc-managememnt {
+    margin: 10px auto;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .grid-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-3 {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-info-row {
+    flex-wrap: wrap;
+  }
+  .box-info-small {
+    font-size: 14px;
+  }
+  .box-info {
+    padding: 20px;
+  }
+  .box-info-head {
+    padding: 15px 0px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .box-info-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .border-box-color p {
+    flex: 1;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about-info {
+    padding: 60px 0px;
+  }
+  .naming-ussage h3 {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 10px;
+  }
+  .naming-ussage p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .naming {
+    margin-bottom: 40px;
+  }
+  .naming-ussage {
+    padding: 60px 0px;
+  }
+  .clarity-box-icon {
+    padding: 40px 0px;
+    gap: 10px;
+  }
+  .clarity-box-icon img {
+    width: 100px;
+  }
+  .plan-card-highlight .purple-btn {
+    padding: 10px 15.08px 10px 15px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .border-gray-btn {
+    min-height: 48px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .plan-list-free {
+    padding-top: 0px;
+  }
+  .clarity-hos-content {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+  }
+  .clarity-hos-content h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .clarity-hos-content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .heading-box h3 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .pricing-sec .left-heading {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .border-started-btn {
+    min-height: 38px;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+    white-space: nowrap;
+  }
+  .pricing-sec .rt-TableCell {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pricing-sec td.rt-TableCell {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .table-flexalign .iconify {
+    width: 16px;
+  }
+  .started-btn {
+    white-space: nowrap;
+    margin-top: 15px;
+    min-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 6px;
+    border: 1px solid #8512e0;
+    background: #8512e0;
+  }
+}
+@media (min-width: 600px) and (max-width: 999px) {
+  .home-banner {
+    padding: 70px 0px 70px 0px;
+  }
+  .home-heading {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .banner-description {
+    font-size: 22px;
+    line-height: 38px;
+    padding: 0px 50px;
+  }
+  .banner-text.text-white {
+    text-align: center;
+  }
+  .heighlight {
+    padding: 60px 0px 60px;
+  }
+  .sub-heading {
+    max-width: 400px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+  .sub-heading-description {
+    padding: 10px 15% 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .keyboard-shortcut {
+    padding: 25px 20px;
+  }
+  .breathtaking {
+    padding: 25px 20px;
+  }
+  .keyboard-shortcut h3 {
+    font-size: 20px;
+  }
+  .keyboard-shortcut p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .breathtaking h3 {
+    font-size: 20px;
+  }
+  .breathtaking p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .chip-emr-specific {
+    gap: 8px;
+    height: 40px;
+    font-size: 14.805px;
+  }
+  .chip-emr-specific img {
+    width: 24px !important;
+    height: 38px !important;
+  }
+  .integration-heading {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .integration-inner {
+    gap: 20px;
+    padding: 118px 20px;
+  }
+  .feature-banner h2 {
+    font-size: 45px;
+    line-height: 50px;
+    max-width: 536px;
+  }
+  .upcase-small {
+    padding: 20px 0px 20px;
+  }
+  .feature-b-desc {
+    margin: 15px auto;
+    max-width: 688px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .patient-management h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .patient-management {
+    padding: 60px 0px;
+  }
+  .patient-management .desc-managememnt {
+    margin: 15px auto;
+    max-width: 601px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .grid-3 {
+    grid-template-columns: auto auto;
+  }
+  .management-card h3 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .management-card .ehr-cards {
+    padding: 0px 15px 20px !important;
+  }
+  .cta-section h2 {
+    font-size: 45px;
+    line-height: 54px;
+    max-width: 520px;
+  }
+  .cta-section {
+    padding: 60px 0px;
+  }
+  .box-info-head {
+    padding: 15px 0px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .box-info-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .border-box-color p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .naming-ussage h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .naming-ussage p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .plan-card {
+    padding: 20px;
+  }
+  .list-plan li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .growth-btn {
+    margin-top: 24px;
+  }
+  .clarity-hos-content {
+    padding: 20px;
+    gap: 20px;
+  }
+  .clarity-hos-content h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .clarity-hos-content p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .feature-banner {
+    padding: 60px 0px;
+  }
+  .pricing-sec .left-heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .border-started-btn {
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 10px 10px 10px 10px;
+    white-space: nowrap;
+  }
+  .started-btn {
+    min-height: 40px;
+    font-size: 15px;
+    line-height: 28px;
+    padding: 10px 10px 10px 10px;
+    white-space: nowrap;
+  }
+  .pricing-sec .rt-TableCell {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .pricing-sec td.rt-TableCell {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .table-flexalign .iconify {
+    width: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu ul {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+  .mobileMenuIcon {
+    display: block;
+  }
+  .menu.showMenu {
+    flex-direction: column;
+    padding: 30px;
+    position: absolute;
+    top: 70px;
+    background-color: #fff;
+    width: 100%;
+    left: 0;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+  .toggle-visible {
+    display: block;
+  }
+  .contact-part {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 17px;
+  }
+  ul.navLinks {
+    gap: 22px;
+  }
+  .header-inner {
+    justify-content: space-between;
+    width: 100%;
+  }
+}

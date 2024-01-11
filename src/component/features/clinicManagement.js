@@ -40,7 +40,7 @@ const ClinicManagement = () => {
     },
   ];
   return (
-    <div className="patient-management clinic-management">
+    <div className="patient-management clinic-management border-b-gray">
       <div className="container">
         <Box className="text-center">
           {" "}

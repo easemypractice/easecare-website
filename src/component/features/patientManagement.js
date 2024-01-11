@@ -55,7 +55,7 @@ const PatientManagement = () => {
     },
   ];
   return (
-    <div className="patient-management">
+    <div className="patient-management border-b-gray">
       <div className="container">
         <Box className="text-center">
           {" "}

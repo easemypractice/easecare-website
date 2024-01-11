@@ -51,7 +51,7 @@ const Analytics = () => {
     },
   ];
   return (
-    <div className="patient-management analytics">
+    <div className="patient-management analytics border-b-gray">
       <div className="container">
         <Box className="text-center">
           {" "}

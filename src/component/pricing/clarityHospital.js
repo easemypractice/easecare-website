@@ -22,7 +22,7 @@ const ClarityHospital = () => {
             </Box>
             <IconButton className="contact-sale"><Icon icon="tabler:message-circle-2-filled" width="24" color="#fff" className="btn-icon" /> Contact Sales</IconButton>
           </Box>
-          <Box>
+          <Box className="clarityjplus-img">
             <Image src={ClarityHospitalImage} alt={ClarityHospitalImage} />
           </Box>
         </Box>

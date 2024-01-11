@@ -4,7 +4,7 @@ import React from "react";
 import CtaIcon from "@/images/ctaicon.svg";
 const FeaturesBanner = () => {
   return (
-    <Box className=" feature-banner ">
+    <Box className=" feature-banner border-b-gray">
       <Box className="container  text-center">
         <Image src={CtaIcon} alt={CtaIcon} />
         <Text as="p" className="upcase-small">Features</Text>

@@ -18,8 +18,10 @@ const Testimonail = () => {
       <Box className="container">
         <Box className="testimonail-heading">
           <Heading as="h2">Here’s why Doctors</Heading>
-          <Icon icon="mdi:heart" width={"57"} color="#FF642D" />
-          <Heading as="h2">Clarity</Heading>
+          <div className="heart-head">
+            <Icon icon="mdi:heart" width={"57"} color="#FF642D" />
+            <Heading as="h2">Clarity</Heading>
+          </div>
         </Box>
         <Box className="tab-box">
           <Tabs.Root defaultValue="Orthopedics">
@@ -59,7 +61,6 @@ const Testimonail = () => {
             </Box>
           </Tabs.Root>
         </Box>
-     
       </Box>
     </Box>
   );

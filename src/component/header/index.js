@@ -5,6 +5,7 @@ import styles from "@/styles/styles.css";
 import Image from "next/image";
 import Logo from "@/images/logo.svg";
 import { Button } from "@radix-ui/themes";
+import { Icon } from "@iconify/react";
 const HeaderLayout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -25,7 +26,7 @@ const HeaderLayout = () => {
 
                 <Link href="/about">Clarity</Link>
               </div>
-              <div className={`menu ${isMenuOpen ? "showMenu" : ""}`}>
+              <div className={`menu ${isMenuOpen ? "showMenu" : "hidemenu"}`}>
                 <ul className={"navLinks"}>
                   <li>
                     <Link href="/features">Features</Link>
@@ -38,12 +39,28 @@ const HeaderLayout = () => {
                   </li>
                   {/* Add more navigation links as needed */}
                 </ul>
+                <div
+                  className={` ${
+                    isMenuOpen
+                      ? "toggle-visible contact-part"
+                      : "desktop-hidden"
+                  }`}
+                >
+                  <Link href="/about">Contact</Link>
+                  <Button variant="solid" className="purple-btn">
+                    Get a demo
+                  </Button>
+                </div>
               </div>
               <div className={"mobileMenuIcon"} onClick={toggleMenu}>
-                toggle
+                <Icon
+                  icon={isMenuOpen ? "ep:close-bold" : "fontisto:nav-icon-a"}
+                  width="24"
+                  color="#8512E0"
+                />
               </div>
             </div>
-            <div className="header-right">
+            <div className="header-right mobile-hidden">
               <Link href="/about">Contact</Link>
               <Button variant="solid" className="purple-btn">
                 Get a demo

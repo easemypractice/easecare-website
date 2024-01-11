@@ -1,9 +1,14 @@
-"use client";
+"use client"
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const TabComponent = ({ tabs }) => {
   const [activeTab, setActiveTab] = useState(0);
+  const tabRef = useRef(null);
+
+  const switchTab = (index) => {
+    setActiveTab(index);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -13,20 +18,23 @@ const TabComponent = ({ tabs }) => {
     return () => clearInterval(interval);
   }, [tabs.length]);
 
-  const handleTabClick = (index) => {
-    setActiveTab(index);
-  };
+  useEffect(() => {
+    if (tabRef.current) {
+      const activeTabElement = tabRef.current.children[activeTab];
+      const containerWidth = tabRef.current.offsetWidth;
+      const scrollLeft = activeTabElement.offsetLeft - (containerWidth - activeTabElement.offsetWidth) / 2;
+      tabRef.current.scrollLeft = scrollLeft;
+    }
+  }, [activeTab]);
 
   return (
     <div className="tab-container">
-      <div className="tabs">
+      <div className="tabs tabs-keyboard" ref={tabRef}>
         {tabs.map((tab, index) => (
           <button
             key={index}
-            className={`tab ${
-              index === activeTab ? "active-key" : "deactive-key"
-            }`}
-            onClick={() => handleTabClick(index)}
+            className={`tab keyboard-tab ${index === activeTab ? "active-key" : "deactive-key"}`}
+            onClick={() => switchTab(index)}
           >
             {tab.title}
           </button>
@@ -36,10 +44,9 @@ const TabComponent = ({ tabs }) => {
         {tabs.map((tab, index) => (
           <div
             key={index}
-            className={`tab-pane ${index === activeTab ? "active" : ""}`}
-            style={{ display: index === activeTab ? "flex" : "none" }}
+            className={`tab-pane ${index === activeTab ? "active" : ""} ${index < activeTab ? "slide-left" : "slide-right"}`}
+            style={{ display: index === activeTab ? "block" : "none" }}
           >
-            {/* {tab.content} */}
             <Image
               src={tab.KeyboardImage}
               alt={tab.KeyboardImage}

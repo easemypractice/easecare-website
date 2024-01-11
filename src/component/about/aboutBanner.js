@@ -14,7 +14,7 @@ const AboutBanner = () => {
           "Empowering healthcare through innovative EHR solutions, we are
           dedicated to enhancing patient care, efficiency, and outcomes."
         </Text>
-        <div className="mt-6">
+        <div className="mt-6 bannerimg">
           <Image src={AboutbannerImage} alt={AboutbannerImage} />
         </div>
       </Box>
