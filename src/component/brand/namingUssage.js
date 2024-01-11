@@ -9,11 +9,11 @@ const NamingUssage = () => {
         <Box className="naming">
           <Heading as="h3">Naming</Heading>
           <Text as="p">
-            "Clarity" is a singular term, consistently written with an uppercase
-            "C." It serves as both our company and our application name (not
-            "Clarity app"). When denoting specific releases from Clarity, please
-            use capitalization as you would for proper nouns (e.g., "Clarity
-            Method")
+            &quot;Clarity&quot; is a singular term, consistently written with an
+            uppercase &quot;C.&quot; It serves as both our company and our
+            application name (not &quot;Clarity app&quot;). When denoting
+            specific releases from Clarity, please use capitalization as you
+            would for proper nouns (e.g., &quot;Clarity Method&quot;)
           </Text>
         </Box>
         <Box>

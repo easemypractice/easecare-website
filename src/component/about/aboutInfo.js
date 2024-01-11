@@ -62,9 +62,9 @@ const AboutInfo = () => {
             <Heading as="h4" className="box-info-head">
               Central to the EaseCare ethos is an unwavering focus on patients.
               We understand that every data point within Clarity, our EHR
-              system, represents an individual's health journey. Our commitment
-              is to provide a secure, intuitive, and patient-centric platform
-              that enhances the overall healthcare experience.
+              system, represents an individual&apos;s health journey. Our
+              commitment is to provide a secure, intuitive, and patient-centric
+              platform that enhances the overall healthcare experience.
             </Heading>
             <Text as="p" className="box-info-text">
               By prioritizing patients in Clarity, our EHR solution, we
@@ -80,8 +80,8 @@ const AboutInfo = () => {
             width={"24"}
           />
           <Text as="p">
-            "Empower doctors with streamlined EHR for enhanced productivity and
-            improved patient outcomes."{" "}
+            &quot;Empower doctors with streamlined EHR for enhanced productivity
+            and improved patient outcomes.&quot;{" "}
           </Text>
         </Box>
       </Box>

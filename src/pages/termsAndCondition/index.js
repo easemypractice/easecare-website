@@ -73,7 +73,7 @@ const TermsAndCondition = () => {
                 b. Clarity employs security measures to protect your data;
                 however, EaseCare shall not be held liable for any unauthorized
                 access, use, or disclosure of data unless such access is a
-                direct result of EaseCare's negligence.
+                direct result of EaseCare&apos;s negligence.
               </Text>
             </Box>
           </Box>

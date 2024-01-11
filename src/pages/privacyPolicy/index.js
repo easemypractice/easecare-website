@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
               </Text>
               <Text as="p">
                 c. Improving our Services Analytics: We may analyze aggregated
-                and anonymized data to improve Clarity's features,
+                and anonymized data to improve Clarity&apos;s features,
                 functionality, and user experience.
               </Text>
             </Box>
@@ -104,7 +104,7 @@ const PrivacyPolicy = () => {
                 b. Clarity employs security measures to protect your data;
                 however, EaseCare shall not be held liable for any unauthorized
                 access, use, or disclosure of data unless such access is a
-                direct result of EaseCare's negligence.
+                direct result of EaseCare&apos;s negligence.
               </Text>
             </Box>
           </Box>
@@ -122,7 +122,7 @@ const PrivacyPolicy = () => {
             <Box className="privacy-text-list">
               <Text as="p">
                 EaseCare Contact Information: If you have any questions or
-                concerns about this Privacy Policy or Clarity's privacy
+                concerns about this Privacy Policy or Clarity&apos;s privacy
                 practices, please contact us at{" "}
                 <Link
                   className="purple-color"

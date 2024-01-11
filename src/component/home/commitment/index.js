@@ -20,21 +20,27 @@ const CommitmentSection = () => {
           </Box>
           <Box className=" ">
             <Text as="p" className="headingup-16 mb-4">
-            Commitment
+              Commitment
             </Text>
             <Box className="data-security-right ">
               <Box className="dr-security">
                 <Heading as="h2" className="integration-heading mb-5">
-                Our Promise
+                  Our Promise
                 </Heading>
                 <Text as="p" className="big-paragraph mb-6">
-                Try risk-free for the first 7 days. If you're not satisfied, we'll give you a 100% refund—no questions asked. Your success is our priority.
+                  Try risk-free for the first 7 days. If you&apos;re not
+                  satisfied, we&apos;ll give you a 100% refund—no questions
+                  asked. Your success is our priority.
                 </Text>
               </Box>
             </Box>
             <Box className="flex-align">
-                <Button variant="outline" className="purple-outline">Get a Demo</Button>
-                <Button variant="soft" className="purple-without">Explore pricing</Button>
+              <Button variant="outline" className="purple-outline">
+                Get a Demo
+              </Button>
+              <Button variant="soft" className="purple-without">
+                Explore pricing
+              </Button>
             </Box>
           </Box>
         </Grid>

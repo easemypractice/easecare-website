@@ -65,7 +65,7 @@ const EhrPlatformSection = () => {
               Professionals
             </Text>
             <Text as="p">
-              Elevate telehealth with EaseMyPractice's Online Consultation
+              Elevate telehealth with EaseMyPractice&apos;s Online Consultation
               Module for seamless virtual care.
             </Text>
             <Box className="box-img">
@@ -124,7 +124,7 @@ const EhrPlatformSection = () => {
               <Heading as={"h3"}>In-Depth Insights</Heading>
             </Box>
             <Text as="p" className="text-24bold mt-2">
-              Unlock the power of data with EaseMyPractice's Analytics.
+              Unlock the power of data with EaseMyPractice&apos;s Analytics.
             </Text>
             <Text as="p">
               Gain insights into practice performance and patient trends through
@@ -174,8 +174,8 @@ const EhrPlatformSection = () => {
               On-the-Go Access to Your Healthcare Universe.
             </Text>
             <Text as="p">
-              Experience freedom with EaseMyPractice's Mobile Apps, managing
-              your practice anytime, anywhere.
+              Experience freedom with EaseMyPractice&apos;s Mobile Apps,
+              managing your practice anytime, anywhere.
             </Text>
             <Box className="box-img">
               <Image
