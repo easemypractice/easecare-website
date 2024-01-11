@@ -14,7 +14,7 @@ const HeaderLayout = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={'border-b-gray'}>
       <nav className={styles.navbar}>
         <div className="container ">
           <div className="header-outer">
