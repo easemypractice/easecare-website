@@ -11,8 +11,8 @@ const AboutBanner = () => {
         </Text>
         <Heading as="h2">Get to know Clarity</Heading>
         <Text as="p" className="feature-b-desc about-desc-w">
-          "Empowering healthcare through innovative EHR solutions, we are
-          dedicated to enhancing patient care, efficiency, and outcomes."
+          &quot;Empowering healthcare through innovative EHR solutions, we are
+          dedicated to enhancing patient care, efficiency, and outcomes.&quot;
         </Text>
         <div className="mt-6 bannerimg">
           <Image src={AboutbannerImage} alt={AboutbannerImage} />

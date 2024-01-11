@@ -34,7 +34,7 @@ const Testimonail = () => {
             <Box px="4" pt="3" pb="2" className="tabbox-content">
               <TabsContent value="Orthopedics" className="testi-list">
                 <Text as="p" className="testi-description">
-                  We've been using Easemypractice for our clinic's Electronic
+                  We&apos;ve been using Easemypractice for our clinic&apos;s Electronic
                   Health Records, and it has truly streamlined our workflow. The
                   user-friendly interface makes it easy for our doctors to
                   access and update patient records efficiently.
