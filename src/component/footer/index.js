@@ -49,9 +49,9 @@ const Footer = () => {
               <li>
                 <Link href="/about">About Us</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">Blog </Link>
-              </li>
+              </li> */}
             </ul>
           </Box>
           <Box className="footer-links">
