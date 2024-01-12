@@ -25,14 +25,20 @@ body {
   font-weight: 400;
   line-height: 38px; /* 158.333% */
 }
+.main-content {
+  height: 100vh;
+  min-height: 100vh !important;
+  overflow-y: scroll;
+}
 header {
+  z-index: 999;
   position: sticky;
   top: 0; /* required */
   width: 100%;
   /* margin-bottom: 100px; */
 }
 
-.clarity-header:hover{
+.clarity-header:hover {
   border-top: 1px solid transparent;
   border-bottom: 1px solid #000;
 }
@@ -45,15 +51,14 @@ header {
 ul.navLinks li {
   border-top: 1px solid transparent;
 }
-.navLinks li a{
+.navLinks li a {
   color: #000;
-font-size: 18px;
-font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 ul.navLinks li:hover {
   border-top: 1px solid transparent;
   border-bottom: 1px solid #000;
- 
 }
 .bg-teal-dark {
   background: var(--Clarity-Colors-Malibu, #59f2f6);
@@ -200,7 +205,7 @@ header nav {
 }
 .home-green-btn {
   padding: 4px 20px;
-  color: var(--Clarity-Colors-Mountain-Meadow, #19BB7D);
+  color: var(--Clarity-Colors-Mountain-Meadow, #19bb7d);
   border-radius: 83px;
   background: #063738;
   /* color: var(--www-freshworks-com-black-pearl-linear-japanese-laurel-mountain-meadow-science-blue-picton-blue-rose-of-sharon-linear-black-pearl-black-pearl, #070624 ); */

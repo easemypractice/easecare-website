@@ -23,12 +23,12 @@ export default function RootLayout({ children }) {
 }
 export const Layout = ({ children }) => {
   return (
-    <>
+    <div className="main-content">
       <Theme>
         <HeaderLayout />
         <main>{children}</main>
         <Footer />
       </Theme>
-    </>
+    </div>
   );
 };
