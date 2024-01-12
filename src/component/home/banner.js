@@ -22,8 +22,7 @@ const HomeBanner = () => {
           </Text>
           <Button className="purple-btn">Request for a demo</Button>
           <Text className="banner-text text-white">
-            Meet the new standard for modern practice management. Streamline
-            patient care, appointments, billing, and engagement
+            Modern, Secure, Cloud-Based EMR for Growing Your Practice
           </Text>
         </div>
         {/* <iframe
@@ -39,9 +38,8 @@ const HomeBanner = () => {
           allowFullScreen
         ></iframe> */}
         <div className="banner-image">
-        <Image src={HeroImag} alt={HeroImag} />
+          <Image src={HeroImag} alt={HeroImag} />
         </div>
-       
       </div>
     </div>
   );

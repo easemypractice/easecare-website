@@ -14,7 +14,7 @@ const HeaderLayout = () => {
   };
 
   return (
-    <header className={'border-b-gray'}>
+    <header className={"border-b-gray"}>
       <nav className={styles.navbar}>
         <div className="container ">
           <div className="header-outer">
@@ -24,7 +24,9 @@ const HeaderLayout = () => {
                   <Image src={Logo} alt={Logo} />
                 </Link>
 
-                <Link href="/about">Clarity</Link>
+                <Link href="/" className="clarity-header">
+                  Clarity
+                </Link>
               </div>
               <div className={`menu ${isMenuOpen ? "showMenu" : "hidemenu"}`}>
                 <ul className={"navLinks"}>
@@ -46,7 +48,7 @@ const HeaderLayout = () => {
                       : "desktop-hidden"
                   }`}
                 >
-                  <Link href="/about">Contact</Link>
+                  <Link href="/">Contact</Link>
                   <Button variant="solid" className="purple-btn">
                     Get a demo
                   </Button>

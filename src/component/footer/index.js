@@ -63,9 +63,9 @@ const Footer = () => {
               <li>
                 <Link href="/privacyPolicy">Privacy Policy</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/">Cookies Policy</Link>
-              </li>
+              </li> */}
             </ul>
           </Box>
         </Box>
@@ -116,7 +116,7 @@ const Footer = () => {
         </Box>
         <Box className="text-center footer-copyright">
           {" "}
-          <Text as="p">© 2023 EaseCare Inc. All Rights Reserved</Text>
+          <Text as="p">© 2024 EaseCare Inc. All Rights Reserved</Text>
         </Box>
       </Box>
     </Box>

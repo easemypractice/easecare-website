@@ -25,11 +25,35 @@ body {
   font-weight: 400;
   line-height: 38px; /* 158.333% */
 }
+header {
+  position: sticky;
+  top: 0; /* required */
+  width: 100%;
+  /* margin-bottom: 100px; */
+}
+
+.clarity-header:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #000;
+}
 .bg-gray {
   background: var(--Clarity-Colors-Athens-Gray, #ebeff2);
 }
 .bg-teal {
   background: #defcfd;
+}
+ul.navLinks li {
+  border-top: 1px solid transparent;
+}
+.navLinks li a{
+  color: #000;
+font-size: 18px;
+font-weight: 400;
+}
+ul.navLinks li:hover {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #000;
+ 
 }
 .bg-teal-dark {
   background: var(--Clarity-Colors-Malibu, #59f2f6);
@@ -140,13 +164,13 @@ ul.navLinks {
   align-items: center;
   gap: 12px;
 }
-.logo-left a:nth-child(2) {
-  border-left: 1px solid #8b909c;
-  padding-left: 12px;
+.logo-left a:nth-child(1) {
+  border-right: 1px solid #8b909c;
+  padding-right: 18px;
 }
 header nav {
   height: 80px;
-  background: var(--Clarity-Colors-Yellow, #FBFCFF);
+  background: var(--Clarity-Colors-Yellow, #fbfcff);
   align-items: center;
   display: flex;
 }
@@ -175,18 +199,17 @@ header nav {
     #070624;
 }
 .home-green-btn {
+  padding: 4px 20px;
+  color: var(--Clarity-Colors-Mountain-Meadow, #19BB7D);
   border-radius: 83px;
-  background: #77ffa0;
-  color: var(
-    --www-freshworks-com-black-pearl-linear-japanese-laurel-mountain-meadow-science-blue-picton-blue-rose-of-sharon-linear-black-pearl-black-pearl,
-    #070624
-  );
+  background: #063738;
+  /* color: var(--www-freshworks-com-black-pearl-linear-japanese-laurel-mountain-meadow-science-blue-picton-blue-rose-of-sharon-linear-black-pearl-black-pearl, #070624 ); */
   text-align: center;
-  min-height: 44px;
-  font-size: 18px;
+  min-height: 36px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 155.556% */
+  line-height: 26px;
 }
 .banner-content-top {
   display: flex;
@@ -730,6 +753,7 @@ header nav {
 .rt-TabsList {
   gap: 22px;
   box-shadow: none;
+  justify-content: center;
 }
 .tab-box {
   padding-top: 32px;
