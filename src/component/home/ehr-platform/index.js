@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import React from "react";
-import AppointmentReminderImage from "@/images/appointment-remember.png";
+import AppointmentReminderImage from "@/images/reminder.png";
 import CalendarImage from "@/images/Calendar.svg";
 import CellularDataImage from "@/images/CellularData.svg";
 import DoctorImage from "@/images/Doctor.svg";
