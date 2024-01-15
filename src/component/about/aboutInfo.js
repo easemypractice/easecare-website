@@ -73,7 +73,7 @@ const AboutInfo = () => {
             </Text>
           </Box>
         </Box>
-        <Box className="border-box-color">
+        <Box className="border-box-color about-info-bottom">
           <Icon
             icon={"fluent:text-quote-16-filled"}
             color="#3278B2"

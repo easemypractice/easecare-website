@@ -107,7 +107,7 @@ const PricingTable = () => {
             <TableBody>
               <TableRow className="table-sub-head">
                 <TableRowHeaderCell className="left-heading">
-                  Patient management
+                  Usages
                 </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
@@ -131,7 +131,7 @@ const PricingTable = () => {
                 ></TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Charting</TableRowHeaderCell>
+                <TableRowHeaderCell>Doctors</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -181,7 +181,7 @@ const PricingTable = () => {
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Customizable Templates</TableRowHeaderCell>
+                <TableRowHeaderCell>Staff members</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -231,7 +231,7 @@ const PricingTable = () => {
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Billing</TableRowHeaderCell>
+                <TableRowHeaderCell>Patients</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -244,7 +244,7 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
+                    5000
                   </div>
                 </TableCell>
                 <TableCell
@@ -281,7 +281,7 @@ const PricingTable = () => {
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Appointment Scheduling</TableRowHeaderCell>
+                <TableRowHeaderCell>Appointments </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -294,7 +294,7 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
+                    250
                   </div>
                 </TableCell>
                 <TableCell
@@ -327,6 +327,372 @@ const PricingTable = () => {
                       width={"24"}
                     />{" "}
                     Unlimited
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Tele-Consultations (Telecalling)
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    100 Minutes
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    Unlimited
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    Unlimited
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>File upload size</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    10 MB
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    Unlimited
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    Unlimited
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>File upload volume</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    150 MB per month
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    Unlimited
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                    Unlimited
+                  </div>
+                </TableCell>
+              </TableRow>
+              {/* Features */}
+              <TableRow className="table-sub-head">
+                <TableRowHeaderCell className="left-heading">
+                  Features
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                ></TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                ></TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                ></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Import and export </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Billing </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Digital Prescriptions</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Vital Tracking</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
                   </div>
                 </TableCell>
               </TableRow>
@@ -344,7 +710,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -361,7 +726,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -376,12 +740,11 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Telecalling</TableRowHeaderCell>
+                <TableRowHeaderCell>Charting</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -394,7 +757,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -411,7 +773,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -426,14 +787,408 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
-              {/* clinic management */}
+              <TableRow>
+                <TableRowHeaderCell>Customizable Templates</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Multiple Devices</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Migration from existing EMR
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Muti-clinics</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}{" "}
+                    -
+                  </div>{" "}
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}  */}{" "}
+                    -
+                  </div>{" "}
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Personalised Booking Link (0% Commission)
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}{" "}
+                    -
+                  </div>{" "}
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Send Prescription via WhatsApp (Coming Soon)
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}{" "}
+                    -
+                  </div>{" "}
+                  -
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Invoice Prescription via WhatsApp (Coming Soon)
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}{" "}
+                    -
+                  </div>{" "}
+                  -
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Payment Link (Coming Soon)
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}{" "}
+                    -
+                  </div>{" "}
+                  -
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              {/* Communication */}
               <TableRow className="table-sub-head">
                 <TableRowHeaderCell className="left-heading">
-                  Clinic management
+                  Communication
                 </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
@@ -457,7 +1212,9 @@ const PricingTable = () => {
                 ></TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Muti-Clinic management</TableRowHeaderCell>
+                <TableRowHeaderCell>
+                  SMS Appointment Confirmation{" "}
+                </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -470,7 +1227,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -487,7 +1243,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -502,113 +1257,12 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableRowHeaderCell>Doctors management</TableRowHeaderCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Essential"
-                      ? "mob-tab-visible"
-                      : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableRowHeaderCell>Staff Management</TableRowHeaderCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Essential"
-                      ? "mob-tab-visible"
-                      : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableRowHeaderCell>
-                  User Roles and Permissions
+                  SMS Appointment Reminder
                 </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
@@ -622,7 +1276,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -639,7 +1292,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -654,14 +1306,114 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
-              {/* Analytics */}
+              <TableRow>
+                <TableRowHeaderCell>
+                  WhatsApp Appointment Confirmation (Coming Soon)
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  WhatsApp Appointment Reminder (Coming Soon){" "}
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+
+              {/* Analytics & Reporting */}
               <TableRow className="table-sub-head">
                 <TableRowHeaderCell className="left-heading">
-                  Analytics
+                  Analytics & Reporting
                 </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
@@ -685,7 +1437,7 @@ const PricingTable = () => {
                 ></TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Income tracking</TableRowHeaderCell>
+                <TableRowHeaderCell>Income tracking </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -698,7 +1450,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -715,7 +1466,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -730,13 +1480,12 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableRowHeaderCell>
-                  Current Month vs previous month income
+                  Current Month vs previous month income{" "}
                 </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
@@ -750,7 +1499,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -767,7 +1515,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -782,13 +1529,12 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableRowHeaderCell>
-                  New vs returning patient
+                  New vs returning patient{" "}
                 </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
@@ -802,7 +1548,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -819,7 +1564,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -834,12 +1578,11 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Appointment Status Data</TableRowHeaderCell>
+                <TableRowHeaderCell>Appointments Report </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -852,7 +1595,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -869,7 +1611,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -884,239 +1625,11 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
-              <TableRow>
-                <TableRowHeaderCell>Billing Breakdown</TableRowHeaderCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Essential"
-                      ? "mob-tab-visible"
-                      : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableRowHeaderCell>
-                  Money collection and SMS reports
-                </TableRowHeaderCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Essential"
-                      ? "mob-tab-visible"
-                      : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-              </TableRow>
-              {/* Appointment */}
-              <TableRow className="table-sub-head">
-                <TableRowHeaderCell className="left-heading">
-                  Appointment
-                </TableRowHeaderCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
-                  )}
-                ></TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Essential"
-                      ? "mob-tab-visible"
-                      : "mob-none"
-                  )}
-                ></TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
-                  )}
-                ></TableCell>
-              </TableRow>
-              <TableRow>
-                <TableRowHeaderCell>Calendar View</TableRowHeaderCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Essential"
-                      ? "mob-tab-visible"
-                      : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableRowHeaderCell>List View</TableRowHeaderCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Essential"
-                      ? "mob-tab-visible"
-                      : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-                <TableCell
-                  className={clsx(
-                    ``,
-                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
-                  )}
-                >
-                  <div className="table-flexalign">
-                    <Icon
-                      icon="simple-line-icons:check"
-                      color="#25C16F"
-                      width={"24"}
-                    />{" "}
-                    Unlimited
-                  </div>
-                </TableCell>
-              </TableRow>
-              {/* Appointment */}
+
+              {/* Security */}
               <TableRow className="table-sub-head">
                 <TableRowHeaderCell className="left-heading">
                   Security
@@ -1143,7 +1656,7 @@ const PricingTable = () => {
                 ></TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>Priority Support</TableRowHeaderCell>
+                <TableRowHeaderCell>Admin roles</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -1151,12 +1664,12 @@ const PricingTable = () => {
                   )}
                 >
                   <div className="table-flexalign">
-                    <Icon
+                    {/* <Icon
                       icon="simple-line-icons:check"
                       color="#25C16F"
                       width={"24"}
-                    />{" "}
-                    Unlimited
+                    />{" "} */}
+                    -
                   </div>
                 </TableCell>
                 <TableCell
@@ -1173,7 +1686,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -1188,12 +1700,13 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
               </TableRow>
               <TableRow>
-                <TableRowHeaderCell>HIPAA-compliant service</TableRowHeaderCell>
+                <TableRowHeaderCell>
+                  Data 256-AES bit encryption
+                </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
                     ``,
@@ -1206,7 +1719,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -1223,7 +1735,6 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
                   </div>
                 </TableCell>
                 <TableCell
@@ -1238,7 +1749,355 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    Unlimited
+                  </div>
+                </TableCell>
+              </TableRow>
+
+              {/* Support */}
+              <TableRow className="table-sub-head">
+                <TableRowHeaderCell className="left-heading">
+                  Support
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                ></TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                ></TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                ></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Standard Support</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Priority support</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Dedicated Success Manager
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              {/* Services */}
+              <TableRow className="table-sub-head">
+                <TableRowHeaderCell className="left-heading">
+                  Services
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                ></TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                ></TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                ></TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>Website Building</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>
+                  Google Profile Management
+                </TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableRowHeaderCell>SEO Boost</TableRowHeaderCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Essential"
+                      ? "mob-tab-visible"
+                      : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    {/* <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "} */}
+                    -
+                  </div>
+                </TableCell>
+                <TableCell
+                  className={clsx(
+                    ``,
+                    selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
+                  )}
+                >
+                  <div className="table-flexalign">
+                    <Icon
+                      icon="simple-line-icons:check"
+                      color="#25C16F"
+                      width={"24"}
+                    />{" "}
                   </div>
                 </TableCell>
               </TableRow>
