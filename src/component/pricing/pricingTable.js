@@ -1050,7 +1050,7 @@ const PricingTable = () => {
                     />{" "} */}{" "}
                     -
                   </div>{" "}
-                  -
+                  
                 </TableCell>
                 <TableCell
                   className={clsx(
@@ -1101,7 +1101,7 @@ const PricingTable = () => {
                     />{" "} */}{" "}
                     -
                   </div>{" "}
-                  -
+                  
                 </TableCell>
                 <TableCell
                   className={clsx(
@@ -1152,7 +1152,7 @@ const PricingTable = () => {
                     />{" "} */}{" "}
                     -
                   </div>{" "}
-                  -
+                  
                 </TableCell>
                 <TableCell
                   className={clsx(
