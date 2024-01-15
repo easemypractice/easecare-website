@@ -28,21 +28,22 @@ const PrivacyPolicy = () => {
             <Heading as="h3">1. Information We Collect</Heading>
             <Box className="privacy-text-list">
               <Text as="p">
-                a. Personal Information User Registration: To use Clarity, you
-                may be required to provide personal information such as your
-                name, contact details, and professional credentials during the
-                registration process.
+                a. Personal Information <br />
+                User Registration: To use Clarity, you may be required to
+                provide personal information such as your name, contact details,
+                and professional credentials during the registration process.
               </Text>
               <Text as="p">
-                b. Health Information Patient Records: Clarity may store health
-                information including patient demographics, medical history,
-                diagnoses, treatments, and other relevant data entered by
-                healthcare providers.
+                b. Health Information <br />
+                Patient Records: Clarity may store health information including
+                patient demographics, medical history, diagnoses, treatments,
+                and other relevant data entered by healthcare providers.
               </Text>
               <Text as="p">
-                c. Usage Information Log Data: We collect information about your
-                interactions with Clarity, including log data, IP addresses, and
-                device information for diagnostic and security purposes.
+                c. Usage Information <br />
+                Log Data: We collect information about your interactions with
+                Clarity, including log data, IP addresses, and device
+                information for diagnostic and security purposes.
               </Text>
             </Box>
           </Box>
@@ -50,20 +51,20 @@ const PrivacyPolicy = () => {
             <Heading as="h3">2. How We Use Your Information</Heading>
             <Box className="privacy-text-list">
               <Text as="p">
-                a. Service Provision EHR and EMR Functionality: Your personal
-                and health information is used to provide you with the full
-                range of EHR and EMR services offered by Clarity.
+                a. Service Provision <br /> EHR and EMR Functionality: Your
+                personal and health information is used to provide you with the
+                full range of EHR and EMR services offered by Clarity.
               </Text>
               <Text as="p">
-                b. Telemedicine Services Virtual Consultations: If you use
-                Clarity for telemedicine services, your information may be
+                b. Telemedicine Services <br /> Virtual Consultations: If you
+                use Clarity for telemedicine services, your information may be
                 shared with healthcare providers to facilitate virtual
                 consultations.
               </Text>
               <Text as="p">
-                c. Improving our Services Analytics: We may analyze aggregated
-                and anonymized data to improve Clarity&apos;s features,
-                functionality, and user experience.
+                c. Improving our Services <br /> Analytics: We may analyze
+                aggregated and anonymized data to improve Clarity&apos;s
+                features, functionality, and user experience.
               </Text>
             </Box>
           </Box>
@@ -71,13 +72,13 @@ const PrivacyPolicy = () => {
             <Heading as="h3">3. Information Sharing</Heading>
             <Box className="privacy-text-list">
               <Text as="p">
-                a. Third-Party Providers Service Partners: We may share your
-                information with third-party service providers to assist us in
-                providing and improving our services. These providers are bound
-                by confidentiality agreements.
+                a. Third-Party Providers <br /> Service Partners: We may share
+                your information with third-party service providers to assist us
+                in providing and improving our services. These providers are
+                bound by confidentiality agreements.
               </Text>
               <Text as="p">
-                b. Legal Requirements Compliance: We may disclose your
+                b. Legal Requirements <br /> Compliance: We may disclose your
                 information if required by law, regulation, or legal process.
               </Text>
             </Box>
