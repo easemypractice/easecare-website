@@ -37,7 +37,10 @@ header {
   width: 100%;
   /* margin-bottom: 100px; */
 }
-
+.contact-header:hover {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #000;
+}
 .clarity-header:hover {
   border-top: 1px solid transparent;
   border-bottom: 1px solid #000;
@@ -191,7 +194,7 @@ header nav {
 }
 
 .home-banner {
-  padding: 131.125px 0px 130.875px 0px;
+  padding: 70px 0px 70px 0px;
   background: linear-gradient(180deg, #070624 0%, rgba(7, 6, 36, 0) 100%),
     linear-gradient(
       88deg,
@@ -255,6 +258,10 @@ header nav {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.banner-text {
+  margin: -6px;
+  margin-bottom: 10px;
+}
 .banner-description {
   color: #fff;
   text-align: center;
@@ -264,65 +271,6 @@ header nav {
   line-height: 38px; /* 158.333% */
   padding: 0px 100px;
 }
-
-.hhdohM .sc-6bdb0090-22 {
-  position: absolute;
-  top: -92px;
-  -webkit-mask-image: linear-gradient(to bottom, black, transparent 70%);
-  mask-image: linear-gradient(to bottom, black, transparent 70%);
-}
-.dgJsZh {
-  pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.cDBvLr::before {
-  content: "";
-  pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.07)
-  );
-  -webkit-mask: linear-gradient(black, black) content-box,
-    linear-gradient(black, black);
-  mask: linear-gradient(black, black) content-box, linear-gradient(black, black);
-  -webkit-mask-composite: xor;
-  -webkit-mask-composite: exclude;
-  mask-composite: exclude;
-}
-.hhdohM.hhdohM {
-  grid-column: auto / span 2;
-  --order: 1;
-}
-.goFtLD {
-  --gap: 24px;
-  padding-left: var(--page-padding-left);
-  padding-right: var(--page-padding-right);
-  max-width: var(--page-max-width);
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  --row: minmax(0, 1fr);
-  grid-template-columns:
-    [page-start] var(--row) [prose-start] var(--row) var(--row)
-    var(--row) var(--row) [prose-end] var(--row) [page-end];
-  grid-gap: var(--gap);
-}
-
 .sub-heading {
   margin: auto;
   max-width: 550px;
@@ -365,6 +313,9 @@ header nav {
       rgba(89, 242, 246, 0.2) 100%
     ),
     #fff;
+}
+.listfirst-selected{
+  color:#3278B2!important;
 }
 .healthcare-teams {
   padding: 25px 50.88px 28.95px 51.01px;
@@ -832,7 +783,7 @@ header nav {
 }
 .command-search input {
   border: 0px;
-  color: var(--Clarity-Colors-Silver-Chalice, #a6a6a6);
+  color: #000;
   font-size: 18.428px;
   font-style: normal;
   font-weight: 400;

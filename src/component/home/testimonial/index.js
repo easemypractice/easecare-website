@@ -32,32 +32,75 @@ const Testimonail = () => {
             </TabsList>
 
             <Box px="4" pt="3" pb="2" className="tabbox-content">
-              <TabsContent value="Orthopedics" className="testi-list">
+            <TabsContent value="Orthopedics">
                 <Text as="p" className="testi-description">
-                  We&apos;ve been using Easemypractice for our clinic&apos;s Electronic
-                  Health Records, and it has truly streamlined our workflow. The
-                  user-friendly interface makes it easy for our doctors to
-                  access and update patient records efficiently.
+                  Tops all other appointment scheduling tools. Simple and sleek
+                  without any clutter
                 </Text>
                 <Box className="testi-info">
                   <Image src={TestiDemoImage} alt={TestiDemoImage} />
 
                   <Text as={"p"} className="testi-name">
-                    Dr. Abhinav Negi
+                    Dr Sandeep Dathik
                   </Text>
                   <Text as={"p"} className="testi-designation">
-                    Orthopedics
+                    Orthopedic Surgeon
                   </Text>
                 </Box>
               </TabsContent>
-              <TabsContent value="Physiotheraphy">
-                <Text size="2">Access and update your documents.</Text>
-              </TabsContent>
-              <TabsContent value="Pediatrician">
-                <Text size="2">
-                  Edit your profile or update contact information.
+              <TabsContent value="Physiotheraphy" className="testi-list">
+                <Text as="p" className="testi-description">
+                  We&apos;ve been using Easemypractice for our clinic&apos;s
+                  Electronic Health Records, and it has truly streamlined our
+                  workflow. The user-friendly interface makes it easy for our
+                  doctors to access and update patient records efficiently.
                 </Text>
+                <Box className="testi-info">
+                  <Image src={TestiDemoImage} alt={TestiDemoImage} />
+
+                  <Text as={"p"} className="testi-name">
+                    Dr. Vipin Mehra
+                  </Text>
+                  <Text as={"p"} className="testi-designation">
+                    M.D. Physician
+                  </Text>
+                </Box>
+              </TabsContent>           
+              <TabsContent value="Pediatrician">
+                <Text as="p" className="testi-description">
+                  Clarity has truly streamlined my clinic management workflow.
+                  Its intuitive interface and robust features make it a
+                  must-have tool for anyone looking to stay organized and
+                  efficient.
+                </Text>
+                <Box className="testi-info">
+                  <Image src={TestiDemoImage} alt={TestiDemoImage} />
+                  <Text as={"p"} className="testi-name">
+                    Dr. Shantanu Patil
+                  </Text>
+                  <Text as={"p"} className="testi-designation">
+                    Pediatrician
+                  </Text>
+                </Box>
               </TabsContent>
+              {/* <TabsContent value="Pediatrician">
+                <Text as="p" className="testi-description">
+                  This is the best Electronic Medical Record(EMR) software I
+                  have used. It feels like it was built for doctors, by doctors.
+                  The user experience is straightforward, and every interaction
+                  is so fast. They prioritize common workflows and have removed
+                  all the bloat you usually find in EMR software.
+                </Text>
+                <Box className="testi-info">
+                  <Image src={TestiDemoImage} alt={TestiDemoImage} />
+                  <Text as={"p"} className="testi-name">
+                    Dr. Tejaswini Nayak
+                  </Text>
+                  <Text as={"p"} className="testi-designation">
+                    Pediatrician
+                  </Text>
+                </Box>
+              </TabsContent> */}
             </Box>
           </Tabs.Root>
         </Box>

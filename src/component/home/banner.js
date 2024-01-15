@@ -1,6 +1,6 @@
 import { Button, Heading, Text } from "@radix-ui/themes";
 import React from "react";
-import HeroImag from "@/images/heroimag.png";
+import HeroImag from "@/images/homebanner-new.png";
 import Image from "next/image";
 const HomeBanner = () => {
   return (
