@@ -137,11 +137,11 @@ const TermsAndCondition = () => {
             <Box className="privacy-text-list">
               <Text as="p">
                 These terms and conditions are governed by the laws of
-                [Jurisdiction]. Any disputes arising out of or relating to these
-                terms shall be resolved through arbitration in accordance with
-                the rules of the [Arbitration Association], and judgment upon
-                the award rendered by the arbitrator(s) may be entered in any
-                court having jurisdiction thereof.
+                Uttarakhand, India. Any disputes arising out of or relating to
+                these terms shall be resolved through arbitration in accordance
+                with the law of India, and judgment upon the award rendered by
+                the arbitrator(s) may be entered in any court having
+                jurisdiction thereof.
               </Text>
               <Text as="p">
                 By using Clarity, you acknowledge that you have read,
@@ -149,10 +149,10 @@ const TermsAndCondition = () => {
                 have any questions or concerns, please contact EaseCare at
                 <Link
                   className="purple-color"
-                  href={" hello@easemypractice.net"}
+                  href={"mailto:hello@easecare.co"}
                 >
                   {" "}
-                  hello@easemypractice.net
+                  hello@easecare.co
                 </Link>
                 .
               </Text>
