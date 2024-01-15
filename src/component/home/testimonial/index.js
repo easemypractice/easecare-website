@@ -27,12 +27,12 @@ const Testimonail = () => {
           <Tabs.Root defaultValue="Orthopedics">
             <TabsList>
               <TabsTrigger value="Orthopedics">Orthopedics</TabsTrigger>
-              <TabsTrigger value="Physiotheraphy">Physiotheraphy</TabsTrigger>
+              <TabsTrigger value="Physiotheraphy">Physiotherapy</TabsTrigger>
               <TabsTrigger value="Pediatrician">Pediatrician</TabsTrigger>
             </TabsList>
 
             <Box px="4" pt="3" pb="2" className="tabbox-content">
-            <TabsContent value="Orthopedics">
+              <TabsContent value="Orthopedics">
                 <Text as="p" className="testi-description">
                   Tops all other appointment scheduling tools. Simple and sleek
                   without any clutter
@@ -65,7 +65,7 @@ const Testimonail = () => {
                     M.D. Physician
                   </Text>
                 </Box>
-              </TabsContent>           
+              </TabsContent>
               <TabsContent value="Pediatrician">
                 <Text as="p" className="testi-description">
                   Clarity has truly streamlined my clinic management workflow.
