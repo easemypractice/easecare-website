@@ -12,6 +12,8 @@ import {
 import Image from "next/image";
 import React from "react";
 import TestiDemoImage from "@/images/testi-demo.svg";
+import PhysiotherapyImage from "@/images/phy.png";
+import PediatricianImage from "@/images/phy2.png";
 const Testimonail = () => {
   return (
     <Box className="testimonail">
@@ -27,7 +29,7 @@ const Testimonail = () => {
           <Tabs.Root defaultValue="Orthopedics">
             <TabsList>
               <TabsTrigger value="Orthopedics">Orthopedics</TabsTrigger>
-              <TabsTrigger value="Physiotheraphy">Physiotherapy</TabsTrigger>
+              <TabsTrigger value="Physician">Physician</TabsTrigger>
               <TabsTrigger value="Pediatrician">Pediatrician</TabsTrigger>
             </TabsList>
 
@@ -48,7 +50,7 @@ const Testimonail = () => {
                   </Text>
                 </Box>
               </TabsContent>
-              <TabsContent value="Physiotheraphy" className="testi-list">
+              <TabsContent value="Physician" className="testi-list">
                 <Text as="p" className="testi-description">
                   We&apos;ve been using Easemypractice for our clinic&apos;s
                   Electronic Health Records, and it has truly streamlined our
@@ -56,7 +58,7 @@ const Testimonail = () => {
                   doctors to access and update patient records efficiently.
                 </Text>
                 <Box className="testi-info">
-                  <Image src={TestiDemoImage} alt={TestiDemoImage} />
+                  <Image src={PhysiotherapyImage} alt={PhysiotherapyImage} />
 
                   <Text as={"p"} className="testi-name">
                     Dr. Vipin Mehra
@@ -74,7 +76,7 @@ const Testimonail = () => {
                   efficient.
                 </Text>
                 <Box className="testi-info">
-                  <Image src={TestiDemoImage} alt={TestiDemoImage} />
+                  <Image src={PediatricianImage} alt={PediatricianImage} />
                   <Text as={"p"} className="testi-name">
                     Dr. Shantanu Patil
                   </Text>

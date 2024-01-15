@@ -454,6 +454,10 @@ header nav {
 .box-img {
   padding: 20px 10% 0px;
 }
+.testi-info img {
+  width: 75px;
+  height: auto;
+}
 .ehr-cards-bottom {
   padding-bottom: 0px;
 }
