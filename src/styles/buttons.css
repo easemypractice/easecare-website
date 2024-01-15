@@ -7,6 +7,9 @@ button {
   background: #8512e0;
   min-height: 48px;
 }
+.purple-btn:hover{
+  opacity:0.8;
+}
 .green-btn {
   background: #77ffa0;
 }
