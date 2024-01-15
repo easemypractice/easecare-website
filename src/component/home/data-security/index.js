@@ -1,3 +1,4 @@
+"use client";
 import { Box, Flex, Grid, Heading, Text, Button } from "@radix-ui/themes";
 import React from "react";
 import ShieldIcon from "@/images/Shield.svg";
@@ -9,6 +10,7 @@ import KivLogo from "@/images/kiv2.svg";
 import MobileDemoImage from "@/images/mob.png";
 import Image from "next/image";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 const DataSecuritySection = () => {
   return (
     <div className="data-security bg-teal py-20">
@@ -41,37 +43,51 @@ const DataSecuritySection = () => {
             <Box className="ehr-cards integrated-billing mb-5">
               <Box className="flex-align">
                 <Box className="box-heading-icon">
-                  <Image src={ShieldIcon} alt={ShieldIcon} />
+                  {/* <Image src={ShieldIcon} alt={ShieldIcon} /> */}
+                  <Icon
+                    icon="clarity:shield-line"
+                    color="#8512E0"
+                    width={"24"}
+                  />
                 </Box>
-                <Heading as={"h3"}>Integrated Billing Module</Heading>
+                <Heading as={"h3"}>Military-Grade Encryption</Heading>
               </Box>
               <Text as="p" className="big-paragraph mt-5">
-                Top-tier 256-AES bit encryption ensures your data is safe from
-                unauthorized access.
+                Top-tier{" "}
+                <span className="purple-text-medium">
+                  256-AES bit encryption
+                </span>{" "}
+                ensures your data is safe from unauthorized access.
               </Text>
             </Box>
             <Box className="ehr-cards integrated-billing mb-5">
               <Box className="flex-align">
-                <Box className="box-heading-icon">
-                  <Image src={ShieldIcon} alt={ShieldIcon} />
+                <Box className="box-heading-icon sharing-third-iconbg">
+                  {/* <Image src={ShieldIcon} alt={ShieldIcon} /> */}
+                  <Icon
+                    icon="fluent:people-prohibited-20-regular"
+                    color="#3278B1"
+                    width={"24"}
+                  />
                 </Box>
-                <Heading as={"h3"}>Integrated Billing Module</Heading>
+                <Heading as={"h3"}>No Third-Party Sharing</Heading>
               </Box>
               <Text as="p" className="big-paragraph mt-5 ">
-                Top-tier 256-AES bit encryption ensures your data is safe from
-                unauthorized access.
+                Your sensitive information stays confidential—never shared with
+                third parties.
               </Text>
             </Box>
             <Box className="ehr-cards integrated-billing ">
               <Box className="flex-align">
-                <Box className="box-heading-icon">
-                  <Image src={ShieldIcon} alt={ShieldIcon} />
+                <Box className="box-heading-icon doc-icon-bg">
+                  {/* <Image src={ShieldIcon} alt={ShieldIcon} /> */}
+                  <Icon icon="maki:doctor" color="#19BB7D" width={"24"} />
                 </Box>
-                <Heading as={"h3"}>Integrated Billing Module</Heading>
+                <Heading as={"h3"}>Patient-Doctor Confidentiality</Heading>
               </Box>
               <Text as="p" className="big-paragraph mt-5">
-                Top-tier 256-AES bit encryption ensures your data is safe from
-                unauthorized access.
+                Patient records are exclusively linked to you for utmost
+                privacy.
               </Text>
             </Box>
           </Box>

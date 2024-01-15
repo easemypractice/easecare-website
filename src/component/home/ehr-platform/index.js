@@ -6,9 +6,9 @@ import CellularDataImage from "@/images/CellularData.svg";
 import DoctorImage from "@/images/Doctor.svg";
 import ReceiptImage from "@/images/Receipt.svg";
 import VideoImage from "@/images/Video.svg";
-import VideoCallImage from "@/images/videocall.png";
+import VideoCallImage from "@/images/doc-lady.png";
 import NewPatientImage from "@/images/newpatient.png";
-import MobileAppImage from "@/images/mobile-app.png";
+import MobileAppImage from "@/images/mobile-app2.png";
 import DevicePhoneMobileImage from "@/images/device-phone-mobile.svg";
 import ReceiptBillImage from "@/images/receipt-bill.png";
 import CardiologistImage from "@/images/cardiologist.svg";
@@ -33,7 +33,7 @@ const EhrPlatformSection = () => {
         <Grid columns={"2"} className="ehr-cards-outer">
           <Box className="ehr-cards ehr-cards-bottom">
             <Box className="flex-align">
-              <Box className="box-heading-icon">
+              <Box className="box-heading-icon ">
                 <Image src={CalendarImage} alt={CalendarImage} />
               </Box>
               <Heading as={"h3"}>Appointments & Reminders</Heading>
@@ -55,7 +55,7 @@ const EhrPlatformSection = () => {
           </Box>
           <Box className="ehr-cards online-consultation">
             <Box className="flex-align">
-              <Box className="box-heading-icon">
+              <Box className="box-heading-icon video-ico-bg">
                 <Image src={VideoImage} alt={VideoImage} />
               </Box>
               <Heading as={"h3"}>Online Consultation</Heading>
@@ -78,7 +78,7 @@ const EhrPlatformSection = () => {
           </Box>
           <Box className="ehr-cards specialty-specific">
             <Box className="flex-align">
-              <Box className="box-heading-icon">
+              <Box className="box-heading-icon plus-icon-bg">
                 <Image src={DoctorImage} alt={DoctorImage} />
               </Box>
               <Heading as={"h3"}>Specialty-specific EMR</Heading>
@@ -118,7 +118,7 @@ const EhrPlatformSection = () => {
           </Box>
           <Box className="ehr-cards ehr-cards-bottom in-depth-insights">
             <Box className="flex-align">
-              <Box className="box-heading-icon">
+              <Box className="box-heading-icon cellular-icon-bg">
                 <Image src={CellularDataImage} alt={CellularDataImage} />
               </Box>
               <Heading as={"h3"}>In-Depth Insights</Heading>
@@ -140,7 +140,7 @@ const EhrPlatformSection = () => {
           </Box>
           <Box className="ehr-cards integrated-billing ">
             <Box className="flex-align">
-              <Box className="box-heading-icon">
+              <Box className="box-heading-icon receipt-icon-bg">
                 <Image src={ReceiptImage} alt={ReceiptImage} />
               </Box>
               <Heading as={"h3"}>Integrated Billing Module</Heading>
@@ -152,7 +152,7 @@ const EhrPlatformSection = () => {
               Manage finances effortlessly, focusing more on patient care with
               integrated billing solutions.
             </Text>
-            <Box className="box-img">
+            <Box className="box-img ">
               <Image
                 src={ReceiptBillImage}
                 alt={ReceiptBillImage}
@@ -162,7 +162,7 @@ const EhrPlatformSection = () => {
           </Box>
           <Box className="ehr-cards online-consultation ehr-cards-bottom">
             <Box className="flex-align">
-              <Box className="box-heading-icon">
+              <Box className="box-heading-icon phon-icon-bg">
                 <Image
                   src={DevicePhoneMobileImage}
                   alt={DevicePhoneMobileImage}
