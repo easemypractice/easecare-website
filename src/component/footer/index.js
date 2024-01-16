@@ -18,7 +18,7 @@ const Footer = () => {
             </Text>
             <Box className="footer-contact">
               <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "}
-              <Link href="mailto:sales@easecare.com">sales@easecare.com</Link>
+              <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
             </Box>
           </Box>
         </Box>
