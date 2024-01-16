@@ -148,7 +148,7 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn">
-              <Link
+                <Link
                   target="_blank"
                   href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
                   className="purple-btn"
@@ -160,7 +160,7 @@ const PricingBanner = () => {
             </Box>
             <Box className="plan-card">
               <Heading as="h3" className="">
-                Free Plan
+                Growth
               </Heading>
               <Text as="p" className="avibality-seen">
                 <Icon
@@ -168,7 +168,7 @@ const PricingBanner = () => {
                   width={"24"}
                   color="#A6A6A6"
                 />{" "}
-               Best for All Clinics & Hospitals
+                Best for All Clinics & Hospitals
               </Text>
               <Heading as="h4" className="plan-subhead">
                 Everything from Essential Plus
@@ -212,7 +212,7 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn growth-btn">
-              <Link
+                <Link
                   target="_blank"
                   href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
                   className="border-gray-btn"
