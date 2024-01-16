@@ -1370,6 +1370,9 @@ header nav {
   border-radius: 6px;
   border: 1px solid var(--Clarity-Colors-Trout, #505766);
 }
+.border-gray-btn:hover {
+  opacity: 0.8;
+}
 .req-btn {
   text-align: center;
   margin-top: 60px;
