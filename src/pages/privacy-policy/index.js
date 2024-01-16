@@ -127,9 +127,9 @@ const PrivacyPolicy = () => {
                 practices, please contact us at{" "}
                 <Link
                   className="purple-color"
-                  href={"mailto:contact@easecare.com"}
+                  href={"mailto:hello@easecare.co"}
                 >
-                  [contact@easecare.com]
+                 hello@easecare.co
                 </Link>
                 .
               </Text>
