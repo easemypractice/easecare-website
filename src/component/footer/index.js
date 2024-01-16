@@ -17,7 +17,7 @@ const Footer = () => {
               Contact us
             </Text>
             <Box className="footer-contact">
-              <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "}
+              {/* <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "} */}
               <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
             </Box>
           </Box>
