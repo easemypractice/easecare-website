@@ -42,7 +42,7 @@ const DataSecuritySection = () => {
           <Box className="mobile-demo-side ">
             <Box className="ehr-cards integrated-billing mb-5">
               <Box className="flex-align">
-                <Box className="box-heading-icon">
+                <Box className="box-heading-icon military-card-icon">
                   {/* <Image src={ShieldIcon} alt={ShieldIcon} /> */}
                   <Icon
                     icon="clarity:shield-line"

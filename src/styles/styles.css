@@ -1067,7 +1067,7 @@ header nav {
   gap: 8px;
 }
 .patient-management .management-card img {
-  height: 261px;
+  height: 210px;
   width: 100%;
 }
 .brand-banner {
@@ -1758,4 +1758,13 @@ a.clarity-header {
 }
 .cta-heading {
   margin-bottom: 30px !important;
+}
+.patient-manage img {
+  object-fit: cover;
+}
+.patient-manage {
+  padding-top: 15px;
+}
+.military-card-icon {
+  background: rgba(133, 18, 224, 0.1);
 }
