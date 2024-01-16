@@ -1,8 +1,9 @@
 import { Box,  Heading, IconButton, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import React from "react";
-import ClarityHospitalImage from "@/images/clarity-hos.png";
+import ClarityHospitalImage from "@/images/clarity-hos.svg";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 const ClarityHospital = () => {
   return (
@@ -20,7 +21,14 @@ const ClarityHospital = () => {
                 and more.
               </Text>
             </Box>
-            <IconButton className="contact-sale"><Icon icon="tabler:message-circle-2-filled" width="24" color="#fff" className="btn-icon" /> Contact Sales</IconButton>
+            <Link
+                target="_blank"
+                href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
+                className="contact-sale"
+              >
+             <Icon icon="tabler:message-circle-2-filled" width="24" color="#fff" className="btn-icon" /> Contact Sales
+              </Link>
+            {/* <IconButton className="contact-sale"><Icon icon="tabler:message-circle-2-filled" width="24" color="#fff" className="btn-icon" /> Contact Sales</IconButton> */}
           </Box>
           <Box className="clarityjplus-img">
             <Image src={ClarityHospitalImage} alt={ClarityHospitalImage} />

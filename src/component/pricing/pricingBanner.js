@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import AboutbannerImage from "@/images/about-b.png";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 const PricingBanner = () => {
   return (
     <Box className=" feature-banner pricing-baner ">
@@ -74,7 +75,14 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn">
-                <Button className="border-gray-btn">Request a callback</Button>
+                <Link
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                  className="border-gray-btn"
+                >
+                  Request a callback
+                </Link>
+                {/* <Button className="border-gray-btn">Request a callback</Button> */}
               </Box>
             </Box>
             <Box className="plan-card plan-card-highlight">
@@ -95,7 +103,7 @@ const PricingBanner = () => {
               <ul className="list-plan">
                 <li>
                   <Icon
-                    icon="solar:check-square-bold"
+                    icon="fluent:people-star-20-regular"
                     width={"24"}
                     className="icon-tick-plan"
                     color="#19BB7D"
@@ -140,7 +148,14 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn">
-                <Button className="purple-btn">Request a callback</Button>
+              <Link
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                  className="purple-btn"
+                >
+                  Request a callback
+                </Link>
+                {/* <Button className="purple-btn">Request a callback</Button> */}
               </Box>
             </Box>
             <Box className="plan-card">
@@ -149,11 +164,11 @@ const PricingBanner = () => {
               </Heading>
               <Text as="p" className="avibality-seen">
                 <Icon
-                  icon="fluent:people-queue-20-regular"
+                  icon="fluent:people-team-add-24-regular"
                   width={"24"}
                   color="#A6A6A6"
                 />{" "}
-                Free for everyone
+               Best for All Clinics & Hospitals
               </Text>
               <Heading as="h4" className="plan-subhead">
                 Everything from Essential Plus
@@ -197,7 +212,14 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn growth-btn">
-                <Button className="border-gray-btn">Request a callback</Button>
+              <Link
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                  className="border-gray-btn"
+                >
+                  Request a callback
+                </Link>
+                {/* <Button className="border-gray-btn">Request a callback</Button> */}
               </Box>
             </Box>
           </Box>
