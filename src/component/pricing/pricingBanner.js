@@ -91,7 +91,7 @@ const PricingBanner = () => {
               </Heading>
               <Text as="p" className="avibality-seen">
                 <Icon
-                  icon="fluent:people-queue-20-regular"
+                  icon="fluent:people-star-16-regular"
                   width={"24"}
                   color="#A6A6A6"
                 />{" "}
@@ -103,7 +103,7 @@ const PricingBanner = () => {
               <ul className="list-plan">
                 <li>
                   <Icon
-                    icon="fluent:people-star-20-regular"
+                    icon="solar:check-square-bold"
                     width={"24"}
                     className="icon-tick-plan"
                     color="#19BB7D"

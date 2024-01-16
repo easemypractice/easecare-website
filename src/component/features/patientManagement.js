@@ -68,51 +68,8 @@ const PatientManagement = () => {
           </Text>
         </Box>
         <Box className="grid-3">
-          {/* <Box className="management-card">
-            <Image src={ChartingImage} alt={ChartingImage} />
-            <Box className="ehr-cards ehr-cards-bottom">
-              <Box className="flex-align">
-                <Icon
-                  icon="material-symbols-light:share-outline"
-                  width={"24"}
-                  style={{ transform: "rotate(-30deg)" }}
-                />
-                <Heading as={"h3"}>Charting</Heading>
-              </Box>
-              <Text as="p">
-                Enhance efficiency with specialty-specific modules tailored to
-                diverse medical specialties for a streamlined workflow
-              </Text>
-            </Box>
-          </Box>
-          <Box className="management-card">
-            <Image src={ChartingImage} alt={ChartingImage} />
-            <Box className="ehr-cards ehr-cards-bottom">
-              <Box className="flex-align">
-                <Icon icon="tabler:file-import" width={"24"} />
-                <Heading as={"h3"}>Customizable Templates</Heading>
-              </Box>
-              <Text as="p">
-                Enhance efficiency with specialty-specific modules tailored to
-                diverse medical specialties for a streamlined workflow
-              </Text>
-            </Box>
-          </Box>
-          <Box className="management-card">
-            <Image src={ChartingImage} alt={ChartingImage} />
-            <Box className="ehr-cards ehr-cards-bottom">
-              <Box className="flex-align">
-                <Icon icon="fluent:receipt-16-regular" width={"24"} />
-                <Heading as={"h3"}>Billing</Heading>
-              </Box>
-              <Text as="p">
-                Enhance efficiency with specialty-specific modules tailored to
-                diverse medical specialties for a streamlined workflow
-              </Text>
-            </Box>
-          </Box> */}
           {ManagementCardData.map((item, index) => (
-            <Box key={index} className="management-card">
+            <Box key={index} className="management-card patient-manage">
               <Image src={item.image} alt={item.title} />
               <Box className="ehr-cards ehr-cards-bottom">
                 <Box className="flex-align">
