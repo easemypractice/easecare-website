@@ -25,7 +25,14 @@ const IntegrationsMigrations = () => {
               With Clarity, seamlessly transfer all your patient data from other
               EMRs.
             </Text>
-            <Button className="purple-btn">Request for a demo</Button>
+            <Link
+                target="_blank"
+                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                className="purple-btn"
+              >
+               Request for a demo
+              </Link>
+            {/* <Button className="purple-btn">Request for a demo</Button> */}
           </Box>
           <Box className="mobile-demo-side ">
             <Box className="flex-align mb-6 flex-end">

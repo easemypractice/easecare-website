@@ -48,7 +48,11 @@ const HeaderLayout = () => {
                       : "desktop-hidden"
                   }`}
                 >
-                  <Link href="/" className="contact-header">
+                  <Link
+                    target="_blank"
+                    href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
+                    className="contact-header"
+                  >
                     Contact
                   </Link>
                   <Button variant="solid" className="purple-btn">
@@ -65,12 +69,20 @@ const HeaderLayout = () => {
               </div>
             </div>
             <div className="header-right mobile-hidden">
-              <Link href="/" className="contact-header">
+              <Link
+                target="_blank"
+                href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
+                className="contact-header"
+              >
                 Contact
               </Link>
-              <Button variant="solid" className="purple-btn">
+              <Link
+                target="_blank"
+                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                className="purple-btn"
+              >
                 Get a demo
-              </Button>
+              </Link>
             </div>
           </div>
         </div>

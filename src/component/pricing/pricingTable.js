@@ -12,15 +12,23 @@ import {
   TableRow,
   TableRowHeaderCell,
 } from "@radix-ui/themes";
+import { useRouter } from "next/router";
 import clsx from "clsx";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const PricingTable = () => {
+  const router = useRouter();
   const [selectedPlan, setSelectedPlan] = useState("Free"); // Initial state - Free is selected
 
   const handlePlanButtonClick = (plan) => {
     setSelectedPlan(plan); // Update the selected plan when a button is clicked
   };
+  // const Getstarted = () => {
+  //   router.push(
+  //     "https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+  //   );
+  // };
   return (
     <div className="pricing-sec">
       <Box className="container">
@@ -68,7 +76,14 @@ const PricingTable = () => {
                     <Heading as="h3" className="table-top-heading">
                       Free{" "}
                     </Heading>
-                    <Button className="border-started-btn">Get Started</Button>
+                    <Link
+                      target="Blank"
+                      href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                      className="border-started-btn"
+                    >
+                      Get Started
+                    </Link>
+                    {/* <Button className="border-started-btn">Get Started</Button> */}
                   </Box>
                 </TableColumnHeaderCell>
                 <TableColumnHeaderCell
@@ -84,7 +99,14 @@ const PricingTable = () => {
                     <Heading as="h3" className="table-top-heading">
                       Essential{" "}
                     </Heading>
-                    <Button className="started-btn">Get Started</Button>
+                    <Link
+                      target="Blank"
+                      href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                      className="started-btn"
+                    >
+                      Get Started
+                    </Link>
+                    {/* <Button className="started-btn">Get Started</Button> */}
                   </Box>
                 </TableColumnHeaderCell>
                 <TableColumnHeaderCell
@@ -98,7 +120,13 @@ const PricingTable = () => {
                     <Heading as="h3" className="table-top-heading">
                       Growth{" "}
                     </Heading>
-                    <Button className="border-started-btn">Get Started</Button>
+                    <Link
+                      target="Blank"
+                      href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                      className="border-started-btn"
+                    >
+                      Get Started
+                    </Link>
                   </Box>
                 </TableColumnHeaderCell>
               </TableRow>
@@ -1050,7 +1078,6 @@ const PricingTable = () => {
                     />{" "} */}{" "}
                     -
                   </div>{" "}
-                  
                 </TableCell>
                 <TableCell
                   className={clsx(
@@ -1101,7 +1128,6 @@ const PricingTable = () => {
                     />{" "} */}{" "}
                     -
                   </div>{" "}
-                  
                 </TableCell>
                 <TableCell
                   className={clsx(
@@ -1152,7 +1178,6 @@ const PricingTable = () => {
                     />{" "} */}{" "}
                     -
                   </div>{" "}
-                  
                 </TableCell>
                 <TableCell
                   className={clsx(

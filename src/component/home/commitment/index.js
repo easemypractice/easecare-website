@@ -35,9 +35,15 @@ const CommitmentSection = () => {
               </Box>
             </Box>
             <Box className="flex-align">
-              <Button variant="outline" className="purple-outline">
+              <Link
+              
+                target="_blank"
+                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                className="purple-outline"
+              >
                 Get a Demo
-              </Button>
+              </Link>
+
               <Button variant="soft" className="purple-without">
                 Explore pricing
               </Button>
