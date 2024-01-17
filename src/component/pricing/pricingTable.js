@@ -11,6 +11,7 @@ import {
   TableHeader,
   TableRow,
   TableRowHeaderCell,
+  Text,
 } from "@radix-ui/themes";
 import { useRouter } from "next/router";
 import clsx from "clsx";
@@ -162,7 +163,7 @@ const PricingTable = () => {
                 <TableRowHeaderCell>Doctors</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
-                    ``,
+                    `table-left-force`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -212,7 +213,7 @@ const PricingTable = () => {
                 <TableRowHeaderCell>Staff members</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
-                    ``,
+                    `table-left-force`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -262,7 +263,7 @@ const PricingTable = () => {
                 <TableRowHeaderCell>Patients</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
-                    ``,
+                    `table-left-force`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -312,7 +313,7 @@ const PricingTable = () => {
                 <TableRowHeaderCell>Appointments </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
-                    ``,
+                    `table-left-force`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -364,7 +365,7 @@ const PricingTable = () => {
                 </TableRowHeaderCell>
                 <TableCell
                   className={clsx(
-                    ``,
+                    `table-left-force`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -374,7 +375,7 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    100 Minutes
+                   <Text  className="permonth">100 Minutes</Text>  
                   </div>
                 </TableCell>
                 <TableCell
@@ -414,7 +415,7 @@ const PricingTable = () => {
                 <TableRowHeaderCell>File upload size</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
-                    ``,
+                    `table-left-force`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -464,7 +465,7 @@ const PricingTable = () => {
                 <TableRowHeaderCell>File upload volume</TableRowHeaderCell>
                 <TableCell
                   className={clsx(
-                    ``,
+                    `table-left-force`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -474,7 +475,7 @@ const PricingTable = () => {
                       color="#25C16F"
                       width={"24"}
                     />{" "}
-                    150 MB per month
+                  <Text as="p" className="permonth">  150 MB per month</Text>
                   </div>
                 </TableCell>
                 <TableCell

@@ -38,7 +38,7 @@ const EhrPlatformSection = () => {
               </Box>
               <Heading as={"h3"}>Appointments & Reminders</Heading>
             </Box>
-            <Text as="p" className="text-24bold mt-2">
+            <Text as="p" className="text-24bold mt-2 ">
               Tailored Solutions for Streamlined Practice 
             </Text>
             <Text as="p">
@@ -86,9 +86,15 @@ const EhrPlatformSection = () => {
             <Text as="p" className="text-24bold mt-2">
               Tailored Solutions for Streamlined Practice 
             </Text>
-            <Text as="p">
+            <Text as="p" className="mb-4">
               Enhance efficiency with specialty-specific modules tailored to
               diverse medical specialties for a streamlined workflow
+            </Text>
+            <Text as="p"  className="mb-4">
+              Optimize operational effectiveness by implementing
+              specialty-specific modules meticulously tailored to a wide array
+              of medical specialties, fostering a seamless workflow and
+              enhancing overall efficiency.
             </Text>
             <Box className="box-img">
               <Box className="flex-align justify-center mb-6">
@@ -134,7 +140,7 @@ const EhrPlatformSection = () => {
               <Image
                 src={NewPatientImage}
                 alt={NewPatientImage}
-                className="w-full appointment-img"
+                className="w-full appointment-img depth-insight-img"
               />
             </Box>
           </Box>
