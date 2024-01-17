@@ -440,6 +440,10 @@
     line-height: 38px;
     padding: 0px 50px;
   }
+  .big-paragraph{
+    font-size: 20px;
+    line-height: 30px;
+  }
   .banner-text.text-white {
     text-align: center;
   }
@@ -451,6 +455,9 @@
     font-size: 35px;
     line-height: 48px;
   }
+  .healthcare-access {
+    padding: 20px;
+  }s
   .sub-heading-description {
     padding: 10px 15% 40px;
     font-size: 20px;
@@ -486,8 +493,8 @@
     height: 38px !important;
   }
   .integration-heading {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
   }
   .integration-inner {
     gap: 20px;
@@ -615,7 +622,7 @@
     width: 16px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   .menu ul {
     display: none;
   }
@@ -654,4 +661,16 @@
     justify-content: space-between;
     width: 100%;
   }
+  .healthcare-teams {
+    padding: 25px 20px 28.95px 20px;
+  }
+  .command-line {
+    padding: 25px 20px 28.95px 20px;
+  }
+  .rt-Box.box-img {
+    transform: scale(0.75);
+}
+.headingup-16 {
+  
+}
 }

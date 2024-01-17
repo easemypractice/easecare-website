@@ -8,11 +8,15 @@ import Footer from "@/component/footer";
 import FaviconIcon from "./favicon.ico";
 import "@/styles/mediaQuery.css";
 import LoadingBar from "../component/loadingBar/loadingBar";
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        
+      </Head>
       <body className={"body"}>
         {/* heelo
         <LoadingBar /> */}
