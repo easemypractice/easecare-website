@@ -615,7 +615,7 @@
     width: 16px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 999px) {
   .menu ul {
     display: none;
   }
