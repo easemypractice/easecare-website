@@ -391,7 +391,7 @@ header nav {
   color: var(--Clarity-Colors-Violet-0, #8512e0);
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 38px;
 }
 
@@ -1501,6 +1501,7 @@ header nav {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  font-family: "Roboto", sans-serif !important;
   line-height: 28px;
 }
 .pricing-sec .left-heading {
@@ -1516,6 +1517,7 @@ header nav {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  font-family: "Roboto", sans-serif !important;
 }
 .border-started-btn {
   margin-top: 15px;
@@ -1767,4 +1769,14 @@ a.clarity-header {
 }
 .military-card-icon {
   background: rgba(133, 18, 224, 0.1);
+}
+.table-left-force .table-flexalign {
+  /* min-width: 200px; */
+  justify-content: left;
+}
+.permonth {
+  flex: 1;
+}
+.depth-insight-img {
+  box-shadow: 0px -15px 81.253px 0px rgba(174, 174, 174, 0.12);
 }

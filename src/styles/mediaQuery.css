@@ -168,8 +168,14 @@
     margin-bottom: 10px;
   }
   .headingup-16 {
+    text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
+  }
+  .purple-without {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 12px 12px;
   }
   .data-security-inner {
     display: flex;
@@ -186,11 +192,17 @@
   .purple-outline {
     font-size: 16px;
     padding: 8px 15px;
-    line-height: 28px;
+    line-height: 22px;
     height: 40px;
   }
   .data-security-right {
+    text-align: center;
+    flex-direction: column;
     gap: 10px;
+  }
+  .purple-text-medium {
+    font-size: 20px;
+    line-height: 30px;
   }
   .CommitmentSection.py-20 {
     padding: 10px 0px 50px;
@@ -385,7 +397,7 @@
   }
   .border-started-btn {
     min-height: 38px;
-    font-size: 14px;
+    font-size: 13px;
     padding: 10px 10px 10px 10px;
     white-space: nowrap;
   }
@@ -405,7 +417,7 @@
     margin-top: 15px;
     min-height: 40px;
     color: #fff;
-    font-size: 16px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;

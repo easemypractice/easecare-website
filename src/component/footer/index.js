@@ -26,12 +26,12 @@ const Footer = () => {
           <Box className="footer-links">
             <Heading as="h3">Products</Heading>
             <ul>
-              <li>
+              {/* <li>
                 <Link href="/">EaseCare +</Link>
               </li>
               <li>
                 <Link href="/">Sites</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/">Clarity</Link>
               </li>
