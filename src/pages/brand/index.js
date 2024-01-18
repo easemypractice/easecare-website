@@ -7,10 +7,18 @@ import ClarityWordmark from "@/component/brand/clarityWordmark";
 import NamingUssage from "@/component/brand/namingUssage";
 import React from "react";
 import { Layout } from "../../app/layout";
-
+import HeadPart from "@/component/Head/head";
+import BrandPreiviewImage from "@/images/brand-preview.jpg";
 const BrandLayout = () => {
   return (
     <Layout>
+      <HeadPart
+        title={"Brand Guidelines - Clarity"}
+        description={
+          "Resources for presenting the EaseCare Clarity brand consistently and professionally. "
+        }
+        imageUrl={BrandPreiviewImage}
+      />
       <BrandBanner />
       <div className="box-clarity">
         <NamingUssage />
