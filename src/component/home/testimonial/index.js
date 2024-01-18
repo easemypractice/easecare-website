@@ -12,8 +12,8 @@ import {
 import Image from "next/image";
 import React from "react";
 import TestiDemoImage from "@/images/testi-demo.svg";
-import PhysiotherapyImage from "@/images/phy.png";
-import PediatricianImage from "@/images/phy2.png";
+import PhysiotherapyImage from "@/images/dra.png";
+import PediatricianImage from "@/images/drb.png";
 const Testimonail = () => {
   return (
     <Box className="testimonail">

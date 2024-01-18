@@ -5,7 +5,7 @@ import { Layout } from "../../app/layout";
 
 const AboutUsLayout = () => {
   return (
-    <Layout>
+    <Layout >
       <AboutBanner />
       <AboutInfo />
     </Layout>

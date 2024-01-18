@@ -116,7 +116,7 @@ const Footer = () => {
         </Box>
         <Box className="text-center footer-copyright">
           {" "}
-          <Text as="p">© 2024 EaseCare Inc. All Rights Reserved</Text>
+          <Text as="p">© 2024 EaseCare. All Rights Reserved</Text>
         </Box>
       </Box>
     </Box>
