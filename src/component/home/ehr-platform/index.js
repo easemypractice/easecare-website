@@ -1,3 +1,4 @@
+"use client";
 import { Box, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import React from "react";
 import AppointmentReminderImage from "@/images/reminder.png";
@@ -18,6 +19,7 @@ import GastroenterologistImage from "@/images/Gastroenterologist.svg";
 
 import Image from "next/image";
 import Link from "next/link";
+
 const EhrPlatformSection = () => {
   return (
     <div className="ehr-section">
@@ -90,7 +92,7 @@ const EhrPlatformSection = () => {
               Enhance efficiency with specialty-specific modules tailored to
               diverse medical specialties for a streamlined workflow
             </Text>
-            <Text as="p"  className="mb-4">
+            <Text as="p" className="mb-4">
               Optimize operational effectiveness by implementing
               specialty-specific modules meticulously tailored to a wide array
               of medical specialties, fostering a seamless workflow and

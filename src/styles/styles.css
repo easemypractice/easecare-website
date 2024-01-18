@@ -462,7 +462,8 @@ header nav {
 }
 .testi-info img {
   width: 75px;
-  height: auto;
+  height: 75px;
+  border-radius: 50%;
 }
 .ehr-cards-bottom {
   padding-bottom: 0px;
