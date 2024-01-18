@@ -9,11 +9,32 @@ import FaviconIcon from "./favicon.ico";
 import "@/styles/mediaQuery.css";
 import LoadingBar from "../component/loadingBar/loadingBar";
 import Head from "next/head";
+import HomePreviewImage from "@/images/home-preview.jpg";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>{"Clarity is a better way to manage practice"}</title>
+        <meta
+          name="description"
+          content={
+            "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
+          }
+        />
+        <meta
+          property="og:title"
+          content={"Clarity is a better way to manage practice"}
+        />
+        <meta
+          property="og:description"
+          content={
+            "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
+          }
+        />
+        <meta property="og:image" content={HomePreviewImage} />
+      </head>
       <body className={"body"}>
         {/* heelo
         <LoadingBar /> */}
