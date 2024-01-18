@@ -8,7 +8,7 @@ import CtaSection from "@/component/home/cta";
 import React from "react";
 import { Layout } from "../../app/layout";
 import HeadPart from "@/component/Head/head";
-import FeaturesPreviewImage from "@/images/features-preivew.jpg";
+import FeaturesPreviewImage from "@/images/features-preview.jpg";
 const FeaturesLayout = () => {
   return (
     <Layout>
