@@ -34,6 +34,9 @@ export default function RootLayout({ children }) {
           }
         />
         <meta property="og:image" content={HomePreviewImage} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="600" />
+        <meta property="og:image:type" content="image/jpg" />
       </head>
       <body className={"body"}>
         {/* heelo
