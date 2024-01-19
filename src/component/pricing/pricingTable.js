@@ -79,7 +79,7 @@ const PricingTable = () => {
                     </Heading>
                     <Link
                       target="Blank"
-                      href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                      href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
                       className="border-started-btn"
                     >
                       Get Started
@@ -102,7 +102,7 @@ const PricingTable = () => {
                     </Heading>
                     <Link
                       target="Blank"
-                      href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                      href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
                       className="started-btn"
                     >
                       Get Started
@@ -123,7 +123,7 @@ const PricingTable = () => {
                     </Heading>
                     <Link
                       target="Blank"
-                      href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                      href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
                       className="border-started-btn"
                     >
                       Get Started

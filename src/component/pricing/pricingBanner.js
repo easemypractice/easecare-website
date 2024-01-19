@@ -77,7 +77,7 @@ const PricingBanner = () => {
               <Box className="req-btn">
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                  href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
                   className="border-gray-btn"
                 >
                   Request a callback
@@ -150,7 +150,7 @@ const PricingBanner = () => {
               <Box className="req-btn">
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                  href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
                   className="purple-btn"
                 >
                   Request a callback
@@ -214,7 +214,7 @@ const PricingBanner = () => {
               <Box className="req-btn growth-btn">
                 <Link
                   target="_blank"
-                  href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                  href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
                   className="border-gray-btn"
                 >
                   Request a callback
