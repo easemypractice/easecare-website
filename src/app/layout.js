@@ -9,7 +9,7 @@ import FaviconIcon from "./favicon.ico";
 import "@/styles/mediaQuery.css";
 import LoadingBar from "../component/loadingBar/loadingBar";
 import Head from "next/head";
-import HomePreviewImage from "../../public/home-preview.jpg";
+// import HomePreviewImage from "../../public/home-preview.jpg";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
           }
         />
-        <meta property="og:image" content={HomePreviewImage} />
+        <meta property="og:image" content={"/home-preview.jpg"} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
         <meta property="og:image:type" content="image/jpg" />
