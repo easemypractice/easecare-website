@@ -9,7 +9,7 @@ import FaviconIcon from "./favicon.ico";
 import "@/styles/mediaQuery.css";
 import LoadingBar from "../component/loadingBar/loadingBar";
 import Head from "next/head";
-import HomePreviewImage from "@/images/home-preview.jpg";
+import HomePreviewImage from "../../public/home-preview.jpg";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
