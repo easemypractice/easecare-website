@@ -12,10 +12,11 @@ import HighlightLayout from "@/component/home/highlight";
 import IntegrationsMigrations from "@/component/home/integrations-migrations";
 import Testimonail from "@/component/home/testimonial";
 import { Box } from "@radix-ui/themes";
+import RootLayout from "./layout";
 
 export default function Home() {
   return (
-    <div>
+    <RootLayout>
       <HeadPart
         title={"Clarity is a better way to manage practicey"}
         description={
@@ -34,6 +35,6 @@ export default function Home() {
       <Testimonail />
 
       <CtaSection />
-    </div>
+    </RootLayout>
   );
 }

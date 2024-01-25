@@ -2,10 +2,18 @@ import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
 import { Layout } from "../../app/layout";
+import HeadPart from "@/component/Head/head";
 
 const TermsAndCondition = () => {
   return (
     <Layout>
+      <HeadPart
+        title={"Clarity - Terms & Conditions"}
+        // description={
+        //   "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
+        // }
+        // imageUrl={AboutPreviewImage}
+      />
       <Box className="heading-box">
         <Box className="container-privacy">
           <Heading as="h3">Terms & Conditions</Heading>
