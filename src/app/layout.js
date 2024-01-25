@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
           }
         />
-        <meta property="og:image" content="/images/preview.jpg" />
+        <meta property="og:image" content="../../public/images/preview.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
         <meta property="og:image:type" content="image/jpeg" />

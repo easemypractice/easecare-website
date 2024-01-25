@@ -9,11 +9,12 @@ import IntegrationsMigrations from "@/component/home/integrations-migrations";
 import Testimonail from "@/component/home/testimonial";
 import { Box } from "@radix-ui/themes";
 import React from "react";
-import HomePreview from "@/images/home-preview.jpg";
+import HomePreview from "../../public/images/preview.jpg";
+import { Layout } from "@/app/layout";
 
 const HomeLayout = () => {
   return (
-    <div>
+    <Layout>
       <HeadPart
         title={"Clarity is a better way to manage practicey"}
         description={
@@ -32,7 +33,7 @@ const HomeLayout = () => {
       <Testimonail />
 
       <CtaSection />
-    </div>
+    </Layout>
   );
 };
 
