@@ -890,7 +890,7 @@ header nav {
   border-radius: 9999px;
   padding: 2px 12px !important;
   border: 1px solid var(--Clarity-Colors-Shuttle-Gray, #5d6476);
-  /* background: var(--Clarity-Colors-Athens-Gray, #ebeff2); */
+  background: var(--Clarity-Colors-Athens-Gray, #ebeff2);
   /* border-radius: 9999px; */
   /* background: rgba(255, 255, 255, 0.05);  */
 }
