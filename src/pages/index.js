@@ -16,11 +16,11 @@ const HomeLayout = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity is a better way to manage practicey"}
+        title={"Clarity is a better way to manage practice"}
         description={
           "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
         }
-        imageUrl={'/public/imags/priview.jpg'}
+        imageUrl={"/public/imags/priview.jpg"}
       />
       <HomeBanner />
       <HighlightLayout />
