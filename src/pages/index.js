@@ -20,7 +20,7 @@ const HomeLayout = () => {
         description={
           "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
         }
-        imageUrl={HomePreview}
+        imageUrl={'/public/imags/priview.jpg'}
       />
       <HomeBanner />
       <HighlightLayout />
