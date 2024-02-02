@@ -86,7 +86,10 @@ const Footer = () => {
             <Box>
               <ul className="social-links">
                 <li>
-                  <Link href={"/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://twitter.com/easecare_co"}
+                  >
                     <Icon
                       icon="devicon:twitter"
                       color="#000"
@@ -96,17 +99,26 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.linkedin.com/company/easecareco/"}
+                  >
                     <Icon icon="ri:linkedin-fill" height="16" width={"16"} />
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.facebook.com/easecareco"}
+                  >
                     <Icon icon="bxl:facebook" height="16" width={"16"} />
                   </Link>
                 </li>
                 <li>
-                  <Link href={"/"}>
+                  <Link
+                    target="_blank"
+                    href={"https://www.youtube.com/@easecare_co"}
+                  >
                     <Icon icon="mdi:youtube" height="16" width={"16"} />
                   </Link>
                 </li>
