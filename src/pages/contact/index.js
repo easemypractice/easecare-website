@@ -2,7 +2,14 @@
 import React from "react";
 import { Icon as IconifyIcon } from "@iconify/react";
 import { Layout } from "@/app/layout";
-import { Button, Heading } from "@radix-ui/themes";
+import {
+  Button,
+  Heading,
+  Select,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+} from "@radix-ui/themes";
 import { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 const ClinicSizes = ["Small", "Medium", "Large"];
@@ -51,7 +58,9 @@ const Contact = () => {
                   className={`iconhov`}
                   color={"text-primaryGr-300"}
                 />
-                <div className="flex-1">Learn which plan is right for your clinic/ hospital</div>
+                <div className="flex-1">
+                  Learn which plan is right for your clinic/ hospital
+                </div>
               </li>
               <li>
                 {" "}
@@ -69,7 +78,7 @@ const Contact = () => {
           <div className="flex-1">
             <div className="form-style">
               <Form.Root className="FormRoot form-style-inner">
-              <Heading as="h3">Tell us how we can help</Heading>
+                <Heading as="h3">Tell us how we can help</Heading>
                 <Form.Field className="FormField" name="email">
                   <Form.Label className="FormLabel">Clinic’s Name</Form.Label>
                   <Form.Control asChild>
@@ -169,6 +178,18 @@ const Contact = () => {
                       Please provide a valid Address
                     </Form.Message>
                   </div>
+                </Form.Field>
+                <Form.Field className="clinic-size">
+                  <Form.Label className="FormLabel">Clinic Size</Form.Label>
+
+                  <Select.Root>
+                    <Select.Trigger placeholder="Select Clinic" />
+                    <Select.Content position="popper">
+                      <Select.Item value="Clinic1">Single Clinic</Select.Item>
+                      <Select.Item value="Clinic2">Two Clinic</Select.Item>
+                      <Select.Item value="Clinic3">Three Clinic</Select.Item>
+                    </Select.Content>
+                  </Select.Root>
                 </Form.Field>
                 <Form.Field className="FormField" name="question">
                   <Form.Label className="FormLabel">

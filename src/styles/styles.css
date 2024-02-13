@@ -1812,6 +1812,7 @@ ul.list-main {
   gap: 5px;
   align-items: center;
 }
+
 ul.cont-list {
   color: #5d6476;
   margin-top: 13px;
@@ -1910,4 +1911,8 @@ textarea::placeholder {
 .form-style-inner label.FormLabel {
   display: block;
   padding-bottom: 8px !important;
+}
+.clinic-size button {
+  width: 100%;
+  height: 40px;
 }
