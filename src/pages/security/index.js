@@ -24,7 +24,7 @@ const Security = () => {
           <Box className="privacy-content-box">
             <Text as="p">
               At Clarity, we prioritize the utmost safety and security of our
-              customers' data. We highly appreciate contributions from our
+              customers&apos; data. We highly appreciate contributions from our
               community to help identify vulnerabilities in our EHR, EMR, and
               Telemedicine solutions.
             </Text>
@@ -58,7 +58,7 @@ const Security = () => {
               </ul>
               <Text as="p">
                 Upon receiving your email, our dedicated team will promptly
-                investigate the reported issue. We'll keep you informed of the
+                investigate the reported issue. We&apos;ll keep you informed of the
                 progress and may request additional details if necessary. Once
                 resolved, we will update our valued customers.
               </Text>
@@ -104,7 +104,7 @@ const Security = () => {
                 </li>
                 <li>Denial of Service attacks.</li>
                 <li>
-                  Attacks requiring physical access to the victim's computer.
+                  Attacks requiring physical access to the victim&apos;s computer.
                 </li>
                 <li>Theoretical attacks without proof of exploitability.</li>
                 <li>Man-in-the-middle attacks.</li>
