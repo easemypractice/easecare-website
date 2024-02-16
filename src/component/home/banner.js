@@ -1,5 +1,5 @@
 import { Button, Heading, Text } from "@radix-ui/themes";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroImag from "@/images/homebanner-new.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +8,19 @@ const HomeBanner = () => {
     <div className="home-banner">
       <div className="container">
         <div className="banner-content-top">
+          {/* {data &&
+            data.length > 0 &&
+            data.map((item, index) => (
+              <div key={index}>
+                <Image
+                  src={urlFor(item.titleImage).url()}
+                  height={400}
+                  width={400}
+                  alt={"blog-image"}
+                  className=" rounded-lg border    "
+                />
+              </div>
+            ))} */}
           <Button className="green-btn home-green-btn">
             An EHR built by Doctors for Doctors
           </Button>
@@ -22,12 +35,12 @@ const HomeBanner = () => {
             patient care, appointments, billing, and engagement
           </Text>
           <Link
-                target="_blank"
-                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
-                className="purple-btn"
-              >
-               Request for a demo
-              </Link>
+            target="_blank"
+            href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+            className="purple-btn"
+          >
+            Request for a demo
+          </Link>
           {/* <Button className="purple-btn">Request for a demo</Button> */}
           <Text className="banner-text text-white">
             Modern, Secure, Cloud-Based EMR for Growing Your Practice

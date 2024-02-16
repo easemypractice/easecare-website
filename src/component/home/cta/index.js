@@ -6,7 +6,7 @@ import Link from "next/link";
 const CtaSection = () => {
   return (
     <Box className=" cta-section bg-teal-dark">
-      <Box className="container  text-center">
+      <Box className="container text-center">
         <Image src={CtaIcon} alt={CtaIcon} />
         <Heading as="h2" className="cta-heading">Built for the <span className="future-text">Future.</span> <span className="available-text">Available today.</span></Heading>
         {/* <Button className="purple-btn">Get a demo</Button> */}
