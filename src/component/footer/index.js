@@ -52,9 +52,9 @@ const Footer = () => {
               <li>
                 <Link href="/security">Security</Link>
               </li>
-              {/* <li>
-                <Link href="/">Blog </Link>
-              </li> */}
+              <li>
+                <Link href="/blog">Blog </Link>
+              </li>
             </ul>
           </Box>
           <Box className="footer-links">
