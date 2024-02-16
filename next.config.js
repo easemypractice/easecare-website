@@ -4,11 +4,10 @@ const nextConfig = {
   swcMinify: true,
   publicRuntimeConfig: "http://localhost:3000",
   images: {
-    domains: ["cdn.sanity.io"],
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "cdn.sanity.io",
         port: "",
         pathname: "**",
       },
