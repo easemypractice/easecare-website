@@ -10,7 +10,7 @@ import { client } from "@/app/lib/sanity";
 import CtaSection from "@/component/home/cta";
 async function getData() {
   const query = `*[_type=="blog"] | order(releaseDate desc) {
-   title,
+   title,type,_id,
     smallDescription,
     "currentSlug":slug.current,
     titleImage,_createdAt
@@ -45,9 +45,8 @@ const Blog = () => {
           </Box>
         </Box>
         <RecentBlogs data={data} />
-        <EditorChoice />
-        <LatestIndustry />
-        <CtaSection/>
+        <EditorChoice data={data} />
+        <CtaSection />
       </Layout>
     </div>
   );

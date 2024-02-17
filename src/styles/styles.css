@@ -461,6 +461,7 @@ header nav {
 .download-btns a {
   z-index: 100;
 }
+
 .healthcare-access {
   position: relative;
 }
@@ -2091,6 +2092,7 @@ a.clarity-header {
 .download-btns img {
   width: 100%;
 }
+
 ul.list-main {
   padding-left: 20px;
 }
@@ -2239,6 +2241,7 @@ textarea::placeholder {
   width: 100%;
   height: 40px;
 }
+
 /* blog css */
 .blog .header {
   background: url(../images/Banner.png);
@@ -2312,13 +2315,13 @@ textarea::placeholder {
   padding: 32px;
   gap: 36px;
   max-width: 624px;
-
+  cursor: pointer;
 }
 
 .blog .recent-post .body .left-part h2 {
   padding-top: 12px;
   padding-bottom: 12px;
-  cursor: pointer;
+
 
 }
 
@@ -2364,6 +2367,18 @@ textarea::placeholder {
   max-width: 280px;
 }
 
+.blog .recent-post .body .left-part:hover h2,
+.blog .recent-post .body .right-part .box:hover h2,
+.blog .editor-choice .body .content:hover h4 {
+  color: #8512e0
+}
+
+.blog .recent-post .right-part .box:hover,
+.blog .recent-post .body .left-part:hover,
+.blog .editor-choice .body .content:hover {
+  border: 1px solid #8512e0
+}
+
 .blog .recent-post .right-part h2 {
   color: var(--Clarity-Colors-Shark, #1D2026);
   font-size: 20px;
@@ -2405,6 +2420,7 @@ textarea::placeholder {
   border: 1px solid var(--explodingtopics_com_blog_library_1440x810_default-Chartreuse-Yellow, #DBE7FF);
   min-height: 130px;
   padding: 25px 31px;
+  cursor: pointer
 }
 
 .blog .editor-choice .body .content span {
@@ -2415,6 +2431,12 @@ textarea::placeholder {
   line-height: 24px;
   letter-spacing: 1.25px;
   text-transform: uppercase;
+  margin-bottom: 8px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
 }
 
 .blog .editor-choice .body .content h4 {
@@ -2423,6 +2445,11 @@ textarea::placeholder {
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
 }
 
 .blog .editor-choice .body-container .elite-club {
@@ -2565,4 +2592,3 @@ textarea::placeholder {
 .blog-content ul {
   padding-left: 50px
 }
-
