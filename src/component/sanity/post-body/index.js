@@ -9,10 +9,12 @@ const PostBody = ({ content, className }) => {
       <Image
         src={urlBuilder(client).image(value).fit("max").auto("format").url()}
         alt={value.alt || " "}
-        loading="lazy"
         width={640}
         height={320}
         className="content-image"
+        style={{ height: "100%", width: "100%" }}
+        priority
+        quality={80}
       />
     );
   };

@@ -9,7 +9,7 @@ import PostBody from "@/component/sanity/post-body";
 import { useParams } from "next/navigation";
 async function getData(slug) {
   if (slug) {
-      const query = `*[_type=="blog" && slug.current =='${slug}'] {
+    const query = `*[_type=="blog" && slug.current =='${slug}'] {
      "currentSlug":slug.current,
      title,smallDescription,
      content,titleImage,_createdAt,_updatedAt ,'author':*[_type == "author"]{
@@ -39,7 +39,7 @@ const RecentBlogArticle = () => {
           //   imageUrl={BrandPreiviewImage}
         />
         <Box className="container">
-          <Text as="h2">{data?.title}</Text>
+          <Text as="h1">{data?.title}</Text>
           <Flex className="author-image">
             {data && data?.author && (
               <Image
@@ -59,6 +59,7 @@ const RecentBlogArticle = () => {
               src={urlFor(data?.titleImage)?.url()}
               width={640}
               height={320}
+              style={{ height: "100%", width: "100%" }}
               alt="image"
               className="content-image"
               priority

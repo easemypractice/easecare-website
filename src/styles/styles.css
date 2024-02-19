@@ -2530,12 +2530,22 @@ textarea::placeholder {
   line-height: 28px;
 }
 
-.blog-page h2 {
+.blog-page h1 {
   color: var(--Clarity-Colors-Black, #000);
   font-size: 52px;
   font-style: normal;
   font-weight: 600;
   line-height: 60px;
+  letter-spacing: -1.2px;
+  padding: 40px 0px 32px 0px;
+}
+
+.blog-page h2 {
+  color: var(--Clarity-Colors-Black, #000);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
   letter-spacing: -1.2px;
   padding: 40px 0px 32px 0px;
 }
@@ -2551,7 +2561,6 @@ textarea::placeholder {
 
 .blog-page .author-image {
   gap: 12px;
-  margin-bottom: 30px;
 }
 
 .blog-page .author-image img {
@@ -2568,7 +2577,7 @@ textarea::placeholder {
 .content-image {
   object-fit: cover;
   border-radius: 14px;
-  margin: 16px
+  margin: 30px 0px;
 }
 
 .blog-content p,
@@ -2582,11 +2591,13 @@ textarea::placeholder {
 }
 
 .blog-content li strong {
-  color: var(--Clarity-Colors-Shark, #1D2026) !important;
-  font-size: 24px !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-  line-height: 38px !important;
+  display: block;
+  color: var(--Clarity-Colors-Shark, #1D2026);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: -18px;
 }
 
 .blog-content ul {
