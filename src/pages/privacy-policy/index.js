@@ -1,8 +1,7 @@
+import HeadPart from "@/component/Head/head";
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
-import React from "react";
 import { Layout } from "../../app/layout";
-import HeadPart from "@/component/Head/head";
 
 const PrivacyPolicy = () => {
   return (
@@ -171,6 +170,23 @@ const PrivacyPolicy = () => {
                 this policy at any time, so please review it periodically. Your
                 continued use of Clarity after changes to the Privacy Policy
                 constitutes acceptance of those changes.
+              </Text>
+            </Box>
+          </Box>
+          <Box className="privacy-content-box">
+            <Heading as="h3">11. Subscription Management & Refunds</Heading>
+            <Box className="privacy-text-list">
+              <Text as="p">
+                I. Seamless Subscription Management: We offer flexible
+                subscriptions with automatic renewal at the end of your current
+                term. To avoid automatic renewal, simply cancel your plan before
+                the end of your billing cycle. You can easily manage your
+                subscription through your account settings.
+              </Text>
+              <Text as="p">
+                II. Refund Policy: While we don&apos;t offer refunds for past
+                billing periods due to the ongoing service provided, we
+                understand that sometimes things change.
               </Text>
             </Box>
           </Box>
