@@ -2603,3 +2603,8 @@ textarea::placeholder {
 .blog-content ul {
   padding-left: 50px
 }
+li.addre {
+  display: flex;
+  max-width: 362px;
+  gap: 20px;
+}

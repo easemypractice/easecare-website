@@ -24,6 +24,26 @@ const Footer = () => {
         </Box>
         <Box className=" justify-between footer-middle">
           <Box className="footer-links">
+            <Heading as="h3">Contact Us:</Heading>
+            <ul>
+              <li>
+                Customer Care:{" "}
+                <Link href="tel:+91-7251027599">+91-7251027599</Link>
+              </li>
+              <li>
+                Email address:{" "}
+                <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
+              </li>
+              <li class="addre">
+                <span>Address:</span>
+                <span>
+                  III FLOOR, USHA TOWER, KEDARPURAM, NEW CANAL ROAD, MOTHROWALA,
+                  Dehradun- 248001, Uttarakhand, India{" "}
+                </span>
+              </li>
+            </ul>
+          </Box>
+          <Box className="footer-links">
             <Heading as="h3">Products</Heading>
             <ul>
               {/* <li>

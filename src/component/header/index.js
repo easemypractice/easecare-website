@@ -48,9 +48,16 @@ const HeaderLayout = () => {
                       : "desktop-hidden"
                   }`}
                 >
-                  <Link
+                  {/* <Link
                     target="_blank"
                     href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
+                    className="contact-header"
+                  >
+                    Contact
+                  </Link> */}
+                  <Link
+                    target="_blank"
+                    href="/contact"
                     className="contact-header"
                   >
                     Contact
@@ -69,11 +76,14 @@ const HeaderLayout = () => {
               </div>
             </div>
             <div className="header-right mobile-hidden">
-              <Link
+              {/* <Link
                 target="_blank"
                 href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
                 className="contact-header"
               >
+                Contact
+              </Link> */}
+              <Link target="_blank" href="/contact" className="contact-header">
                 Contact
               </Link>
               <Link
