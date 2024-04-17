@@ -11,20 +11,21 @@ const Footer = () => {
   return (
     <Box className="footer">
       <Box className="container footer-inner">
-        <Box>
+        {/* <Box>
           <Box className="flex-align footer-top">
             <Text as="p" className="contact">
               Contact us
             </Text>
             <Box className="footer-contact">
-              {/* <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "} */}
+              <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "}
               <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
         <Box className=" justify-between footer-middle">
           <Box className="footer-links">
             <Heading as="h3">Contact Us:</Heading>
+            <p class="name-s">EASECARE HEALTHTECH LLP</p>
             <ul>
               <li>
                 Customer Care:{" "}
