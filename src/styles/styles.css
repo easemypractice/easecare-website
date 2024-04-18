@@ -2603,3 +2603,98 @@ textarea::placeholder {
 .blog-content ul {
   padding-left: 50px
 }
+
+.clarity .header {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.clarity .header h3 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -1.2000000476837158px;
+  color: #1D2026;
+  margin-bottom: 40px;
+}
+
+.clarity .header p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  text-align: left;
+  color: #1D2026;
+}
+
+.clarity .header .typography {
+  gap: 100px;
+}
+
+.clarity .body h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -1.2000000476837158px;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.clarity .body h3 {
+  font-size: 26px;
+  line-height: 38px;
+  text-align: left;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.clarity .body h6 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+  color: #8512E0;
+  text-transform: capitalize;
+}
+
+.clarity .body .list {
+  margin-bottom: 30px;
+}
+
+.clarity .body .list p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 38px;
+  color: rgba(29, 32, 38, 1);
+  margin-left: 28px;
+}
+
+.clarity-detailed h1 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -1.2000000476837158px;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 32px;
+  text-transform: capitalize;
+}
+
+.clarity-detailed h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+  color: rgba(29, 32, 38, 1);
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.clarity-detailed h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: left;
+  color: rgba(29, 32, 38, 1);
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
