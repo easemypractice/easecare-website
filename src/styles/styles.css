@@ -2713,6 +2713,7 @@ li.addre {
   text-align: left;
   color: #8512E0;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
 .clarity .body .list {

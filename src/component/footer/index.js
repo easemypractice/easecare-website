@@ -57,7 +57,7 @@ const Footer = () => {
                 <Link href="/">Clarity</Link>
               </li>
               <li>
-                <Link href="/">Clarity Method</Link>
+                <Link href="/clarity">Clarity Method</Link>
               </li>
             </ul>
           </Box>
