@@ -253,12 +253,14 @@ header nav {
 .home-banner {
   padding: 70px 0px 70px 0px;
   background: linear-gradient(180deg, #070624 0%, rgba(7, 6, 36, 0) 100%),
-    linear-gradient(88deg,
+    linear-gradient(
+      88deg,
       rgba(255, 168, 0, 0.4) 0%,
       rgba(25, 187, 125, 0.4) 24.91%,
       rgba(0, 82, 204, 0.4) 48.82%,
       rgba(69, 164, 236, 0.4) 72.18%,
-      rgba(184, 95, 255, 0.4) 88.31%),
+      rgba(184, 95, 255, 0.4) 88.31%
+    ),
     #070624;
 }
 
@@ -287,12 +289,16 @@ header nav {
 
 .home-heading {
   max-width: 692px;
-  background: var(--Clarity-Colors-Linear-Electric-Violet-Buddha-Gold-Bondi-Blue-Caribbean-Green,
-      linear-gradient(90deg,
-        #b5ffd3 0.02%,
-        #d1a4ff 39.16%,
-        #ffa5af 75.82%,
-        #ffdca4 100%));
+  background: var(
+    --Clarity-Colors-Linear-Electric-Violet-Buddha-Gold-Bondi-Blue-Caribbean-Green,
+    linear-gradient(
+      90deg,
+      #b5ffd3 0.02%,
+      #d1a4ff 39.16%,
+      #ffa5af 75.82%,
+      #ffdca4 100%
+    )
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -305,8 +311,10 @@ header nav {
 }
 
 .heading-white {
-  background: var(--Clarity-Colors-Linear-Electric-Violet-Buddha-Gold-Bondi-Blue-Caribbean-Green,
-      linear-gradient(90deg, #fff 0.02%, #fff 39.16%, #fff 75.82%, #fff 100%));
+  background: var(
+    --Clarity-Colors-Linear-Electric-Violet-Buddha-Gold-Bondi-Blue-Caribbean-Green,
+    linear-gradient(90deg, #fff 0.02%, #fff 39.16%, #fff 75.82%, #fff 100%)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -357,9 +365,11 @@ header nav {
 .keyboard-shortcut {
   padding: 25px 50.88px 28.95px 51.01px;
   border-radius: 14px;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(255, 224, 174, 0.5) 0%,
-      rgba(255, 224, 174, 0.5) 100%),
+      rgba(255, 224, 174, 0.5) 100%
+    ),
     #fff;
   height: 100%;
 }
@@ -367,9 +377,11 @@ header nav {
 .breathtaking {
   padding: 25px 50.88px 28.95px 51.01px;
   border-radius: 14px;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(89, 242, 246, 0.2) 0%,
-      rgba(89, 242, 246, 0.2) 100%),
+      rgba(89, 242, 246, 0.2) 100%
+    ),
     #fff;
   height: 100%;
 }
@@ -381,9 +393,11 @@ header nav {
 .healthcare-teams {
   padding: 25px 50.88px 28.95px 51.01px;
   border-radius: 14px;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(203, 231, 163, 0.5) 0%,
-      rgba(203, 231, 163, 0.5) 100%),
+      rgba(203, 231, 163, 0.5) 100%
+    ),
     #fff;
   margin-top: 32px;
 }
@@ -391,9 +405,11 @@ header nav {
 .command-line {
   padding: 25px 50.88px 28.95px 51.01px;
   border-radius: 14px;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(255, 224, 174, 0.5) 0%,
-      rgba(255, 224, 174, 0.5) 100%),
+      rgba(255, 224, 174, 0.5) 100%
+    ),
     #fff;
   margin-top: 32px;
 }
@@ -404,9 +420,11 @@ header nav {
   align-items: center;
   margin-top: 32px;
   border-radius: 14px;
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(191, 99, 198, 0.2) 0%,
-      rgba(191, 99, 198, 0.2) 100%),
+      rgba(191, 99, 198, 0.2) 100%
+    ),
     #fff;
 }
 
@@ -678,8 +696,10 @@ header nav {
 }
 
 .available-text {
-  color: var(--Clarity-Colors-Black-Pearl-Linear-Japanese-Laurel-Mountain-Meadow-Science-Blue-Picton-Blue-Rose-of-Sharon-Linear-Black-Pearl-Black-Pearl,
-      #070624);
+  color: var(
+    --Clarity-Colors-Black-Pearl-Linear-Japanese-Laurel-Mountain-Meadow-Science-Blue-Picton-Blue-Rose-of-Sharon-Linear-Black-Pearl-Black-Pearl,
+    #070624
+  );
 }
 
 .cta-section .purple-btn {
@@ -1114,8 +1134,10 @@ header nav {
 }
 
 .patient-management h2 {
-  color: var(--Clarity-Colors-Black-Pearl-Linear-Japanese-Laurel-Mountain-Meadow-Science-Blue-Picton-Blue-Rose-of-Sharon-Linear-Black-Pearl-Black-Pearl,
-      #070624);
+  color: var(
+    --Clarity-Colors-Black-Pearl-Linear-Japanese-Laurel-Mountain-Meadow-Science-Blue-Picton-Blue-Rose-of-Sharon-Linear-Black-Pearl-Black-Pearl,
+    #070624
+  );
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -1142,10 +1164,12 @@ header nav {
 .management-card {
   border-radius: 12px;
   border: 1px solid var(--Clarity-Colors-Athens-Gray, #ebeff2);
-  background: linear-gradient(180deg,
-      rgba(255, 255, 255, 0.72) 0%,
-      rgba(255, 255, 255, 0.36) 85.42%,
-      rgba(255, 255, 255, 0.36) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.36) 85.42%,
+    rgba(255, 255, 255, 0.36) 100%
+  );
   backdrop-filter: blur(12px);
   /* padding: 20px; */
 }
@@ -1188,10 +1212,12 @@ header nav {
 }
 
 .clinic-management {
-  background: radial-gradient(53.29% 53.29% at 50% 46.71%,
+  background: radial-gradient(
+      53.29% 53.29% at 50% 46.71%,
       rgba(255, 224, 174, 0.2) 0%,
       rgba(255, 224, 174, 0.06) 57.81%,
-      rgba(255, 255, 255, 0) 100%),
+      rgba(255, 255, 255, 0) 100%
+    ),
     linear-gradient(0deg, #fcfeff 0%, #fcfeff 100%), rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(22px);
 }
@@ -1205,13 +1231,17 @@ header nav {
 }
 
 .analytics {
-  background: radial-gradient(50% 50% at 50% 50%,
+  background: radial-gradient(
+      50% 50% at 50% 50%,
       rgba(220, 243, 250, 0.2) 0%,
-      rgba(255, 255, 255, 0) 100%),
-    radial-gradient(67.2% 59.94% at 61.6% 65.84%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      67.2% 59.94% at 61.6% 65.84%,
       rgba(203, 231, 163, 0.2) 0%,
       rgba(255, 255, 255, 0.2) 35.13%,
-      rgba(255, 255, 255, 0.2) 62.09%),
+      rgba(255, 255, 255, 0.2) 62.09%
+    ),
     rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(22px);
 }
@@ -1222,10 +1252,12 @@ header nav {
 }
 
 .calendar-sec {
-  background: radial-gradient(26.88% 26.88% at 50% 46.71%,
+  background: radial-gradient(
+      26.88% 26.88% at 50% 46.71%,
       rgba(233, 206, 255, 0.2) 0%,
       rgba(210, 177, 237, 0.14) 57.81%,
-      rgba(255, 255, 255, 0) 100%),
+      rgba(255, 255, 255, 0) 100%
+    ),
     linear-gradient(0deg, #fcfeff 0%, #fcfeff 100%), rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(22px);
 }
@@ -1276,8 +1308,10 @@ header nav {
 }
 
 .naming-ussage h3 {
-  color: var(--Clarity-Colors-Black-Pearl-Linear-Japanese-Laurel-Mountain-Meadow-Science-Blue-Picton-Blue-Rose-of-Sharon-Linear-Black-Pearl-Black-Pearl,
-      #070624);
+  color: var(
+    --Clarity-Colors-Black-Pearl-Linear-Japanese-Laurel-Mountain-Meadow-Science-Blue-Picton-Blue-Rose-of-Sharon-Linear-Black-Pearl-Black-Pearl,
+    #070624
+  );
 
   font-size: 48px;
   font-style: normal;
@@ -1498,9 +1532,11 @@ header nav {
 }
 
 .heading-box {
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0) 100%),
+      rgba(255, 255, 255, 0) 100%
+    ),
     #dcf3fa;
   padding: 58px 0px;
 }
@@ -1667,10 +1703,12 @@ header nav {
 .clarity-hos {
   border-radius: 20px;
   border: 2px solid var(--Clarity-Colors-Athens-Gray, #ebeff2);
-  background: linear-gradient(98deg,
-      #f2f9fe 21.75%,
-      rgba(255, 255, 255, 0.5) 77.88%,
-      rgba(255, 255, 255, 0.5) 87.46%);
+  background: linear-gradient(
+    98deg,
+    #f2f9fe 21.75%,
+    rgba(255, 255, 255, 0.5) 77.88%,
+    rgba(255, 255, 255, 0.5) 87.46%
+  );
   backdrop-filter: blur(12px);
   position: relative;
   margin: auto;
@@ -1679,9 +1717,11 @@ header nav {
 
 .clarity-hos:after {
   border-radius: 555px;
-  background: radial-gradient(45.11% 43.49% at 50% 50%,
-      #f5ad39 0%,
-      rgba(255, 224, 174, 0) 100%);
+  background: radial-gradient(
+    45.11% 43.49% at 50% 50%,
+    #f5ad39 0%,
+    rgba(255, 224, 174, 0) 100%
+  );
   filter: blur(162px);
   width: 455px;
   height: 288px;
@@ -1847,10 +1887,12 @@ header nav {
 .column-two-head {
   border-radius: 12px 12px 0px 0px;
   border: 1px solid var(--Clarity-Colors-Caper, #cbe7a3);
-  background: linear-gradient(180deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.5) 85.42%,
-      rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.5) 85.42%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   backdrop-filter: blur(12px);
   border-bottom: 0px !important;
 }
@@ -1858,10 +1900,12 @@ header nav {
 .pricing-sec tr.rt-TableRow td:nth-child(3) {
   /* border-radius: 8px 12px 0px 0px; */
   border: 1px solid var(--Clarity-Colors-Caper, #cbe7a3);
-  background: linear-gradient(180deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.5) 85.42%,
-      rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.5) 85.42%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   backdrop-filter: blur(12px);
   border-bottom: 1px dashed #ebeff2;
   border-top: 0px;
@@ -1890,10 +1934,12 @@ header nav {
 .table-sub-head .border-b-pricing {
   border-radius: 0px 0px 12px 12px;
   border-bottom: 1px solid var(--Clarity-Colors-Caper, #cbe7a3) !important;
-  background: linear-gradient(180deg,
-      #fff 0%,
-      rgba(255, 255, 255, 0.5) 85.42%,
-      rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.5) 85.42%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   backdrop-filter: blur(12px);
 }
 
@@ -2033,9 +2079,11 @@ a.clarity-header {
 }
 
 .receipt-icon-bg {
-  background: linear-gradient(232deg,
-      rgba(255, 58, 68, 0.1) 15.53%,
-      rgba(195, 17, 98, 0.1) 169.57%);
+  background: linear-gradient(
+    232deg,
+    rgba(255, 58, 68, 0.1) 15.53%,
+    rgba(195, 17, 98, 0.1) 169.57%
+  );
 }
 
 .phon-icon-bg {
@@ -2179,7 +2227,8 @@ ul.cont-list {
   border: 1px solid var(--Neutral-color-Neutral-Alpha-5, rgba(0, 0, 48, 0.11));
   background: var(--Tokens-Colors-surface, rgba(255, 255, 255, 0.9));
   width: 100%;
-  box-shadow: 0px 1.5px 2px 0px var(--Neutral-color-Neutral-Alpha-2, rgba(5, 5, 88, 0.02)) inset,
+  box-shadow: 0px 1.5px 2px 0px
+      var(--Neutral-color-Neutral-Alpha-2, rgba(5, 5, 88, 0.02)) inset,
     0px 1.5px 2px 0px var(--Overlays-Black-Alpha-2, rgba(0, 0, 0, 0.02)) inset;
   height: 40px;
   padding: 20px 10px;
@@ -2190,7 +2239,8 @@ ul.cont-list {
   border: 1px solid var(--Neutral-color-Neutral-Alpha-5, rgba(0, 0, 48, 0.11));
   background: var(--Tokens-Colors-surface, rgba(255, 255, 255, 0.9));
   width: 100%;
-  box-shadow: 0px 1.5px 2px 0px var(--Neutral-color-Neutral-Alpha-2, rgba(5, 5, 88, 0.02)) inset,
+  box-shadow: 0px 1.5px 2px 0px
+      var(--Neutral-color-Neutral-Alpha-2, rgba(5, 5, 88, 0.02)) inset,
     0px 1.5px 2px 0px var(--Overlays-Black-Alpha-2, rgba(0, 0, 0, 0.02)) inset;
   min-height: 60px;
   padding: 8px 10px;
@@ -2253,7 +2303,7 @@ textarea::placeholder {
 }
 
 .blog .header h2 {
-  color: var(--Clarity-Colors-Shark, #1D2026);
+  color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 72px;
   font-style: normal;
   font-weight: 600;
@@ -2271,8 +2321,8 @@ textarea::placeholder {
 }
 
 .blog .header p {
-  color: var(--Clarity-Colors-Shark, #1D2026);
-  color: var(--Clarity-Colors-Shuttle-Gray, #5D6476);
+  color: var(--Clarity-Colors-Shark, #1d2026);
+  color: var(--Clarity-Colors-Shuttle-Gray, #5d6476);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2290,13 +2340,15 @@ textarea::placeholder {
 .blog .editor-choice .head span {
   gap: 18px;
   margin-bottom: 40px;
-
 }
 
 .blog .recent-post .head span,
 .blog .editor-choice .head span,
 .blog .latest-industry .head span {
-  color: var(--explodingtopics_com_blog_library_1440x810_default-Big-Stone, #121737);
+  color: var(
+    --explodingtopics_com_blog_library_1440x810_default-Big-Stone,
+    #121737
+  );
   font-size: 28px;
   font-style: normal;
   font-weight: 800;
@@ -2311,7 +2363,7 @@ textarea::placeholder {
 
 .blog .recent-post .body .left-part {
   border-radius: 14px;
-  border: 1px solid var(--Clarity-Colors-Athens-Gray, #EBEFF2);
+  border: 1px solid var(--Clarity-Colors-Athens-Gray, #ebeff2);
   padding: 32px;
   gap: 36px;
   max-width: 624px;
@@ -2321,12 +2373,10 @@ textarea::placeholder {
 .blog .recent-post .body .left-part h2 {
   padding-top: 12px;
   padding-bottom: 12px;
-
-
 }
 
 .blog .recent-post .body .left-part h5 {
-  color: #5D6476;
+  color: #5d6476;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2339,7 +2389,10 @@ textarea::placeholder {
 }
 
 .blog .recent-post .body .left-part span {
-  color: var(--explodingtopics_com_blog_library_1440x810_default-Santas-Gray, #A0A2AF);
+  color: var(
+    --explodingtopics_com_blog_library_1440x810_default-Santas-Gray,
+    #a0a2af
+  );
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
@@ -2348,7 +2401,7 @@ textarea::placeholder {
 
 .blog .recent-post .body img {
   border-radius: 12px;
-  background: var(--Clarity-Colors-Athens-Gray, #EBEFF2);
+  background: var(--Clarity-Colors-Athens-Gray, #ebeff2);
 }
 
 .blog .recent-post .right-part {
@@ -2363,24 +2416,24 @@ textarea::placeholder {
   gap: 10px;
   align-self: stretch;
   border-radius: 14px;
-  border: 1px solid var(--Clarity-Colors-Athens-Gray, #EBEFF2);
+  border: 1px solid var(--Clarity-Colors-Athens-Gray, #ebeff2);
   max-width: 280px;
 }
 
 .blog .recent-post .body .left-part:hover h2,
 .blog .recent-post .body .right-part .box:hover h2,
 .blog .editor-choice .body .content:hover h4 {
-  color: #8512e0
+  color: #8512e0;
 }
 
 .blog .recent-post .right-part .box:hover,
 .blog .recent-post .body .left-part:hover,
 .blog .editor-choice .body .content:hover {
-  border: 1px solid #8512e0
+  border: 1px solid #8512e0;
 }
 
 .blog .recent-post .right-part h2 {
-  color: var(--Clarity-Colors-Shark, #1D2026);
+  color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2393,7 +2446,7 @@ textarea::placeholder {
 }
 
 .blog .recent-post .right-part span {
-  color: #5D6476;
+  color: #5d6476;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2403,7 +2456,7 @@ textarea::placeholder {
 .blog .editor-choice {
   padding-top: 80px;
   padding-bottom: 80px;
-  background: var(--Clarity-Colors-Yellow, #FBFCFF);
+  background: var(--Clarity-Colors-Yellow, #fbfcff);
 }
 
 .blog .editor-choice .body {
@@ -2412,19 +2465,22 @@ textarea::placeholder {
 
 .body-container {
   gap: 32px;
-
 }
 
 .blog .editor-choice .body .content {
   border-radius: 14px 14px 0px 0px;
-  border: 1px solid var(--explodingtopics_com_blog_library_1440x810_default-Chartreuse-Yellow, #DBE7FF);
+  border: 1px solid
+    var(
+      --explodingtopics_com_blog_library_1440x810_default-Chartreuse-Yellow,
+      #dbe7ff
+    );
   min-height: 130px;
   padding: 25px 31px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .blog .editor-choice .body .content span {
-  color: var(--Clarity-Colors-Silver-Chalice, #A6A6A6);
+  color: var(--Clarity-Colors-Silver-Chalice, #a6a6a6);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2436,11 +2492,10 @@ textarea::placeholder {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-
 }
 
 .blog .editor-choice .body .content h4 {
-  color: var(--Clarity-Colors-Shark, #1D2026);
+  color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2449,12 +2504,11 @@ textarea::placeholder {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-
 }
 
 .blog .editor-choice .body-container .elite-club {
   border-radius: 14px;
-  background: #1E0730;
+  background: #1e0730;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
@@ -2463,12 +2517,11 @@ textarea::placeholder {
 }
 
 .blog .elite-club h2 {
-  color: var(--Clarity-Colors-Nero, #FFF);
+  color: var(--Clarity-Colors-Nero, #fff);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 38px;
-
 }
 
 .blog .editor-choice .head,
@@ -2477,7 +2530,7 @@ textarea::placeholder {
 }
 
 .blog .elite-club p {
-  color: var(--explodingtopics_com_blog_library_1440x810_default-Nero, #FFF);
+  color: var(--explodingtopics_com_blog_library_1440x810_default-Nero, #fff);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2496,26 +2549,24 @@ textarea::placeholder {
 
 .blog .industry-data {
   border-radius: 14px;
-  border: 1px solid var(--Clarity-Colors-Athens-Gray, #EBEFF2);
+  border: 1px solid var(--Clarity-Colors-Athens-Gray, #ebeff2);
   gap: 10px;
   align-self: stretch;
   padding: 32px;
-
 }
 
 .blog .industry-data h2 {
-  color: var(--Clarity-Colors-Silver-Chalice, #A6A6A6);
+  color: var(--Clarity-Colors-Silver-Chalice, #a6a6a6);
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 1.25px;
   text-transform: uppercase;
-
 }
 
 .blog .industry-data p {
-  color: var(--Clarity-Colors-Shark, #1D2026);
+  color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -2523,7 +2574,7 @@ textarea::placeholder {
 }
 
 .blog .industry-data span {
-  color: #5D6476;
+  color: #5d6476;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2552,7 +2603,7 @@ textarea::placeholder {
 
 .blog-page .author h4,
 .blog-page .author span {
-  color: var(--Clarity-Colors-Shark, #1D2026);
+  color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2582,17 +2633,17 @@ textarea::placeholder {
 
 .blog-content p,
 .blog-content li {
-  color: var(--Clarity-Colors-Shark, #1D2026);
+  color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  margin-bottom: 32px
+  margin-bottom: 32px;
 }
 
 .blog-content li strong {
   display: block;
-  color: var(--Clarity-Colors-Shark, #1D2026);
+  color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -2601,9 +2652,16 @@ textarea::placeholder {
 }
 
 .blog-content ul {
-  padding-left: 50px
+  padding-left: 50px;
 }
-
+li.addre {
+  display: flex;
+  max-width: 436px;
+  gap: 20px;
+}
+.name-s {
+  margin-bottom: 10px;
+}
 .clarity .header {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -2689,6 +2747,7 @@ textarea::placeholder {
   margin-bottom: 20px;
   text-transform: capitalize;
 }
+
 .clarity-detailed h3 {
   font-size: 24px;
   font-weight: 700;

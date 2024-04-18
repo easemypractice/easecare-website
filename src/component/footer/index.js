@@ -11,18 +11,39 @@ const Footer = () => {
   return (
     <Box className="footer">
       <Box className="container footer-inner">
-        <Box>
+        {/* <Box>
           <Box className="flex-align footer-top">
             <Text as="p" className="contact">
               Contact us
             </Text>
             <Box className="footer-contact">
-              {/* <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "} */}
+              <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "}
               <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
         <Box className=" justify-between footer-middle">
+          <Box className="footer-links">
+            <Heading as="h3">Contact Us:</Heading>
+            <p class="name-s">EASECARE HEALTHTECH LLP</p>
+            <ul>
+              <li>
+                Customer Care:{" "}
+                <Link href="tel:+91-7251027599">+91-7251027599</Link>
+              </li>
+              <li>
+                Email address:{" "}
+                <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
+              </li>
+              <li class="addre">
+                <span>Address:</span>
+                <span>
+                  III FLOOR, USHA TOWER, KEDARPURAM, NEW CANAL ROAD, MOTHROWALA,
+                  Dehradun- 248001, Uttarakhand, India{" "}
+                </span>
+              </li>
+            </ul>
+          </Box>
           <Box className="footer-links">
             <Heading as="h3">Products</Heading>
             <ul>
