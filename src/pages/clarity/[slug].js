@@ -39,11 +39,13 @@ const ClarityArticle = () => {
             data?.items.length > 0 &&
             data?.items.map((item, index) => {
               return (
-                <div className="">
+                <div className="" key={item?._id}>
+
                   {item?.subcategories?.length > 0 ? (
                     item?.subcategories?.map((subCategory, index) => {
                       return (
-                        <div>
+                        <div key={index}>
+                          
                           <Text as="h2"> {`${item?.title}`} </Text>
                           <Text as="h3">
                             {" "}
