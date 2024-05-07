@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  publicRuntimeConfig: {url:"http://localhost:3000"},
+  publicRuntimeConfig: { staticFolder: '/static',},
   images: {
     remotePatterns: [
       {
