@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "easecare.sanity.studio",
+        hostname: "https://easecare-website.sanity.studio/studio",
         port: "",
         pathname: "**",
       },
