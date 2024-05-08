@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // publicRuntimeConfig: { staticFolder: '/sanity.config.js',},
+  publicRuntimeConfig: { staticFolder: '/sanity.config.js',},
   images: {
     remotePatterns: [
       {
