@@ -1,3 +1,4 @@
+"use client"
 import { Layout } from "@/app/layout";
 import { client } from "@/app/lib/sanity";
 import HeadPart from "@/component/Head/head";

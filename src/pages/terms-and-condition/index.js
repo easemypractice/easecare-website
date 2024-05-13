@@ -1,3 +1,4 @@
+"use client"
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";

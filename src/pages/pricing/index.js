@@ -1,3 +1,4 @@
+"use client"
 import RootLayout from "@/app/layout";
 import CtaSection from "@/component/home/cta";
 import ClarityHospital from "@/component/pricing/clarityHospital";
