@@ -1,3 +1,4 @@
+"use client"
 import AboutBanner from "@/component/about/aboutBanner";
 import AboutInfo from "@/component/about/aboutInfo";
 import React from "react";

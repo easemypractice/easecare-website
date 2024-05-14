@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  publicRuntimeConfig: "http://localhost:3000",
+  // publicRuntimeConfig: { staticFolder: '/sanity.config.js',},
   images: {
     remotePatterns: [
       {
@@ -11,7 +11,7 @@ const nextConfig = {
         port: "",
         pathname: "**",
       },
-    ],
+    ],  
   },
 };
 
