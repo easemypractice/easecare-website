@@ -6,6 +6,7 @@ import { Country, State, City } from "country-state-city";
 import Image from "next/image";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import Link from "next/link";
 export default function DemoComp() {
   const initialPayload = {
     name: "",
@@ -210,8 +211,14 @@ export default function DemoComp() {
           <Text className={styles.terms}>
             By clicking <span className="italic">Request demo</span>, I accept
             the Easecare{" "}
-            <span className="purple-color underline">Terms of Service</span> and{" "}
-            <span className="purple-color underline">Privacy Notice</span>.
+            <span className="purple-color underline">
+              <Link href={"/terms-and-condition"}>Terms of Service</Link>
+            </span>{" "}
+            and{" "}
+            <span className="purple-color underline">
+              <Link href={"/privacy-policy"}>Privacy Notice</Link>
+            </span>
+            .
           </Text>
         </div>
       </Flex>
