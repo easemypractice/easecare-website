@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "project": {
+        "name": "Clarity"
+    },
+    "api": {
+        "projectId": "w2lce9jj",
+        "dataset": "production",
+        "apiVersion": "2024-05-06"
+    },
+    "plugins": [
+        "@sanity/base",
+        "@sanity/default-layout",
+        "@sanity/default-login",
+        "@sanity/desk-tool"
+    ],
+    "parts": [
+        {
+            "name": "part:@sanity/desk-tool/structure",
+            "path": "./deskStructure.js"
+        }
+    ]
+}
