@@ -1,0 +1,84 @@
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.address {
+    grid-column: 1 / span 2;
+}
+
+.demoLayout {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.formLayout {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 16px;
+    row-gap: 22px;
+    margin-bottom: 27px;
+}
+
+.formLayout label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3F4551;
+}
+
+.formLayout input,
+.formLayout select {
+    background: white;
+    color: #747A89;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #CDCFD2;
+    padding: 12px;
+    min-width: 290px;
+    appearance: none;
+}
+
+.formLayout input:focus-visible {
+    outline: none;
+}
+
+.downArror {
+    position: absolute;
+    top: 37px;
+    right: 15px;
+}
+
+.formLayout div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.terms {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.errors{
+    font-size: 12px;
+    color: red;
+    padding-left: 5px;
+}
+
+.mobileCode{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #747A89
+}
