@@ -11,7 +11,7 @@ import LoadingBar from "../component/loadingBar/loadingBar";
 import Head from "next/head";
 // import HomePreviewImage from "../../public/home-preview.jpg";
 const inter = Inter({ subsets: ["latin"] });
-
+import { GoogleTagManager } from "@next/third-parties/google";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -52,6 +52,7 @@ export const Layout = ({ children }) => {
     <div className="main-content">
       <Theme>
         <HeaderLayout />
+        <GoogleTagManager gtmId="GTM-P537FBR7" />
         <main>{children}</main>
         <Footer />
       </Theme>

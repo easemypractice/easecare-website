@@ -36,8 +36,9 @@ const CommitmentSection = () => {
             </Box>
             <Box className="flex-align">
               <Link
-                target="_blank"
-                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                // target="_blank"
+                // href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                href={"/book-a-demo"}
                 className="purple-outline"
               >
                 Get a Demo

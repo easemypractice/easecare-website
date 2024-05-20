@@ -87,9 +87,9 @@ const HeaderLayout = () => {
                 Contact
               </Link>
               <Link
-                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/viewform?edit_requested=true"
+                href="/book-a-demo"
                 className="purple-btn"
-                target="_blank"
+                // target="_blank"
               >
                 Get a demo
               </Link>
