@@ -2,11 +2,12 @@ import { Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import styles from "../../styles/Demo.module.css";
 import down from "@/images/downIcon.svg";
 import { useForm } from "react-hook-form";
-import { Country, State, City } from "country-state-city";
+import { State, City } from "country-state-city";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 export default function DemoComp() {
   const initialPayload = {
     name: "",
@@ -19,10 +20,15 @@ export default function DemoComp() {
   };
 
   const [stateValue, setSatateValue] = useState("");
+  const [cities, setCities] = useState([]);
   const StatesData = State.getStatesOfCountry("IN");
   const getSelectedState = StatesData.find((item) => item.name === stateValue);
   const stateCode = getSelectedState?.isoCode;
-  const CityData = City.getCitiesOfState("IN", stateCode);
+  const router = useRouter();
+  useEffect(() => {
+    const CityData = City.getCitiesOfState("IN", stateCode);
+    setCities(CityData);
+  }, [stateCode]);
   const {
     register,
     handleSubmit,
@@ -41,7 +47,7 @@ export default function DemoComp() {
         body: JSON.stringify(data),
       });
       if (response.ok) {
-        toast.success("Form Submitted successfully");
+        router.push("/thank-you");
         reset(initialPayload);
       } else {
         toast.error("Failed to submit the form.");
@@ -65,7 +71,6 @@ export default function DemoComp() {
   };
   return (
     <>
-      <Toaster />
       <Flex className={styles.demoLayout}>
         <img src="/images/demoImg.png" />
         <div className={styles.form}>
@@ -151,12 +156,11 @@ export default function DemoComp() {
                   <option value={""} selected disabled>
                     Please Select
                   </option>
-                  {StatesData.map((item) => (
-                    <option key={item.isoCode} value={item.name}>
+                  {StatesData.map((item, index) => (
+                    <option key={index} value={item.name}>
                       {item.name}
                     </option>
                   ))}
-                  {/* <option value={"Maharastra"}>Maharastra</option> */}
                 </select>
                 <Image
                   alt="doen"
@@ -175,8 +179,8 @@ export default function DemoComp() {
                   <option value={""} selected disabled>
                     Please Select
                   </option>
-                  {CityData.map((item) => (
-                    <option key={item.stateCode} value={item.name}>
+                  {cities.map((item, index) => (
+                    <option key={index} value={item.name}>
                       {item.name}
                     </option>
                   ))}

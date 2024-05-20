@@ -1,6 +1,5 @@
 // pages/api/submit-form.js
 import nodemailer from "nodemailer";
-import sanityClient from "@sanity/client";
 import { createClient } from "next-sanity";
 
 // Initialize Sanity client
@@ -17,23 +16,21 @@ const submitForm = async (req, res) => {
   if (req.method === "POST") {
     const { name, email, phoneNumber, clinic, state, city, address } = req.body;
 
-    console.log(name, email, phoneNumber, clinic, state, city, address);
-
     // Create the email transporter
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: {
-        user: "aman@ailoitte.com",
-        pass: "lofs zsfy mviz uufr",
+        user: "easecareofficial@gmail.com",
+        pass: "dhme gjiw frlr ddsl",
       },
     });
 
     // Email options
     const mailOptions = {
-      from: "aman@ailoitte.com",
-      to: "aman@ailoitte.com",
-      subject: "An request for Clarity Demo",
-      text: `Full Name: ${name}\nEmail: ${email}\nphone number: ${phoneNumber}\nClinic name: ${clinic}\nState: ${state}\nCity: ${city}\nAddress: ${address}`,
+      from: "easecareofficial@gmail.com",
+      to: "hello@easecare.co",
+      subject: "ES Book Demo Request",
+      text: `Full Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nClinic Name: ${clinic}\nAddress: ${address}\nCity: ${city}\nState: ${state}`,
     };
 
     try {

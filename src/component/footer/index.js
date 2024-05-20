@@ -11,19 +11,19 @@ const Footer = () => {
   return (
     <Box className="footer">
       <Box className="container footer-inner">
-        {/* <Box>
+        <Box>
           <Box className="flex-align footer-top">
             <Text as="p" className="contact">
               Contact us
             </Text>
             <Box className="footer-contact">
-              <Link href="tel:+1 (855) 747 6767">+1 (855) 747 6767 </Link> or{" "}
-              <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
+              <Link href="tel:8006777110">8006777110</Link> or{" "}
+              <Link href="mailto:sales@easecare.com">sales@easecare.com</Link>
             </Box>
           </Box>
-        </Box> */}
+        </Box>
         <Box className=" justify-between footer-middle">
-          <Box className="footer-links">
+          {/* <Box className="footer-links">
             <Heading as="h3">Contact Us:</Heading>
             <p class="name-s">EASECARE HEALTHTECH LLP</p>
             <ul>
@@ -43,16 +43,16 @@ const Footer = () => {
                 </span>
               </li>
             </ul>
-          </Box>
+          </Box> */}
           <Box className="footer-links">
             <Heading as="h3">Products</Heading>
             <ul>
-              {/* <li>
-                <Link href="/">EaseCare +</Link>
+              <li>
+                <Link href="#">EaseCare +</Link>
               </li>
               <li>
-                <Link href="/">Sites</Link>
-              </li> */}
+                <Link href="#">Sites</Link>
+              </li>
               <li>
                 <Link href="/">Clarity</Link>
               </li>
@@ -71,10 +71,10 @@ const Footer = () => {
                 <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/security">Security</Link>
+                <Link href="/blog">Blog </Link>
               </li>
               <li>
-                <Link href="/blog">Blog </Link>
+                <Link href="/security">Security</Link>
               </li>
             </ul>
           </Box>
@@ -87,9 +87,9 @@ const Footer = () => {
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
-              {/* <li>
-                <Link href="/">Cookies Policy</Link>
-              </li> */}
+              <li>
+                <Link href="#">Cookies Policy</Link>
+              </li>
             </ul>
           </Box>
         </Box>

@@ -12,8 +12,25 @@
     display: flex;
     gap: 40px;
     align-items: center;
+    /* justify-content: center; */
 }
-
+.thanksPage h2{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+.thanksPage p{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.thanksPage h1{
+    padding-left: 200px;
+    z-index: 50;
+    position: relative;
+}
 .formLayout {
     display: grid;
     grid-template-columns: auto auto;
