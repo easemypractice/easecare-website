@@ -12,6 +12,11 @@ import Head from "next/head";
 // import HomePreviewImage from "../../public/home-preview.jpg";
 const inter = Inter({ subsets: ["latin"] });
 import { GoogleTagManager } from "@next/third-parties/google";
+import { wrapper } from "../../store/store";
+import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { addRoute } from "../../store/pageSlice";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -47,7 +52,21 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-export const Layout = ({ children }) => {
+export const Structure = ({ children }) => {
+  const router = useRouter();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      dispatch(addRoute(url));
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events, dispatch]);
   return (
     <div className="main-content">
       <Theme>
@@ -59,3 +78,5 @@ export const Layout = ({ children }) => {
     </div>
   );
 };
+
+export const Layout = wrapper.withRedux(Structure);
