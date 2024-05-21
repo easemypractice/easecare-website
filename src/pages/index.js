@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import HeadPart from "@/component/Head/head";
 import HomeBanner from "@/component/home/banner";
 import CommitmentSection from "@/component/home/commitment";

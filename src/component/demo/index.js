@@ -42,7 +42,6 @@ export default function DemoComp() {
     formState: { errors },
   } = useForm();
   const pageRoutes = useSelector((state) => state.pages.pageRoutes);
-
   useEffect(() => {
     const IPv4 = () =>
       axios.get("https://api.ipify.org?format=json").then((res) => {

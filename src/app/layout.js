@@ -46,27 +46,12 @@ export default function RootLayout({ children }) {
       <body className={"body"}>
         {/* heelo
         <LoadingBar /> */}
-
         <Layout> {children}</Layout>
       </body>
     </html>
   );
 }
-export const Structure = ({ children }) => {
-  const router = useRouter();
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      dispatch(addRoute(url));
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events, dispatch]);
+export const Layout = ({ children }) => {
   return (
     <div className="main-content">
       <Theme>
@@ -78,5 +63,3 @@ export const Structure = ({ children }) => {
     </div>
   );
 };
-
-export const Layout = wrapper.withRedux(Structure);
