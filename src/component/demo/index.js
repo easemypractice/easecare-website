@@ -58,13 +58,16 @@ export default function DemoComp() {
     IPv6();
   }, []);
 
-  const locationIp = ip4.ip;
+  const locationIp = ip4.ip !== undefined && ip4.ip;
+
   useEffect(() => {
-    const Geological = () =>
-      axios.get(`http://ip-api.com/json/${locationIp}`).then((res) => {
-        setIPLocation(res.data);
-      });
-    Geological();
+    if (locationIp) {
+      const Geological = () =>
+        axios.get(`http://ip-api.com/json/${locationIp}`).then((res) => {
+          setIPLocation(res.data);
+        });
+      Geological();
+    }
   }, [locationIp]);
 
   const trackedCountry = location.country;
