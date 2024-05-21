@@ -215,14 +215,19 @@ export default function DemoComp() {
           <Text className={styles.terms}>
             By clicking <span className="italic">Request demo</span>, I accept
             the Easecare{" "}
-            <span className="purple-color underline">
-              <Link href={"/terms-and-condition"}>Terms of Service</Link>
-            </span>{" "}
+            <Link
+              className={`purple-color underline ${styles.terms}`}
+              href={"/terms-and-condition"}
+            >
+              Terms of Service
+            </Link>{" "}
             and{" "}
-            <span className="purple-color underline">
-              <Link href={"/privacy-policy"}>Privacy Notice</Link>
-            </span>
-            .
+            <Link
+              className={`purple-color underline ${styles.terms}`}
+              href={"/privacy-policy"}
+            >
+              Privacy Notice
+            </Link>
           </Text>
         </div>
       </Flex>
