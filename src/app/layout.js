@@ -12,6 +12,11 @@ import Head from "next/head";
 // import HomePreviewImage from "../../public/home-preview.jpg";
 const inter = Inter({ subsets: ["latin"] });
 import { GoogleTagManager } from "@next/third-parties/google";
+import { wrapper } from "../../store/store";
+import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { addRoute } from "../../store/pageSlice";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -41,7 +46,6 @@ export default function RootLayout({ children }) {
       <body className={"body"}>
         {/* heelo
         <LoadingBar /> */}
-
         <Layout> {children}</Layout>
       </body>
     </html>

@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useSelector } from "react-redux";
+import axios from "axios";
 export default function DemoComp() {
   const initialPayload = {
     name: "",
@@ -20,6 +22,9 @@ export default function DemoComp() {
   };
 
   const [stateValue, setSatateValue] = useState("");
+  const [ip4, setIP4] = useState({});
+  const [ip6, setIP6] = useState({});
+  const [location, setIPLocation] = useState({});
   const [cities, setCities] = useState([]);
   const StatesData = State.getStatesOfCountry("IN");
   const getSelectedState = StatesData.find((item) => item.name === stateValue);
@@ -36,8 +41,46 @@ export default function DemoComp() {
     clearErrors,
     formState: { errors },
   } = useForm();
+  const pageRoutes = useSelector((state) => state.pages.pageRoutes);
+  useEffect(() => {
+    const IPv4 = () =>
+      axios.get("https://api.ipify.org?format=json").then((res) => {
+        setIP4(res.data);
+      });
+    IPv4();
+  }, []);
+
+  useEffect(() => {
+    const IPv6 = () =>
+      axios.get("https://api64.ipify.org?format=json").then((res) => {
+        setIP6(res.data);
+      });
+    IPv6();
+  }, []);
+
+  const locationIp = ip4.ip;
+  useEffect(() => {
+    const Geological = () =>
+      axios.get(`http://ip-api.com/json/${locationIp}`).then((res) => {
+        setIPLocation(res.data);
+      });
+    Geological();
+  }, [locationIp]);
+
+  const trackedCountry = location.country;
+  const trackedCity = location.city;
+  const trackedRegion = location.regionName;
+  const trackedProvider = location.isp;
+
   const onSubmit = async (data, e) => {
     e.preventDefault();
+    data.track = pageRoutes;
+    data.IPv4 = ip4.ip;
+    data.IPv6 = ip6.ip;
+    data.trackedCountry = trackedCountry;
+    data.trackedCity = trackedCity;
+    data.trackedRegion = trackedRegion;
+    data.trackedProvider = trackedProvider;
     try {
       const response = await fetch("/api/submit-form", {
         method: "POST",
@@ -215,14 +258,19 @@ export default function DemoComp() {
           <Text className={styles.terms}>
             By clicking <span className="italic">Request demo</span>, I accept
             the Easecare{" "}
-            <span className="purple-color underline">
-              <Link href={"/terms-and-condition"}>Terms of Service</Link>
-            </span>{" "}
+            <Link
+              className={`purple-color underline ${styles.terms}`}
+              href={"/terms-and-condition"}
+            >
+              Terms of Service
+            </Link>{" "}
             and{" "}
-            <span className="purple-color underline">
-              <Link href={"/privacy-policy"}>Privacy Notice</Link>
-            </span>
-            .
+            <Link
+              className={`purple-color underline ${styles.terms}`}
+              href={"/privacy-policy"}
+            >
+              Privacy Notice
+            </Link>
           </Text>
         </div>
       </Flex>

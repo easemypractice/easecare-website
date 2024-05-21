@@ -31,10 +31,13 @@ const HeaderLayout = () => {
               <div className={`menu ${isMenuOpen ? "showMenu" : "hidemenu"}`}>
                 <ul className={"navLinks"}>
                   <li>
+                    <Link href="/about">About us</Link>
+                  </li>
+                  <li>
                     <Link href="/features">Features</Link>
                   </li>
                   <li>
-                    <Link href="/about">About us</Link>
+                    <Link href="#">Products</Link>
                   </li>
                   <li>
                     <Link href="/pricing">Pricing</Link>
@@ -55,12 +58,8 @@ const HeaderLayout = () => {
                   >
                     Contact
                   </Link> */}
-                  <Link
-                    target="_blank"
-                    href="/contact"
-                    className="contact-header"
-                  >
-                    Contact
+                  <Link target="_blank" href="#" className="contact-header">
+                    Log in
                   </Link>
                   <Button variant="solid" className="purple-btn">
                     Get a demo
@@ -83,8 +82,8 @@ const HeaderLayout = () => {
               >
                 Contact
               </Link> */}
-              <Link target="_blank" href="/contact" className="contact-header">
-                Contact
+              <Link href="#" className="contact-header">
+                Log in
               </Link>
               <Link
                 href="/book-a-demo"

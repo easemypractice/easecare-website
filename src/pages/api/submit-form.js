@@ -14,7 +14,22 @@ const client = new createClient({
 
 const submitForm = async (req, res) => {
   if (req.method === "POST") {
-    const { name, email, phoneNumber, clinic, state, city, address } = req.body;
+    const {
+      name,
+      email,
+      phoneNumber,
+      clinic,
+      state,
+      city,
+      address,
+      track,
+      IPv4,
+      IPv6,
+      trackedCountry,
+      trackedCity,
+      trackedRegion,
+      trackedProvider,
+    } = req.body;
 
     // Create the email transporter
     const transporter = nodemailer.createTransport({
@@ -30,12 +45,11 @@ const submitForm = async (req, res) => {
       from: "easecareofficial@gmail.com",
       to: "hello@easecare.co",
       subject: "ES Book Demo Request",
-      text: `Full Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nClinic Name: ${clinic}\nAddress: ${address}\nCity: ${city}\nState: ${state}`,
+      text: `Full Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nClinic Name: ${clinic}\nCity: ${city}\nState: ${state}\nAddress: ${address} \n --------------------------------------------------- \n Track : ${track}\n IPv4: ${IPv4}\n IPv6: ${IPv6}\nInternet Provider through IP: ${trackedProvider}\n City through IP: ${trackedCity}\n Region through IP: ${trackedRegion}\n Country through IP: ${trackedCountry}`,
     };
 
     try {
       await transporter.sendMail(mailOptions);
-
       const doc = {
         _type: "formSubmission",
         name,
@@ -45,6 +59,13 @@ const submitForm = async (req, res) => {
         state,
         city,
         address,
+        track,
+        IPv4,
+        IPv6,
+        trackedCountry,
+        trackedCity,
+        trackedRegion,
+        trackedProvider,
         _createdAt: new Date().toISOString(),
       };
 

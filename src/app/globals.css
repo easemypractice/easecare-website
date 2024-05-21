@@ -94,6 +94,10 @@ body {
   font-family: "Roboto", sans-serif !important;
   font-size: 18px;
 }
+body ::-webkit-scrollbar{
+  display: none;
+}
+
 a {
   font-size: 18px;
 }
