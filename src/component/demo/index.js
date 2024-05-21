@@ -63,17 +63,17 @@ export default function DemoComp() {
   useEffect(() => {
     if (locationIp) {
       const Geological = () =>
-        axios.get(`http://ip-api.com/json/${locationIp}`).then((res) => {
+        axios.get(`https://ipapi.co/${locationIp}/json`).then((res) => {
           setIPLocation(res.data);
         });
       Geological();
     }
   }, [locationIp]);
 
-  const trackedCountry = location.country;
+  const trackedCountry = location.country_name;
   const trackedCity = location.city;
-  const trackedRegion = location.regionName;
-  const trackedProvider = location.isp;
+  const trackedRegion = location.region;
+  const trackedProvider = location.org;
 
   const onSubmit = async (data, e) => {
     e.preventDefault();
