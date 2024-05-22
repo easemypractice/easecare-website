@@ -3,6 +3,8 @@ import HeadPart from "@/component/Head/head";
 import React from "react";
 import styles from "../styles/Demo.module.css";
 import { InlineWidget } from "react-calendly";
+import Image from "next/image";
+import check from "@/images/check.svg";
 const ThankPage = () => {
   return (
     <Layout>
@@ -14,7 +16,12 @@ const ThankPage = () => {
         imageUrl={"/public/imags/priview.jpg"}
       />
       <div className={`container purple ${styles.thanksPage}`}>
+        {/* <div>
+          <span>
+            <Image src={check} width={32} height={32} alt="" />
+          </span> */}
         <h2>We have received your query</h2>
+        {/* </div> */}
         <p>
           Our experts will contact you within 24 working hours to continue the
           conversation.
@@ -24,7 +31,7 @@ const ThankPage = () => {
           className={styles.Calender}
           styles={{
             height: "700px",
-            marginTop: "-50px",
+            // minHeight: "100%",
           }}
           url="https://calendly.com/easecare/30min"
         />

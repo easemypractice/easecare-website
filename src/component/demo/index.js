@@ -10,6 +10,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
 import axios from "axios";
+import checkedIcon from "@/images/checkedIcon.svg";
 export default function DemoComp() {
   const initialPayload = {
     name: "",
@@ -115,10 +116,46 @@ export default function DemoComp() {
     }
     clearErrors("phoneNumber");
   };
+  const TransformHealthData = [
+    {
+      point: "Streamline Patient Care",
+    },
+    {
+      point: "Seamless Online Appointment Booking",
+    },
+    {
+      point: "Automated Appointment Reminders",
+    },
+    {
+      point: "Video Consultant with Patients ",
+    },
+    {
+      point: "Easy to Manage Patient Record",
+    },
+    {
+      point: "24x7 Instant Booking",
+    },
+    {
+      point: "Easy Billing and Payment Process",
+    },
+  ];
   return (
     <>
       <Flex className={styles.demoLayout}>
-        <img src="/images/demoImg.png" />
+        <div className={styles.leftbar}>
+          <h1 className={styles.heading}>Transforming Healthcare</h1>
+          <ul>
+            {TransformHealthData.map((item, index) => (
+              <li key={index}>
+                <Image src={checkedIcon} width={28} height={28} />
+                <Text>{item.point}</Text>
+              </li>
+            ))}
+            <li>
+              <Text className={styles.moreFeture}>+50 more features...</Text>
+            </li>
+          </ul>
+        </div>
         <div className={styles.form}>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.heading}>
@@ -220,8 +257,8 @@ export default function DemoComp() {
                 )}
               </div>
               <div>
-                <label>City *</label>
-                <select {...register("city", { required: true })}>
+                <label>City</label>
+                <select {...register("city")}>
                   <option value={""} selected disabled>
                     Please Select
                   </option>
@@ -238,20 +275,14 @@ export default function DemoComp() {
                   src={down}
                   className={styles.downArror}
                 />
-                {errors.city && (
-                  <span className={styles.errors}>City is required*</span>
-                )}
               </div>
               <div className={styles.address}>
-                <label>Address *</label>
+                <label>Address</label>
                 <input
                   type="text"
                   placeholder="Enter Address"
-                  {...register("address", { required: true })}
+                  {...register("address")}
                 />
-                {errors.address && (
-                  <span className={styles.errors}>Address is required*</span>
-                )}
               </div>
             </Grid>
             <button type="submit" className="purple-btn w-full">

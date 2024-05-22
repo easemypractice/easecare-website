@@ -58,11 +58,15 @@ const HeaderLayout = () => {
                   >
                     Contact
                   </Link> */}
-                  <Link target="_blank" href="#" className="contact-header">
+                  <Link
+                    target="_blank"
+                    href="https://clarity.easecare.co/login"
+                    className="contact-header"
+                  >
                     Log in
                   </Link>
                   <Button variant="solid" className="purple-btn">
-                    Get a demo
+                    <Link href="/book-a-demo">Get a demo</Link>
                   </Button>
                 </div>
               </div>
@@ -82,7 +86,11 @@ const HeaderLayout = () => {
               >
                 Contact
               </Link> */}
-              <Link href="#" className="contact-header">
+              <Link
+                target="_blank"
+                href="https://clarity.easecare.co/login"
+                className="contact-header"
+              >
                 Log in
               </Link>
               <Link
