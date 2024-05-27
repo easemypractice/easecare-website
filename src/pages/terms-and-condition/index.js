@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
@@ -124,7 +124,50 @@ const TermsAndCondition = () => {
             </Box>
           </Box>
           <Box className="privacy-content-box">
-            <Heading as="h3">8. Termination</Heading>
+            <Heading as="h3">8. Payments & Refund</Heading>
+            <Heading as="h4">
+              #1 Online Payment options are available for the services listed
+              below:
+            </Heading>
+            <Box className="privacy-text-list">
+              <Text as="p">
+                1. Booking a consultation with a doctor <br />
+                2. Subscription Services around Health Records Management,
+                Doctor Consultation, Medicine Delivery & Lab Packages
+              </Text>
+            </Box>
+            <Heading as="h4" className="mt-3">
+              #2 Payment Options for the following options are available for
+              making payments:
+            </Heading>
+            <Box className="privacy-text-list">
+              <Text as="p">
+                1. Domestic Debit & Credit cards which are part of the Visa and
+                Mastercard network. <br />
+                2. UPI one-time/recurring payments through Phonepe, GPay, or any
+                UPI ID <br />
+                3. Important: No one will call you for your OTP, CVV, or other
+                secure codes. Please do not disclose this information to anyone.
+              </Text>
+            </Box>
+            <Heading as="h4" className="mt-3">
+              #3 Refund & Return Policy:
+            </Heading>
+            <Box className="privacy-text-list ">
+              <Text as="p">
+                1. Refund for Doctor Consultation can be processed if cancelled
+                24 hours before the appointment. Refunds will be at the sole
+                discretion of the clinic/doctor. Refunds will always be paid to
+                the source of payment.
+                <br /> 2. Subscription Services around Health Records Management
+                and doctor Consultation are non-refundable. <br />
+                3. Refunds would take 7-10 working days from the date of
+                cancellation to reflect in the payment source.
+              </Text>
+            </Box>
+          </Box>
+          <Box className="privacy-content-box">
+            <Heading as="h3">9. Termination</Heading>
             <Box className="privacy-text-list">
               <Text as="p">
                 EaseCare reserves the right to terminate or suspend your access
@@ -134,7 +177,7 @@ const TermsAndCondition = () => {
             </Box>
           </Box>
           <Box className="privacy-content-box">
-            <Heading as="h3">9. Changes to Terms</Heading>
+            <Heading as="h3">10. Changes to Terms</Heading>
             <Text as="p">
               EaseCare may update or modify these terms and conditions at any
               time. Continued use of Clarity after such changes shall constitute
@@ -142,7 +185,7 @@ const TermsAndCondition = () => {
             </Text>
           </Box>
           <Box className="privacy-content-box">
-            <Heading as="h3">10. Governing Law and Dispute Resolution</Heading>
+            <Heading as="h3">11. Governing Law and Dispute Resolution</Heading>
             <Box className="privacy-text-list">
               <Text as="p">
                 These terms and conditions are governed by the laws of

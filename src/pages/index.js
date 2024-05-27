@@ -12,6 +12,7 @@ import { Box } from "@radix-ui/themes";
 import React from "react";
 import HomePreview from "../../public/images/preview.jpg";
 import { Layout } from "@/app/layout";
+import CloudBased from "@/component/home/cloudBased";
 
 const HomeLayout = () => {
   return (
@@ -24,6 +25,7 @@ const HomeLayout = () => {
         imageUrl={"/public/imags/priview.jpg"}
       />
       <HomeBanner />
+      {/* <CloudBased /> */}
       <HighlightLayout />
       <EhrPlatformSection />
       <Box className="py-20">

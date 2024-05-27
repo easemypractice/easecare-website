@@ -1543,12 +1543,22 @@ header nav {
 }
 
 .privacy-content-box h3 {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 25px;
+  /* 158.333% */
+}
+
+.privacy-content-box h4 {
+  /* margin-bottom:5px; */
+  color: var(--Clarity-Colors-Shark, #1d2026);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height:30px;
   /* 158.333% */
 }
 
@@ -1564,8 +1574,9 @@ header nav {
 .privacy-text-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
 }
+
 
 .plan-card {
   border-radius: 15px;
@@ -2730,4 +2741,74 @@ li.footerCon{
 
 .underline {
   text-decoration: underline;
+}
+
+.cloudBased{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 250px;
+}
+.cloudBased p{
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.cloudBased h1{
+  background-image: linear-gradient(to right, #090827,#AD45FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: center;
+  padding: 0px, 2px, 0px, 2px
+}
+
+.CloudCard, .CloudCard2{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 45.5px 37px 41.5px 50px;
+  width: 220px;
+  background: #8512E0;
+  color: white;
+  border-radius: 14px;
+  position: relative;
+}
+.CloudCard2{
+  background-image: linear-gradient(to right, #090827,#AD45FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CloudCardbg{
+  background-color: #FEECFF;
+  border-radius: 14px;
+}
+.CloudCard p,.CloudCard2 p{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.09px;
+  text-align: start;
+}
+
+.CardGrp{
+  display: flex;
+  gap: 15px;
+}
+
+.CloudCardGrp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.CardIcon{
+  position: absolute;
+  bottom: 35px;
+  right: 30px;
 }
