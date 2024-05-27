@@ -140,7 +140,7 @@ const TermsAndCondition = () => {
               #2 Payment Options for the following options are available for
               making payments:
             </Heading>
-            <Box className="privacy-text-list ">
+            <Box className="privacy-text-list">
               <Text as="p">
                 1. Domestic Debit & Credit cards which are part of the Visa and
                 Mastercard network. <br />

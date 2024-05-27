@@ -9,9 +9,10 @@ const CloudBased = () => {
         Cloud-based Clinic Management Software to Drive Your Clinic’s Needs
       </Heading>
       <p>
-        At EaseCare, India's best software for healthcare management, doctors'
-        #1 choice for modern practice management, simplifying patient care,
-        appointments, billing, and interactions seamlessly for modern practices.
+        At EaseCare, India&apos;s best software for healthcare management,
+        doctors&apos; #1 choice for modern practice management, simplifying
+        patient care, appointments, billing, and interactions seamlessly for
+        modern practices.
       </p>
       <div className="CloudCardGrp">
         <div className="CardGrp">
