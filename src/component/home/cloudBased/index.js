@@ -6,18 +6,24 @@ const CloudBased = () => {
   return (
     <div className="cloudBased">
       <Heading as="h1">
-        Cloud-based Clinic Management Software to Drive Your Clinic’s Needs
+        Cloud-based Clinic Management <br /> Software to Drive Your Clinic’s
+        Needs
       </Heading>
       <p>
         At EaseCare, India&apos;s best software for healthcare management,
-        doctors&apos; #1 choice for modern practice management, simplifying
-        patient care, appointments, billing, and interactions seamlessly for
-        modern practices.
+        doctors&apos; #1
+        <br /> choice for modern practice management, simplifying patient care,
+        <br />
+        appointments, billing, and interactions seamlessly for modern practices.
       </p>
       <div className="CloudCardGrp">
         <div className="CardGrp">
           <div className="CloudCard">
-            <p>Patient Management System</p>
+            <p>
+              Patient
+              <br /> Management
+              <br /> System
+            </p>
             <Icon
               className="CardIcon"
               icon={"mdi:arrow-top-right"}
@@ -67,8 +73,6 @@ const CloudBased = () => {
               height={20}
             />
           </div>
-        </div>
-        <div className="CardGrp">
           <div className="CloudCardbg">
             <div className="CloudCard2">
               <p>Medical Billing Software</p>

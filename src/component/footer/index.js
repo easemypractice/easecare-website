@@ -11,7 +11,7 @@ import mailIcon from "@/images/mail.svg";
 import locationIcon from "@/images/location.svg";
 const Footer = () => {
   return (
-    <Box className="footer">
+    <Box className="footer" id="footer-easecare">
       <Box className="container footer-inner">
         {/* <Box>
           <Box className="flex-align footer-top">
