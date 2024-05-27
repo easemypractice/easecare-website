@@ -34,7 +34,6 @@ const HomeLayout = () => {
       <DataSecuritySection />
       <CommitmentSection />
       <Testimonail />
-
       <CtaSection />
     </Layout>
   );
