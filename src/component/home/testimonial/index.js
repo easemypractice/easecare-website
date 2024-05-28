@@ -145,7 +145,7 @@ const TestimonialCard = () => {
   return (
     <>
       {data.map((item, index) => (
-        <div className="doctor-review">
+        <div className="doctor-review" key={index}>
           <div className="flex-col gap-20">
             <p className="testi-review">{item.review}</p>
 
