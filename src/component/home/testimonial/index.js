@@ -1,15 +1,6 @@
 "use client";
 import { Icon } from "@iconify/react";
-import {
-  Box,
-  Heading,
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-  Text,
-} from "@radix-ui/themes";
-import Image from "next/image";
+import { Avatar, Box, Heading, Text } from "@radix-ui/themes";
 import React from "react";
 import TestiDemoImage from "@/images/testi-demo.svg";
 import PhysiotherapyImage from "@/images/dra.png";
@@ -17,7 +8,7 @@ import PediatricianImage from "@/images/drb.png";
 const Testimonail = () => {
   return (
     <Box className="testimonail">
-      <Box className="container">
+      <Box className="container gap-32 flex-col">
         <Box className="testimonail-heading">
           <Heading as="h2">Here’s why Doctors</Heading>
           <div className="heart-head">
@@ -25,7 +16,7 @@ const Testimonail = () => {
             <Heading as="h2">Clarity</Heading>
           </div>
         </Box>
-        <Box className="tab-box">
+        {/* <Box className="tab-box">
           <Tabs.Root defaultValue="Orthopedics">
             <TabsList>
               <TabsTrigger value="Orthopedics">Orthopedics</TabsTrigger>
@@ -85,7 +76,7 @@ const Testimonail = () => {
                   </Text>
                 </Box>
               </TabsContent>
-              {/* <TabsContent value="Pediatrician">
+              <TabsContent value="Pediatrician">
                 <Text as="p" className="testi-description">
                   This is the best Electronic Medical Record(EMR) software I
                   have used. It feels like it was built for doctors, by doctors.
@@ -102,9 +93,12 @@ const Testimonail = () => {
                     Pediatrician
                   </Text>
                 </Box>
-              </TabsContent> */}
+              </TabsContent>
             </Box>
           </Tabs.Root>
+        </Box> */}
+        <Box className="CardsGrp">
+          <TestimonialCard />
         </Box>
       </Box>
     </Box>
@@ -112,3 +106,92 @@ const Testimonail = () => {
 };
 
 export default Testimonail;
+
+const data = [
+  {
+    review:
+      "Tops all other appointment scheduling tools. Simple and sleek without any clutter.",
+    doctorName: "Dr. Sandeep Dathik",
+    specialization: "Orthopedic Surgeon",
+    profile: TestiDemoImage,
+  },
+  {
+    review:
+      "We've been using Easemypractice for our clinic's Electronic Health Records, and it has truly streamlined our workflow. The user-friendly interface makes it easy for our doctors to access and update patient records efficiently.",
+    doctorName: "Dr. Vipin Mehra",
+    specialization: "M.D. Physician",
+    profile: PhysiotherapyImage,
+  },
+  {
+    review:
+      "Clarity has truly streamlined my clinic management workflow. Its intuitive interface and robust features make it a must-have tool for anyone looking to stay organized and efficient.",
+    doctorName: "Dr. Shantanu Patil",
+    specialization: "Pediatrician",
+    profile: PediatricianImage,
+  },
+];
+
+const TestimonialCard = () => {
+  return (
+    <>
+      {data.map((item, index) => (
+        <div className="doctor-review" key={index}>
+          <div className="flex-col gap-20">
+            <p className="testi-review">{item.review}</p>
+
+            <div className="flex flex-align-end gap-6">
+              <Avatar
+                src={item.profile}
+                alt={TestiDemoImage}
+                fallback={item.doctorName.charAt(4)}
+                width={50}
+                radius="full"
+                height={50}
+              />
+              <div>
+                <div className="flex ">
+                  <Icon
+                    icon="ic:sharp-star"
+                    width="20"
+                    height="19"
+                    color="#FF630C"
+                  ></Icon>
+                  <Icon
+                    icon="ic:sharp-star"
+                    width="20"
+                    height="19"
+                    color="#FF630C"
+                  ></Icon>
+                  <Icon
+                    icon="ic:sharp-star"
+                    width="20"
+                    height="19"
+                    color="#FF630C"
+                  ></Icon>
+                  <Icon
+                    icon="ic:sharp-star"
+                    width="20"
+                    height="19"
+                    color="#FF630C"
+                  ></Icon>
+                  <Icon
+                    icon="ic:sharp-star"
+                    width="20"
+                    height="19"
+                    color="#FF630C"
+                  ></Icon>
+                </div>
+                <Text as={"p"} className="testi-name">
+                  {item.doctorName}
+                </Text>
+                <Text as={"p"} className="testi-designation">
+                  {item.specialization}
+                </Text>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </>
+  );
+};

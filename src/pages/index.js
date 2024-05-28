@@ -13,6 +13,8 @@ import React from "react";
 import HomePreview from "../../public/images/preview.jpg";
 import { Layout } from "@/app/layout";
 import CloudBased from "@/component/home/cloudBased";
+import ChooseClearity from "@/component/home/chooseClearity.js";
+import DownloadApp from "@/component/home/download";
 
 const HomeLayout = () => {
   return (
@@ -32,6 +34,8 @@ const HomeLayout = () => {
         <IntegrationsMigrations />
       </Box>
       <DataSecuritySection />
+      {/* <ChooseClearity /> */}
+      {/* <DownloadApp /> */}
       <CommitmentSection />
       <Testimonail />
       <CtaSection />

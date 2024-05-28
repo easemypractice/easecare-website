@@ -638,6 +638,9 @@
   .blog .recent-post {
     padding-bottom: 0px;
   }
+  .downloadEaseCare{
+    flex-direction: column;
+  } 
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
@@ -982,4 +985,38 @@
   }
 
   .headingup-16 {}
+
+  .cloudBased h1{
+    font-size: 46px;
+  }
+  .Clearity_Features ul>li{
+    font-size: 20px;
+  }
+  
+.Clearity_Features .right {
+  gap: 20px;
+  padding: 92px 28px 80px 50px;
+}
+.Choose_clearity {
+  padding: 80px 20px;
+}
+.downloadEaseCare h3 {
+  font-size: 23px;
+}
+.downloadEaseCare p {
+  font-size: 19px;
+}
+.downloadLink{
+  flex-direction: column;
+}
+.CardsGrp{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.doctor-review {
+  width: 100%;
+}
+.CloudCard, .CloudCard2 {
+  width: 211px;
+}
 }

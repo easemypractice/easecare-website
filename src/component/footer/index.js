@@ -27,7 +27,7 @@ const Footer = () => {
         <Box className=" justify-between footer-middle">
           <Box className="footer-links">
             <Heading as="h3">Contact Us</Heading>
-            {/* <p class="name-s">EASECARE HEALTHTECH LLP</p> */}
+            <p class="name-s">EASECARE HEALTHTECH LLP</p>
             <ul>
               <li class="footerCon">
                 {/* Customer Care:{" "} */}
