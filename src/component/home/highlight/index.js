@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import React from "react";
-import GooglePlayImage from "@/images/googleplay.svg";
+import GooglePlayImage from "@/images/googlePlay.svg";
 import AppStoreImage from "@/images/appstore.svg";
 import MobileDemoImage from "@/images/mob.png";
 import Image from "next/image";
@@ -83,11 +83,19 @@ const HighlightLayout = () => {
               device.
             </Text>
             <Flex className="download-btns">
-              <Link target="_blank" href={"https://play.google.com/store/apps/details?id=com.easemypractice.atlas&hl=en_IN&gl=US"}>
+              <Link
+                target="_blank"
+                href={
+                  "https://play.google.com/store/apps/details?id=com.easemypractice.atlas&hl=en_IN&gl=US"
+                }
+              >
                 <Image src={GooglePlayImage} alt={GooglePlayImage} />
               </Link>
 
-              <Link target="_blank" href={"https://apps.apple.com/in/app/clarity-ehr/id6468764592"}>
+              <Link
+                target="_blank"
+                href={"https://apps.apple.com/in/app/clarity-ehr/id6468764592"}
+              >
                 <Image src={AppStoreImage} alt={AppStoreImage} />
               </Link>
             </Flex>

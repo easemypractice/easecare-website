@@ -1,16 +1,6 @@
 "use client";
 import { Icon } from "@iconify/react";
-import {
-  Avatar,
-  Box,
-  Heading,
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-  Text,
-} from "@radix-ui/themes";
-import Image from "next/image";
+import { Avatar, Box, Heading, Text } from "@radix-ui/themes";
 import React from "react";
 import TestiDemoImage from "@/images/testi-demo.svg";
 import PhysiotherapyImage from "@/images/dra.png";

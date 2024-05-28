@@ -638,6 +638,9 @@
   .blog .recent-post {
     padding-bottom: 0px;
   }
+  .downloadEaseCare{
+    flex-direction: column;
+  } 
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
