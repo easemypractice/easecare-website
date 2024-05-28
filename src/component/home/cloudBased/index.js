@@ -19,11 +19,7 @@ const CloudBased = () => {
       <div className="CloudCardGrp">
         <div className="CardGrp">
           <div className="CloudCard">
-            <p>
-              Patient
-              <br /> Management
-              <br /> System
-            </p>
+            <p>Patient Management System</p>
             <Icon
               className="CardIcon"
               icon={"mdi:arrow-top-right"}
@@ -127,8 +123,8 @@ const CloudBased = () => {
               />
             </div>
           </div>
-        </div>
-        <div className="CardGrp">
+          {/* </div>
+        <div className="CardGrp"> */}
           <div className="CloudCard">
             <p>Inventory Management Software</p>
             <Icon

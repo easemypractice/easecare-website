@@ -9,8 +9,9 @@ const CtaSection = () => {
       <Box className="container text-center">
         <Image src={CtaIcon} alt={CtaIcon} />
         <Heading as="h2" className="cta-heading">
-          Built for the <span className="future-text">Future.</span>{" "}
-          <span className="available-text">Available today.</span>
+          Your one
+          <span className="future-text">-stop</span>{" "}
+          <span className="available-text">Digital Clinic</span>
         </Heading>
         {/* <Button className="purple-btn">Get a demo</Button> */}
         <Link
