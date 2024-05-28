@@ -1,7 +1,7 @@
 import React from "react";
 import IphoneImg from "@/images/iPhoneImgApp.svg";
 import call from "@/images/easeCareCall.svg";
-import googlePlay from "@/images/googlePlay.svg";
+import googlePlay from "@/images/googleplay.svg";
 import appleStore from "@/images/appstore.svg";
 import Image from "next/image";
 const DownloadApp = () => {

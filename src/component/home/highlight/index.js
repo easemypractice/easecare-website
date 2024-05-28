@@ -1,6 +1,6 @@
 import { Box, Flex, Grid, Heading, Text } from "@radix-ui/themes";
 import React from "react";
-import GooglePlayImage from "@/images/googlePlay.svg";
+import GooglePlayImage from "@/images/googleplay.svg";
 import AppStoreImage from "@/images/appstore.svg";
 import MobileDemoImage from "@/images/mob.png";
 import Image from "next/image";
