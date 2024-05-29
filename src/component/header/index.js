@@ -36,9 +36,9 @@ const HeaderLayout = () => {
                   <li>
                     <Link href="/features">Features</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="#">Products</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/pricing">Pricing</Link>
                   </li>
