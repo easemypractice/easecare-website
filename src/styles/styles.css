@@ -11,6 +11,10 @@ body {
   min-height: 100vh;
 }
 
+.rounded-full{
+  border-radius: 100%;
+}
+
 .flex-col{
   display: flex;
   flex-direction: column;
@@ -691,7 +695,7 @@ header nav {
   line-height: 88px;
   /* 122.222% */
   letter-spacing: -1.44px;
-  max-width: 610px;
+  /* max-width: 610px; */
   margin: auto;
 }
 
@@ -2848,6 +2852,7 @@ li.footerCon{
 .Clearity_Features{
   display: flex;
   background-color: white;
+  max-width: 1142px;
 }
 
 .Clearity_Features ul{
@@ -2856,6 +2861,7 @@ li.footerCon{
   display: flex;
   flex-direction: column;
   gap: 6px;
+  max-width: 474px;
 }
 
 .Clearity_Features ul>li{
@@ -2865,7 +2871,9 @@ li.footerCon{
   font-weight: 500;
   gap: 25px;
   align-items: center;
-  padding: 8px 40px;
+  padding: 12px 18px;
+  text-wrap: nowrap;
+  cursor: pointer;
 }
 .Clearity_Features .active{
   background-color: #8512E0;
@@ -2886,6 +2894,7 @@ li.footerCon{
   flex-direction: column;
   gap: 25px;
   padding: 129px 118px 80px 127px;
+  max-width: 65%;
 }
 .Clearity_Features .right p{
  text-align: start;

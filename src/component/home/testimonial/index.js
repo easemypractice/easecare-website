@@ -5,6 +5,7 @@ import React from "react";
 import TestiDemoImage from "@/images/testi-demo.svg";
 import PhysiotherapyImage from "@/images/dra.png";
 import PediatricianImage from "@/images/drb.png";
+import Image from "next/image";
 const Testimonail = () => {
   return (
     <Box className="testimonail">
@@ -140,13 +141,11 @@ const TestimonialCard = () => {
             <p className="testi-review">{item.review}</p>
 
             <div className="flex flex-align-end gap-6">
-              <Avatar
+              <Image
                 src={item.profile}
-                alt={TestiDemoImage}
-                fallback={item.doctorName.charAt(4)}
                 width={50}
-                radius="full"
                 height={50}
+                className="rounded-full"
               />
               <div>
                 <div className="flex ">
