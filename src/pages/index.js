@@ -27,15 +27,15 @@ const HomeLayout = () => {
         imageUrl={"/public/imags/priview.jpg"}
       />
       <HomeBanner />
-      {/* <CloudBased /> */}
-      <HighlightLayout />
-      <EhrPlatformSection />
+      <CloudBased />
+      {/* <HighlightLayout /> */}
+      {/* <EhrPlatformSection /> */}
       <Box className="py-20">
         <IntegrationsMigrations />
       </Box>
       <DataSecuritySection />
-      {/* <ChooseClearity /> */}
-      {/* <DownloadApp /> */}
+      <ChooseClearity />
+      <DownloadApp />
       <CommitmentSection />
       <Testimonail />
       <CtaSection />
