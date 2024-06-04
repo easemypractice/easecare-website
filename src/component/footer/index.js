@@ -181,7 +181,7 @@ const Footer = () => {
                 <li>
                   <Link
                     target="_blank"
-                    href={"https://twitter.com/easecare_co"}
+                    href={"https://www.instagram.com/easecare_co/"}
                   >
                     <Icon
                       // icon="arcticons:x-twitter"
