@@ -27,13 +27,17 @@ const DownloadApp = () => {
           </p>
           <div className="flex downloadLink gap-20">
             <Link
+              target="_blank"
               href={
                 "https://play.google.com/store/apps/details?id=com.easemypractice.atlas"
               }
             >
               <Image src={googlePlay} />
             </Link>
-            <Link href={""}>
+            <Link
+              target="_blank"
+              href={"https://apps.apple.com/in/app/clarity-ehr/id6468764592"}
+            >
               <Image src={appleStore} />
             </Link>
           </div>
