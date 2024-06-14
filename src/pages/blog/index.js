@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
 import React, { useEffect, useState } from "react";

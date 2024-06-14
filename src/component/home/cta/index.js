@@ -8,15 +8,18 @@ const CtaSection = () => {
     <Box className=" cta-section bg-teal-dark">
       <Box className="container text-center">
         <Image src={CtaIcon} alt={CtaIcon} />
-        <Heading as="h2" className="cta-heading">Built for the <span className="future-text">Future.</span> <span className="available-text">Available today.</span></Heading>
+        <Heading as="h2" className="cta-heading">
+          Your one-stop Digital Clinic
+        </Heading>
         {/* <Button className="purple-btn">Get a demo</Button> */}
         <Link
-                target="_blank"
-                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
-                className="purple-btn"
-              >
-              Get a demo
-              </Link>
+          // target="_blank"
+          // href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+          href={"/book-a-demo"}
+          className="purple-btn"
+        >
+          Get a demo
+        </Link>
       </Box>
     </Box>
   );

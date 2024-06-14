@@ -1,0 +1,191 @@
+.heading {
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.address {
+    grid-column: 1 / span 2;
+}
+
+.demoLayout {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.thanksPage h2{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+/* .thanksPage div{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+} */
+.thanksPage p{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.thanksPage h1{
+    padding:0px 200px;
+    z-index: 50;
+    position: relative;
+}
+.formLayout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    row-gap: 22px;
+    margin-bottom: 27px;
+    padding-right: 10px;
+}
+
+.formLayout label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3F4551;
+}
+
+.formLayout input,
+.formLayout select {
+    background: white;
+    color: #747A89;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #CDCFD2;
+    padding: 12px;
+    appearance: none;
+}
+.formLayout select{
+    min-width: 100%;
+    width:100%
+}
+
+.formLayout input:focus-visible {
+    outline: none;
+}
+
+.downArror {
+    position: absolute;
+    top: 37px;
+    right: 15px;
+}
+
+.formLayout div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.terms {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: clamp(250px,50%,655px);
+}
+
+.errors{
+    font-size: 12px;
+    color: red;
+    padding-left: 5px;
+}
+
+.mobileCode{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #747A89
+}
+
+.leftbar{
+    background-image: linear-gradient(to bottom, #9C40E4,#742BBA,#2D0471);
+    height: 100%;
+    color: white;
+    padding: 101px 108px;
+    width: clamp(250px,50%,800px);
+}
+.leftbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.leftbar li{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    gap: 12px;
+}
+
+.moreFeture{
+    font-size: 14px;
+}
+
+@media screen and (min-width: 1600px) {
+    .demoLayout {
+        justify-content: center;
+    }
+}
+
+@media  (min-width: 1000px) and (max-width: 1440px) {
+    .heading{
+        font-size: 40px;
+    }
+    .leftbar li{
+        font-size: 16px;
+    }   
+}
+
+@media screen and (max-width: 999px) {
+    .demoLayout{
+        flex-direction: column-reverse;
+    }
+    .leftbar{
+        width: 100vw;
+        padding: 70px 108px;
+    }
+    .form{
+        width: clamp(250px,100%,655px);
+        padding: 0px 12px !important;
+    }
+    .thanksPage h1{
+        text-align: center;
+        position: static;
+        padding: 0px;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 599px) {
+    .formLayout {
+        display: flex;
+        flex-direction: column;
+        padding: 0px !important;
+    }
+    .demoLayout{
+        padding: 0px 20px;
+    }
+    .heading{
+        font-size: 30px;
+    }
+    .leftbar{
+        padding: 25px 20px
+    }
+    .leftbar li{
+        font-size: 16px;
+    }
+}

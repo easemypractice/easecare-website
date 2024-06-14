@@ -4,6 +4,13 @@
     font-size: 14px;
   }
 
+  .header-inner {
+    gap: 0px;
+}
+.main-content {
+  overflow-y: inherit;
+}
+
   .home-heading {
     font-size: 40px;
     line-height: 46px;
@@ -158,7 +165,15 @@
     font-size: 20px;
     line-height: 30px;
   }
-
+  
+  .cloudBased h1{
+    font-size: 40px !important;
+    line-height: 46px;
+  }
+  .cloudBased p{
+    font-size: 20px;
+    line-height: 30px;
+  }
   .healthcare-teams::after {
     height: 181px;
     width: 181px;
@@ -638,6 +653,61 @@
   .blog .recent-post {
     padding-bottom: 0px;
   }
+  .downloadEaseCare{
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .downloadEaseCare h3,  .downloadEaseCare p{
+   text-align: center;
+  }
+  .bgDownload{
+    z-index: 0;
+  }
+  .easeCareBackGround {
+    top: -150px;
+    right: -90px;
+}
+  .downloadLink{
+    flex-direction: row !important;
+    gap: 0px;
+    justify-content: space-around;
+  }
+  .downloadLink img{
+    width: 110px;
+    z-index: 10;
+  } 
+  .Clearity_Features .right{
+    display: none;
+  }
+  .Clearity_Features .active{
+    background-color: transparent !important;
+    color: black;
+  }
+
+  .CloudCard, .CloudCard2{
+    width: 100% !important;
+    padding: 31px 12px;
+    justify-content: flex-start;
+  }
+
+  .CardGrp{
+    width: 100vw;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 0px 12px;
+    display: grid !important;
+    grid-template-columns: auto auto;
+    
+  }
+  .CardIcon {
+    bottom: 10px;
+    right: 10px;
+}
+.cloudBased{
+  padding: 13px 0px;
+}
+
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
@@ -645,6 +715,13 @@
     padding: 30px 0px;
   }
 
+  .header-inner{
+    gap: 0px;
+  }
+
+  .downloadEaseCare{
+    padding-bottom: 12px;
+  }
   .home-banner {
     padding: 70px 0px 70px 0px;
   }
@@ -982,4 +1059,38 @@
   }
 
   .headingup-16 {}
+
+  .cloudBased h1{
+    font-size: 46px;
+  }
+  .Clearity_Features ul>li{
+    font-size: 20px;
+  }
+  
+.Clearity_Features .right {
+  gap: 20px;
+  padding: 92px 28px 80px 50px;
+}
+.Choose_clearity {
+  padding: 80px 20px;
+}
+.downloadEaseCare h3 {
+  font-size: 23px;
+}
+.downloadEaseCare p {
+  font-size: 19px;
+}
+.downloadLink{
+  flex-direction: column;
+}
+.CardsGrp{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.doctor-review {
+  width: 100%;
+}
+.CloudCard, .CloudCard2 {
+  width: 211px;
+}
 }

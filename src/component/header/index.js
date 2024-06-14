@@ -31,11 +31,14 @@ const HeaderLayout = () => {
               <div className={`menu ${isMenuOpen ? "showMenu" : "hidemenu"}`}>
                 <ul className={"navLinks"}>
                   <li>
-                    <Link href="/features">Features</Link>
-                  </li>
-                  <li>
                     <Link href="/about">About us</Link>
                   </li>
+                  <li>
+                    <Link href="/features">Features</Link>
+                  </li>
+                  {/* <li>
+                    <Link href="#">Products</Link>
+                  </li> */}
                   <li>
                     <Link href="/pricing">Pricing</Link>
                   </li>
@@ -57,13 +60,13 @@ const HeaderLayout = () => {
                   </Link> */}
                   <Link
                     target="_blank"
-                    href="/contact"
+                    href="https://clarity.easecare.co/login"
                     className="contact-header"
                   >
-                    Contact
+                    Log in
                   </Link>
                   <Button variant="solid" className="purple-btn">
-                    Get a demo
+                    <Link href="/book-a-demo">Get a demo</Link>
                   </Button>
                 </div>
               </div>
@@ -83,13 +86,17 @@ const HeaderLayout = () => {
               >
                 Contact
               </Link> */}
-              <Link target="_blank" href="/contact" className="contact-header">
-                Contact
-              </Link>
               <Link
                 target="_blank"
-                href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+                href="https://clarity.easecare.co/login"
+                className="contact-header"
+              >
+                Log in
+              </Link>
+              <Link
+                href="/book-a-demo"
                 className="purple-btn"
+                // target="_blank"
               >
                 Get a demo
               </Link>

@@ -39,6 +39,15 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -85,6 +94,10 @@ body {
   font-family: "Roboto", sans-serif !important;
   font-size: 18px;
 }
+body ::-webkit-scrollbar{
+  display: none;
+}
+
 a {
   font-size: 18px;
 }
