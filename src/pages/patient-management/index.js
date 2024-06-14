@@ -33,6 +33,7 @@ const PatientManagement = () => {
         image={contactImg}
         content="Want to explore the optimum benefits of the best patient data management system?"
         btnText="Contact us today"
+        link={"contact"}
       />
       <VarientTypes />
       <FeaturesPatient />
@@ -40,6 +41,7 @@ const PatientManagement = () => {
         image={featureImg}
         content="Want to explore more features? Contact EaseCare-Clarity today and get a free demo!"
         btnText="Contact us today"
+        link={"contact"}
       />
       <ChallangeFaced />
       <SelectRight />
@@ -48,6 +50,7 @@ const PatientManagement = () => {
           image={cuateImg}
           content="Finding the best clinic patient management system? EaseCare-Clarity is your destination. Reach out to us and you will not regret your decision!"
           btnText="Get a free Demo"
+          link={"book-a-demo"}
         />
       </div>
       <div style={{ backgroundColor: "#FCFBF6" }}>
