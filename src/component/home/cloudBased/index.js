@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import { Heading } from "@radix-ui/themes";
+import Link from "next/link";
 import React from "react";
 
 const CloudBased = () => {
@@ -19,13 +20,15 @@ const CloudBased = () => {
       {/* <div className="CloudCardGrp"> */}
       <div className="CardGrp">
         <div className="CloudCard">
-          <p>Patient Management System</p>
-          <Icon
-            className="CardIcon"
-            icon={"mdi:arrow-top-right"}
-            width={40}
-            height={20}
-          />
+          <Link href={"/patient-management"}>
+            <p>Patient Management System</p>
+            <Icon
+              className="CardIcon"
+              icon={"mdi:arrow-top-right"}
+              width={40}
+              height={20}
+            />
+          </Link>
         </div>
         <div className="CloudCardbg">
           <div className="CloudCard2">

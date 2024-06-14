@@ -32,7 +32,7 @@ const Footer = () => {
               <li class="footerCon">
                 {/* Customer Care:{" "} */}
                 <Image src={callIcon} width={17} height={17} alt="" />
-                <Link href="tel:+91-7251027599">+91-7251027599</Link>
+                <Link href="tel:+91-8006777110">+91-8006777110</Link>
               </li>
               <li class="footerCon">
                 {/* Email address:{" "} */}
