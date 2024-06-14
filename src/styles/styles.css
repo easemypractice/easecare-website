@@ -107,6 +107,10 @@ ul.navLinks li:hover {
   justify-content: center;
 }
 
+.justify-flex-start{
+  justify-content: flex-start;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -117,6 +121,13 @@ ul.navLinks li:hover {
 
 .flex-align-end {
   align-items: flex-end;
+}
+.items-center{
+  align-items: center;
+}
+
+.flex-row {
+  flex-direction: row !important;
 }
 
 .text-center {
@@ -129,8 +140,19 @@ ul.navLinks li:hover {
   gap: 20px;
 }
 
+.text-start{
+  text-align: start !important;
+}
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.pt-10{
+  padding-top: 100px !important;
+}
+
+.my-6{
+  margin: 60px 0px;
 }
 
 .pl-2 {
@@ -206,8 +228,34 @@ ul.navLinks li:hover {
   width: 100%;
 }
 
+.gap-3{
+  gap: 12px;
+}
+/* .flex-1{
+  flex: 1 1 0% !important;
+} */
+
 .gap-20 {
   gap: 20px;
+}
+
+.lightPurple{
+  background-color: #E8D2F9 !important;
+}
+.lightBlue{
+  background-color: #D0F4FF !important;
+}
+.lightGreen{
+  background-color: #D3F2E6 !important;
+}
+.lightYellow{
+  background-color: #FFF2DD !important;
+}
+.lightOrange{
+  background-color: #FFE9E2 !important;
+}
+.lightpur{
+  background-color: #E0E1FD !important;
 }
 
 .menu {
@@ -2216,7 +2264,7 @@ ul.cont-list {
 }
 
 .flex-1 {
-  flex: 1;
+  flex: 1 !important;
 }
 
 .form-style input {
@@ -2972,4 +3020,16 @@ li.footerCon{
 .CardsGrp{
   display: flex;
   gap: 15px;
+}
+
+.patient-banner {
+  padding: 70px 0px 50px 0px;
+  background-image: url("../images/patientManageBanner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
 }
