@@ -1,7 +1,7 @@
 import React from "react";
 import BenefitCard from "../banefits/benefitCard";
 import styles from "@/styles/Patient.module.css";
-const data = [
+const cardData = [
   {
     icon: "hugeicons:ai-innovation-01",
     iconColor: "#8F1BE4",
@@ -31,28 +31,38 @@ const data = [
       "With constantly increasing digital threats, we recognize the importance of data security for our customers adopting various advanced solutions",
   },
 ];
+
+// const data = {
+//   HeadingFirst: "Exploring Patient Management",
+//   HeadingSec: "Software- Types and Variations",
+//   para: "Depending on the purpose and requirements, there are various types and variations of patient management software systems:",
+//   cardType: "practice",
+// };
+
 const BestPractice = () => {
   return (
-    <div
-      className={`container ${styles.VarComp}`}
-      style={{ backgroundColor: "#FCFBF6" }}
-    >
-      <div className="flex justify-center flex-col items-center gap-20">
-        <div className={`${styles.Heading} ${styles.maxheadingWid}`}>
-          <span>Exploring Patient Management</span>{" "}
-          <span className={styles.GradHead}>
-            Software- Types and Variations
-          </span>
-        </div>
-        <p className={styles.Para}>
-          Depending on the purpose and requirements, there are various types and
-          variations of patient management software systems:
-        </p>
-        <div className={styles.CardGrp}>
-          <BenefitCard data={data} cardType="practice" />
+    <>
+      <div
+        className={`container ${styles.VarComp}`}
+        style={{ backgroundColor: "#FCFBF6" }}
+      >
+        <div className="flex justify-center flex-col items-center gap-20">
+          <div className={`${styles.Heading} ${styles.maxheadingWid}`}>
+            <span></span>{" "}
+            <span className={styles.GradHead}>
+              Software- Types and Variations
+            </span>
+          </div>
+          <p className={styles.Para}>
+            Depending on the purpose and requirements, there are various types
+            and variations of patient management software systems:
+          </p>
+          <div className={styles.CardGrp}>
+            <BenefitCard data={cardData} cardType="practice" />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

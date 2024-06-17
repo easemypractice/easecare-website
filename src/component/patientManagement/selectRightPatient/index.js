@@ -4,21 +4,49 @@ import React, { useState } from "react";
 import checkedIcon from "@/images/checkedIcon.svg";
 import { Icon } from "@iconify/react";
 import styles from "@/styles/Patient.module.css";
-const SelectRight = () => {
-  const [path, setPath] = useState("access-requirement");
+
+const SelectRight = ({ data }) => {
+  const firstPath = data.RightData.map((item) => item.path);
+  const [path, setPath] = useState(firstPath[0]);
   return (
     <div className="Choose_clearity cloudBased">
-      <h1 className={styles.maxheadingWid}>
-        How to Select the Right Patient Management Software?
-      </h1>
-      {/* <p>
-        The Best Cloud-Based Practice Management Software for Doctors & Clinics.
-        Here&apos;s why you
-        <br /> should choose us as one of the best healthcare software
-        outsourcing companies in India:
-      </p> */}
+      <h1 className={styles.maxheadingWid}>{data.Heading}</h1>
       <div className="Clearity_Features">
-        <ul>
+        <>
+          <ul>
+            {data?.RightData?.map((item, index) => (
+              <li
+                key={index}
+                onClick={() => {
+                  setPath(`${item.path}`);
+                }}
+                className={`${path === item.path && "active"}`}
+              >
+                <Image src={checkedIcon} />
+                <span>{item.listItem}</span>
+              </li>
+            ))}
+          </ul>
+          {data?.RightData?.map((item, index) => (
+            <React.Fragment key={index}>
+              {path === item.path && (
+                <div className="right pt-10">
+                  <div className="iconContainer">
+                    <Icon
+                      icon={item.Icon}
+                      width="48"
+                      height="48"
+                      color="white"
+                    ></Icon>
+                  </div>
+                  <p>{item.ListData}</p>
+                </div>
+              )}
+            </React.Fragment>
+          ))}
+        </>
+
+        {/* <ul>
           <li
             onClick={() => {
               setPath("access-requirement");
@@ -64,8 +92,8 @@ const SelectRight = () => {
             <Image src={checkedIcon} />
             <span>Cloud-Based Solutions</span>
           </li>
-        </ul>
-        {path === "access-requirement" && (
+        </ul> */}
+        {/* {path === "access-requirement" && (
           <div className="right pt-10">
             <div className="iconContainer">
               <Icon
@@ -143,7 +171,7 @@ const SelectRight = () => {
               cost-effectiveness.
             </p>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

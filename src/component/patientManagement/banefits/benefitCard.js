@@ -32,14 +32,17 @@ const BenefitCard = ({ data, cardType }) => {
                 height="39"
               />
             </div>
-            <h4>{item.heading}</h4>
+            <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>
           </div>
           {cardType === "benefit" && (
-            <ul>
-              {item?.desc.map((item) => (
-                <li key={item?.name}>{item?.name}</li>
-              ))}
-            </ul>
+            <>
+              <ul>
+                {item?.desc?.map((item) => (
+                  <li key={item?.name}>{item?.name}</li>
+                ))}
+              </ul>
+              <p>{item?.para}</p>
+            </>
           )}
           {cardType === "varient" && <p>{item?.description}</p>}
           {cardType === "practice" && <p>{item?.description}</p>}
