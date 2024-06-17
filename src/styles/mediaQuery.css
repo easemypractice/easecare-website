@@ -60,6 +60,19 @@
     border: 1px solid var(--Clarity-Colors-Trout, #505766);
   }
 
+  .tabsTrigger{
+    width: 100% !important;
+    overflow-x: scroll;
+  }
+
+  .tabTrigger{
+    font-size: 20px !important;
+    min-width: max-content !important;
+  }
+
+  .mobile-display-none{
+    display: none !important;
+  }
   .active-plan-btn {
     margin-top: 15px;
     min-height: 38px;
@@ -997,6 +1010,9 @@
 
   }
 
+  .tabsTrigger{
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 999px) {

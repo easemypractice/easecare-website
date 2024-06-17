@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/Patient.module.css";
 import { Icon } from "@iconify/react";
-const data = [
+const featureData = [
   {
     icon: "teenyicons:appointments-outline",
     bgColor: "#E8D2F9",
@@ -61,7 +61,7 @@ const FeaturesPatient = () => {
             <span className={styles.GradHead}>Management Software</span>
           </div>
           <div className={styles.CardGrp}>
-            <FeaturesCard />
+            <FeaturesCard data={featureData} />
           </div>
         </div>
       </div>
@@ -69,7 +69,7 @@ const FeaturesPatient = () => {
   );
 };
 
-const FeaturesCard = () => {
+export const FeaturesCard = ({ data }) => {
   return (
     <>
       {data?.map((item, index) => (
@@ -86,7 +86,7 @@ const FeaturesCard = () => {
           </div>
           <div className={`flex gap-3 flex-col justify-flex-start flex-1`}>
             <h4>{item.heading}</h4>
-            <p>{item?.description}</p>
+            <p className={item.displayClass}>{item?.description}</p>
           </div>
         </div>
       ))}
