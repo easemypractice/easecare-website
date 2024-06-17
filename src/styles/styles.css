@@ -33,6 +33,13 @@ body {
   position: relative;
 }
 
+.maxWidth-45r{
+  max-width: 45rem !important;
+}
+.maxWidth-55r{
+  max-width: 55rem !important;
+}
+
 .heading-24 {
   color: var(--Clarity-Colors-Shark, #1d2026);
   font-size: 24px;
@@ -151,6 +158,10 @@ ul.navLinks li:hover {
   padding-top: 100px !important;
 }
 
+.pt-6{
+  padding-top: 6px !important;
+}
+
 .my-6{
   margin: 60px 0px;
 }
@@ -159,11 +170,25 @@ ul.navLinks li:hover {
   padding-left: 40px !important;
 }
 
+.pb-50{
+  padding-bottom: 50px !important;
+}
+.p-5{
+  padding: 10px 0px !important;
+}
+
 .py-20 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
+.py-10{
+  padding: 30px 0px !important;
+}
+
+.max-width-full{
+  max-width: 100% !important
+}
 .mb-4 {
   margin-bottom: 16px;
 }
@@ -182,6 +207,10 @@ ul.navLinks li:hover {
 
 .mb-8 {
   margin-bottom: 32px;
+}
+
+.mb-2{
+  margin-bottom: 8px;
 }
 
 .mt-2 {
@@ -3024,7 +3053,7 @@ li.footerCon{
 
 .patient-banner {
   padding: 70px 0px 50px 0px;
-  background-image: url("../images/patientManageBanner.svg");
+  /* background-image: url("../images/patientManageBanner.svg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

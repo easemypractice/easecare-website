@@ -32,14 +32,16 @@ const CloudBased = () => {
         </div>
         <div className="CloudCardbg">
           <div className="CloudCard2">
-            <p>Practice Management Software</p>
-            <Icon
-              icon={"mdi:arrow-top-right"}
-              width={40}
-              color={"#8512E0"}
-              height={20}
-              className="CardIcon"
-            />
+            <Link href={"/practice-management"}>
+              <p>Practice Management Software</p>
+              <Icon
+                icon={"mdi:arrow-top-right"}
+                width={40}
+                color={"#8512E0"}
+                height={20}
+                className="CardIcon"
+              />
+            </Link>
           </div>
         </div>
         <div className="CloudCard">

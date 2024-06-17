@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "@/styles/Patient.module.css";
+import bg from "@/images/contbg.svg";
 import Link from "next/link";
 const ContactUsPatients = ({ image, content, btnText, link }) => {
   return (
@@ -13,6 +14,7 @@ const ContactUsPatients = ({ image, content, btnText, link }) => {
             <button className="purple-btn w-full">{btnText}</button>
           </Link>
         </div>
+        <Image src={bg} width={400} className={styles.bgPosition} />
       </div>
     </div>
   );
