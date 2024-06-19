@@ -76,7 +76,7 @@ const BestPracticeData = [
           "The budget can be one of the top and most significant constraints when it comes to implementing a robust clinic patient management software",
       },
       {
-        icon: "fluent-mdl2:custom-list-mirrored",
+        icon: "material-symbols-light:inbox-customize-outline-sharp",
         iconColor: "#19BB7D",
         heading: "Scalability and Customization Options",
         description:
