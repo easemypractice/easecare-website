@@ -10,7 +10,17 @@ const SelectRight = ({ data }) => {
   const [path, setPath] = useState(firstPath[0]);
   return (
     <div className="Choose_clearity cloudBased">
-      <h1 className={styles.maxheadingWid}>{data.Heading}</h1>
+      {data.Heading ? (
+        <h1 className={styles.maxheadingWid}>{data.Heading}</h1>
+      ) : (
+        <div className={`${styles.Heading} ${data.HeadingClass}`}>
+          {data.HeadingFirst}{" "}
+          <div className={styles.GradHead}>{data?.HeadingSec}</div>
+        </div>
+      )}
+      {data.Para && (
+        <p className={`${styles.Para} ${data?.ParaClass}`}>{data?.Para}</p>
+      )}
       <div className="Clearity_Features">
         <>
           <ul>

@@ -1110,3 +1110,9 @@
   width: 211px;
 }
 }
+
+@media screen and (min-width: 1700px) {
+  .patient-banner{
+    min-height: 30vh;
+  }
+}

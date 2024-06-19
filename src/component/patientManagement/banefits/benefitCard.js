@@ -8,6 +8,7 @@ const BenefitCard = ({ data, cardType }) => {
     <>
       {data?.map((item, index) => (
         <div
+          style={{ backgroundColor: item?.cardBgColor }}
           className={`${styles.BenefitCard} ${cardType === "varient" && styles.VarCard} ${cardType === "practice" && styles.PracticeCard}`}
           key={index}
         >
@@ -23,7 +24,9 @@ const BenefitCard = ({ data, cardType }) => {
                   cardType === "benefit"
                     ? "white"
                     : cardType === "varient"
-                      ? "#8512E0"
+                      ? item.colorIcon
+                        ? item.colorIcon
+                        : "#8512E0"
                       : cardType === "practice"
                         ? item.iconColor
                         : undefined
@@ -41,7 +44,7 @@ const BenefitCard = ({ data, cardType }) => {
                   <li key={item?.name}>{item?.name}</li>
                 ))}
               </ul>
-              <p>{item?.para}</p>
+              <p className="text-center">{item?.para}</p>
             </>
           )}
           {cardType === "varient" && <p>{item?.description}</p>}
