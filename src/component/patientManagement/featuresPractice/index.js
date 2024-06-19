@@ -121,7 +121,7 @@ const TabContantData = [
     headingFirst: "Benefits for Patients",
     featureData: [
       {
-        icon: "teenyicons:appointments-outline",
+        icon: "icon-park-outline:check-correct",
         bgColor: "#E8D2F9",
         IconbgColor: "#8512E01A",
         displayClass: "mobile-display-none",

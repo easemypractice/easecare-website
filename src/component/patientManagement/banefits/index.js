@@ -15,7 +15,7 @@ const BenefitPatients = ({ data }) => {
               <span className={styles.GradHead}>{item?.HeadingSec}</span>
             </div>
             <p className={`${styles.Para} ${item.paraClass}`}>{item?.para}</p>
-            <div className={styles.CardGrp}>
+            <div className={`${styles.CardGrp} ${item?.cardClass}`}>
               <BenefitCard data={item.benefitData} cardType={item.cardType} />
             </div>
           </div>
