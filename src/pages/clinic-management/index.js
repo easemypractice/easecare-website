@@ -6,18 +6,12 @@ import PatientManagmentBanner from "@/component/patientManagement/banner";
 import styles from "@/styles/Patient.module.css";
 import BenefitPatients from "@/component/patientManagement/banefits";
 import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import Divider from "@/component/patientManagement/divider";
 import VarientTypes from "@/component/patientManagement/varientsTypes";
 import FeaturesPatient, {
   FeaturesCard,
 } from "@/component/patientManagement/featurePatients";
-import contactImg from "@/images/contactPanaImg.svg";
 import featureImg from "@/images/featureImg.svg";
-import cuateImg from "@/images/cuateImg.svg";
-import ChallangeFaced from "@/component/patientManagement/challangeFaced";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
-import BestPractice from "@/component/patientManagement/bestPractice";
-import FAQs from "@/component/patientManagement/faqs";
 import bgImg from "@/images/ClinicBg.svg";
 const clinicBannerData = [
   {
