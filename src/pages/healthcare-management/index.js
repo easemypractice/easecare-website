@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
-import bgImg from "@/images/ClinicBg.svg";
+import bgImg from "@/images/healthcarebanner.svg";
 import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import featureImg from "@/images/featureImg.svg";
 import BenefitPatients from "@/component/patientManagement/banefits";
@@ -56,7 +56,7 @@ const healthcareBenefits = [
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "material-symbols-light:inventory-sharp",
+        icon: "iconamoon:invoice-thin",
         heading: "Accurate Billing and Revenue Management",
         para: "Operations and activities related to finances, from billing creation to revenue management will be accurate and seamless. Apart from automated billing creation and management, the data and insights of this software help you enhance and manage your revenue",
       },
@@ -110,7 +110,7 @@ const MedicalRecordScope = [
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "ri:medicine-bottle-line",
+        icon: "hugeicons:medicine-02",
         cardBgColor: "white",
         heading: "Medications",
       },
@@ -219,21 +219,21 @@ const BenefitOfEffectiveRecords = {
       listItem: "Automated Tracking",
       ListData:
         "Automated patient tracking and data management reduce the limiting errors.",
-      Icon: "fluent-mdl2:custom-list-mirrored",
+      Icon: "material-symbols-light:inbox-customize-outline-sharp",
     },
     {
       path: "electronic-data",
       listItem: "Electronic Data Management",
       ListData:
         "Electronic data management makes it easier to share information within various departments without compromising the privacy of the patients.",
-      Icon: "iconamoon:invoice-thin",
+      Icon: "mage:health-square",
     },
     {
       path: "ehr-emr",
       listItem: "EHR/EMR Integration",
       ListData:
         "Integrating electronic health records makes sure that the data of patients is stored accurately to fuel effective patient care.",
-      Icon: "iconamoon:invoice-thin",
+      Icon: "material-symbols-light:clinical-notes-outline",
     },
   ],
 };
@@ -272,7 +272,7 @@ const ModuleHosptalManage = [
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "teenyicons:appointments-outline",
+        icon: "hugeicons:medicine-01",
         heading: "Supply Management",
         para: "Tracking the availability of medications and other medical supplies so that they can be availed on time",
       },
@@ -309,7 +309,7 @@ const BestHealthCare = [
           "Data and analytics play an important role in effective decision-making and deriving results. Choose a good software for healthcare management that provides detailed insights into the condition of patients",
       },
       {
-        icon: "fluent:person-support-24-regular",
+        icon: "hugeicons:service",
         iconColor: "#3278B1",
         heading: "Personalized Care",
         description:
