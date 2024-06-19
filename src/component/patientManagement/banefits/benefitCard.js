@@ -23,7 +23,9 @@ const BenefitCard = ({ data, cardType }) => {
                   cardType === "benefit"
                     ? "white"
                     : cardType === "varient"
-                      ? "#8512E0"
+                      ? item.colorIcon
+                        ? item.colorIcon
+                        : "#8512E0"
                       : cardType === "practice"
                         ? item.iconColor
                         : undefined

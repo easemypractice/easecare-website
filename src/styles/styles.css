@@ -132,7 +132,9 @@ ul.navLinks li:hover {
 .items-center{
   align-items: center;
 }
-
+.uppercase{
+  text-transform: uppercase !important;
+}
 .flex-row {
   flex-direction: row !important;
 }
@@ -173,8 +175,16 @@ ul.navLinks li:hover {
 .pb-50{
   padding-bottom: 50px !important;
 }
+
+.pb-40{
+  padding-bottom: 40px !important;
+}
+
 .p-5{
   padding: 10px 0px !important;
+}
+.p-0{
+  padding: 0px !important;
 }
 
 .py-20 {
