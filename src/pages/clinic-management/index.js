@@ -305,7 +305,7 @@ const ClinicManagement = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Features"}
+        title={"Clarity - Clinic management"}
         description={
           "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
         }
