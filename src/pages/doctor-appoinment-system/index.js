@@ -1,8 +1,8 @@
-import React from "react";
 import { Layout } from "@/app/layout";
+import React from "react";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
-import bgImg from "@/images/healthcarebanner.png";
+import bgImg from "@/images/doctorAppoinmentBanner.png";
 import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import featureImg from "@/images/featureImg.svg";
 import BenefitPatients from "@/component/patientManagement/banefits";
@@ -10,13 +10,13 @@ import FeaturesPatient from "@/component/patientManagement/featurePatients";
 import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
 import VarientTypes from "@/component/patientManagement/varientsTypes";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
-const healthcareBannerData = [
+const doctorAppBannerData = [
   {
-    maxWidth: "max-width-full p-5",
+    maxWidth: "maxWidth-55r p-5",
     bgImg: bgImg,
-    subHeading: "Healthcare Management Software",
-    HeadingFirst: "Healthcare Management Software",
-    // HeadingSecound: "Software System?",
+    subHeading: "Doctor Appointment Management Software",
+    HeadingFirst: "Doctor Appointment",
+    HeadingSecound: "Management Software",
     description:
       "Software for healthcare management is driving the ever-evolving sector of healthcare helping hospitals, healthcare professionals,  clinics, and various modern medical settings helping them throughout all the medical aspects from improving patient care, and efficient data management to streamlining various administration operations. From managing medical records to scheduling appointments to administrating billing and various financial operations, healthcare management software not only helps medical settings and hospitals improve efficiency but also takes over the tension of finding a professional and seasoned financial expert or accountant to look after their complex and intricate financial operations",
   },
@@ -325,17 +325,17 @@ const BestHealthCare = [
     ],
   },
 ];
-const HealthCareManagement = () => {
+const DoctorAppoinment = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Healthcare management"}
+        title={"Clarity - Doctor appoinment system"}
         description={
           "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
         }
         imageUrl={FeaturesPreviewImage}
       />
-      <PatientManagmentBanner data={healthcareBannerData} />
+      <PatientManagmentBanner data={doctorAppBannerData} />
       <BenefitPatients data={healthcareBenefits} />
       <div className="my-6">
         <ContactUsPatients
@@ -365,4 +365,4 @@ const HealthCareManagement = () => {
   );
 };
 
-export default HealthCareManagement;
+export default DoctorAppoinment;

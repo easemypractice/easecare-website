@@ -16,7 +16,7 @@ import ChallangeFaced from "@/component/patientManagement/challangeFaced";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
 import BestPractice from "@/component/patientManagement/bestPractice";
 import FAQs from "@/component/patientManagement/faqs";
-import bgImg from "@/images/patientManageBanner.svg";
+import bgImg from "@/images/patientManageBanner.png";
 const patientBannerData = [
   {
     bgImg: bgImg,

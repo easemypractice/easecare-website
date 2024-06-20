@@ -1,6 +1,6 @@
 import React from "react";
-import IphoneImg from "@/images/iPhoneImgApp.svg";
-import call from "@/images/easeCareCall.svg";
+import IphoneImg from "@/images/iPhoneIngApp.png";
+import call from "@/images/easeCareCell.png";
 import googlePlay from "@/images/googleplay.svg";
 import appleStore from "@/images/appstore.svg";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const DownloadApp = () => {
           <Image
             src={call}
             width={205}
-            height={305}
+            height={"100%"}
             className="easeCareBackGround"
           />
         </div>
