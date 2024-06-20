@@ -9,14 +9,8 @@ import FaviconIcon from "./favicon.ico";
 import "@/styles/mediaQuery.css";
 import LoadingBar from "../component/loadingBar/loadingBar";
 import Head from "next/head";
-// import HomePreviewImage from "../../public/home-preview.jpg";
 const inter = Inter({ subsets: ["latin"] });
 import { GoogleTagManager } from "@next/third-parties/google";
-import { wrapper } from "../../store/store";
-import { useRouter } from "next/router";
-import { useDispatch } from "react-redux";
-import { useEffect } from "react";
-import { addRoute } from "../../store/pageSlice";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -38,10 +32,10 @@ export default function RootLayout({ children }) {
             "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
           }
         />
-        <meta property="og:image" content="../../public/images/preview.jpg" />
+        {/* <meta property="og:image" content="../../public/images/preview.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/jpeg" /> */}
       </head>
       <body className={"body"}>
         {/* heelo

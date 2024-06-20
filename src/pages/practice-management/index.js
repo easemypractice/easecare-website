@@ -1,7 +1,7 @@
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
 import React from "react";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
+import FeaturesPreviewImage from "@/images/ogImage/practiceManageOg.svg";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 
 import BenefitPatients from "@/component/patientManagement/banefits";
@@ -209,7 +209,7 @@ const PracticeManagement = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Features"}
+        title={"Clarity - Practice management"}
         description={
           "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
         }
