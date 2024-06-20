@@ -70,6 +70,7 @@ const CloudBased = () => {
           </div>
         </div>
         <div className="CloudCard">
+          {/* <Link href={"/doctor-appoinment-system"}> */}
           <p>Doctor Appointment System</p>
           <Icon
             className="CardIcon"
@@ -77,6 +78,7 @@ const CloudBased = () => {
             width={40}
             height={20}
           />
+          {/* </Link> */}
         </div>
         <div className="CloudCardbg">
           <div className="CloudCard2">

@@ -12,7 +12,7 @@ import contactImg from "@/images/contactPanaImg.svg";
 import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
-import bgImg from "@/images/practiceBanner.svg";
+import bgImg from "@/images/practiceBanner.png";
 import FeaturePractice from "@/component/patientManagement/featuresPractice";
 const practiceManagementData = [
   {

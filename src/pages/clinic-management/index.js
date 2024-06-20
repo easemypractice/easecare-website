@@ -12,7 +12,7 @@ import FeaturesPatient, {
 } from "@/component/patientManagement/featurePatients";
 import featureImg from "@/images/featureImg.svg";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
-import bgImg from "@/images/ClinicBg.svg";
+import bgImg from "@/images/ClinicBg.png";
 const clinicBannerData = [
   {
     maxWidth: "max-width-full p-5",
