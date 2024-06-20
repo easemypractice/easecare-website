@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "@/styles/Patient.module.css";
-import bg from "@/images/contbg.svg";
+import bg from "@/images/contbg.png";
 import Link from "next/link";
 const ContactUsPatients = ({ image, content, btnText, link }) => {
   return (
