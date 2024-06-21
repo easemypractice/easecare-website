@@ -5,6 +5,7 @@ import PatientManagmentBanner from "@/component/patientManagement/banner";
 import bgImg from "@/images/doctorAppoinmentBanner.png";
 import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import featureImg from "@/images/featureImg.svg";
+import cuateImg from "@/images/cuateImg.svg";
 import BenefitPatients from "@/component/patientManagement/banefits";
 import FeaturesPatient from "@/component/patientManagement/featurePatients";
 import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
@@ -18,309 +19,284 @@ const doctorAppBannerData = [
     HeadingFirst: "Doctor Appointment",
     HeadingSecound: "Management Software",
     description:
-      "Software for healthcare management is driving the ever-evolving sector of healthcare helping hospitals, healthcare professionals,  clinics, and various modern medical settings helping them throughout all the medical aspects from improving patient care, and efficient data management to streamlining various administration operations. From managing medical records to scheduling appointments to administrating billing and various financial operations, healthcare management software not only helps medical settings and hospitals improve efficiency but also takes over the tension of finding a professional and seasoned financial expert or accountant to look after their complex and intricate financial operations",
+      "Every hospital and clinic faces the problem of people lined up every day, pushing each other as they eagerly wait for their turn to get a consultation from healthcare professionals. The mere process of the appointment of the patients takes a long time as well as the energy and resources of the healthcare professionals and staff. Manage the appointments of your patients seamlessly with a doctor appointment management software. A doctor appointment management software is like the backbone of healthcare providers, hospitals, and clinics that encompasses various features.",
   },
 ];
-const healthcareBenefits = [
+const OnlineDoctorAppoin = [
   {
-    // HeadingClass: "max-width-full py-10",
-    HeadingFirst: "Benefits of Healthcare",
-    HeadingSec: "Management System",
-    paraClass: "pb-40",
-    para: "Following are some of the benefits that demand you to implement hospital management  software to streamline your medical operations",
+    HeadingClass: "max-width-80",
+    HeadingFirst: "Discover EaseCare’s Online ",
+    HeadingSec: "Doctor Appointment System",
+    // paraClass: "pb-40",
+    // para: "Following are some of the benefits that demand you to implement hospital management  software to streamline your medical operations",
     cardType: "benefit",
     benefitData: [
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "grommet-icons:task",
-        heading: "Streamlining Operations with Accuracy and Speed",
-        para: "In your healthcare organization, there are multiple things that need to be taken care of. From keeping a safe track of the data of your patients to listening to the queries of your healthcare staff, no need not to worry about a single thing when you have good healthcare management software",
+        icon: "healthicons:doctor-outline",
+        heading: "Find a Perfect Doctor for You",
+        para: "To provide the best healthcare services, we make sure that patients have enough options to choose from when they are looking for a personalized solution to their problems",
+        IconWidth: "45",
+        IconHeight: "45",
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "carbon:money",
-        heading: "Reduced Expenses",
-        para: "When all the tasks are managed by a single machine and software, it means that you will need less manpower which will drastically reduce your expenses. Additionally, various tools and machines are also replaced by the software",
+        icon: "maki:doctor",
+        heading: "View Doctor",
+        para: "On the basis of your concerns, we make sure that you get the best professional to give you the best and most personalized solutions",
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "carbon:dashboard",
-        heading: "Better Patient Experience",
-        para: "When all things are automated with the help of a good healthcare management system software, patients will not have to wait or complain about anything which will result in better patient experience and retention driving more profit to you",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "material-symbols-light:inventory-sharp",
-        heading: "Effective Inventory and Pharmacy Management",
-        para: "Managing inventory and pharmacy is one of the complex tasks faced by doctors, healthcare professionals, clinics, and even big hospitals. Make this whole process seamless with good medical management software with features like real-time inventory tracking to automatic reordering and stock management",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "iconamoon:invoice-thin",
-        heading: "Accurate Billing and Revenue Management",
-        para: "Operations and activities related to finances, from billing creation to revenue management will be accurate and seamless. Apart from automated billing creation and management, the data and insights of this software help you enhance and manage your revenue",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "carbon:security",
-        heading: "Data Security and Privacy",
-        para: "Data security and privacy are among the biggest concerns of this digital age. While AI technology is continuously evolving, there are various privacy and cyber threats we can’t even recognize. Advanced healthcare software solutions provide you with robust security measures while being compliant with healthcare regulations like HIPAA",
-      },
-    ],
-  },
-];
-const MedicalRecordScope = [
-  {
-    HeadingClass: "max-width-full py-10",
-    cardClass: "grid-cols-3",
-    HeadingFirst: "Scope of Medical Records Management",
-    paraClass: "pb-40",
-    para: "A robust digital medical records software covers a wide range related to the practice of healthcare professionals which reduces the need for dedicated professionals for each task. Below are some of the areas that can be looked after with the help of a good healthcare management system software",
-    cardType: "benefit",
-    benefitData: [
-      {
-        HeadingWidth: "max-width-full text-center",
-        cardBgColor: "white",
-        icon: "solar:history-bold",
-        heading: "Patient history",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "hugeicons:clinic",
-        cardBgColor: "white",
-        heading: "Clinical findings",
+        icon: "teenyicons:appointments-outline",
+        heading: "Book a consultation",
+        para: "We strive to reach out to you beyond your geographical, linguistic, and busy schedule. Book a consultation according to your preferred time",
       },
       {
         HeadingWidth: "max-width-full text-center",
         icon: "hugeicons:service",
-        cardBgColor: "white",
-        heading: "Diagnostic test results",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "solar:health-broken",
-        cardBgColor: "white",
-        heading: "Pre and postoperative care",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "grommet-icons:user-expert",
-        cardBgColor: "white",
-        heading: "Patient progress",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "hugeicons:medicine-02",
-        cardBgColor: "white",
-        heading: "Medications",
+        heading: "Get the Best Services",
+        para: "While personalization is our priority, we strive to deliver the best services to our patients at EaseCare. Get the best and quickest services and healthcare supplies at the best prices",
       },
     ],
   },
 ];
-const FeatuesHealthCare = {
-  HeadingFirst: "Features of Healthcare",
-  HeadingClass: "max-width-full p-5",
-  HeadingSec: "Management System",
-  ParaClass: "pb-40",
-  Para: "Following are some of the key features of the advanced healthcare management systems",
+const FeatuesDoctorAppoin = {
+  HeadingFirst: "Features of Doctor Appointment",
+  HeadingSec: "Management Software",
+  HeadingClass: "max-width-full",
+  // ParaClass: "pb-40",
+  // Para: "Following are some of the key features of the advanced healthcare management systems",
   CardData: [
     {
-      icon: "teenyicons:appointments-outline",
+      icon: "material-symbols-light:event-available-outline",
       bgColor: "#E8D2F9",
       IconbgColor: "#8512E01A",
-      heading: "Patient Scheduling System",
+      heading: "Availability Management",
       headingClass: "max-width-full",
       description:
-        "A healthcare practice management helps you in seamlessly scheduling the appointments. If your patient is not able to reach out to you at the decided time, no worries. You can easily reschedule it according to the convenience of your patient",
+        "Tracking the availability of various medical supplies so that they can be availed on time",
     },
     {
-      icon: "carbon:dashboard",
+      icon: "streamline:waiting-appointments-calendar",
       bgColor: "#D0F4FF",
       IconbgColor: "#08C7FB1A",
+      IconWidth: "35",
+      IconHeight: "35",
       headingClass: "max-width-full",
-      heading: "Intuitive User Interface",
+      heading: "Shifting Appointments",
+      strockWidth: "1",
       description:
-        "EaseCare boasts an intuitive and user-friendly interface, making it easy for healthcare professionals to navigate and access critical information swiftly. Whether you’re a doctor, nurse, or administrative staff, EaseCare streamlines your workflow",
+        "Easily shift the appointments and you can drop a reminder or notification to the patients through an SMS or email",
     },
     {
-      icon: "carbon:report",
+      icon: "material-symbols-light:cancel-outline",
       bgColor: "#D3F2E6",
       IconbgColor: "#19BB7D1A",
       headingClass: "max-width-full",
-      heading: "Customizable Workflows",
+      heading: "Cancellations",
       description:
-        "At EaseCare, we take it into consideration that each clinic can have different requirements and thus, we make sure that our solutions are mostly customizable and will help you improve the quality of your service",
+        "If the specific healthcare expert is not available and the appointment gets canceled, patients can get the information through a notification or an online doctor booking app",
     },
     {
-      icon: "uiw:mobile",
+      icon: "guidance:waiting-room",
       bgColor: "#FFF2DD",
       IconbgColor: "#FAE2BB",
+      IconWidth: "37",
+      IconHeight: "37",
       headingClass: "max-width-full",
-      heading: "Mobile Applications",
+      heading: "Waiting Room",
       description:
-        "Various hospital management software are available at various play stores so that the patient can easily access medical services with the help of an app",
+        "During the consultation, make a calm environment in your hospital or clinic as the names will be called out automatically and there will be an accurate and proper sitting of the patients",
     },
     {
-      icon: "guidance:hospital",
+      icon: "system-uicons:reverse",
       bgColor: "#FFE9E2",
+      IconWidth: "35",
+      IconHeight: "35",
       IconbgColor: "#8512E01A",
-      heading: "Lab Management",
+      heading: "Reverse Slots",
       headingClass: "max-width-full",
       description:
-        "A good hospital management software is a perfect tool to manage your lab. From the effectiveness and success of your testing to the availability of required tools and substances, you will not have to worry about anything",
+        "The reverse slot feature of medical software for scheduling will allow you to prioritize emergencies over normal walk-ins",
     },
     {
-      icon: "carbon:data-bin",
+      icon: "gala:multi",
       bgColor: "#E0E1FD",
       IconbgColor: "#08C7FB1A",
-      heading: "Data Analytics and Reporting",
+      IconWidth: "30",
+      IconHeight: "30",
+      heading: "Multi-Doctor and Department Support",
       headingClass: "max-width-full",
       description:
-        "From assessing how satisfied your customers are to analyzing the current trends in the healthcare sector, data analytics and reporting through a good healthcare management solution is a good tool for making decisions that will turn profitable in your favor from all aspects",
+        "Managing doctors and various departments in a larger healthcare environment can be challenging. Make this daunting task seamless with the best doctor appointment management system",
     },
   ],
 };
-const keyAspectMadicalRecord = {
-  HeadingFirst: "Key Aspects of Medical",
-  HeadingSec: "Records Management",
+const MedicalSechedulingBenefit = [
+  {
+    HeadingClass: "max-width-55r py-10",
+    cardClass: "grid-cols-3",
+    HeadingFirst: "Benefits of Medical",
+    HeadingSec: "Software for Scheduling",
+    // paraClass: "pb-40",
+    // para: "A robust digital medical records software covers a wide range related to the practice of healthcare professionals which reduces the need for dedicated professionals for each task. Below are some of the areas that can be looked after with the help of a good healthcare management system software",
+    cardType: "benefit",
+    benefitData: [
+      {
+        HeadingWidth: "max-width-full text-center",
+        cardBgColor: "white",
+        icon: "teenyicons:appointments-outline",
+        heading: "Online Booking",
+        para: "Patients can easily book appointments through a website or a mobile app without wasting their time and money on reaching the hospital and then waiting there for hours",
+      },
+      {
+        HeadingWidth: "max-width-full text-center",
+        icon: "carbon:reminder",
+        cardBgColor: "white",
+        heading: "Automated Reminders",
+        para: "Automatic appointments allow your patients to get the check-up early on without procrastinating the process for the diagnosis of any significant health condition",
+      },
+      {
+        HeadingWidth: "max-width-full text-center",
+        icon: "fluent:patient-20-regular",
+        cardBgColor: "white",
+        heading: "Patient Management",
+        para: "Manage all the information of your patients from contact details to health history in one place to fuel the current medication in one place",
+      },
+      {
+        HeadingWidth: "max-width-full text-center",
+        icon: "fluent:payment-28-regular",
+        cardBgColor: "white",
+        heading: "Payment Processing",
+        para: "Payment processing is one of the most complex operations for patients as they are insecure about their money and safe transactions. Doctor Appointment Management Software assures patients of instant and safe transactions",
+      },
+      {
+        HeadingWidth: "max-width-full text-center",
+        icon: "fluent-mdl2:custom-list",
+        cardBgColor: "white",
+        heading: "Customizable Scheduling",
+        para: "Increase your customer satisfaction at the first step by offering them the best customization through flexible scheduling",
+      },
+      {
+        HeadingWidth: "max-width-full text-center",
+        icon: "carbon:report",
+        cardBgColor: "white",
+        heading: "Reporting and Analytics",
+        para: "The doctor appointment management system provides comprehensive reporting and analytics to help you enhance your decision-making toward the performance of your clinic",
+      },
+    ],
+  },
+];
+const maximizeEfficiency = {
+  HeadingFirst: "Maximizing Efficiency with Doctor",
+  HeadingSec: "Appointment Booking Systems",
   HeadingClass: "max-width-full pb-40",
-  para: "Electronic Medical Records (EMR) and Electronic Health Records (EHR)",
+  para: "Here’s how you can maximize the efficiency of your clinic with our best doctor appointment booking systems",
   cardType: "varient",
   CardData: [
     {
-      icon: "vaadin:health-card",
-      heading: "EMR",
+      icon: "material-symbols-light:event-available-outline",
+      heading: "Streamlined Scheduling",
       description:
-        "An Electronic Medical Record can help a single or solo provider to keep track of everything that is in the sphere of his practice. It closely contains the information of specific healthcare providers",
+        "With digital medical software for scheduling, clinics, and doctors have the expertise to offer their customers with the best facilities as they don’t have to give phone calls to the clinic again and again",
     },
     {
-      icon: "material-symbols-light:clinical-notes-outline",
-      heading: "EHR",
+      icon: "carbon:reminder",
+      heading: "Automated Reminders",
       description:
-        "An Electronic Health Record is a broad term as it is used throughout various health organizations with the flexibility of transferring patient data to various medical settings",
+        "No-shows should be taken seriously in the healthcare system as they can make you lose potential customers and they need to learn how efficient your services are. Make sure that not a single patient misses their appointments with you with the help of automated reminders",
+    },
+    {
+      icon: "material-symbols-light:update",
+      heading: "Real-Time Updates",
+      description:
+        "The real-time updates through the online doctor booking app or doctor appointment software help healthcare providers enhance efficiency and performance. Based on the real-time data, healthcare providers can manage their time to give personalized attention and better services to each patient who approaches them",
+    },
+    {
+      icon: "carbon:document-requirements",
+      heading: "Data-Driven Decisions",
+      description:
+        "The data-driven decisions of advanced tools for doctor appointments online make doctors and healthcare professionals not only review their performance but also follow more decisions in their favor which helps in enhanced conversion and profit",
     },
   ],
 };
 
-const BenefitOfEffectiveRecords = {
+const AppoinmentManagementSoftWare = {
   HeadingClass: "max-width-full",
-  HeadingFirst: "Benefits of Effective Records",
-  HeadingSec: "Management System",
+  HeadingFirst: "Doctor Appointment Management Software",
+  HeadingSec: "for Doctors, Nurses, and Medical Offices",
   RightData: [
     {
-      path: "efficiency",
-      listItem: "Efficiency",
+      path: "brand-your-practice",
+      listItem: "Brand Your Practice’s Page",
       ListData:
-        "Patient records management systems are quick and easy to access with easy-to-use features which makes it easier for patients to navigate through these software and get the essential services on time.",
-      Icon: "grommet-icons:task",
+        "With a trusted tool or software, at EaseCare-Clarity we help you to not only provide the best services to your patients through a seamless online doctor appointment booking system but also offer them personalized solutions making them return to you next time.",
+      Icon: "hugeicons:clinic",
     },
     {
-      path: "automated",
-      listItem: "Automated Tracking",
+      path: "appoinment-from-website",
+      listItem: "Appointments From Your Website",
       ListData:
-        "Automated patient tracking and data management reduce the limiting errors.",
-      Icon: "material-symbols-light:inbox-customize-outline-sharp",
+        "Giving a fixed spot to book appointments on your website gives convenience to the patients because they don’t have to wait on phone calls when the server is busy or wait in lines in your medical setting.",
+      Icon: "teenyicons:appointments-outline",
     },
     {
-      path: "electronic-data",
-      listItem: "Electronic Data Management",
+      path: "inventery-tracking",
+      listItem: "Keep Track of Your Inventory",
       ListData:
-        "Electronic data management makes it easier to share information within various departments without compromising the privacy of the patients.",
-      Icon: "mage:health-square",
+        "Inventory is an important organ for your clinic or healthcare organization. When supplies are available at your end, then only you will be able to provide them to your patients on time. Keep track of everything from small to big with this automatic inventory management tool.",
+      Icon: "material-symbols-light:inventory-sharp",
     },
     {
-      path: "ehr-emr",
-      listItem: "EHR/EMR Integration",
+      path: "contactless-payment",
+      listItem: "Secure Contactless Payments",
       ListData:
-        "Integrating electronic health records makes sure that the data of patients is stored accurately to fuel effective patient care.",
-      Icon: "material-symbols-light:clinical-notes-outline",
+        "A good online doctor appointment booking system allows your patients to become tension-free when it comes to any transaction making the whole process seamless and convenient as you can add the option of pre-pay directly from your booking page.",
+      Icon: "fluent:payment-28-regular",
     },
   ],
 };
-const ModuleHosptalManage = [
+const whyEaseCareDoctorAppoinSoftware = [
   {
     // HeadingClass: "max-width-full py-10",
-    HeadingFirst: "Modules of Hospital Management System",
+    HeadingFirst: "Why EaseCare’s Doctor",
+    HeadingSec: "Appointment Software?",
     paraClass: "pb-40",
-    para: "Below are various aspects or modules of hospital management, which are handled by a medical management system",
-    cardType: "benefit",
-    cardClass: "grid-cols-3",
+    para: "Make your patients seamlessly book medical appointments online with EaseCare’s doctor appointment software",
+    cardType: "practice",
+    // cardClass: "grid-cols-3",
     benefitData: [
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "teenyicons:appointments-outline",
-        heading: "Appointment Management",
-        para: "Making the process of scheduling appointments seamless and easy for patients",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "grommet-icons:user-expert",
-        heading: "Patient Management",
-        para: "Making patients believe that you have the perfect solution for their problems and managing them",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "ph:hospital",
-        heading: "Facility Management",
-        para: "A healthcare management solution manages all the facilities in a medical setting by managing data from various departments",
+        icon: "hugeicons:voice",
+        heading: "Automated IVR",
+        iconColor: "#8512E0",
+        description:
+          "Save more time with our automated IVR to receive voice information from your patients anytime without getting into the hustle of investing your time in talking with them",
       },
       {
         HeadingWidth: "max-width-full text-center",
         icon: "ri:team-line",
-        heading: "Staff Management",
-        para: "Maintaining the data of staff members for better transparency",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "hugeicons:medicine-01",
-        heading: "Supply Management",
-        para: "Tracking the availability of medications and other medical supplies so that they can be availed on time",
-      },
-      {
-        HeadingWidth: "max-width-full text-center",
-        icon: "ep:money",
-        heading: "Financial Management",
-        para: "Keeping track of finances and fueling the revenue with better strategies based on the insights of the digital medical records software",
-      },
-    ],
-  },
-];
-const BestHealthCare = [
-  {
-    maxWidth: "maxWidth-55r",
-    HeadingClass: "py-10",
-    HeadingFirst: "How to Choose the Best Health",
-    HeadingSec: "Care Management Software?",
-    cardType: "practice",
-    para: "Need hospital management software but wondering how to select the right software for you?  Below are some things to consider when you are going to choose the right healthcare management software",
-    benefitData: [
-      {
-        icon: "akar-icons:health",
-        iconColor: "#8512E0",
-        heading: "Integrated Physical, Behavioral, and Social Health",
-        description:
-          "When it comes to becoming the best healthcare provider for your patients, you need to understand that the term ‘health’ addresses complete spheres like physical, behavioral, and social health. Go for software that has these features",
-      },
-      {
-        icon: "material-symbols-light:inbox-customize-outline-sharp",
         iconColor: "#19BB7D",
-        heading: "Detailed Analytics and Patient Identification",
+        heading: "Staff/Doctors Easy Management",
         description:
-          "Data and analytics play an important role in effective decision-making and deriving results. Choose a good software for healthcare management that provides detailed insights into the condition of patients",
+          "Easily manage the information and current status of each member of your staff to make sure that services remain at their best",
       },
       {
-        icon: "hugeicons:service",
+        HeadingWidth: "max-width-full text-center",
+        icon: "oui:mobile",
         iconColor: "#3278B1",
-        heading: "Personalized Care",
+        heading: "Mobile App",
         description:
-          "From shopping to scheduling an appointment with the doctor, personalization and customization have become the first priority of people. So, to make sure that you retain your customers offering personalized care is essential",
+          "While going back to your website again and again might seem irritating to your patients, offer them personalized services through an app based on their preferences",
       },
       {
-        icon: "carbon:security",
-        iconColor: "#1AC55E",
-        heading: "Security",
+        HeadingWidth: "max-width-full text-center",
+        icon: "streamline:browser-website-1",
+        iconColor: "#08C7FB",
+        heading: "Manage Your Website",
         description:
-          "In this digital age, where there is unlimited data online, security is one thing that can not be neglected when it comes to choosing the best software for healthcare management for your clinic",
+          "Keep a sharp eye on your website and increase the traffic as well as focus on the conversion rate directly with the help of the software",
       },
     ],
   },
@@ -336,30 +312,35 @@ const DoctorAppoinment = () => {
         imageUrl={FeaturesPreviewImage}
       />
       <PatientManagmentBanner data={doctorAppBannerData} />
-      <BenefitPatients data={healthcareBenefits} />
+      <BenefitPatients data={OnlineDoctorAppoin} />
+      <FeaturesPatient data={FeatuesDoctorAppoin} />
       <div className="my-6">
         <ContactUsPatients
           image={featureImg}
-          content="Want to explore this further? EaseCare-Clarity is here to guide you anytime"
+          content="Explore the features of EaseCare Doctor Appointments online"
           btnText="Get a Free Demo"
           link={"book-a-demo"}
         />
       </div>
-      <FeaturesPatient data={FeatuesHealthCare} />
-      <VarientTypes TypesVarientData={keyAspectMadicalRecord} />
       <div
         style={{
-          backgroundColor: "#F2FEF8",
-          margin: "50px 0px 0px",
           paddingBottom: "70px",
         }}
       >
-        <BenefitPatients data={MedicalRecordScope} />
+        <BenefitPatients data={MedicalSechedulingBenefit} />
       </div>
-      <SelectRight data={BenefitOfEffectiveRecords} />
-      <BenefitPatients data={ModuleHosptalManage} />
+      <SelectRight data={AppoinmentManagementSoftWare} />
+      <div className="my-6">
+        <ContactUsPatients
+          image={cuateImg}
+          content="Discover how implementing EaseCare’s online doctor appointment system can help you manage your clinic"
+          btnText="Get a Free Demo"
+          link={"book-a-demo"}
+        />
+      </div>
+      <VarientTypes TypesVarientData={maximizeEfficiency} />
       <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 10px" }}>
-        <BenefitPatients data={BestHealthCare} />
+        <BenefitPatients data={whyEaseCareDoctorAppoinSoftware} />
       </div>
     </Layout>
   );

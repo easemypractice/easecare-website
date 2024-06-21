@@ -2,7 +2,7 @@
 export default {
   name: "homePage",
   type: "document",
-  title: "Home Page",
+  title: "Features",
   fields: [
     {
       name: "title",
@@ -13,10 +13,7 @@ export default {
       name: "heroComp",
       type: "array",
       title: "HeroComp",
-      of: [
-        // { type: "block" },
-        { type: "patientManagementBlock" }, // Ensure this is included
-      ],
+      of: [{ type: "heroSection" }],
     },
   ],
 };
