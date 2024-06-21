@@ -10,7 +10,7 @@ const PatientManagmentBanner = ({ data }) => {
         >
           <div className="container">
             <div className="banner-content-top">
-              <Heading size="4" className="text-white uppercase">
+              <Heading size="4" className="text-white text-center uppercase">
                 {item?.subHeading}
               </Heading>
               <Heading size="1" className={`${item.maxWidth} home-heading`}>

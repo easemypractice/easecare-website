@@ -6,8 +6,8 @@ import formSubmission from "./schemas/formSubmission";
 import parentCategory from "./schemas/parentCategory";
 import seo from "./schemas/seo";
 import subCategory from "./schemas/subCategory";
-import homePage from "./schemas/page";
-import patientManagementBlock from "./schemas/patientManagementBlock";
+import homePage from "./schemas/features/page";
+import heroSection from "./schemas/features/heroSection";
 export const schema = {
   types: [
     blog,
@@ -19,6 +19,6 @@ export const schema = {
     parentCategory,
     formSubmission,
     homePage,
-    patientManagementBlock,
+    heroSection,
   ],
 };

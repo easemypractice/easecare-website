@@ -34,7 +34,13 @@ export const FeaturesCard = ({ data }) => {
             className={`${styles.BenefitIcon} ${styles.FeaturesIcon}`}
             style={{ backgroundColor: `${item.IconbgColor}` }}
           >
-            <Icon icon={item.icon} color={"#8512E0"} width="39" height="39" />
+            <Icon
+              icon={item.icon}
+              color={"#8512E0"}
+              width={item.IconWidth || "39"}
+              height={item.IconHeight || "39"}
+              style={{ strokeWidth: item.strokeWidth || "1" }}
+            />
           </div>
           <div className={`flex gap-3 flex-col justify-flex-start flex-1`}>
             <h4 className={`${item?.headingClass}`}>{item.heading}</h4>

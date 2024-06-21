@@ -49,6 +49,7 @@ const patientBenefits = [
       {
         icon: "icon-park-outline:bill",
         heading: "Easy Billing",
+        strockWidth: "1",
         desc: [
           {
             name: "Systematize all your financial processes from keeping the records of payments to bill creation. ",
@@ -61,6 +62,9 @@ const patientBenefits = [
       {
         icon: "material-symbols-light:patient-list-outline",
         heading: "Patient Records",
+        IconWidth: "45",
+        IconHeight: "45",
+        strockWidth: "5",
         desc: [
           {
             name: "Have a pre-existing record of the situation of your patients from health conditions to medications to increase the succession rate during the treatment. ",

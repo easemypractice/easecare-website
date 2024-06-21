@@ -31,8 +31,9 @@ const BenefitCard = ({ data, cardType }) => {
                         ? item.iconColor
                         : undefined
                 }
-                width="39"
-                height="39"
+                width={item.IconHeight || "39"}
+                height={item.IconWidth || "39"}
+                style={{ strokeWidth: item.strockWidth || 1 }}
               />
             </div>
             <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>

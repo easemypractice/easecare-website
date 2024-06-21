@@ -19,8 +19,8 @@ const CloudBased = () => {
       </p>
       {/* <div className="CloudCardGrp"> */}
       <div className="CardGrp">
-        <div className="CloudCard">
-          <Link href={"/patient-management"}>
+        <Link href={"/patient-management"}>
+          <div className="CloudCard">
             <p>Patient Management System</p>
             <Icon
               className="CardIcon"
@@ -28,11 +28,11 @@ const CloudBased = () => {
               width={40}
               height={20}
             />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className="CloudCardbg">
-          <div className="CloudCard2">
-            <Link href={"/practice-management"}>
+          <Link href={"/practice-management"}>
+            <div className="CloudCard2">
               <p>Practice Management Software</p>
               <Icon
                 icon={"mdi:arrow-top-right"}
@@ -41,11 +41,11 @@ const CloudBased = () => {
                 height={20}
                 className="CardIcon"
               />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
-        <div className="CloudCard">
-          <Link href={"/clinic-management"}>
+        <Link href={"/clinic-management"}>
+          <div className="CloudCard">
             <p>Clinic Management Software</p>
             <Icon
               className="CardIcon"
@@ -53,11 +53,11 @@ const CloudBased = () => {
               width={40}
               height={20}
             />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className="CloudCardbg">
-          <div className="CloudCard2">
-            <Link href={"/healthcare-management"}>
+          <Link href={"/healthcare-management"}>
+            <div className="CloudCard2">
               <p>Healthcare Management Software</p>
               <Icon
                 icon={"mdi:arrow-top-right"}
@@ -66,20 +66,20 @@ const CloudBased = () => {
                 height={20}
                 className="CardIcon"
               />
-            </Link>
+            </div>
+          </Link>
+        </div>
+        <Link href={"/doctor-appoinment-system"}>
+          <div className="CloudCard">
+            <p>Doctor Appointment System</p>
+            <Icon
+              className="CardIcon"
+              icon={"mdi:arrow-top-right"}
+              width={40}
+              height={20}
+            />
           </div>
-        </div>
-        <div className="CloudCard">
-          {/* <Link href={"/doctor-appoinment-system"}> */}
-          <p>Doctor Appointment System</p>
-          <Icon
-            className="CardIcon"
-            icon={"mdi:arrow-top-right"}
-            width={40}
-            height={20}
-          />
-          {/* </Link> */}
-        </div>
+        </Link>
         <div className="CloudCardbg">
           <div className="CloudCard2">
             <p>Medical Billing Software</p>

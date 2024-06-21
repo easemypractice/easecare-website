@@ -39,7 +39,7 @@ const FAQs = () => {
   return (
     <div className={`${styles.FAQSection} container`}>
       <div className={`${styles.Heading} text-start ${styles.headingPadding}`}>
-        FAQ&rsquo;s:
+        FAQ:
       </div>
       <AccordionComp />
     </div>
