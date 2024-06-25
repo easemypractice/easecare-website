@@ -339,7 +339,7 @@ const DoctorAppoinment = () => {
         />
       </div>
       <VarientTypes TypesVarientData={maximizeEfficiency} />
-      <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 10px" }}>
+      <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
         <BenefitPatients data={whyEaseCareDoctorAppoinSoftware} />
       </div>
     </Layout>
