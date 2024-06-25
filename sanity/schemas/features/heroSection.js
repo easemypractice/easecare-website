@@ -1,8 +1,8 @@
 // sanity/schemas/patientManagementBlock.js
 export default {
-  name: "patientManagementBlock",
+  name: "heroSection",
   type: "object",
-  title: "Patient Management Software System Block",
+  title: "Hero Section",
   fields: [
     {
       name: "subtitle",
@@ -12,9 +12,17 @@ export default {
     },
     {
       name: "title",
-      type: "string",
+      type: "array",
       title: "Title",
       description: "Main title of the block",
+      of: [
+        {
+          type: "block",
+          marks: {
+            annotations: [{ name: "color", title: "Color", type: "color" }],
+          },
+        },
+      ],
     },
     {
       name: "description",

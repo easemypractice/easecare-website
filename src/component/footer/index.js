@@ -85,22 +85,34 @@ const Footer = () => {
             <Heading as="h3">Features</Heading>
             <ul>
               <li>
-                <Link href="#">Patient Management System</Link>
+                <Link href="/patient-management">
+                  Patient Management System
+                </Link>
               </li>
               <li>
-                <Link href="#">Practice Management Software</Link>
+                <Link href="/practice-management">
+                  Practice Management Software
+                </Link>
               </li>
               <li>
-                <Link href="#">Clinic Management Software</Link>
+                <Link href="/clinic-management">
+                  Clinic Management Software
+                </Link>
               </li>
               <li>
-                <Link href="#">Healthcare Management Software</Link>
+                <Link href="/healthcare-management">
+                  Healthcare Management Software
+                </Link>
               </li>
               <li>
-                <Link href="#">Doctor Appointment System</Link>
+                <Link href="/doctor-appoinment-system">
+                  Doctor Appointment System
+                </Link>
               </li>
               <li>
-                <Link href="#">Medical Billing Software</Link>
+                <Link href="/medical-billing-software">
+                  Medical Billing Software
+                </Link>
               </li>
               <li>
                 <Link href="#">Electronic Health Records Software</Link>

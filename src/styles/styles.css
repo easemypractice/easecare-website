@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
 }
 
+
 .rounded-full{
   border-radius: 100%;
 }
@@ -41,6 +42,10 @@ body {
 }
 .maxWidth-55r{
   max-width: 55rem !important;
+}
+
+.max-width-80{
+  max-width: 80% !important;
 }
 
 .heading-24 {
@@ -812,6 +817,7 @@ header nav {
 
 .footer {
   padding: 25px 0px;
+  border-top: 1px solid rgba(128, 128, 128, 0.163);
 }
 
 .footer ul li {
