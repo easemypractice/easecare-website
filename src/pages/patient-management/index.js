@@ -22,7 +22,7 @@ const patientBannerData = [
     bgImg: bgImg,
     subHeading: "Patient Management System",
     HeadingFirst: "Patient Management",
-    HeadingSecound: "Software System?",
+    HeadingSecound: "Software System",
     description:
       "As the name suggests, Patient Management Software helps you manage all the things related to your patients for example - scheduling appointments, billing, evaluation, treatment, and discharge. But managing your patients is much more than this. A patient management software system helps you streamline your desk and administrative tasks along with providing you scalable and comprehensive reports on your medical operations which result in better efficiency, productivity, and customer satisfaction.",
   },

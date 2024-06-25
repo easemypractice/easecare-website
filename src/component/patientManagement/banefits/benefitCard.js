@@ -33,7 +33,7 @@ const BenefitCard = ({ data, cardType }) => {
                 }
                 width={item.IconHeight || "39"}
                 height={item.IconWidth || "39"}
-                style={{ strokeWidth: item.strockWidth || 1 }}
+                style={{ strokeWidth: item.strockWidth || "1" }}
               />
             </div>
             <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>
