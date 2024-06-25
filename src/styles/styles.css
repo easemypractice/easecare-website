@@ -817,6 +817,7 @@ header nav {
 
 .footer {
   padding: 25px 0px;
+  border-top: 1px solid rgba(128, 128, 128, 0.163);
 }
 
 .footer ul li {

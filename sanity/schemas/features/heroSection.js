@@ -12,9 +12,17 @@ export default {
     },
     {
       name: "title",
-      type: "string",
+      type: "array",
       title: "Title",
       description: "Main title of the block",
+      of: [
+        {
+          type: "block",
+          marks: {
+            annotations: [{ name: "color", title: "Color", type: "color" }],
+          },
+        },
+      ],
     },
     {
       name: "description",

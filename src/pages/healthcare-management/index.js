@@ -358,7 +358,7 @@ const HealthCareManagement = () => {
       </div>
       <SelectRight data={BenefitOfEffectiveRecords} />
       <BenefitPatients data={ModuleHosptalManage} />
-      <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 10px" }}>
+      <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
         <BenefitPatients data={BestHealthCare} />
       </div>
     </Layout>
