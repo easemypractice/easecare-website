@@ -340,7 +340,7 @@ const HealthCareManagement = () => {
       <div className="my-6">
         <ContactUsPatients
           image={featureImg}
-          content="Want to explore this further? EaseCare-Clarity is here to guide you anytime"
+          content="Want to explore this further? EaseCare-Clarity is here to guide you anytime"
           btnText="Get a Free Demo"
           link={"book-a-demo"}
         />

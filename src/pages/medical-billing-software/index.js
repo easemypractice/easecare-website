@@ -207,15 +207,18 @@ const whyChooseSoftware = [
     benefitData: [
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "hugeicons:voice",
+        icon: "marketeq:secure",
         heading: "Modern, Secure, Cloud-Based EMR",
         iconColor: "#306CFE",
+        IconWidth: "45",
+        IconHeight: "45",
+        strockWidth: "4",
         description:
           "EaseCare-Clarity focuses on efficiency and seamless integration of resources and thus, we offer a modern, secure, and cloud-based EMR system to ensure high performance and become the best billing services company",
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "ri:team-line",
+        icon: "icon-park-outline:bill",
         iconColor: "#19BB7D",
         heading: "Integrated Billing Solutions",
         description:
@@ -223,16 +226,20 @@ const whyChooseSoftware = [
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "oui:mobile",
+        icon: "material-symbols-light:analytics-outline",
         iconColor: "#3278B1",
+        IconWidth: "45",
+        IconHeight: "45",
         heading: "Comprehensive Analytics Tools",
         description:
           "We have the most advanced medical invoicing software which provides extensive insights and practice",
       },
       {
         HeadingWidth: "max-width-full text-center",
-        icon: "oui:mobile",
+        icon: "clarity:mobile-line",
         iconColor: "#08C7FB",
+        IconWidth: "45",
+        IconHeight: "45",
         heading: "Mobile Accessibility",
         description:
           "Stay connected with your practice on the go with the Clarity Mobile App, which makes you easily access all the patient records and appointment scheduling on your mobile device with all the real-time data",
