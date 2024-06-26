@@ -209,9 +209,9 @@ const PracticeManagement = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Practice management"}
+        title={"Clarity - Practice management software "}
         description={
-          "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+          "From scheduling appointments to billing, we understand a clinic's hustle. Revolutionize the business of your clinic with our latest and advanced practice manage."
         }
         imageUrl={FeaturesPreviewImage}
       />

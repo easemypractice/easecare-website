@@ -287,9 +287,9 @@ const MedicalBilling = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Medical billing system"}
+        title={"Clarity - Medical billing software"}
         description={
-          "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+          "Manage complex billing seamlessly with our medical billing software. Focus on patient care, not paperwork. Simplify your process today."
         }
         imageUrl={FeaturesPreviewImage}
       />

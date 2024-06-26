@@ -329,9 +329,9 @@ const HealthCareManagement = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Healthcare management"}
+        title={"Clarity - Software for healthcare management"}
         description={
-          "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+          "Want to take your healthcare organization to the next level by improving the quality of your services? Our software for healthcare management is all you need."
         }
         imageUrl={FeaturesPreviewImage}
       />
