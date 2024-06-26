@@ -5,14 +5,14 @@ const PatientManagmentBanner = ({ data }) => {
       {data.map((item, index) => (
         <div
           key={index}
-          className="patient-banner"
+          className={`patient-banner ${item.bannerStyle}`}
           style={{ backgroundImage: `url(${item.bgImg.src})` }}
         >
           <div className="container">
             <div className="banner-content-top">
-              <Heading size="4" className="text-white text-center uppercase">
+              {/* <Heading size="4" className="text-white text-center uppercase">
                 {item?.subHeading}
-              </Heading>
+              </Heading> */}
               <Heading size="1" className={`${item.maxWidth} home-heading`}>
                 <span className="heading-white">{item?.HeadingFirst}</span>{" "}
                 <span className="heading-white">{item?.HeadingSecound}</span>

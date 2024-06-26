@@ -4,7 +4,6 @@ import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 import bgImg from "@/images/revenueCycleBanner.png";
 import FeaturesPreviewImage from "@/images/features-preview.jpg";
-import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
 import BenefitPatients from "@/component/patientManagement/banefits";
 import FeaturesPatient from "@/component/patientManagement/featurePatients";
@@ -288,7 +287,7 @@ const MedicalBilling = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Doctor appoinment system"}
+        title={"Clarity - Medical billing system"}
         description={
           "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
         }
