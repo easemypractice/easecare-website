@@ -109,6 +109,13 @@
     line-height: 28px;
     color: #5D6476;
 }
+
+.BenefitCard ul li{
+    list-style: none;
+    display: flex;
+    align-items: start;
+    gap: 12px;
+}
 .CardGrp{
     display: grid;
     grid-template-columns: auto auto;
@@ -168,6 +175,20 @@
     position: absolute;
     bottom: 0px;
     right: 0px;
+}
+
+.diffSec{
+    align-items: flex-start;
+    border-radius: 12px;
+}
+.diffSec h2{
+    font-size: 40px;
+}
+
+.diffSec ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media (min-width: 600px) and (max-width: 999px) {

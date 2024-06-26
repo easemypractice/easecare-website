@@ -42,7 +42,15 @@ const BenefitCard = ({ data, cardType }) => {
             <>
               <ul>
                 {item?.desc?.map((item) => (
-                  <li key={item?.name}>{item?.name}</li>
+                  <li key={item?.name}>
+                    <Icon
+                      icon="ic:round-check-circle"
+                      width={25}
+                      height={25}
+                      color="#1AC55E"
+                    ></Icon>
+                    <span className="flex-1">{item?.name}</span>
+                  </li>
                 ))}
               </ul>
               <p className="text-center">{item?.para}</p>

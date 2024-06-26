@@ -95,25 +95,31 @@ const CloudBased = () => {
           </Link>
         </div>
         <div className="CloudCard">
-          <p>Electronic Health Records Software</p>
-          <Icon
-            className="CardIcon"
-            icon={"mdi:arrow-top-right"}
-            width={40}
-            height={20}
-          />
+          <Link href={"/ehr-emr-software"}>
+            <div>
+              <p>Electronic Health Records Software</p>
+              <Icon
+                className="CardIcon"
+                icon={"mdi:arrow-top-right"}
+                width={40}
+                height={20}
+              />
+            </div>
+          </Link>
         </div>
         <div className="CloudCardbg">
-          <div className="CloudCard2">
-            <p>Software For Multiple Clinic Chain</p>
-            <Icon
-              icon={"mdi:arrow-top-right"}
-              color={"#8512E0"}
-              width={40}
-              height={20}
-              className="CardIcon"
-            />
-          </div>
+          <Link href={"/software-for-multiple-clinic-chain"}>
+            <div className="CloudCard2">
+              <p>Software For Multiple Clinic Chain</p>
+              <Icon
+                icon={"mdi:arrow-top-right"}
+                color={"#8512E0"}
+                width={40}
+                height={20}
+                className="CardIcon"
+              />
+            </div>
+          </Link>
         </div>
         <div className="CloudCard">
           <p>Cloud Based Software</p>
@@ -138,7 +144,7 @@ const CloudBased = () => {
         </div>
         {/* </div>
         <div className="CardGrp"> */}
-        <div className="CloudCard">
+        {/* <div className="CloudCard">
           <p>Inventory Management Software</p>
           <Icon
             className="CardIcon"
@@ -146,7 +152,7 @@ const CloudBased = () => {
             width={40}
             height={20}
           />
-        </div>
+        </div> */}
         <div className="CloudCardbg">
           <div className="CloudCard2">
             <p>Offline software for doctors & Clinic</p>
@@ -170,7 +176,7 @@ const CloudBased = () => {
         </div>
         <div className="CloudCardbg">
           <div className="CloudCard2">
-            <p>Offline software for doctors & Clinic</p>
+            <p>Telemedicine App For Clinics</p>
             <Icon
               icon={"mdi:arrow-top-right"}
               color={"#8512E0"}

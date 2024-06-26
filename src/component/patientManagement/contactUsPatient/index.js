@@ -10,7 +10,7 @@ const ContactUsPatients = ({ image, content, btnText, link }) => {
         <Image src={image} alt="" />
         <div className={styles.right}>
           <h3>{content}</h3>
-          <Link href={link}>
+          <Link href={"/book-a-demo"}>
             <button className="purple-btn w-full">{btnText}</button>
           </Link>
         </div>
