@@ -31,7 +31,10 @@ import contactImg from "@/images/contactPanaImg.svg";
 const VarientTypes = ({ TypesVarientData }) => {
   return (
     <>
-      <div className={`container ${styles.VarComp}`}>
+      <div
+        className={`container`}
+        // style={{ backgroundColor: TypesVarientData?.containerClass }}
+      >
         <div className="flex justify-center flex-col items-center gap-20">
           <div
             className={`${styles.Heading} ${styles.maxheadingWid} ${TypesVarientData?.HeadingClass}`}

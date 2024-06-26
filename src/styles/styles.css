@@ -16,6 +16,9 @@ body {
   border-radius: 100%;
 }
 
+.read-or-hide{
+  cursor: pointer;
+}
 .flex-col{
   display: flex;
   flex-direction: column;
@@ -134,8 +137,15 @@ ul.navLinks li:hover {
   justify-content: flex-end;
 }
 
+.align-center {
+  align-content: center !important;
+}
+
 .flex-align-end {
   align-items: flex-end;
+}
+.flex-align-start {
+  align-items: flex-start !important;
 }
 .items-center{
   align-items: center;
@@ -2949,6 +2959,7 @@ li.footerCon{
   display: flex;
   background-color: white;
   max-width: 1142px;
+  min-height: 440px;
 }
 
 .Clearity_Features ul{

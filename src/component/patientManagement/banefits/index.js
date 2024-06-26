@@ -11,7 +11,7 @@ const BenefitPatients = ({ data }) => {
             <div
               className={`${styles.Heading} ${item?.maxWidth} ${item?.HeadingClass}`}
             >
-              {item.HeadingFirst}{" "}
+              <span>{item.HeadingFirst}</span>{" "}
               <span className={styles.GradHead}>{item?.HeadingSec}</span>
             </div>
             <p className={`${styles.Para} ${item.paraClass}`}>{item?.para}</p>
