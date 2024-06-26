@@ -690,6 +690,9 @@
     width: 110px;
     z-index: 10;
   } 
+  .Clearity_Features{
+    min-height: 0px;
+  }
   .Clearity_Features .right{
     display: none;
   }
@@ -719,6 +722,10 @@
 }
 .cloudBased{
   padding: 13px 0px;
+}
+.mobileCol{
+  flex-direction: column;
+  padding: 0px;
 }
 
 }
@@ -1010,6 +1017,9 @@
 
   }
 
+  .mobileCol{
+    flex-direction: column;
+  }
   .tabsTrigger{
     width: 100% !important;
   }

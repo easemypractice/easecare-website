@@ -131,16 +131,18 @@ const CloudBased = () => {
           />
         </div>
         <div className="CloudCardbg">
-          <div className="CloudCard2">
-            <p>ePrescription Software</p>
-            <Icon
-              icon={"mdi:arrow-top-right"}
-              color={"#8512E0"}
-              width={40}
-              height={20}
-              className="CardIcon"
-            />
-          </div>
+          <Link href={"/prescription-software-for-doctors"}>
+            <div className="CloudCard2">
+              <p>ePrescription Software</p>
+              <Icon
+                icon={"mdi:arrow-top-right"}
+                color={"#8512E0"}
+                width={40}
+                height={20}
+                className="CardIcon"
+              />
+            </div>
+          </Link>
         </div>
         {/* </div>
         <div className="CardGrp"> */}

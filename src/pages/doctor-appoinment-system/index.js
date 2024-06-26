@@ -305,9 +305,9 @@ const DoctorAppoinment = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Doctor appoinment system"}
+        title={"Clarity - Effortless Booking with Doctor Appointment Software"}
         description={
-          "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+          "Automate your clinic's operations with our doctor appointment software, an all-in-one solution for efficiently handling scheduling, patient registration, billing."
         }
         imageUrl={FeaturesPreviewImage}
       />

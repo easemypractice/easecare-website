@@ -1794,6 +1794,19 @@ header nav {
   border: 2px solid var(--Clarity-Colors-Caper, #cbe7a3);
 }
 
+.white-btn{
+  background: #fff;
+  color: #8512e0;
+  padding: 10px 24.08px 10px 25px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  border: 1px solid #D55DFF;
+  width: max-content;
+}
+
 .plan-card-highlight .purple-btn {
   padding: 10px 24.08px 10px 25px;
   border-radius: 6px;

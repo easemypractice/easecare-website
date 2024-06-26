@@ -115,7 +115,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#">Electronic Health Records Software</Link>
+                <Link href="/ehr-emr-software">
+                  Electronic Health Records Software
+                </Link>
               </li>
             </ul>
           </Box>
@@ -123,13 +125,17 @@ const Footer = () => {
             <Heading as="h3">Products</Heading>
             <ul>
               <li>
-                <Link href="#">Software For Multiple Clinic Chain</Link>
+                <Link href="/software-for-multiple-clinic-chain">
+                  Software For Multiple Clinic Chain
+                </Link>
               </li>
               <li>
                 <Link href="#">Cloud Based Software</Link>
               </li>
               <li>
-                <Link href="#">ePrescription Software</Link>
+                <Link href="/prescription-software-for-doctors">
+                  ePrescription Software
+                </Link>
               </li>
               <li>
                 <Link href="#">Inventory Management Software</Link>
