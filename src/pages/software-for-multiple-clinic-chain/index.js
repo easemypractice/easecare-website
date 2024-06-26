@@ -215,9 +215,11 @@ const SoftwareForMultiChain = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Software For Multiple Clinic Chain"}
+        title={
+          "Clarity - Optimize Multi-Chain Clinic Management with Our Advanced Software Solution"
+        }
         description={
-          "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+          "We managing your multiple clinic chains and we are here to help with the best solution. Keep an eye on each of your clinic chains with our software multiple clinic chains. "
         }
         imageUrl={FeaturesPreviewImage}
       />
@@ -246,8 +248,11 @@ const SoftwareForMultiChain = () => {
         />
       </div>
       <SelectRight data={centralizedStaffManagement} />
-      <div style={{ backgroundColor: "#FCFBF6", padding: "50px" }}>
-        <div className="flex container gap-20">
+      <div
+        style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
+        className="mobileCol"
+      >
+        <div className="flex container mobileCol gap-20">
           <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
         </div>
       </div>

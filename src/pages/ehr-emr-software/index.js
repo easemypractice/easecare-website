@@ -352,9 +352,9 @@ const EHREMR = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - EHR EMR Software"}
+        title={"Clarity - Electronic health records software"}
         description={
-          "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+          "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
         }
         imageUrl={FeaturesPreviewImage}
       />

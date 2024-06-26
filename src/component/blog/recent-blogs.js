@@ -32,13 +32,15 @@ const RecentBlogs = ({ data }) => {
                   onClick={() => handleBlogRoute(item)}
                 >
                   <Text as="h2">{item?.title}</Text>
-                  <Image
-                    src={urlFor(item?.titleImage).url()}
-                    alt="blog-post-image"
-                    width={557}
-                    height={280}
-                    className="rounded-lg border"
-                  />
+                  {item.titleImage && (
+                    <Image
+                      src={urlFor(item?.titleImage)?.url()}
+                      alt="blog-post-image"
+                      width={557}
+                      height={280}
+                      className="rounded-lg border"
+                    />
+                  )}
                   <Text as="h5">{item?.smallDescription}</Text>
                   <Text as="span">{formatDate(item?._createdAt)}</Text>
                 </Flex>

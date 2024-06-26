@@ -15,7 +15,11 @@ const HeroComp = ({ section }) => {
                 {section?.subtitle}
               </Heading> */}
               {section.title.map((block) => (
-                <Heading size="1" className={`home-heading`} key={block._key}>
+                <Heading
+                  size="1"
+                  className={`home-heading  max-width-full`}
+                  key={block._key}
+                >
                   {block.children.map((span) => (
                     <span key={span._key} className="heading-white">
                       {span?.text}
