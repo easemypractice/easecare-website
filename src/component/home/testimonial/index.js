@@ -6,7 +6,21 @@ import TestiDemoImage from "@/images/testi-demo.svg";
 import PhysiotherapyImage from "@/images/dra.png";
 import PediatricianImage from "@/images/drb.png";
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const Testimonail = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    // fade: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
+    waitForAnimate: false,
+  };
   return (
     <Box className="testimonail">
       <Box className="container gap-32 flex-col">
@@ -17,90 +31,187 @@ const Testimonail = () => {
             <Heading as="h2">Clarity</Heading>
           </div>
         </Box>
-        {/* <Box className="tab-box">
-          <Tabs.Root defaultValue="Orthopedics">
-            <TabsList>
-              <TabsTrigger value="Orthopedics">Orthopedics</TabsTrigger>
-              <TabsTrigger value="Physician">Physician</TabsTrigger>
-              <TabsTrigger value="Pediatrician">Pediatrician</TabsTrigger>
-            </TabsList>
-
-            <Box px="4" pt="3" pb="2" className="tabbox-content">
-              <TabsContent value="Orthopedics">
-                <Text as="p" className="testi-description">
+        <Box className="CardsGrp webTestimonial">
+          <TestimonialCard />
+        </Box>
+        <div className="mobileTestimonial">
+          <Slider {...settings}>
+            <div className="doctor-review">
+              <div className="flex-col gap-20">
+                <p className="testi-review">
                   Tops all other appointment scheduling tools. Simple and sleek
-                  without any clutter
-                </Text>
-                <Box className="testi-info">
-                  <Image src={TestiDemoImage} alt={TestiDemoImage} />
+                  without any clutter.
+                </p>
 
-                  <Text as={"p"} className="testi-name">
-                    Dr Sandeep Dathik
-                  </Text>
-                  <Text as={"p"} className="testi-designation">
-                    Orthopedic Surgeon
-                  </Text>
-                </Box>
-              </TabsContent>
-              <TabsContent value="Physician" className="testi-list">
-                <Text as="p" className="testi-description">
-                  We&apos;ve been using Easemypractice for our clinic&apos;s
-                  Electronic Health Records, and it has truly streamlined our
-                  workflow. The user-friendly interface makes it easy for our
-                  doctors to access and update patient records efficiently.
-                </Text>
-                <Box className="testi-info">
-                  <Image src={PhysiotherapyImage} alt={PhysiotherapyImage} />
+                <div className="flex flex-align-end gap-6">
+                  <Image
+                    src={TestiDemoImage}
+                    width={50}
+                    height={50}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <div className="flex ">
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                    </div>
+                    <Text as={"p"} className="testi-name">
+                      Dr. Sandeep Dathik
+                    </Text>
+                    <Text as={"p"} className="testi-designation">
+                      Orthopedic Surgeon
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="doctor-review">
+              <div className="flex-col gap-20">
+                <p className="testi-review">
+                  We've been using Easemypractice for our clinic's Electronic
+                  Health Records, and it has truly streamlined our workflow. The
+                  user-friendly interface makes it easy for our doctors to
+                  access and update patient records efficiently.
+                </p>
 
-                  <Text as={"p"} className="testi-name">
-                    Dr. Vipin Mehra
-                  </Text>
-                  <Text as={"p"} className="testi-designation">
-                    M.D. Physician
-                  </Text>
-                </Box>
-              </TabsContent>
-              <TabsContent value="Pediatrician">
-                <Text as="p" className="testi-description">
+                <div className="flex flex-align-end gap-6">
+                  <Image
+                    src={PhysiotherapyImage}
+                    width={50}
+                    height={50}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <div className="flex ">
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                    </div>
+                    <Text as={"p"} className="testi-name">
+                      Dr. Vipin Mehra
+                    </Text>
+                    <Text as={"p"} className="testi-designation">
+                      M.D. Physician
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="doctor-review">
+              <div className="flex-col gap-20">
+                <p className="testi-review">
                   Clarity has truly streamlined my clinic management workflow.
                   Its intuitive interface and robust features make it a
                   must-have tool for anyone looking to stay organized and
                   efficient.
-                </Text>
-                <Box className="testi-info">
-                  <Image src={PediatricianImage} alt={PediatricianImage} />
-                  <Text as={"p"} className="testi-name">
-                    Dr. Shantanu Patil
-                  </Text>
-                  <Text as={"p"} className="testi-designation">
-                    Pediatrician
-                  </Text>
-                </Box>
-              </TabsContent>
-              <TabsContent value="Pediatrician">
-                <Text as="p" className="testi-description">
-                  This is the best Electronic Medical Record(EMR) software I
-                  have used. It feels like it was built for doctors, by doctors.
-                  The user experience is straightforward, and every interaction
-                  is so fast. They prioritize common workflows and have removed
-                  all the bloat you usually find in EMR software.
-                </Text>
-                <Box className="testi-info">
-                  <Image src={TestiDemoImage} alt={TestiDemoImage} />
-                  <Text as={"p"} className="testi-name">
-                    Dr. Tejaswini Nayak
-                  </Text>
-                  <Text as={"p"} className="testi-designation">
-                    Pediatrician
-                  </Text>
-                </Box>
-              </TabsContent>
-            </Box>
-          </Tabs.Root>
-        </Box> */}
-        <Box className="CardsGrp">
-          <TestimonialCard />
-        </Box>
+                </p>
+                <div className="flex flex-align-end gap-6">
+                  <Image
+                    src={PediatricianImage}
+                    width={50}
+                    height={50}
+                    className="rounded-full"
+                  />
+                  <div>
+                    <div className="flex ">
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                      <Icon
+                        icon="ic:sharp-star"
+                        width="20"
+                        height="19"
+                        color="#FF630C"
+                      ></Icon>
+                    </div>
+                    <Text as={"p"} className="testi-name">
+                      Dr. Shantanu Patil
+                    </Text>
+                    <Text as={"p"} className="testi-designation">
+                      Pediatrician
+                    </Text>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Slider>
+        </div>
       </Box>
     </Box>
   );

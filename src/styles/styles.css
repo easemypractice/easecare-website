@@ -380,6 +380,10 @@ header nav {
   justify-content: space-between;
 }
 
+.mobileTestimonial{
+  display: none;
+}
+
 .header-right {
   display: flex;
   align-items: center;
@@ -3109,4 +3113,8 @@ li.footerCon{
   display: flex;
   align-content: flex-end;
   flex-wrap: wrap;
+}
+
+.mobileTestimonial .doctor-review{
+  min-height: 410px !important;
 }
