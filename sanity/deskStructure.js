@@ -8,6 +8,5 @@ const deskStructure = () =>
         .title("Form Submissions")
         .schemaType("formSubmission")
         .child(S.documentTypeList("formSubmission").title("Form Submissions")),
-      // Add other document types here as needed
     ]);
 export default deskStructure;

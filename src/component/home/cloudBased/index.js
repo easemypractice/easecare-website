@@ -121,15 +121,17 @@ const CloudBased = () => {
             </div>
           </Link>
         </div>
-        <div className="CloudCard">
-          <p>Cloud Based Software</p>
-          <Icon
-            className="CardIcon"
-            icon={"mdi:arrow-top-right"}
-            width={40}
-            height={20}
-          />
-        </div>
+        <Link href={"/patient-appointment-scheduling-software"}>
+          <div className="CloudCard">
+            <p>Appoinment Scheduling Software</p>
+            <Icon
+              className="CardIcon"
+              icon={"mdi:arrow-top-right"}
+              width={40}
+              height={20}
+            />
+          </div>
+        </Link>
         <div className="CloudCardbg">
           <Link href={"/prescription-software-for-doctors"}>
             <div className="CloudCard2">
