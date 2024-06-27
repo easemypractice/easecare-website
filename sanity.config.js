@@ -5,7 +5,6 @@
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
-
 import { schema } from "./sanity/schema";
 import { colorInput } from "@sanity/color-input";
 import { iconify } from "sanity-plugin-iconify";
