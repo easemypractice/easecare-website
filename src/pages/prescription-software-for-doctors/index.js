@@ -366,17 +366,15 @@ const PrescriptionSoftware = () => {
       <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
         <VarientTypes TypesVarientData={HowEnhancePatientSafty} />
       </div>
+      <ContactUsPatients
+        image={cuateImg}
+        content="Enhanced Accuracy, Efficiency & Value"
+        btnText="Contact us"
+        purpleCard="true"
+        description="Electronic prescription software has the potential to transform the workflow of your clinic while it is known for increasing the accuracy, efficiency, and value. As the prescription software is computerized, it is not only known for its accuracy. More than this, it can integrate thousands of tasks and manage patient prescriptions for which your staff would require hours in a single day"
+      />
       <div style={{ backgroundColor: "#FCFBF6" }}>
         <BenefitPatients data={offerAdditionalSolution} />
-      </div>
-      <div className="my-6">
-        <ContactUsPatients
-          image={cuateImg}
-          content="Enhanced Accuracy, Efficiency & Value"
-          btnText="Contact us"
-          purpleCard="true"
-          description="Electronic prescription software has the potential to transform the workflow of your clinic while it is known for increasing the accuracy, efficiency, and value. As the prescription software is computerized, it is not only known for its accuracy. More than this, it can integrate thousands of tasks and manage patient prescriptions for which your staff would require hours in a single day"
-        />
       </div>
     </Layout>
   );

@@ -690,6 +690,9 @@
     width: 110px;
     z-index: 10;
   } 
+  .mobileGrid{
+    grid-template-columns: auto !important;
+  }
   .Clearity_Features{
     min-height: 0px;
   }
