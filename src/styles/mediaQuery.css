@@ -671,11 +671,29 @@
     align-items: center;
     gap: 5px;
   }
-  .downloadEaseCare h3,  .downloadEaseCare p{
+  .downloadEaseCare div{
+    gap: 4px;
+  } 
+  .downloadEaseCare h3{
+    font-size: 20px !important;
+    line-height: 26px;
+    padding: 0px 2px;
+  }
+  .downloadEaseCare p{
+    font-size: 12px !important;
+    line-height: 25px;
+  }
+  .downloadEaseCare h3, .downloadEaseCare p,.integration-mobile-view p,.integration-mobile-view h2{
    text-align: center;
   }
+  .integration-mobile-view a{
+    display: none;
+  }
+.integration-inner>a{
+    display: block;
+  }
   .bgDownload{
-    z-index: 0;
+    display: none;
   }
   .easeCareBackGround {
     top: -150px;
@@ -687,7 +705,7 @@
     justify-content: space-around;
   }
   .downloadLink img{
-    width: 110px;
+    width: 135px !important;
     z-index: 10;
   } 
   .mobileGrid{
