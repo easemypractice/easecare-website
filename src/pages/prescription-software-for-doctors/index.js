@@ -2,7 +2,7 @@ import { Layout } from "@/app/layout";
 import React from "react";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
-import bgImg from "@/images/softwareMultiBanner.png";
+import bgImg from "@/images/ePrescription.png";
 import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";

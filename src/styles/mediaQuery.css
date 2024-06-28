@@ -730,6 +730,14 @@
   flex-direction: column;
   padding: 0px;
 }
+.mobileTestimonial{
+  display: block;
+}
+
+.webTestimonial{
+  display: none;
+}
+
 
 }
 
@@ -1025,6 +1033,15 @@
   }
   .tabsTrigger{
     width: 100% !important;
+  }
+  .mobileTestimonial{
+    display: block;
+  }
+  .webTestimonial{
+    display: none;
+  }
+  .mobileTestimonial .doctor-review{
+    min-height: 310px !important;
   }
 }
 
