@@ -3118,3 +3118,7 @@ li.footerCon{
 .mobileTestimonial .doctor-review{
   min-height: 410px !important;
 }
+
+.integration-inner>a{
+  display: none;
+}

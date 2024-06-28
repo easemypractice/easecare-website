@@ -14,7 +14,7 @@ const IntegrationsMigrations = () => {
     <div className="integration-migration">
       <div className="container">
         <Grid columns="2" width="auto" className="integration-inner">
-          <Box className=" ">
+          <Box className="integration-mobile-view">
             <Text as="p" className="headingup-16">
               Integrations & Migrations
             </Text>
@@ -65,6 +65,14 @@ const IntegrationsMigrations = () => {
               </Box>
             </Box>
           </Box>
+          <Link
+            // target="_blank"
+            // href="https://docs.google.com/forms/d/1LailTDqPH259y1i8_d5oM35VG-P2i1x5M-oLTrDmoiM/edit"
+            href={"/book-a-demo"}
+            className="purple-btn"
+          >
+            Request for a demo
+          </Link>
         </Grid>
       </div>
     </div>
