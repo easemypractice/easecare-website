@@ -3,7 +3,7 @@ import React from "react";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 import bgImg from "@/images/healthCareInventory.png";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
+// import FeaturesPreviewImage from "";
 import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
 import BenefitPatients from "@/component/patientManagement/banefits";
@@ -293,7 +293,7 @@ const OfflineSoftwareForPractice = () => {
         description={
           "the most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software is the solution to your every requirement."
         }
-        imageUrl={FeaturesPreviewImage}
+        // imageUrl={FeaturesPreviewImage}
       />
       <PatientManagmentBanner data={Bannerdata} />
       <div style={{ paddingTop: "50px" }}>

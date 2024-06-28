@@ -130,7 +130,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#">Cloud Based Software</Link>
+                <Link href="/patient-appointment-scheduling-software">
+                  Appoinment Scheduling Software
+                </Link>
               </li>
               <li>
                 <Link href="/prescription-software-for-doctors">
@@ -138,10 +140,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#">Inventory Management Software</Link>
+                <Link href="/healthcare-inventory-management-systems">
+                  Inventory Management Software
+                </Link>
               </li>
               <li>
-                <Link href="#">Offline software for doctors & Clinic</Link>
+                <Link href="/offline-clinic-management-software">
+                  Offline software for doctors & Clinic
+                </Link>
               </li>
               <li>
                 <Link href="#">Telemedicine App For Clinics</Link>

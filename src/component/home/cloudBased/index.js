@@ -19,7 +19,7 @@ const CloudBased = () => {
       </p>
       {/* <div className="CloudCardGrp"> */}
       <div className="CardGrp">
-        <Link href={"/patient-management"}>
+        <Link href={"/patient-management-software"}>
           <div className="CloudCard">
             <p>Patient Management System</p>
             <Icon
@@ -31,7 +31,7 @@ const CloudBased = () => {
           </div>
         </Link>
         <div className="CloudCardbg">
-          <Link href={"/practice-management"}>
+          <Link href={"/practice-management-software"}>
             <div className="CloudCard2">
               <p>Practice Management Software</p>
               <Icon
@@ -44,7 +44,7 @@ const CloudBased = () => {
             </div>
           </Link>
         </div>
-        <Link href={"/clinic-management"}>
+        <Link href={"/clinic-management-software"}>
           <div className="CloudCard">
             <p>Clinic Management Software</p>
             <Icon
@@ -56,7 +56,7 @@ const CloudBased = () => {
           </div>
         </Link>
         <div className="CloudCardbg">
-          <Link href={"/healthcare-management"}>
+          <Link href={"/healthcare-management-software"}>
             <div className="CloudCard2">
               <p>Healthcare Management Software</p>
               <Icon

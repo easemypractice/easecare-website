@@ -15,6 +15,7 @@ import { Layout } from "@/app/layout";
 import CloudBased from "@/component/home/cloudBased";
 import ChooseClearity from "@/component/home/chooseClearity.js";
 import DownloadApp from "@/component/home/download";
+import Image from "next/image";
 
 const HomeLayout = () => {
   return (
@@ -24,7 +25,7 @@ const HomeLayout = () => {
         description={
           "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
         }
-        imageUrl={"/public/imags/priview.jpg"}
+        imageUrl={"/public/images/preview.jpg"}
       />
       <HomeBanner />
       <CloudBased />
