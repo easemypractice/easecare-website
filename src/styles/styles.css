@@ -183,8 +183,14 @@ ul.navLinks li:hover {
   padding-top: 100px !important;
 }
 
+
+
 .pt-6{
   padding-top: 6px !important;
+}
+
+.pt-20{
+  padding-top: 50px !important;
 }
 
 .my-6{
@@ -2907,7 +2913,7 @@ li.footerCon{
   text-align: center;
 }
 
-.cloudBased h1{
+.cloudBased h2{
   background-image: linear-gradient(to right, #090827,#AD45FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2915,7 +2921,8 @@ li.footerCon{
   font-weight: 700;
   line-height: 70px;
   text-align: center;
-  padding: 0px, 2px, 0px, 2px
+  padding: 0px, 2px, 0px, 2px;
+  letter-spacing: -1.70px;
 }
 
 .CloudCard, .CloudCard2{

@@ -7,7 +7,7 @@ const ChooseClearity = () => {
   const [path, setPath] = useState("onBoarding");
   return (
     <div className="Choose_clearity cloudBased">
-      <h1>Why Choose EaseCare Clarity?</h1>
+      <h2>Why Choose EaseCare Clarity?</h2>
       <p>
         The Best Cloud-Based Practice Management Software for Doctors & Clinics.
         Here&apos;s why you

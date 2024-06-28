@@ -292,9 +292,9 @@ const OfflineSoftwareForPractice = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Offline clinic management software"}
+        title={"Offline clinic management software for Clinics and Doctors"}
         description={
-          "the most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software is the solution to your every requirement."
+          "The most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software is the solution to your every requirement."
         }
         imageUrl={FeaturesPreviewImage}
       />
@@ -307,6 +307,7 @@ const OfflineSoftwareForPractice = () => {
           image={featureImg}
           content="Want to discover the best offline practice management software?"
           btnText="Get a free Demo"
+          alt={"offline clinic management software"}
         />
       </div>
       <div
@@ -323,6 +324,7 @@ const OfflineSoftwareForPractice = () => {
           image={cuateImg}
           content="Know more about the advantages of the best offline medical practice management software"
           btnText="Get a free Demo"
+          alt="offline clinic management software"
         />
       </div>
       <SelectRight data={robustInventoryManagement} />

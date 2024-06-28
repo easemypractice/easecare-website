@@ -215,11 +215,9 @@ const SoftwareForMultiChain = () => {
   return (
     <Layout>
       <HeadPart
-        title={
-          "Clarity - Optimize Multi-Chain Clinic Management with Our Advanced Software Solution"
-        }
+        title={"Clinic software solution for managing multi chain clinics"}
         description={
-          "We managing your multiple clinic chains and we are here to help with the best solution. Keep an eye on each of your clinic chains with our software multiple clinic chains. "
+          "We managing your multiple clinic chains and we are here to help with the best solution. Keep an eye on each of your clinic chains with our software multiple clinic chains."
         }
         imageUrl={FeaturesPreviewImage}
       />
@@ -230,6 +228,7 @@ const SoftwareForMultiChain = () => {
           image={featureImg}
           content="How can you manage multiple clinics with our software for multiple clinics?"
           btnText="Get a free Demo!"
+          alt="software for multiple clinic chain"
         />
       </div>
       <FeaturesPatient data={clinicSoftwareSolution} />
@@ -245,6 +244,7 @@ const SoftwareForMultiChain = () => {
           image={cuateImg}
           content="Explore the benefits of our advanced clinic software solution for managing multi-chain clinics"
           btnText="Get a free Demo"
+          alt="software for multiple clinic chain"
         />
       </div>
       <SelectRight data={centralizedStaffManagement} />
@@ -261,6 +261,7 @@ const SoftwareForMultiChain = () => {
           image={featureImg}
           content="Explore the magic of EaseCare’s clinic software solution for managing multi-chain clinics"
           btnText="Get a free Demo!"
+          alt="software for multiple clinic chain"
         />
       </div>
     </Layout>

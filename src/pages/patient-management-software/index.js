@@ -263,10 +263,10 @@ const PatientManagement = () => {
     <Layout>
       <HeadPart
         title={
-          "Clarity - Patient Management System for Doctors & Clinics - EaseCare Clarity"
+          "Patient Management System for Doctors & Clinics - EaseCare Clarity"
         }
         description={
-          "Streamlining your healthcare operations with our powerful patient management software will be a game changer for you. Whether it is scheduling appointments."
+          "Patient Management Software for medical practices, clinic management, doctor profiles, patient records, and consultations. Discover how it can enhance your practice."
         }
         // imageUrl={FeaturesPreviewImage}
       />
@@ -278,6 +278,7 @@ const PatientManagement = () => {
         content="Want to explore the optimum benefits of the best patient data management system?"
         btnText="Contact us today"
         link={"contact"}
+        alt="Patient management software"
       />
       <VarientTypes TypesVarientData={TypesVarientData} />
       <FeaturesPatient data={featureData} />
@@ -286,6 +287,7 @@ const PatientManagement = () => {
         content="Want to explore more features? Contact EaseCare-Clarity today and get a free demo!"
         btnText="Contact us today"
         link={"contact"}
+        alt="Patient management software"
       />
       <ChallangeFaced />
       <SelectRight data={patientRightData} />
@@ -295,6 +297,7 @@ const PatientManagement = () => {
           content="Finding the best clinic patient management system? EaseCare-Clarity is your destination. Reach out to us and you will not regret your decision!"
           btnText="Get a free Demo"
           link={"book-a-demo"}
+          alt="Patient management software"
         />
       </div>
       <div style={{ backgroundColor: "#FCFBF6" }}>
