@@ -289,9 +289,9 @@ const OfflineSoftwareForPractice = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Offline clinic management software"}
+        title={"Best Medical Inventory Management Software Solution"}
         description={
-          "the most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software is the solution to your every requirement."
+          "Manage complex billing seamlessly with our medical billing software. Focus on patient care, not paperwork. Simplify your process today."
         }
         // imageUrl={FeaturesPreviewImage}
       />
@@ -304,6 +304,7 @@ const OfflineSoftwareForPractice = () => {
           image={featureImg}
           content="Know what a medical inventory management system can do for your clinic"
           btnText="Get a free Demo"
+          alt="healthcare inventory management systems"
         />
       </div>
       <div
@@ -328,6 +329,7 @@ const OfflineSoftwareForPractice = () => {
           image={cuateImg}
           content="Want to know more about how EaseCare’s Clinic inventory management system can help you?"
           btnText="Get a free Demo"
+          alt="healthcare inventory management systems"
         />
       </div>
       <div
@@ -346,6 +348,7 @@ const OfflineSoftwareForPractice = () => {
           image={featureImg}
           content="Know how EaseCare’s online medicine inventory management system can help your revolutionize your healthcare success?"
           btnText="Get a free Demo"
+          alt="healthcare inventory management systems"
         />
       </div>
     </Layout>

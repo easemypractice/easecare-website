@@ -287,9 +287,9 @@ const MedicalBilling = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Medical billing software"}
+        title={"Efficient Medical Billing Software Solutions for Clinics"}
         description={
-          "Manage complex billing seamlessly with our medical billing software. Focus on patient care, not paperwork. Simplify your process today."
+          "Automate your clinic's operations with our doctor appointment software, an all-in-one solution for efficiently handling scheduling, patient registration, billing."
         }
         imageUrl={FeaturesPreviewImage}
       />

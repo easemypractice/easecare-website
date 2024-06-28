@@ -209,9 +209,9 @@ const PracticeManagement = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Practice management software "}
+        title={"Medical practice management software for Clinics"}
         description={
-          "From scheduling appointments to billing, we understand a clinic's hustle. Revolutionize the business of your clinic with our latest and advanced practice manage."
+          "Practice management software handles operations in medical. It captures patient demographics, schedules appointments, manages insurance, performs billing, and generates reports."
         }
         // imageUrl={FeaturesPreviewImage}
       />
@@ -223,6 +223,7 @@ const PracticeManagement = () => {
         content="I’m sure you are also looking for a way how to make your clinic operations effective and seamless while reducing costs and enhancing profits."
         btnText="Contact us today"
         link={"contact"}
+        alt="practice management software"
       />
       <VarientTypes TypesVarientData={TypesVarientData} />
       <div className="my-6">
@@ -240,6 +241,7 @@ const PracticeManagement = () => {
           content="Explore the optimum use of practice management software for your organization"
           btnText="Get a free Demo"
           link={"book-a-demo"}
+          alt="practice management software"
         />
       </div>
       <div style={{ padding: "00px 0px 50px" }}>
@@ -255,6 +257,7 @@ const PracticeManagement = () => {
           content="Want to turn your clinic into a success story?  EaseCare - Clarity is here to help you with the best healthcare software solutions"
           btnText="Get a free Demo"
           link={"book-a-demo"}
+          alt="practice management software"
         />
       </div>
     </Layout>

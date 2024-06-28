@@ -496,7 +496,7 @@ const PrescriptionSoftware = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Patient appointment scheduling software"}
+        title={"Appointment Scheduling Software For Medical Practices"}
         description={
           "Attracting new target audiences or making your old patients keep coming back to you, our electronic health records software is here to help you manage your patients."
         }
@@ -511,6 +511,7 @@ const PrescriptionSoftware = () => {
           image={featureImg}
           content="Want to make it more productive? Here is how you can do it"
           btnText="Get a free Demo"
+          alt="patient appointment scheduling software"
         />
       </div>
       <div
@@ -537,6 +538,7 @@ const PrescriptionSoftware = () => {
           image={cuateImg}
           content="EaseCare’s patient appointment scheduling software will help you at its best to improve your practice"
           btnText="Get a free Demo"
+          alt="patient appointment scheduling software"
         />
       </div>
       <SelectRight data={benefitOfPatientAppoinment} />
@@ -569,6 +571,7 @@ const PrescriptionSoftware = () => {
           image={featureImg}
           content="While patient appointment scheduling software is profitable both for you and your patients."
           btnText="Get a free Demo"
+          alt="patient appointment scheduling software"
         />
       </div>
       <div

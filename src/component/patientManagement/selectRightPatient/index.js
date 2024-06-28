@@ -12,7 +12,7 @@ const SelectRight = ({ data }) => {
   return (
     <div className="Choose_clearity cloudBased">
       {data.Heading ? (
-        <h1 className={styles.maxheadingWid}>{data.Heading}</h1>
+        <h2 className={styles.maxheadingWid}>{data.Heading}</h2>
       ) : (
         <div className={`${styles.Heading} ${data.HeadingClass}`}>
           {data.HeadingFirst}{" "}

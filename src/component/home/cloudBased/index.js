@@ -6,7 +6,7 @@ import React from "react";
 const CloudBased = () => {
   return (
     <div className="cloudBased">
-      <Heading as="h1">
+      <Heading as="h2">
         Cloud-based Clinic Management <br /> Software to Drive Your Clinic’s
         Needs
       </Heading>
@@ -183,16 +183,18 @@ const CloudBased = () => {
           </div>
         </Link>
         <div className="CloudCardbg">
-          <div className="CloudCard2">
-            <p>Telemedicine App For Clinics</p>
-            <Icon
-              icon={"mdi:arrow-top-right"}
-              color={"#8512E0"}
-              width={40}
-              height={20}
-              className="CardIcon"
-            />
-          </div>
+          <Link href={"/telemedicine-app-for-doctors"}>
+            <div className="CloudCard2">
+              <p>Telemedicine App For Clinics</p>
+              <Icon
+                icon={"mdi:arrow-top-right"}
+                color={"#8512E0"}
+                width={40}
+                height={20}
+                className="CardIcon"
+              />
+            </div>
+          </Link>
         </div>
       </div>
       {/* </div> */}

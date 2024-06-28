@@ -305,9 +305,9 @@ const ClinicManagement = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Clinic Management Software"}
+        title={"Cloud Based Clinic Management Software for medical- Easecare"}
         description={
-          "Managing the daily repetitive tasks at a clinic is a tedious job that doesn't make you productive and efficient. But with our clinic management system software."
+          "EaseCare Clarity offers online clinic management software dedicated to enhancing healthcare efficiency. Explore its comprehensive features and benefits."
         }
         imageUrl={FeaturesPreviewImage}
       />
@@ -320,6 +320,7 @@ const ClinicManagement = () => {
           content="Want to know how clinic management software helps you manage your clinic"
           btnText="Get a Free Demo"
           link={"book-a-demo"}
+          alt={"clinic management system software"}
         />
       </div>
 
@@ -334,6 +335,7 @@ const ClinicManagement = () => {
           content="Revolutionize the workforce of your clinic with all these essential features in one software with EaseCare"
           btnText="Get a free Demo"
           link={"book-a-demo"}
+          alt={"clinic management system software"}
         />
       </div>
       <div style={{ backgroundColor: "#FCFBF6" }}>
@@ -352,6 +354,7 @@ const ClinicManagement = () => {
           content="Explore the best and most cost-effective clinic management software with us"
           btnText="Get a free Demo"
           link={"book-a-demo"}
+          alt={"clinic management system software"}
         />
       </div>
     </Layout>

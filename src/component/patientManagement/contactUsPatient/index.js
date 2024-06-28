@@ -9,6 +9,7 @@ const ContactUsPatients = ({
   btnText,
   description,
   purpleCard,
+  alt,
 }) => {
   return (
     <div className="container">
@@ -19,16 +20,23 @@ const ContactUsPatients = ({
         <div className={styles.right}>
           <h3>{content}</h3>
           <p>{description}</p>
-          <Link href={"/book-a-demo"}>
-            <button
-              className={`purple-btn w-full ${purpleCard && "white-btn"}`}
-            >
-              {btnText}
-            </button>
-          </Link>
+          {btnText && (
+            <Link href={"/book-a-demo"}>
+              <button
+                className={`purple-btn w-full ${purpleCard && "white-btn"}`}
+              >
+                {btnText}
+              </button>
+            </Link>
+          )}
         </div>
         {!purpleCard && (
-          <Image src={bg} width={400} className={styles.bgPosition} />
+          <Image
+            src={bg}
+            alt={alt ? alt : ""}
+            width={400}
+            className={styles.bgPosition}
+          />
         )}
       </div>
     </div>
