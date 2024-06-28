@@ -158,26 +158,30 @@ const CloudBased = () => {
           />
         </div> */}
         <div className="CloudCardbg">
-          <div className="CloudCard2">
-            <p>Offline software for doctors & Clinic</p>
+          <Link href={"/offline-clinic-management-software"}>
+            <div className="CloudCard2">
+              <p>Offline software for doctors & Clinic</p>
+              <Icon
+                icon={"mdi:arrow-top-right"}
+                color={"#8512E0"}
+                width={40}
+                height={20}
+                className="CardIcon"
+              />
+            </div>
+          </Link>
+        </div>
+        <Link href={"/healthcare-inventory-management-systems"}>
+          <div className="CloudCard">
+            <p>Inventory Management Software</p>
             <Icon
               icon={"mdi:arrow-top-right"}
-              color={"#8512E0"}
               width={40}
-              height={20}
               className="CardIcon"
+              height={20}
             />
           </div>
-        </div>
-        <div className="CloudCard">
-          <p>Inventory Management Software</p>
-          <Icon
-            icon={"mdi:arrow-top-right"}
-            width={40}
-            className="CardIcon"
-            height={20}
-          />
-        </div>
+        </Link>
         <div className="CloudCardbg">
           <div className="CloudCard2">
             <p>Telemedicine App For Clinics</p>

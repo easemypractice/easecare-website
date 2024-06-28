@@ -262,7 +262,9 @@ const PatientManagement = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Software for healthcare management "}
+        title={
+          "Clarity - Patient Management System for Doctors & Clinics - EaseCare Clarity"
+        }
         description={
           "Streamlining your healthcare operations with our powerful patient management software will be a game changer for you. Whether it is scheduling appointments."
         }
