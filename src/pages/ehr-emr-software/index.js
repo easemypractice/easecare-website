@@ -352,7 +352,9 @@ const EHREMR = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Electronic health records software"}
+        title={
+          "EHR /EMR Software: Electronic Health Records Software Solutions"
+        }
         description={
           "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
         }
@@ -365,6 +367,7 @@ const EHREMR = () => {
           image={featureImg}
           content="Are you looking for an EHR/EMR software for managing patient data?"
           btnText="Get a free Demo"
+          alt="electronic health records software"
         />
       </div>
       <FeaturesPatient data={featuresEHR} />
@@ -384,6 +387,7 @@ const EHREMR = () => {
           image={cuateImg}
           content="Want to know which EMR system is best for your organization"
           btnText="Get a free Demo"
+          alt="electronic health records software"
         />
       </div>
       <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>

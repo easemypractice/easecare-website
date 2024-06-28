@@ -329,7 +329,7 @@ const PrescriptionSoftware = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - E prescribing software for doctor"}
+        title={"Electronic prescription software for doctors and Clinics"}
         description={
           "Enhance patient care with our e-prescribing software. Remember every detail, make patients feel heard, and build lasting connections"
         }
@@ -361,6 +361,7 @@ const PrescriptionSoftware = () => {
           image={cuateImg}
           content="Want to know how our EHR-based prescriptions are best for you"
           btnText="Get a free Demo"
+          alt="e prescribing software for doctor"
         />
       </div>
       <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
@@ -372,6 +373,7 @@ const PrescriptionSoftware = () => {
         btnText="Contact us"
         purpleCard="true"
         description="Electronic prescription software has the potential to transform the workflow of your clinic while it is known for increasing the accuracy, efficiency, and value. As the prescription software is computerized, it is not only known for its accuracy. More than this, it can integrate thousands of tasks and manage patient prescriptions for which your staff would require hours in a single day"
+        alt="e prescribing software for doctor"
       />
       <div style={{ backgroundColor: "#FCFBF6" }}>
         <BenefitPatients data={offerAdditionalSolution} />

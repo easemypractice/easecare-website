@@ -305,9 +305,9 @@ const DoctorAppoinment = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Effortless Booking with Doctor Appointment Software"}
+        title={"Online Doctor Appointment Scheduling Software"}
         description={
-          "Automate your clinic's operations with our doctor appointment software, an all-in-one solution for efficiently handling scheduling, patient registration, billing."
+          "Online doctor appointment scheduling software offers users a convenient way to book appointments. Easily schedule with your current doctor or connect with new healthcare"
         }
         imageUrl={FeaturesPreviewImage}
       />
@@ -320,6 +320,7 @@ const DoctorAppoinment = () => {
           content="Explore the features of EaseCare Doctor Appointments online"
           btnText="Get a Free Demo"
           link={"book-a-demo"}
+          alt="doctor appointmet system"
         />
       </div>
       <div
@@ -336,6 +337,7 @@ const DoctorAppoinment = () => {
           content="Discover how implementing EaseCare’s online doctor appointment system can help you manage your clinic"
           btnText="Get a Free Demo"
           link={"book-a-demo"}
+          alt="doctor appointmet system"
         />
       </div>
       <VarientTypes TypesVarientData={maximizeEfficiency} />

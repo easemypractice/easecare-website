@@ -36,7 +36,7 @@ const Testimonail = () => {
         </Box>
         <div className="mobileTestimonial">
           <Slider {...settings}>
-            <div className="doctor-review">
+            <div className="doctor-review pt-20">
               <div className="flex-col gap-20">
                 <p className="testi-review">
                   Tops all other appointment scheduling tools. Simple and sleek
@@ -93,7 +93,7 @@ const Testimonail = () => {
                 </div>
               </div>
             </div>
-            <div className="doctor-review">
+            <div className="doctor-review pt-20">
               <div className="flex-col gap-20">
                 <p className="testi-review">
                   We&apos;ve been using Easemypractice for our clinic&apos;s
@@ -152,7 +152,7 @@ const Testimonail = () => {
                 </div>
               </div>
             </div>
-            <div className="doctor-review">
+            <div className="doctor-review pt-20">
               <div className="flex-col gap-20">
                 <p className="testi-review">
                   Clarity has truly streamlined my clinic management workflow.
