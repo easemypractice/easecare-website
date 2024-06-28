@@ -1,7 +1,7 @@
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
 import React from "react";
-import FeaturesPreviewImage from "@/images/ogImage/patientManageOg.svg";
+// import FeaturesPreviewImage from "@/images/ogImage/patientManageOg.svg";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 
 import BenefitPatients from "@/component/patientManagement/banefits";
@@ -268,7 +268,7 @@ const PatientManagement = () => {
         description={
           "Streamlining your healthcare operations with our powerful patient management software will be a game changer for you. Whether it is scheduling appointments."
         }
-        imageUrl={FeaturesPreviewImage}
+        // imageUrl={FeaturesPreviewImage}
       />
       <PatientManagmentBanner data={patientBannerData} />
       <BenefitPatients data={patientBenefits} />
