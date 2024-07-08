@@ -1,5 +1,5 @@
 import { Layout } from "@/app/layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 import bgImg from "@/images/softwareMultiBanner.png";
@@ -12,6 +12,13 @@ import VarientTypes from "@/component/patientManagement/varientsTypes";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
 import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
 import BenefitCard from "@/component/patientManagement/banefits/benefitCard";
+import { useRouter } from "next/router";
+import { getFeatureData } from "@/utils/service";
+import HeroComp from "@/component/feature/HeroComp";
+import CardsGroups from "@/component/feature/benefitCards";
+import ContactSection from "@/component/feature/contactSection";
+import MultiColorCardSec from "@/component/feature/multiColorCard";
+import NavDetailsSection from "@/component/feature/navDetailsSection";
 const multiClinicBanner = [
   {
     maxWidth: "max-width-full p-5",
@@ -212,59 +219,88 @@ const whyChooseSoftware = [
   },
 ];
 const SoftwareForMultiChain = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setData(res);
+    });
+  };
   return (
-    <Layout>
-      <HeadPart
-        title={"Clinic software solution for managing multi chain clinics"}
-        description={
-          "We managing your multiple clinic chains and we are here to help with the best solution. Keep an eye on each of your clinic chains with our software multiple clinic chains."
-        }
-        imageUrl={FeaturesPreviewImage}
-      />
-      <PatientManagmentBanner data={multiClinicBanner} />
-      <BenefitPatients data={advanceSolution} />
-      <div className="my-6">
-        <ContactUsPatients
-          image={featureImg}
-          content="How can you manage multiple clinics with our software for multiple clinics?"
-          btnText="Get a free Demo!"
-          alt="software for multiple clinic chain"
-        />
-      </div>
-      <FeaturesPatient data={clinicSoftwareSolution} />
-      <div
-        style={{
-          paddingBottom: "70px",
-        }}
-      >
-        <VarientTypes TypesVarientData={ourIntegratedAdminDashboard} />
-      </div>
-      <div className="my-6">
-        <ContactUsPatients
-          image={cuateImg}
-          content="Explore the benefits of our advanced clinic software solution for managing multi-chain clinics"
-          btnText="Get a free Demo"
-          alt="software for multiple clinic chain"
-        />
-      </div>
-      <SelectRight data={centralizedStaffManagement} />
-      <div
-        style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
-        className="mobileCol"
-      >
-        <div className="flex container mobileCol gap-20">
-          <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
-        </div>
-      </div>
-      <div className="my-6">
-        <ContactUsPatients
-          image={featureImg}
-          content="Explore the magic of EaseCare’s clinic software solution for managing multi-chain clinics"
-          btnText="Get a free Demo!"
-          alt="software for multiple clinic chain"
-        />
-      </div>
-    </Layout>
+    <React.Fragment>
+      {data.map((item) => (
+        <React.Fragment key={item?._id}>
+          <Layout>
+            <HeadPart
+              title={
+                "Clinic software solution for managing multi chain clinics"
+              }
+              description={
+                "We managing your multiple clinic chains and we are here to help with the best solution. Keep an eye on each of your clinic chains with our software multiple clinic chains."
+              }
+              imageUrl={FeaturesPreviewImage}
+            />
+            <HeroComp data={item.heroComp} />
+            <CardsGroups data={item.advanceSolutions} />
+            <ContactSection data={item.ContactFormOne} />
+            <MultiColorCardSec data={item.clinicSoftwareSolution} />
+            <CardsGroups data={item.integratedAdmin} />
+            <ContactSection data={item.contactFormTwo} />
+            <NavDetailsSection data={item.centralizedStaffManagement} />
+            <CardsGroups data={item.extraBenefits} />
+            <ContactSection data={item.contactFormThree} />
+            {/* <PatientManagmentBanner data={multiClinicBanner} /> */}
+            {/* <BenefitPatients data={advanceSolution} /> */}
+            {/* <div className="my-6">
+                <ContactUsPatients
+                  image={featureImg}
+                  content="How can you manage multiple clinics with our software for multiple clinics?"
+                  btnText="Get a free Demo!"
+                  alt="software for multiple clinic chain"
+                />
+              </div> */}
+            {/* <FeaturesPatient data={clinicSoftwareSolution} /> */}
+            {/* <div
+              style={{
+                paddingBottom: "70px",
+              }}
+            >
+              <VarientTypes TypesVarientData={ourIntegratedAdminDashboard} />
+            </div> */}
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={cuateImg}
+                content="Explore the benefits of our advanced clinic software solution for managing multi-chain clinics"
+                btnText="Get a free Demo"
+                alt="software for multiple clinic chain"
+              />
+            </div> */}
+            {/* <SelectRight data={centralizedStaffManagement} /> */}
+            {/* <div
+              style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
+              className="mobileCol"
+            >
+              <div className="flex container mobileCol gap-20">
+                <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
+              </div>
+            </div>
+            <div className="my-6">
+              <ContactUsPatients
+                image={featureImg}
+                content="Explore the magic of EaseCare’s clinic software solution for managing multi-chain clinics"
+                btnText="Get a free Demo!"
+                alt="software for multiple clinic chain"
+              />
+            </div> */}
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 

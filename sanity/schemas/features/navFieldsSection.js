@@ -4,9 +4,9 @@ export default {
   title: "Features Section",
   fields: [
     {
-      name: "Heading",
-      type: "array",
-      of: [{ type: "block" }],
+      name: "title",
+      type: "blockContent",
+      title: "Title",
     },
     {
       name: "NacSec",
@@ -31,18 +31,19 @@ export const NavSection = {
       type: "string",
     },
     {
+      name: "myIcon",
+      title: "My Icon",
+      type: "icon",
+    },
+    {
+      name: "iconSize",
+      title: "Icon Size",
+      type: "number",
+    },
+    {
       name: "contant",
-      type: "array",
-      of: [
-        {
-          type: "block",
-        },
-        {
-          name: "myIcon",
-          title: "My Icon",
-          type: "icon",
-        },
-      ],
+      type: "text",
+      title: "Content",
     },
   ],
 };

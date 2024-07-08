@@ -1,6 +1,6 @@
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import FeaturesPreviewImage from "@/images/ogImage/practiceManageOg.svg";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 
@@ -14,6 +14,13 @@ import cuateImg from "@/images/cuateImg.svg";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
 import bgImg from "@/images/practiceBanner.png";
 import FeaturePractice from "@/component/patientManagement/featuresPractice";
+import { useRouter } from "next/router";
+import { getFeatureData } from "@/utils/service";
+import CardsGroups from "@/component/feature/benefitCards";
+import HeroComp from "@/component/feature/HeroComp";
+import NavDetailsSection from "@/component/feature/navDetailsSection";
+import ContactSection from "@/component/feature/contactSection";
+import TabsSelectCards from "@/component/feature/tabsSelectCards";
 const practiceManagementData = [
   {
     bgImg: bgImg,
@@ -206,61 +213,91 @@ const BestPracticeData = [
 ];
 
 const PracticeManagement = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [data, setData] = useState([]);
+  console.log(data);
+  useEffect(() => {
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setData(res);
+    });
+  };
   return (
-    <Layout>
-      <HeadPart
-        title={"Medical practice management software for Clinics"}
-        description={
-          "Practice management software handles operations in medical. It captures patient demographics, schedules appointments, manages insurance, performs billing, and generates reports."
-        }
-        // imageUrl={FeaturesPreviewImage}
-      />
-      <PatientManagmentBanner data={practiceManagementData} />
-      <BenefitPatients data={practiceBenefits} />
-      <Divider />
-      <ContactUsPatients
-        image={contactImg}
-        content="I’m sure you are also looking for a way how to make your clinic operations effective and seamless while reducing costs and enhancing profits."
-        btnText="Contact us today"
-        link={"contact"}
-        alt="practice management software"
-      />
-      <VarientTypes TypesVarientData={TypesVarientData} />
-      <div className="my-6">
-        <ContactUsPatients
-          image={featureImg}
-          content="While you have learned why your clinic needs practice management software. Know here how to get the best one"
-          btnText="Book a Demo"
-          link={"book-a-demo"}
-        />
-      </div>
-      <FeaturePractice />
-      <div className="mb-2 mt-2">
-        <ContactUsPatients
-          image={cuateImg}
-          content="Explore the optimum use of practice management software for your organization"
-          btnText="Get a free Demo"
-          link={"book-a-demo"}
-          alt="practice management software"
-        />
-      </div>
-      <div style={{ padding: "00px 0px 50px" }}>
-        <BenefitPatients data={howToUseSoftware} />
-      </div>
-      <SelectRight data={practiceRightsData} />
-      <div style={{ backgroundColor: "#FCFBF6", marginTop: "30px" }}>
-        <BenefitPatients data={BestPracticeData} />
-      </div>
-      <div className="my-6">
-        <ContactUsPatients
-          image={cuateImg}
-          content="Want to turn your clinic into a success story?  EaseCare - Clarity is here to help you with the best healthcare software solutions"
-          btnText="Get a free Demo"
-          link={"book-a-demo"}
-          alt="practice management software"
-        />
-      </div>
-    </Layout>
+    <React.Fragment>
+      {data.map((item) => (
+        <React.Fragment key={item?._id}>
+          {console.log(item)}
+          <Layout>
+            <HeadPart
+              title={"Medical practice management software for Clinics"}
+              description={
+                "Practice management software handles operations in medical. It captures patient demographics, schedules appointments, manages insurance, performs billing, and generates reports."
+              }
+              // imageUrl={FeaturesPreviewImage}
+            />
+            <HeroComp data={item.heroComp} />
+            {/* <PatientManagmentBanner data={practiceManagementData} /> */}
+            <CardsGroups data={item.benefitsOfTakingsoftware} />
+            {/* <BenefitPatients data={practiceBenefits} /> */}
+            <Divider />
+            {/* <ContactUsPatients
+              image={contactImg}
+              content="I’m sure you are also looking for a way how to make your clinic operations effective and seamless while reducing costs and enhancing profits."
+              btnText="Contact us today"
+              link={"contact"}
+              alt="practice management software"
+            /> */}
+            <ContactSection data={item.contactFormOne} />
+            <CardsGroups data={item.reasonToImplementSoftware} />
+            {/* <VarientTypes TypesVarientData={TypesVarientData} /> */}
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={featureImg}
+                content="While you have learned why your clinic needs practice management software. Know here how to get the best one"
+                btnText="Book a Demo"
+                link={"book-a-demo"}
+              />
+            </div> */}
+            <ContactSection data={item.contactFormTwo} />
+            <TabsSelectCards data={item.benefitsOfPracticeManagemnent} />
+            <ContactSection data={item.contactFormThree} />
+            <BenefitPatients data={howToUseSoftware} />
+            {/* <div className="mb-2 mt-2">
+              <ContactUsPatients
+                image={cuateImg}
+                content="Explore the optimum use of practice management software for your organization"
+                btnText="Get a free Demo"
+                link={"book-a-demo"}
+                alt="practice management software"
+              />
+            </div> */}
+            {/* <div style={{ padding: "00px 0px 50px" }}>
+              <BenefitPatients data={howToUseSoftware} />
+            </div> */}
+            <NavDetailsSection data={item.UsersOfSoftware} />
+            {/* <SelectRight data={practiceRightsData} /> */}
+            {/* <div style={{ backgroundColor: "#FCFBF6", marginTop: "30px" }}>
+              <BenefitPatients data={BestPracticeData} />
+            </div> */}
+            <BenefitPatients data={item.howUseFullForLargerPractice} />
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={cuateImg}
+                content="Want to turn your clinic into a success story?  EaseCare - Clarity is here to help you with the best healthcare software solutions"
+                btnText="Get a free Demo"
+                link={"book-a-demo"}
+                alt="practice management software"
+              />
+            </div> */}
+            <ContactSection data={item.contactFormFour} />
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 
