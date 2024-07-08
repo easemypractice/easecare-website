@@ -1,6 +1,6 @@
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import FeaturesPreviewImage from "@/images/ogImage/patientManageOg.svg";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 
@@ -17,6 +17,16 @@ import SelectRight from "@/component/patientManagement/selectRightPatient";
 import BestPractice from "@/component/patientManagement/bestPractice";
 import FAQs from "@/component/patientManagement/faqs";
 import bgImg from "@/images/patientManageBanner.png";
+import { useParams } from "next/navigation";
+import { useRouter } from "next/router";
+import { getFeatureData } from "@/utils/service";
+import Banner from "@/component/feature/banner";
+import CardsGroups from "@/component/feature/benefitCards";
+import MultiColorCardSec from "@/component/feature/multiColorCard";
+import NavDetailsSection from "@/component/feature/navDetailsSection";
+import AccordianSections from "@/component/feature/accordianSections";
+import HeroComp from "@/component/feature/HeroComp";
+import ContactSection from "@/component/feature/contactSection";
 const patientBannerData = [
   {
     bgImg: bgImg,
@@ -258,53 +268,79 @@ const featureData = {
     },
   ],
 };
+
 const PatientManagement = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [patientData, setPatientData] = useState([]);
+  useEffect(() => {
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setPatientData(res);
+    });
+  };
   return (
-    <Layout>
-      <HeadPart
-        title={
-          "Patient Management System for Doctors & Clinics - EaseCare Clarity"
-        }
-        description={
-          "Patient Management Software for medical practices, clinic management, doctor profiles, patient records, and consultations. Discover how it can enhance your practice."
-        }
-        // imageUrl={FeaturesPreviewImage}
-      />
-      <PatientManagmentBanner data={patientBannerData} />
-      <BenefitPatients data={patientBenefits} />
-      <Divider />
-      <ContactUsPatients
-        image={contactImg}
-        content="Want to explore the optimum benefits of the best patient data management system?"
-        btnText="Contact us today"
-        link={"contact"}
-        alt="Patient management software"
-      />
-      <VarientTypes TypesVarientData={TypesVarientData} />
-      <FeaturesPatient data={featureData} />
-      <ContactUsPatients
-        image={featureImg}
-        content="Want to explore more features? Contact EaseCare-Clarity today and get a free demo!"
-        btnText="Contact us today"
-        link={"contact"}
-        alt="Patient management software"
-      />
-      <ChallangeFaced />
-      <SelectRight data={patientRightData} />
-      <div className="my-6">
-        <ContactUsPatients
-          image={cuateImg}
-          content="Finding the best clinic patient management system? EaseCare-Clarity is your destination. Reach out to us and you will not regret your decision!"
-          btnText="Get a free Demo"
-          link={"book-a-demo"}
-          alt="Patient management software"
-        />
-      </div>
-      <div style={{ backgroundColor: "#FCFBF6" }}>
-        <BenefitPatients data={BestPracticeData} />
-      </div>
-      <FAQs />
-    </Layout>
+    <React.Fragment>
+      {patientData.map((item) => (
+        <React.Fragment key={item?._id}>
+          <Layout>
+            <HeadPart
+              title={item?.metadata?.title}
+              description={item?.metadata?.description}
+              // imageUrl={FeaturesPreviewImage}
+            />
+            <HeroComp data={item.heroComp} />
+            {/* <PatientManagmentBanner data={patientBannerData} /> */}
+            {/* <BenefitPatients data={patientBenefits} /> */}
+            <CardsGroups data={item.PatientBenefits} />
+            <Divider />
+            {/* <ContactUsPatients
+              image={contactImg}
+              content="Want to explore the optimum benefits of the best patient data management system?"
+              btnText="Contact us today"
+              link={"contact"}
+              alt="Patient management software"
+            /> */}
+            <ContactSection data={item.ContactFormOne} />
+            <CardsGroups data={item.ExploringPatientManagement} />
+            {/* <VarientTypes TypesVarientData={TypesVarientData} /> */}
+            <MultiColorCardSec data={item.FeaturesOfPatientManagement} />
+            {/* <FeaturesPatient data={featureData} /> */}
+            {/* <ContactUsPatients
+              image={featureImg}
+              content="Want to explore more features? Contact EaseCare-Clarity today and get a free demo!"
+              btnText="Contact us today"
+              link={"contact"}
+              alt="Patient management software"
+            /> */}
+            <ContactSection data={item.ContactFormTwo} />
+            <ChallangeFaced data={item.challangeFaced} />
+            {/* <SelectRight data={patientRightData} /> */}
+            <NavDetailsSection data={item.selectRightPatient} />
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={cuateImg}
+                content="Finding the best clinic patient management system? EaseCare-Clarity is your destination. Reach out to us and you will not regret your decision!"
+                btnText="Get a free Demo"
+                link={"book-a-demo"}
+                alt="Patient management software"
+              />
+              
+            </div> */}
+            <ContactSection data={item.ContactFormThree} />
+            <CardsGroups data={item.WhyChoosePatientManagement} />
+            {/* <div style={{ backgroundColor: "#FCFBF6" }}>
+              <BenefitPatients data={BestPracticeData} />
+            </div> */}
+            {/* <FAQs /> */}
+            <AccordianSections data={item.accordienSec} />
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 

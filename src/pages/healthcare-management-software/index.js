@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
@@ -10,6 +10,13 @@ import FeaturesPatient from "@/component/patientManagement/featurePatients";
 import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
 import VarientTypes from "@/component/patientManagement/varientsTypes";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
+import { getFeatureData } from "@/utils/service";
+import { useRouter } from "next/router";
+import HeroComp from "@/component/feature/HeroComp";
+import CardsGroups from "@/component/feature/benefitCards";
+import ContactSection from "@/component/feature/contactSection";
+import MultiColorCardSec from "@/component/feature/multiColorCard";
+import NavDetailsSection from "@/component/feature/navDetailsSection";
 const healthcareBannerData = [
   {
     maxWidth: "max-width-full p-5",
@@ -183,6 +190,7 @@ const FeatuesHealthCare = {
 const keyAspectMadicalRecord = {
   HeadingFirst: "Key Aspects of Medical",
   HeadingSec: "Records Management",
+
   HeadingClass: "max-width-full pb-40",
   para: "Electronic Medical Records (EMR) and Electronic Health Records (EHR)",
   cardType: "varient",
@@ -326,43 +334,72 @@ const BestHealthCare = [
   },
 ];
 const HealthCareManagement = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setData(res);
+    });
+  };
   return (
-    <Layout>
-      <HeadPart
-        title={"Healthcare Management System Software -  EaseCare Clarity"}
-        description={
-          "Healthcare management software digitally manages patient health information in facilities, offering expert solutions, automating operations."
-        }
-        imageUrl={FeaturesPreviewImage}
-      />
-      <PatientManagmentBanner data={healthcareBannerData} />
-      <BenefitPatients data={healthcareBenefits} />
-      <div className="my-6">
-        <ContactUsPatients
-          image={featureImg}
-          content="Want to explore this further? EaseCare-Clarity is here to guide you anytime"
-          btnText="Get a Free Demo"
-          link={"book-a-demo"}
-          alt="healthcare management software"
-        />
-      </div>
-      <FeaturesPatient data={FeatuesHealthCare} />
-      <VarientTypes TypesVarientData={keyAspectMadicalRecord} />
-      <div
-        style={{
-          backgroundColor: "#F2FEF8",
-          margin: "50px 0px 0px",
-          paddingBottom: "70px",
-        }}
-      >
-        <BenefitPatients data={MedicalRecordScope} />
-      </div>
-      <SelectRight data={BenefitOfEffectiveRecords} />
-      <BenefitPatients data={ModuleHosptalManage} />
-      <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
-        <BenefitPatients data={BestHealthCare} />
-      </div>
-    </Layout>
+    <React.Fragment>
+      {data.map((item) => (
+        <React.Fragment key={item?._id}>
+          <Layout>
+            <HeadPart
+              title={
+                "Healthcare Management System Software -  EaseCare Clarity"
+              }
+              description={
+                "Healthcare management software digitally manages patient health information in facilities, offering expert solutions, automating operations."
+              }
+              imageUrl={FeaturesPreviewImage}
+            />
+            {/* <PatientManagmentBanner data={healthcareBannerData} /> */}
+            <HeroComp data={item.heroComp} />
+            {/* <BenefitPatients data={healthcareBenefits} /> */}
+            <CardsGroups data={item.benefitHealthCareManage} />
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={featureImg}
+                content="Want to explore this further? EaseCare-Clarity is here to guide you anytime"
+                btnText="Get a Free Demo"
+                link={"book-a-demo"}
+                alt="healthcare management software"
+              />
+            </div> */}
+            <ContactSection data={item.contactFormOne} />
+            <MultiColorCardSec data={item.featuresOfHealthCare} />
+            {/* <FeaturesPatient data={FeatuesHealthCare} /> */}
+            <CardsGroups data={item.keyAspects} />
+            <CardsGroups data={item.scope} />
+            {/* <VarientTypes TypesVarientData={keyAspectMadicalRecord} /> */}
+            {/* <div
+              style={{
+                backgroundColor: "#F2FEF8",
+                margin: "50px 0px 0px",
+                paddingBottom: "70px",
+              }}
+            >
+              <BenefitPatients data={MedicalRecordScope} />
+            </div> */}
+            <NavDetailsSection data={item.benefitOfEffectiveRecords} />
+            <CardsGroups data={item.modulesOfHospitals} />
+            <CardsGroups data={item.howChooseBestPactice} />
+            {/* <SelectRight data={BenefitOfEffectiveRecords} /> */}
+            {/* <BenefitPatients data={ModuleHosptalManage} /> */}
+            {/* <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
+              <BenefitPatients data={BestHealthCare} />
+            </div> */}
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 

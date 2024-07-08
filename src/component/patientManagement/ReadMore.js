@@ -8,8 +8,8 @@ const ReadMore = ({ children }) => {
   };
   return (
     <p>
-      {isReadMore ? text.slice(0, 140) : text}
-      {text.length > 140 && (
+      {isReadMore ? text?.slice(0, 140) : text}
+      {text?.length > 140 && (
         <span
           onClick={toggleReadMore}
           className="read-or-hide"

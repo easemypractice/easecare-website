@@ -1,38 +1,24 @@
 import { urlFor } from "@/app/lib/sanity";
 import { Heading, Text } from "@radix-ui/themes";
-const HeroComp = ({ section }) => {
+import CustomBlockText from "../customBlockText";
+const HeroComp = ({ data }) => {
   return (
     <>
-      {section.map((section) => (
+      {data && (
         <div
-          key={section._key}
           className="patient-banner"
-          style={{ backgroundImage: `url(${urlFor(section?.image)})` }}
+          style={{ backgroundImage: `url(${urlFor(data?.image)})` }}
         >
           <div className="container">
-            <div className="banner-content-top">
-              {/* <Heading size="4" className="text-white text-center uppercase">
-                {section?.subtitle}
-              </Heading> */}
-              {section.title.map((block) => (
-                <Heading
-                  size="1"
-                  className={`home-heading  max-width-full`}
-                  key={block._key}
-                >
-                  {block.children.map((span) => (
-                    <span key={span._key} className="heading-white">
-                      {span?.text}
-                    </span>
-                  ))}
-                </Heading>
-              ))}
-              <Text className="banner-description">{section?.description}</Text>
+            <div className="banner-content-top features-banner">
+              <div className="home-heading heading-white">
+                <CustomBlockText blocks={data.title} />
+              </div>
+              <Text className="banner-description">{data?.description}</Text>
             </div>
           </div>
         </div>
-      ))}
-      ;
+      )}
     </>
   );
 };

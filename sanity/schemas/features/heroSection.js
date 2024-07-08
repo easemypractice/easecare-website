@@ -5,10 +5,9 @@ export default {
   title: "Hero Section",
   fields: [
     {
-      name: "subtitle",
+      name: "subTitle",
+      title: "SubTitle",
       type: "string",
-      title: "Sub Title",
-      description: "Sub title of the block",
     },
     {
       name: "title",

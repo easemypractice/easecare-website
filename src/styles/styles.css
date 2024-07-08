@@ -11,6 +11,11 @@ body {
   min-height: 100vh;
 }
 
+/* h1{
+  font-size: 72px;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+} */
 
 .rounded-full{
   border-radius: 100%;
@@ -89,9 +94,11 @@ header {
   /* margin-bottom: 100px; */
 }
 
-.contact-header:hover {
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #000;
+.contact-header {
+  border: 0.5px solid #706C9B;
+  padding: 7px 18px;
+  border-radius: 6px;
+  text-align: center;
 }
 
 .clarity-header:hover {
@@ -429,6 +436,9 @@ header nav {
   gap: 20px;
   flex-direction: column;
   margin-bottom: 20px;
+}
+.features-banner .home-heading{
+  max-width: 100%;
 }
 
 .home-heading {
@@ -842,11 +852,20 @@ header nav {
 
 .footer {
   padding: 25px 0px;
-  border-top: 1px solid rgba(128, 128, 128, 0.163);
+  /* border-top: 1px solid rgba(128, 128, 128, 0.163); */
+  background-color: #8512E0;
+  color: white;
+}
+.footer h2{
+   font-size: 50px;
+   text-align: center;
+   letter-spacing: -0.44px;
+   line-height: 88px;
 }
 
 .footer ul li {
   list-style: none;
+
 }
 
 .footer ul {
@@ -856,11 +875,13 @@ header nav {
 .footer-middle {
   padding: 32px 0px 48px;
   display: flex;
+  
   /* border-top: 1px solid #ebeff2; */
 }
 
 .footer-middle h3 {
   margin-bottom: 20px;
+  
 }
 
 .footer-middle h3 {
@@ -869,12 +890,14 @@ header nav {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: white;
 }
 
 .footer-middle ul {
   display: flex;
   flex-direction: column;
   gap: 17px;
+  
   align-items: flex-start;
 }
 
@@ -888,11 +911,12 @@ header nav {
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  
   /* 150% */
 }
 
 .footer-top a {
-  color: #8512e0;
+  /* color: #8512e0; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -917,7 +941,7 @@ header nav {
 }
 
 .footer-links ul li a {
-  color: var(--text-t-500, #171a22);
+  /* color: var(--text-t-500, #171a22); */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -950,7 +974,7 @@ header nav {
 }
 
 .productlogo-text {
-  color: var(--text-t-500, #171a22);
+  /* color: var(--text-t-500, #171a22); */
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1240,6 +1264,17 @@ header nav {
   margin: auto;
 }
 
+.feature-banner h1 {
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 88px;
+  letter-spacing: -1.44px;
+  /* max-width: 875px; */
+  margin: auto;
+}
+
 .upcase-small {
   padding: 36px 0px 33px;
   color: var(--Clarity-Colors-Shuttle-Gray, #5d6476);
@@ -1277,6 +1312,9 @@ header nav {
   line-height: 72px;
   /* 120% */
   letter-spacing: -1.2px;
+}
+.patient-management p {
+  padding: 5px 0px 20px;
 }
 
 .patient-management .desc-managememnt {
@@ -3121,6 +3159,16 @@ li.footerCon{
   align-content: flex-end;
   flex-wrap: wrap;
 }
+.patient-banner h1{
+  text-align: center;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -1.44px;
+  margin: auto;
+}
+
 
 .mobileTestimonial .doctor-review{
   min-height: 410px !important;
@@ -3128,4 +3176,25 @@ li.footerCon{
 
 .integration-inner>a{
   display: none;
+}
+.imageWithContent>div{
+  max-width: 50%;
+}
+
+.imageWithContent,.imageWithContent li{
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+.imageWithContent ul{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.downloadApp{
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-direction: column;
 }

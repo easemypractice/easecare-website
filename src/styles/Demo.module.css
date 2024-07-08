@@ -8,10 +8,39 @@
     grid-column: 1 / span 2;
 }
 
+.socialLinks{
+    margin-top: 50px;
+}
+.contactRight{
+    max-width: 450px;
+    margin: auto;
+}
+.contactHeading{
+    font-size: 45px;
+}
+.socialLinks li{
+    list-style: none;
+}
+.contactRight h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.contactRight h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #8512E0;
+    margin-bottom: 24px;
+}
+.contactDetails li{
+    margin: 8px 0px;
+    
+}
+
 .demoLayout {
     display: flex;
     gap: 40px;
     align-items: center;
+    position: relative;
 }
 .thanksPage h2{
     text-align: center;
@@ -20,13 +49,6 @@
     font-weight: 700;
     margin-top: 12px;
 }
-
-/* .thanksPage div{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-} */
 .thanksPage p{
     text-align: center;
     margin-bottom: 12px;
@@ -53,7 +75,7 @@
 }
 
 .formLayout input,
-.formLayout select {
+.formLayout select,.formLayout textarea {
     background: white;
     color: #747A89;
     font-size: 16px;
@@ -62,13 +84,14 @@
     border: 1px solid #CDCFD2;
     padding: 12px;
     appearance: none;
+    resize: none;
 }
 .formLayout select{
     min-width: 100%;
     width:100%
 }
 
-.formLayout input:focus-visible {
+.formLayout input:focus-visible ,.formLayout select:focus-visible,.formLayout textarea:focus-visible{
     outline: none;
 }
 
@@ -136,6 +159,16 @@
     font-size: 14px;
 }
 
+.divider{
+    width: 0.5px;
+    height: 500px;
+    background-color: #000000;
+    rotate: 0deg;
+    position: absolute;
+    right: 46%;
+    top: 3%;
+}
+
 @media screen and (min-width: 1600px) {
     .demoLayout {
         justify-content: center;
@@ -167,6 +200,9 @@
         text-align: center;
         position: static;
         padding: 0px;
+    }
+    .divider{
+        display: none;
     }
 }
 
