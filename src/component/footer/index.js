@@ -6,7 +6,7 @@ import React from "react";
 import EaseCareLogo from "@/images/logo-dark.svg";
 import ClarityLogo from "@/images/clarity-logo-light.png";
 import { Icon } from "@iconify/react";
-import appStore from "@/images/appStore.svg";
+import appStore from "@/images/appstore.svg";
 import playStore from "@/images/googleplay.svg";
 const Footer = () => {
   return (
