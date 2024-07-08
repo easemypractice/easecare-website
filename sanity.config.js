@@ -8,18 +8,20 @@ import { structureTool } from "sanity/structure";
 import { schema } from "./sanity/schema";
 import { colorInput } from "@sanity/color-input";
 import { iconify } from "sanity-plugin-iconify";
+import deskStructure from "./sanity/deskStructure";
 
 export default defineConfig({
   basePath: "/studio",
   projectId: "w2lce9jj",
-  dataset: "dev",
+  dataset: "producation",
   schema: schema,
   plugins: [
-    structureTool(),
+    structureTool({
+      structure: deskStructure,
+    }),
     colorInput(),
     visionTool({ defaultApiVersion: "2024-05-06" }),
     iconify({
-      // collections: ['fa-brands', 'mdi', ...],
       showName: true,
     }),
   ],

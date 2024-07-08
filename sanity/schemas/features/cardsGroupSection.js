@@ -7,14 +7,18 @@ export default {
   fields: [
     {
       name: "title",
-      type: "array",
+      type: "blockContent",
       title: "Title",
-      of: [{ type: "block" }],
     },
     {
-      name: "description",
-      type: "string",
-      title: "Description",
+      name: "sectionBg",
+      type: "color",
+      title: "Section background",
+    },
+    {
+      name: "cardsPerRow",
+      type: "number",
+      title: "Cards per row",
     },
     {
       name: "type",
@@ -31,6 +35,7 @@ export default {
               { title: "Benefits", value: "benefits" },
               { title: "Varients", value: "varients" },
               { title: "Practice", value: "practice" },
+              { title: "Multi-color Cards", value: "muliColorCard" },
             ],
             isHighlighted: true,
           },
@@ -50,11 +55,18 @@ export default {
           hidden: ({ parent }) => parent?.cardType !== "practice",
         },
         {
-          name: "VarientCards",
+          name: "varientCards",
           type: "array",
           title: "Varient Cards",
-          of: [{ type: "VarientCards" }],
+          of: [{ type: "varientCards" }],
           hidden: ({ parent }) => parent?.cardType !== "varients",
+        },
+        {
+          name: "multiColorCards",
+          type: "array",
+          title: "Multi-color Cards",
+          of: [{ type: "multiColorCard" }],
+          hidden: ({ parent }) => parent?.cardType !== "muliColorCard",
         },
       ],
     },
@@ -67,15 +79,30 @@ export const benefitCard = {
   title: "benefit cards",
   fields: [
     {
+      name: "cardTitle",
+      title: "Card Title",
+      type: "string",
+    },
+    {
+      name: "myIcon",
+      title: "My Icon",
+      type: "icon",
+    },
+    {
+      name: "iconSize",
+      title: "Icon Size",
+      type: "number",
+    },
+    {
+      name: "backGroundColor",
+      title: "Background color",
+      type: "color",
+    },
+    {
       name: "benefitCard",
       type: "array",
       title: "Benefit Card",
       of: [
-        {
-          name: "myIcon",
-          title: "My Icon",
-          type: "icon",
-        },
         {
           type: "block",
         },
@@ -84,10 +111,40 @@ export const benefitCard = {
   ],
 };
 export const VarientCard = {
-  name: "VarientCards",
+  name: "varientCards",
   type: "object",
   title: "VarientsCards",
   fields: [
+    {
+      name: "cardTitle",
+      title: "Card Title",
+      type: "string",
+    },
+    {
+      name: "myIcon",
+      title: "My Icon",
+      type: "icon",
+    },
+    {
+      name: "iconSize",
+      title: "Icon Size",
+      type: "number",
+    },
+    {
+      name: "backGroundColor",
+      title: "Background color",
+      type: "color",
+    },
+    {
+      name: "iconBackGround",
+      title: "Icon Background color",
+      type: "color",
+    },
+    {
+      name: "iconColor",
+      title: "Icon color",
+      type: "color",
+    },
     {
       name: "varientCard",
       type: "array",
@@ -95,26 +152,6 @@ export const VarientCard = {
       of: [
         {
           type: "block",
-        },
-        {
-          name: "myIcon",
-          title: "My Icon",
-          type: "icon",
-        },
-        {
-          name: "backGroundColor",
-          title: "Background color",
-          type: "color",
-        },
-        {
-          name: "IconBackGround",
-          title: "Icon Background color",
-          type: "color",
-        },
-        {
-          name: "IconColor",
-          title: "Icon color",
-          type: "color",
         },
       ],
     },
@@ -126,6 +163,36 @@ export const PracticeCard = {
   title: "Practice Cards",
   fields: [
     {
+      name: "cardTitle",
+      title: "Card Title",
+      type: "string",
+    },
+    {
+      name: "myIcon",
+      title: "My Icon",
+      type: "icon",
+    },
+    {
+      name: "backGroundColor",
+      title: "Background color",
+      type: "color",
+    },
+    {
+      name: "iconBackGround",
+      title: "Icon Background color",
+      type: "color",
+    },
+    {
+      name: "iconSize",
+      title: "Icon Size",
+      type: "number",
+    },
+    {
+      name: "iconColor",
+      title: "Icon color",
+      type: "color",
+    },
+    {
       name: "practiceCard",
       type: "array",
       title: "Practice Card",
@@ -133,15 +200,50 @@ export const PracticeCard = {
         {
           type: "block",
         },
+      ],
+    },
+  ],
+};
+export const multiColorCard = {
+  name: "multiColorCard",
+  type: "object",
+  title: "Multi color Cards",
+  fields: [
+    {
+      name: "myIcon",
+      title: "My Icon",
+      type: "icon",
+    },
+    {
+      name: "backGroundColor",
+      title: "Background color",
+      type: "color",
+    },
+    {
+      name: "iconBackGround",
+      title: "Icon Background color",
+      type: "color",
+      options: {
+        disableAlpha: false,
+      },
+    },
+    {
+      name: "iconSize",
+      title: "Icon Size",
+      type: "number",
+    },
+    {
+      name: "iconColor",
+      title: "Icon color",
+      type: "color",
+    },
+    {
+      name: "multiColorCard",
+      type: "array",
+      title: "Practice Card",
+      of: [
         {
-          name: "myIcon",
-          title: "My Icon",
-          type: "icon",
-        },
-        {
-          name: "IconColor",
-          title: "Icon color",
-          type: "color",
+          type: "block",
         },
       ],
     },

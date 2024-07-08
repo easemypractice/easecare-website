@@ -31,7 +31,7 @@ const HeaderLayout = () => {
               <div className={`menu ${isMenuOpen ? "showMenu" : "hidemenu"}`}>
                 <ul className={"navLinks"}>
                   <li>
-                    <Link href="/about">About us</Link>
+                    <Link href="/about-us">About us</Link>
                   </li>
                   <li>
                     <Link href="/features">Features</Link>

@@ -5,9 +5,8 @@ export default {
   fields: [
     {
       name: "heading",
-      type: "array",
+      type: "blockContent",
       title: "Heading",
-      of: [{ type: "block" }],
     },
     {
       name: "accor",
@@ -24,10 +23,14 @@ export const accordien = {
   title: "Accordien",
   fields: [
     {
-      name: "accordien",
-      type: "array",
-      title: "Accordien",
-      of: [{ type: "block" }],
+      name: "accordienTitle",
+      type: "string",
+      title: "Accordien Title",
+    },
+    {
+      name: "accordienContent",
+      type: "text",
+      title: "Accordien Content",
     },
   ],
 };

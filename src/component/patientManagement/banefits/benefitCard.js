@@ -4,6 +4,7 @@ import styles from "@/styles/Patient.module.css";
 import Image from "next/image";
 
 const BenefitCard = ({ data, cardType }) => {
+  console.log(data);
   return (
     <>
       {data?.map((item, index) => (

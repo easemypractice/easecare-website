@@ -7,6 +7,28 @@
     line-height: 72px;
     padding: 64px 0px 73px 0px
 }
+
+
+.benefitGrp h2{
+    color: #070624;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
+}
+.benefitGrp p{
+    color: #1D2026;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 400;
+    max-width: 60rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.BenefitCard p{
+    text-align: start;
+}
 .maxheadingWid{
     max-width: 60rem !important;
     padding-bottom: 10px !important;
@@ -38,7 +60,6 @@
 .divider{
     height: 2px;
     width: 100vw;
-    margin: 60px 0px 30px;
     background-color: rgba(242, 242, 242, 0.689);
 }
 .GradHead{
@@ -102,7 +123,8 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
-    max-width: 18rem;
+    /* text-align: center; */
+    /* max-width: 18rem; */
 }
 .BenefitCard ul,.BenefitCard p{
     font-size: 18px;
@@ -162,10 +184,21 @@
     font-weight: 500;
     color: #FFFFFF;
 }
-.challangeRight{
+.challangeRight ul{
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
+}
+
+.challangeRight ul li{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
 }
 
 .FAQSection{
@@ -204,7 +237,7 @@
     .contactSec img,.challangeContainer img{
         width: 40%;
     }
-    .challangeRight{
+    .challangeRight ul{
         grid-template-columns: auto;
         gap:30px
     }
@@ -221,7 +254,7 @@
         width: 100%;
         height: 100%;
     }
-    .challangeRight{
+    .challangeRight ul{
         grid-template-columns: auto;
         gap:30px
     }
@@ -232,6 +265,10 @@
         font-size: 35px;
         line-height: 48px;
         padding: 45px 0px 58px 0px;
+    }
+    .benefitGrp h2{
+        font-size: 35px;
+        line-height: 48px;
     }
     .contactSec{
         flex-direction: column !important;

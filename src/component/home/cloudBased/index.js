@@ -69,7 +69,7 @@ const CloudBased = () => {
             </div>
           </Link>
         </div>
-        <Link href={"/doctor-appoinment-system"}>
+        <Link href={"/doctor-appointment-system"}>
           <div className="CloudCard">
             <p>Doctor Appointment System</p>
             <Icon

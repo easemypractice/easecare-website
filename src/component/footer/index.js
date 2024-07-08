@@ -3,15 +3,17 @@ import { Box, Heading, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import EaseCareLogo from "@/images/logo.svg";
-import ClarityLogo from "@/images/clarity-logo.svg";
+import EaseCareLogo from "@/images/logo-dark.svg";
+import ClarityLogo from "@/images/clarity-logo-light.png";
 import { Icon } from "@iconify/react";
-import callIcon from "@/images/call.svg";
-import mailIcon from "@/images/mail.svg";
-import locationIcon from "@/images/location.svg";
+import appStore from "@/images/appStore.svg";
+import playStore from "@/images/googleplay.svg";
 const Footer = () => {
   return (
     <Box className="footer" id="footer-easecare">
+      <Heading as="h2">
+        India&apos;s Trusted Doctor Software - EaseCare Clarity
+      </Heading>
       <Box className="container footer-inner">
         {/* <Box>
           <Box className="flex-align footer-top">
@@ -25,32 +27,38 @@ const Footer = () => {
           </Box>
         </Box> */}
         <Box className=" justify-between footer-middle">
-          <Box className="footer-links">
+          <Box className="footer-links" style={{ maxWidth: "275px" }}>
             <Heading as="h3">Contact Us</Heading>
-            <p class="name-s">EASECARE HEALTHTECH LLP</p>
+            {/* <p class="name-s">EASECARE HEALTHTECH LLP</p> */}
             <ul>
               <li class="footerCon">
-                {/* Customer Care:{" "} */}
-                <Image src={callIcon} width={17} height={17} alt="" />
+                <Icon
+                  icon="mi:call"
+                  color="white"
+                  width={"20"}
+                  height={"20"}
+                ></Icon>
                 <Link href="tel:+91-8006777110">+91-8006777110</Link>
               </li>
               <li class="footerCon">
-                {/* Email address:{" "} */}
-                {/* <Image src={mailIcon} width={17} height={17} alt="" /> */}
                 <Icon
                   icon="mdi:email-outline"
-                  color="black"
+                  color="white"
                   width={"20"}
                   height={"20"}
                 ></Icon>
                 <Link href="mailto:hello@easecare.co">hello@easecare.co</Link>
               </li>
               <li class="addre">
-                {/* <span>Address:</span> */}
-                <Image src={locationIcon} width={20} height={20} alt="" />
+                <Icon
+                  icon="ion:location-outline"
+                  color="white"
+                  width={"35"}
+                  height={"35"}
+                ></Icon>
                 <span>
-                  III FLOOR, USHA TOWER, KEDARPURAM, NEW CANAL ROAD, MOTHROWALA,
-                  Dehradun- 248001, Uttarakhand, India
+                  3rd floor, Usha Tower, Kedarpuram, New Canal Road, Mothrowala,
+                  Dehradun-248001 (India)
                 </span>
               </li>
             </ul>
@@ -62,97 +70,52 @@ const Footer = () => {
                 <Link href="/about">About us</Link>
               </li>
               <li>
-                <Link href="#">Contact us</Link>
+                <Link href="/contact-us">Contact us</Link>
               </li>
               <li>
-                <Link href="/clarity">Clarity Method</Link>
+                <Link href="/pricing">Pricing</Link>
               </li>
               <li>
-                <Link href="/security">Security</Link>
+                <Link href="/features">Features</Link>
               </li>
               <li>
-                <Link href="#">Features</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link href="#">Pricing</Link>
-              </li>
-              <li>
-                <Link href="/blog">Blog </Link>
+                <Link href="https://clarity.easecare.co/login">Log In</Link>
               </li>
             </ul>
           </Box>
           <Box className="footer-links">
-            <Heading as="h3">Features</Heading>
+            <Heading as="h3">Important Links</Heading>
             <ul>
               <li>
-                <Link href="/patient-management">
-                  Patient Management System
-                </Link>
+                <Link href="/patient-management">Clarity Method</Link>
               </li>
               <li>
-                <Link href="/practice-management">
-                  Practice Management Software
-                </Link>
+                <Link href="/terms-and-condition">Terms & Conditions</Link>
               </li>
               <li>
-                <Link href="/clinic-management">
-                  Clinic Management Software
-                </Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="/healthcare-management">
-                  Healthcare Management Software
-                </Link>
+                <Link href="#">Security</Link>
               </li>
               <li>
-                <Link href="/doctor-appoinment-system">
-                  Doctor Appointment System
-                </Link>
-              </li>
-              <li>
-                <Link href="/medical-billing-software">
-                  Medical Billing Software
-                </Link>
-              </li>
-              <li>
-                <Link href="/ehr-emr-software">
-                  Electronic Health Records Software
-                </Link>
+                <Link href="#">Brand Guidelines</Link>
               </li>
             </ul>
           </Box>
-          <Box className="footer-links">
-            <Heading as="h3">Products</Heading>
-            <ul>
-              <li>
-                <Link href="/software-for-multiple-clinic-chain">
-                  Software For Multiple Clinic Chain
-                </Link>
-              </li>
-              <li>
-                <Link href="/patient-appointment-scheduling-software">
-                  Appoinment Scheduling Software
-                </Link>
-              </li>
-              <li>
-                <Link href="/prescription-software-for-doctors">
-                  ePrescription Software
-                </Link>
-              </li>
-              <li>
-                <Link href="/healthcare-inventory-management-systems">
-                  Inventory Management Software
-                </Link>
-              </li>
-              <li>
-                <Link href="/offline-clinic-management-software">
-                  Offline software for doctors & Clinic
-                </Link>
-              </li>
-              <li>
-                <Link href="#">Telemedicine App For Clinics</Link>
-              </li>
-            </ul>
+          <Box className=" downloadApp">
+            <Heading as="h4">Download the EaseCare Clarity App</Heading>
+            <div className="flex flex-col">
+              <Link href="https://apps.apple.com/in/app/clarity-ehr/id6468764592">
+                <Image src={playStore} width={120} />
+              </Link>
+              <Link href="https://play.google.com/store/apps/details?id=com.easemypractice.atlas">
+                <Image src={appStore} width={120} />
+              </Link>
+            </div>
           </Box>
         </Box>
         <Box>
@@ -230,11 +193,13 @@ const Footer = () => {
         </Box>
         <Box className="text-center footer-copyright">
           {" "}
-          <Text className="purple-color">
+          <Text>
             <Link href={"/terms-and-condition"}>Terms & Conditions</Link> |{" "}
             <Link href={"/privacy-policy"}>Privacy Policy</Link>
           </Text>
-          <Text as="p">© 2024 EaseCare Inc. All Rights Reserved</Text>
+          <Text as="p" style={{ color: "white" }}>
+            © 2024 EaseCare Inc. All Rights Reserved
+          </Text>
         </Box>
       </Box>
     </Box>

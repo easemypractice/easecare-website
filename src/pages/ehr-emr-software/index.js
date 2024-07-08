@@ -1,5 +1,5 @@
 import { Layout } from "@/app/layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 import bgImg from "@/images/ehrbannerbg.png";
@@ -12,6 +12,13 @@ import VarientTypes from "@/component/patientManagement/varientsTypes";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
 import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
 import DifferenceCard from "@/component/patientManagement/differenceCard";
+import { useRouter } from "next/router";
+import { getFeatureData } from "@/utils/service";
+import HeroComp from "@/component/feature/HeroComp";
+import CardsGroups from "@/component/feature/benefitCards";
+import ContactSection from "@/component/feature/contactSection";
+import MultiColorCardSec from "@/component/feature/multiColorCard";
+import NavDetailsSection from "@/component/feature/navDetailsSection";
 const ehremrBannerData = [
   {
     maxWidth: "max-width-full p-5",
@@ -349,54 +356,82 @@ const differenceData = {
   ],
 };
 const EHREMR = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setData(res);
+    });
+  };
   return (
-    <Layout>
-      <HeadPart
-        title={
-          "EHR /EMR Software: Electronic Health Records Software Solutions"
-        }
-        description={
-          "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
-        }
-        imageUrl={FeaturesPreviewImage}
-      />
-      <PatientManagmentBanner data={ehremrBannerData} />
-      <BenefitPatients data={BenefitEHR} />
-      <div className="my-6">
-        <ContactUsPatients
-          image={featureImg}
-          content="Are you looking for an EHR/EMR software for managing patient data?"
-          btnText="Get a free Demo"
-          alt="electronic health records software"
-        />
-      </div>
-      <FeaturesPatient data={featuresEHR} />
-      <div
-        style={{
-          paddingBottom: "70px",
-        }}
-      >
-        <VarientTypes TypesVarientData={whatEHRSystem} />
-      </div>
-      <div style={{ paddingBottom: "30px" }}>
-        <DifferenceCard data={differenceData} />
-      </div>
-      <SelectRight data={TypesOfEHR} />
-      <div className="my-6">
-        <ContactUsPatients
-          image={cuateImg}
-          content="Want to know which EMR system is best for your organization"
-          btnText="Get a free Demo"
-          alt="electronic health records software"
-        />
-      </div>
-      <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
-        <VarientTypes TypesVarientData={HowChooseBestBilling} />
-      </div>
-      <div style={{ backgroundColor: "#FCFBF6" }}>
-        <BenefitPatients data={whyChooseSoftware} />
-      </div>
-    </Layout>
+    <React.Fragment>
+      {data.map((item) => (
+        <React.Fragment key={item?._id}>
+          <Layout>
+            <HeadPart
+              title={
+                "EHR /EMR Software: Electronic Health Records Software Solutions"
+              }
+              description={
+                "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
+              }
+              imageUrl={FeaturesPreviewImage}
+            />
+            {/* <PatientManagmentBanner data={ehremrBannerData} /> */}
+            <HeroComp data={item.heroComp} />
+            <CardsGroups data={item.benefitsOfEHR} />
+            <ContactSection data={item.ContactFormOne} />
+            <MultiColorCardSec data={item.FeaturesEHR} />
+            <CardsGroups data={item.WhatIsEHR} />
+            <MultiColorCardSec data={item.EHRvsEMR} />
+            <NavDetailsSection data={item.typesOfEHR} />
+            <ContactSection data={item.ContactFormTwo} />
+            <CardsGroups data={item.findingBestEHR} />
+            <CardsGroups data={item.benefitsOfUsingEHR} />
+            {/* <BenefitPatients data={BenefitEHR} /> */}
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={featureImg}
+                content="Are you looking for an EHR/EMR software for managing patient data?"
+                btnText="Get a free Demo"
+                alt="electronic health records software"
+              />
+            </div> */}
+            {/* <FeaturesPatient data={featuresEHR} /> */}
+            {/* <div
+              style={{
+                paddingBottom: "70px",
+              }}
+            >
+              <VarientTypes TypesVarientData={whatEHRSystem} />
+            </div> */}
+            {/* <div style={{ paddingBottom: "30px" }}>
+              <DifferenceCard data={differenceData} />
+            </div> */}
+            {/* <SelectRight data={TypesOfEHR} /> */}
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={cuateImg}
+                content="Want to know which EMR system is best for your organization"
+                btnText="Get a free Demo"
+                alt="electronic health records software"
+              />
+            </div> */}
+            {/* <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
+              <VarientTypes TypesVarientData={HowChooseBestBilling} />
+            </div>
+            <div style={{ backgroundColor: "#FCFBF6" }}>
+              <BenefitPatients data={whyChooseSoftware} />
+            </div> */}
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 

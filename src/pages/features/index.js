@@ -3,42 +3,55 @@ import Analytics from "@/component/features/analytics";
 import Calendar from "@/component/features/calendar";
 import ClinicManagement from "@/component/features/clinicManagement";
 import FeaturesBanner from "@/component/features/featuresBanner";
-import PatientManagement from "@/component/features/patientManagement";
 import CtaSection from "@/component/home/cta";
 import React, { useEffect, useState } from "react";
 import { Layout } from "../../app/layout";
 import HeadPart from "@/component/Head/head";
 import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import Link from "next/link";
-import { getSlugs } from "@/utils/service";
+import { getFeatureData, getSlugs } from "@/utils/service";
+import HeroComp from "@/component/feature/HeroComp";
+import { useRouter } from "next/router";
+import ImageWithContent from "@/component/features/imageWithContent";
+import BenefitCard from "@/component/patientManagement/banefits/benefitCard";
+import CardsGroups from "@/component/feature/benefitCards";
 const FeaturesLayout = () => {
-  const [slugs, setSlugs] = useState([]);
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [data, setData] = useState([]);
   useEffect(() => {
-    getSlugs().then((res) => {
-      setSlugs(res);
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setData(res);
     });
-  }, []);
+  };
+  console.log(data);
   return (
-    <Layout>
-      <HeadPart
-        title={"Clarity - Features"}
-        description={
-          "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
-        }
-        imageUrl={FeaturesPreviewImage}
-      />
-      {/* {slugs.map((item, index) => (
-        <Link key={index} href={`/features/${item?.slug?.current}`}>
-          To Link {item?.slug?.current}
-        </Link>
-      ))} */}
-      <FeaturesBanner />
-      <PatientManagement />
-      <ClinicManagement />
-      <Analytics />
-      <Calendar />
-      <CtaSection />
-    </Layout>
+    <React.Fragment>
+      {data.map((item, index) => (
+        <React.Fragment key={index}>
+          <Layout>
+            <HeadPart
+              title={"Clarity - Features"}
+              description={
+                "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+              }
+              imageUrl={FeaturesPreviewImage}
+            />
+            <FeaturesBanner data={item.heroComp} />
+            {item.imageWithContent.map((item, index) => (
+              <React.Fragment key={index}>
+                <ImageWithContent data={item} />
+              </React.Fragment>
+            ))}
+            <CardsGroups data={item.whyEaseCareClarity} />
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 

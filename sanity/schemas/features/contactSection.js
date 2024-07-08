@@ -4,13 +4,18 @@ export default {
   title: "Contact section",
   fields: [
     {
+      title: "Is card purple",
+      name: "purpleCard",
+      type: "boolean",
+    },
+    {
       name: "image",
       type: "image",
       title: "Image",
     },
     {
       name: "content",
-      type: "string",
+      type: "blockContent",
       title: "Content",
     },
     {

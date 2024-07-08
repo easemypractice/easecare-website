@@ -1,5 +1,5 @@
 import { Layout } from "@/app/layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 import bgImg from "@/images/revenueCycleBanner.png";
@@ -9,6 +9,12 @@ import BenefitPatients from "@/component/patientManagement/banefits";
 import FeaturesPatient from "@/component/patientManagement/featurePatients";
 import VarientTypes from "@/component/patientManagement/varientsTypes";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
+import { useRouter } from "next/router";
+import { getFeatureData } from "@/utils/service";
+import HeroComp from "@/component/feature/HeroComp";
+import CardsGroups from "@/component/feature/benefitCards";
+import MultiColorCardSec from "@/component/feature/multiColorCard";
+import NavDetailsSection from "@/component/feature/navDetailsSection";
 const revenueCycleBannerData = [
   {
     maxWidth: "maxWidth-55r p-5",
@@ -284,31 +290,56 @@ const HowChooseBestBilling = {
   ],
 };
 const MedicalBilling = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setData(res);
+    });
+  };
   return (
-    <Layout>
-      <HeadPart
-        title={"Efficient Medical Billing Software Solutions for Clinics"}
-        description={
-          "Automate your clinic's operations with our doctor appointment software, an all-in-one solution for efficiently handling scheduling, patient registration, billing."
-        }
-        imageUrl={FeaturesPreviewImage}
-      />
-      <PatientManagmentBanner data={revenueCycleBannerData} />
-      <BenefitPatients data={whyRCMSoftware} />
-      <FeaturesPatient data={benefitsOfHolisticRevenue} />
-      <div
-        style={{
-          paddingBottom: "70px",
-        }}
-      >
-        <VarientTypes TypesVarientData={effectiveRevenueCycle} />
-      </div>
-      <SelectRight data={RevenueManagementSoftwareBanafit} />
-      <VarientTypes TypesVarientData={HowChooseBestBilling} />
-      <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
-        <BenefitPatients data={whyChooseSoftware} />
-      </div>
-    </Layout>
+    <React.Fragment>
+      {data.map((item) => (
+        <React.Fragment key={item?._id}>
+          <Layout>
+            <HeadPart
+              title={"Efficient Medical Billing Software Solutions for Clinics"}
+              description={
+                "Automate your clinic's operations with our doctor appointment software, an all-in-one solution for efficiently handling scheduling, patient registration, billing."
+              }
+              imageUrl={FeaturesPreviewImage}
+            />
+            <HeroComp data={item.heroComp} />
+            {/* <PatientManagmentBanner data={revenueCycleBannerData} /> */}
+            {/* <BenefitPatients data={whyRCMSoftware} /> */}
+            <CardsGroups data={item.importantForHeathCare} />
+            <MultiColorCardSec data={item.benefitsOfHolisticRCM} />
+            <CardsGroups data={item.stepsForEffectiveRevenue} />
+            <NavDetailsSection data={item.benefitsOfRCM} />
+            <CardsGroups data={item.chooseBestMedicalBilling} />
+            <CardsGroups data={item.whyChooseUs} />
+            {/* <FeaturesPatient data={benefitsOfHolisticRevenue} /> */}
+            {/* <div
+              style={{
+                paddingBottom: "70px",
+              }}
+            >
+              <VarientTypes TypesVarientData={effectiveRevenueCycle} />
+            </div> */}
+            {/* <SelectRight data={RevenueManagementSoftwareBanafit} /> */}
+            {/* <VarientTypes TypesVarientData={HowChooseBestBilling} /> */}
+            {/* <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
+              <BenefitPatients data={whyChooseSoftware} />
+            </div> */}
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 

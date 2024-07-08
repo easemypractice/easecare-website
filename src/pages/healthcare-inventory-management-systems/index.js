@@ -1,5 +1,5 @@
 import { Layout } from "@/app/layout";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeadPart from "@/component/Head/head";
 import PatientManagmentBanner from "@/component/patientManagement/banner";
 import bgImg from "@/images/healthCareInventory.png";
@@ -12,6 +12,12 @@ import VarientTypes from "@/component/patientManagement/varientsTypes";
 import SelectRight from "@/component/patientManagement/selectRightPatient";
 import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
 import BenefitCard from "@/component/patientManagement/banefits/benefitCard";
+import { useRouter } from "next/router";
+import { getFeatureData } from "@/utils/service";
+import HeroComp from "@/component/feature/HeroComp";
+import CardsGroups from "@/component/feature/benefitCards";
+import ContactSection from "@/component/feature/contactSection";
+import MultiColorCardSec from "@/component/feature/multiColorCard";
 const Bannerdata = [
   {
     maxWidth: "max-width-80 p-5",
@@ -102,7 +108,7 @@ const HowHelpfulForDoctors = {
         "Effective inventory management system reduces waste inventory management in clinics and hospitals. It ensures that no product surpasses its expiry date without any usage. It helps in the optimum use of medical supplies along with reducing costs.",
     },
     {
-      icon: "carbon:money",
+      icon: "icon-park-outline:bill",
       bgColor: "#FFF2DD",
       IconWidth: "30",
       IconbgColor: "#FAE2BB",
@@ -237,8 +243,9 @@ const whyChooseSoftware = [
 
 const HowToManageMadicalInventorySoftware = [
   {
-    HeadingClass: "max-width-55r py-10",
+    HeadingClass: "max-width-80 py-10",
     HeadingFirst: "How to Manage Medical Inventory",
+
     HeadingSec: "Software in a Simple Way?",
     paraClass: "pb-40",
     para: "Embrace the simple and cost-effective way to manage the medical inventory for your clinic with EaseCare’s Clinic inventory management system",
@@ -286,72 +293,100 @@ const HowToManageMadicalInventorySoftware = [
   },
 ];
 const OfflineSoftwareForPractice = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    getFeaturesData(slug);
+  }, [slug]);
+
+  const getFeaturesData = async (slug) => {
+    await getFeatureData(slug).then((res) => {
+      setData(res);
+    });
+  };
   return (
-    <Layout>
-      <HeadPart
-        title={"Best Medical Inventory Management Software Solution"}
-        description={
-          "Manage complex billing seamlessly with our medical billing software. Focus on patient care, not paperwork. Simplify your process today."
-        }
-        // imageUrl={FeaturesPreviewImage}
-      />
-      <PatientManagmentBanner data={Bannerdata} />
-      <div style={{ paddingTop: "50px" }}>
-        <BenefitPatients data={WhyClinicInventory} />
-      </div>
-      <div className="my-6">
-        <ContactUsPatients
-          image={featureImg}
-          content="Know what a medical inventory management system can do for your clinic"
-          btnText="Get a free Demo"
-          alt="healthcare inventory management systems"
-        />
-      </div>
-      <div
-        style={{
-          paddingBottom: "70px",
-          backgroundColor: "#FCFBF6",
-        }}
-      >
-        <VarientTypes TypesVarientData={KeepTrackOfAllMedicalSupplies} />
-      </div>
-      <div
-        style={{ backgroundColor: "#ffff", padding: "20px" }}
-        className="mobileCol"
-      >
-        <div className="flex container mobileCol gap-20">
-          <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
-        </div>
-      </div>
-      <FeaturesPatient data={HowHelpfulForDoctors} />
-      <div className="my-6">
-        <ContactUsPatients
-          image={cuateImg}
-          content="Want to know more about how EaseCare’s Clinic inventory management system can help you?"
-          btnText="Get a free Demo"
-          alt="healthcare inventory management systems"
-        />
-      </div>
-      <div
-        style={{
-          paddingBottom: "70px",
-          backgroundColor: "#FCFBF6",
-        }}
-      >
-        <VarientTypes TypesVarientData={HowToOptamizeMedicalAssets} />
-      </div>
-      <div style={{ backgroundColor: "#FCFBF6", paddingBottom: "50px" }}>
-        <BenefitPatients data={HowToManageMadicalInventorySoftware} />
-      </div>
-      <div className="my-6">
-        <ContactUsPatients
-          image={featureImg}
-          content="Know how EaseCare’s online medicine inventory management system can help your revolutionize your healthcare success?"
-          btnText="Get a free Demo"
-          alt="healthcare inventory management systems"
-        />
-      </div>
-    </Layout>
+    <React.Fragment>
+      {data.map((item) => (
+        <React.Fragment key={item?._id}>
+          <Layout>
+            <HeadPart
+              title={"Best Medical Inventory Management Software Solution"}
+              description={
+                "Manage complex billing seamlessly with our medical billing software. Focus on patient care, not paperwork. Simplify your process today."
+              }
+              // imageUrl={FeaturesPreviewImage}
+            />
+            <HeroComp data={item.heroComp} />
+            <CardsGroups data={item.inventoryManagementImpForClinic} />
+            <ContactSection data={item.contactFormOne} />
+            <CardsGroups data={item.keepTrackofAllMedicalSupplies} />
+            <CardsGroups data={item.extraBenfits} />
+            <MultiColorCardSec data={item.HowHelpsDoctors} />
+            <ContactSection data={item.contactFormTwo} />
+            <CardsGroups data={item.optimizeMedicalAssets} />
+            <CardsGroups data={item.manageInSimpleWay} />
+            <ContactSection data={item.contactFormThree} />
+            {/* <PatientManagmentBanner data={Bannerdata} /> */}
+            {/* <div style={{ paddingTop: "50px" }}>
+              <BenefitPatients data={WhyClinicInventory} />
+            </div> */}
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={featureImg}
+                content="Know what a medical inventory management system can do for your clinic"
+                btnText="Get a free Demo"
+                alt="healthcare inventory management systems"
+              />
+            </div> */}
+            {/* <div
+              style={{
+                paddingBottom: "70px",
+                backgroundColor: "#FCFBF6",
+              }}
+            >
+              <VarientTypes TypesVarientData={KeepTrackOfAllMedicalSupplies} />
+            </div> */}
+            {/* <div
+              style={{ backgroundColor: "#ffff", padding: "20px" }}
+              className="mobileCol"
+            >
+              <div className="flex container mobileCol gap-20">
+                <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
+              </div>
+            </div> */}
+            {/* <FeaturesPatient data={HowHelpfulForDoctors} /> */}
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={cuateImg}
+                content="Want to know more about how EaseCare’s Clinic inventory management system can help you?"
+                btnText="Get a free Demo"
+                alt="healthcare inventory management systems"
+              />
+            </div> */}
+            {/* <div
+              style={{
+                paddingBottom: "70px",
+                backgroundColor: "#FCFBF6",
+              }}
+            >
+              <VarientTypes TypesVarientData={HowToOptamizeMedicalAssets} />
+            </div> */}
+            {/* <div style={{ backgroundColor: "#FCFBF6", paddingBottom: "50px" }}>
+              <BenefitPatients data={HowToManageMadicalInventorySoftware} />
+            </div> */}
+            {/* <div className="my-6">
+              <ContactUsPatients
+                image={featureImg}
+                content="Know how EaseCare’s online medicine inventory management system can help your revolutionize your healthcare success?"
+                btnText="Get a free Demo"
+                alt="healthcare inventory management systems"
+              />
+            </div> */}
+          </Layout>
+        </React.Fragment>
+      ))}
+    </React.Fragment>
   );
 };
 
