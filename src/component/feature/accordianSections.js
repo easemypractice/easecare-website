@@ -6,12 +6,18 @@ import { Icon } from "@iconify/react";
 import CustomBlockText from "../customBlockText";
 const AccordianSections = ({ data }) => {
   return (
-    <div className={`${styles.FAQSection} container`}>
-      <div className={`${styles.Heading} text-start ${styles.headingPadding}`}>
-        <CustomBlockText blocks={data?.heading} />
-      </div>
-      <AccordionComp data={data.accor} />
-    </div>
+    <>
+      {data && (
+        <div className={`${styles.FAQSection} container`}>
+          <div
+            className={`${styles.Heading} text-start ${styles.headingPadding}`}
+          >
+            <CustomBlockText blocks={data?.heading} />
+          </div>
+          <AccordionComp data={data?.accor} />
+        </div>
+      )}
+    </>
   );
 };
 
@@ -106,12 +112,13 @@ const StyledContentText = styled("div", {
 const AccordionComp = ({ data }) => {
   return (
     <AccordionRoot type="single" collapsible>
-      {data.map((item, index) => (
-        <AccordionItem value={item._key} key={index}>
-          <AccordionTrigger>{item.accordienTitle}</AccordionTrigger>
-          <AccordionContent>{item.accordienContent}</AccordionContent>
-        </AccordionItem>
-      ))}
+      {data &&
+        data?.map((item, index) => (
+          <AccordionItem value={item?._key} key={index}>
+            <AccordionTrigger>{item?.accordienTitle}</AccordionTrigger>
+            <AccordionContent>{item?.accordienContent}</AccordionContent>
+          </AccordionItem>
+        ))}
     </AccordionRoot>
   );
 };
