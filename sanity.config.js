@@ -13,7 +13,7 @@ import deskStructure from "./sanity/deskStructure";
 export default defineConfig({
   basePath: "/studio",
   projectId: "w2lce9jj",
-  dataset: "producation",
+  dataset: "production",
   schema: schema,
   plugins: [
     structureTool({

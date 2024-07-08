@@ -5,7 +5,7 @@
     },
     "api": {
         "projectId": "w2lce9jj",
-        "dataset": "producation",
+        "dataset": "production",
         "apiVersion": "2024-05-06"
     },
     "plugins": [
