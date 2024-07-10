@@ -17,26 +17,37 @@ const ImageWithContent = ({ data }) => {
   return (
     <div
       className="patient-management border-b-gray"
-      style={{ backgroundColor: data?.backgroundColor?.hex }}
+      style={{ backgroundColor: data?.backgroundColor }}
     >
       <div className="container">
         <div className="imageWithContent">
           <div>
-            <CustomBlockText blocks={data?.content} />
+            {/* <CustomBlockText blocks={data?.content} /> */}
+            <Heading as="h2">{data.title}</Heading>
+            <p>{data.description}</p>
+            <ul>
+              {data?.listItem?.map((item, index) => (
+                <li key={index}>
+                  <Icon
+                    icon="ic:round-check-circle"
+                    width={25}
+                    height={25}
+                    color="#1AC55E"
+                  />
+                  <span className="flex-1">{item.list}</span>
+                </li>
+              ))}
+            </ul>
             <div className="flex" style={{ gap: "30px", marginTop: "35px" }}>
               <Link href={"/book-a-demo"} className="purple-btn">
                 Get a Free Demo
               </Link>
-              <Link href={"/book-a-demo"} className="purple-outline">
+              <Link href="" className="purple-outline">
                 Learn more
               </Link>
             </div>
           </div>
-          <Image
-            src={`${data?.image ? urlFor(data?.image) : ""} `}
-            width={500}
-            height={355}
-          />
+          <Image src={data?.image} />
         </div>
       </div>
     </div>

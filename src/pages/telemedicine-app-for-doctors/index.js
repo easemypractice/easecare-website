@@ -270,17 +270,17 @@ const TelemedicineApp = () => {
   };
   return (
     <React.Fragment>
-      {data.map((item) => (
-        <React.Fragment key={item?._id}>
-          <Layout>
-            <HeadPart
-              title={"Best Teleconsultation App for doctors and patients"}
-              description={
-                "EaseCare Clarity stands out as the premier video consultation app for doctors and patients. This telemedicine app helps patients book online appointments from anywhere."
-              }
-              // imageUrl={FeaturesPreviewImage}
-            />
-            <HeroComp data={item.heroComp} />
+      {/* {data.map((item) => (
+        <React.Fragment key={item?._id}> */}
+      <Layout>
+        <HeadPart
+          title={"Best Teleconsultation App for doctors and patients"}
+          description={
+            "EaseCare Clarity stands out as the premier video consultation app for doctors and patients. This telemedicine app helps patients book online appointments from anywhere."
+          }
+          // imageUrl={FeaturesPreviewImage}
+        />
+        {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.attractMorePatients} />
             <CardsGroups data={item.extraBenefits} />
             <CardsGroups data={item.givePatientsWhatTheyWant} />
@@ -289,65 +289,69 @@ const TelemedicineApp = () => {
             <CardsGroups data={item.simplifyMedicalPractice} />
             <ContactSection data={item.contactFormTwo} />
             <NavDetailsSection data={item.featuresOfTelemedicine} />
-            <ContactSection data={item.contactFormThree} />
-            {/* <PatientManagmentBanner data={Bannerdata} /> */}
-            {/* <div style={{ paddingTop: "50px" }}>
-              <BenefitPatients data={AttractMorePatients} />
-            </div> */}
-            {/* <div
-              style={{ backgroundColor: "#ffff", padding: "20px" }}
-              className="mobileCol"
-            >
-              <div className="flex container mobileCol gap-20">
-                <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
-              </div>
-            </div> */}
-            {/* <div
-              style={{
-                paddingBottom: "70px",
-                backgroundColor: "#FCFBF6",
-              }}
-            >
-              <VarientTypes TypesVarientData={GivePatientsWhatTheyWant} />
-            </div> */}
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Want to know how a telemedicine mobile app will help your clinic?"
-                btnText="Get a free Demo"
-                alt="telemedicine app for doctors"
-              />
-            </div> */}
-            {/* <FeaturesPatient data={InprovePatientCare} /> */}
-            {/* <div
-              style={{
-                paddingBottom: "70px",
-                backgroundColor: "#FCFBF6",
-              }}
-            >
-              <VarientTypes TypesVarientData={SimplifyYourMedical} />
-            </div> */}
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={cuateImg}
-                content="Want to know more about how EaseCare’s Clinic inventory management system can help you?"
-                btnText="Get a free Demo"
-                alt="telemedicine app for doctors"
-              />
-            </div> */}
-            {/* <SelectRight data={FeaturesOfTelemedicine} /> */}
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Build Your Own Telemedicine Mobile App For Doctors & Clinics"
-                purpleCard="true"
-                description="Having a dedicated app for your patients helps you keep track of everything without having the stress of going through thousands of documents. Hence, having a dedicated telemedicine mobile app and doctor consultation app removes the need for various tools making it cost-effective, efficient, and productive for you at the same time."
-                alt="telemedicine app for doctors"
-              />
-            </div> */}
-          </Layout>
-        </React.Fragment>
-      ))}
+            <ContactSection data={item.contactFormThree} /> */}
+        <PatientManagmentBanner data={Bannerdata} />
+        <div style={{ paddingTop: "50px" }}>
+          <BenefitPatients data={AttractMorePatients} />
+        </div>
+        <div
+          style={{
+            backgroundColor: "#ffff",
+            padding: "20px",
+            margin: "50px 0px",
+          }}
+          className="mobileCol"
+        >
+          <div className="flex container mobileCol gap-20">
+            <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
+          </div>
+        </div>
+        <div
+          style={{
+            paddingBottom: "70px",
+            backgroundColor: "#FCFBF6",
+          }}
+        >
+          <VarientTypes TypesVarientData={GivePatientsWhatTheyWant} />
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Want to know how a telemedicine mobile app will help your clinic?"
+            btnText="Get a free Demo"
+            alt="telemedicine app for doctors"
+          />
+        </div>
+        <FeaturesPatient data={InprovePatientCare} />
+        <div
+          style={{
+            paddingBottom: "70px",
+            backgroundColor: "#FCFBF6",
+          }}
+        >
+          <VarientTypes TypesVarientData={SimplifyYourMedical} />
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={cuateImg}
+            content="Want to know more about how EaseCare’s Clinic inventory management system can help you?"
+            btnText="Get a free Demo"
+            alt="telemedicine app for doctors"
+          />
+        </div>
+        <SelectRight data={FeaturesOfTelemedicine} />
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Build Your Own Telemedicine Mobile App For Doctors & Clinics"
+            purpleCard="true"
+            description="Having a dedicated app for your patients helps you keep track of everything without having the stress of going through thousands of documents. Hence, having a dedicated telemedicine mobile app and doctor consultation app removes the need for various tools making it cost-effective, efficient, and productive for you at the same time."
+            alt="telemedicine app for doctors"
+          />
+        </div>
+      </Layout>
+      {/* </React.Fragment>
+      ))} */}
     </React.Fragment>
   );
 };

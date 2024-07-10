@@ -143,7 +143,7 @@ const WhyPrescriptionWrittingSoftware = {
     {
       icon: "fluent-mdl2:transition-effect",
       IconWidth: "30",
-      heading: "Service Experience ",
+      heading: "Improved Service Experience ",
       description:
         "Our prescription writing software doesn’t only make it easy for doctors to enhance their patient service but also improves the service experience of the patients",
     },
@@ -244,6 +244,7 @@ const whyChooseSoftware = [
   },
 ];
 const HowEnhancePatientSafty = {
+  HeadingClass: "max-width-full py-10",
   containerClass: "#F8FFFA",
   HeadingFirst: "How Does e-prescribing Enhance",
   HeadingSec: "Patient Safety and Boost Compliance",
@@ -284,7 +285,7 @@ const HowEnhancePatientSafty = {
 };
 const offerAdditionalSolution = [
   {
-    HeadingClass: "max-width-full",
+    HeadingClass: "max-width-full py-10",
     HeadingFirst: "Offering Additional Solutions for Your",
     HeadingSec: "Electronic Prescription Management Workflow",
     // paraClass: "pb-40",
@@ -347,17 +348,17 @@ const PrescriptionSoftware = () => {
   };
   return (
     <React.Fragment>
-      {data.map((item) => (
-        <React.Fragment key={item?._id}>
-          <Layout>
-            <HeadPart
-              title={"Electronic prescription software for doctors and Clinics"}
-              description={
-                "Enhance patient care with our e-prescribing software. Remember every detail, make patients feel heard, and build lasting connections"
-              }
-              imageUrl={FeaturesPreviewImage}
-            />
-            <HeroComp data={item.heroComp} />
+      {/* {data.map((item) => (
+        <React.Fragment key={item?._id}> */}
+      <Layout>
+        <HeadPart
+          title={"Electronic prescription software for doctors and Clinics"}
+          description={
+            "Enhance patient care with our e-prescribing software. Remember every detail, make patients feel heard, and build lasting connections"
+          }
+          imageUrl={FeaturesPreviewImage}
+        />
+        {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.exploreFeild} />
             <MultiColorCardSec data={item.whyGoodForAnyMedicalOrg} />
             <CardsGroups data={item.controlledSubstancesAndDrugs} />
@@ -366,55 +367,55 @@ const PrescriptionSoftware = () => {
             <ContactSection data={item.contactFormOne} />
             <CardsGroups data={item.enhancePatientSafty} />
             <ContactSection data={item.contactFormOne} />
-            <CardsGroups data={item.offeringAdditionalSolutions} />
-            {/* <PatientManagmentBanner data={prescriptionBanner} /> */}
-            {/* <div
-              style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
-              className="mobileCol"
-            >
-              <div className="flex container mobileCol gap-20">
-                <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
-              </div>
-            </div> */}
-            {/* <BenefitPatients data={whyPrescriptionSoftwareGood} /> */}
-            {/* <div style={{ margin: "50px 0px 0px" }}>
-              <FeaturesPatient data={SoftwareForControlledSubstances} />
-            </div> */}
-            {/* <div
-              style={{
-                paddingBottom: "70px",
-              }}
-            >
-              <VarientTypes
-                TypesVarientData={WhyPrescriptionWrittingSoftware}
-              />
-            </div> */}
-            {/* <SelectRight data={featuresOfPrescriptionSoftware} />
-            <div className="my-6">
-              <ContactUsPatients
-                image={cuateImg}
-                content="Want to know how our EHR-based prescriptions are best for you"
-                btnText="Get a free Demo"
-                alt="e prescribing software for doctor"
-              />
-            </div>
-            <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
-              <VarientTypes TypesVarientData={HowEnhancePatientSafty} />
-            </div>
-            <ContactUsPatients
-              image={cuateImg}
-              content="Enhanced Accuracy, Efficiency & Value"
-              btnText="Contact us"
-              purpleCard="true"
-              description="Electronic prescription software has the potential to transform the workflow of your clinic while it is known for increasing the accuracy, efficiency, and value. As the prescription software is computerized, it is not only known for its accuracy. More than this, it can integrate thousands of tasks and manage patient prescriptions for which your staff would require hours in a single day"
-              alt="e prescribing software for doctor"
-            />
-            <div style={{ backgroundColor: "#FCFBF6" }}>
-              <BenefitPatients data={offerAdditionalSolution} />
-            </div> */}
-          </Layout>
-        </React.Fragment>
-      ))}
+            <CardsGroups data={item.offeringAdditionalSolutions} /> */}
+        <PatientManagmentBanner data={prescriptionBanner} />
+        <div
+          style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
+          className="mobileCol"
+        >
+          <div className="flex container mobileCol gap-20">
+            <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
+          </div>
+        </div>
+        <BenefitPatients data={whyPrescriptionSoftwareGood} />
+        <div style={{ margin: "50px 0px 0px" }}>
+          <FeaturesPatient data={SoftwareForControlledSubstances} />
+        </div>
+        <div
+          style={{
+            paddingBottom: "70px",
+          }}
+        >
+          <VarientTypes TypesVarientData={WhyPrescriptionWrittingSoftware} />
+        </div>
+        <SelectRight data={featuresOfPrescriptionSoftware} />
+        <div className="my-6">
+          <ContactUsPatients
+            image={cuateImg}
+            content="Want to know how our EHR-based prescriptions are best for you"
+            btnText="Get a free Demo"
+            alt="e prescribing software for doctor"
+          />
+        </div>
+        <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
+          <VarientTypes TypesVarientData={HowEnhancePatientSafty} />
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={cuateImg}
+            content="Enhanced Accuracy, Efficiency & Value"
+            btnText="Contact us"
+            purpleCard="true"
+            description="Electronic prescription software has the potential to transform the workflow of your clinic while it is known for increasing the accuracy, efficiency, and value. As the prescription software is computerized, it is not only known for its accuracy. More than this, it can integrate thousands of tasks and manage patient prescriptions for which your staff would require hours in a single day"
+            alt="e prescribing software for doctor"
+          />
+        </div>
+        <div style={{ backgroundColor: "#FCFBF6", padding: "50px 0px" }}>
+          <BenefitPatients data={offerAdditionalSolution} />
+        </div>
+      </Layout>
+      {/* </React.Fragment>
+      ))} */}
     </React.Fragment>
   );
 };
