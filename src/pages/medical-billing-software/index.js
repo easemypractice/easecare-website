@@ -27,7 +27,7 @@ const revenueCycleBannerData = [
 ];
 const whyRCMSoftware = [
   {
-    HeadingClass: "max-width-full",
+    HeadingClass: "max-width-80",
     HeadingFirst: "Why are RCM Software Solutions ",
     HeadingSec: "Important for Healthcare Facilities",
     // paraClass: "pb-40",
@@ -253,6 +253,7 @@ const whyChooseSoftware = [
   },
 ];
 const HowChooseBestBilling = {
+  HeadingClass: "max-width-full",
   HeadingFirst: "How to Choose the Best Medical",
   HeadingSec: "Billing Services Company",
   para: "Following are some of the factors, you should not miss when you are searching for a good medical billing services company for your  organization",
@@ -314,28 +315,30 @@ const MedicalBilling = () => {
               }
               imageUrl={FeaturesPreviewImage}
             />
-            <HeroComp data={item.heroComp} />
-            {/* <PatientManagmentBanner data={revenueCycleBannerData} /> */}
-            {/* <BenefitPatients data={whyRCMSoftware} /> */}
-            <CardsGroups data={item.importantForHeathCare} />
-            <MultiColorCardSec data={item.benefitsOfHolisticRCM} />
-            <CardsGroups data={item.stepsForEffectiveRevenue} />
-            <NavDetailsSection data={item.benefitsOfRCM} />
-            <CardsGroups data={item.chooseBestMedicalBilling} />
-            <CardsGroups data={item.whyChooseUs} />
-            {/* <FeaturesPatient data={benefitsOfHolisticRevenue} /> */}
-            {/* <div
+            {/* <HeroComp data={item.heroComp} /> */}
+            <PatientManagmentBanner data={revenueCycleBannerData} />
+            <div style={{ margin: "20px 0px" }}>
+              <BenefitPatients data={whyRCMSoftware} />
+            </div>
+            {/* <CardsGroups data={item.importantForHeathCare} /> */}
+            {/* <MultiColorCardSec data={item.benefitsOfHolisticRCM} /> */}
+            {/* <CardsGroups data={item.stepsForEffectiveRevenue} /> */}
+            {/* <NavDetailsSection data={item.benefitsOfRCM} /> */}
+            {/* <CardsGroups data={item.chooseBestMedicalBilling} /> */}
+            {/* <CardsGroups data={item.whyChooseUs} /> */}
+            <FeaturesPatient data={benefitsOfHolisticRevenue} />
+            <div
               style={{
                 paddingBottom: "70px",
               }}
             >
               <VarientTypes TypesVarientData={effectiveRevenueCycle} />
-            </div> */}
-            {/* <SelectRight data={RevenueManagementSoftwareBanafit} /> */}
-            {/* <VarientTypes TypesVarientData={HowChooseBestBilling} /> */}
-            {/* <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
+            </div>
+            <SelectRight data={RevenueManagementSoftwareBanafit} />
+            <VarientTypes TypesVarientData={HowChooseBestBilling} />
+            <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
               <BenefitPatients data={whyChooseSoftware} />
-            </div> */}
+            </div>
           </Layout>
         </React.Fragment>
       ))}

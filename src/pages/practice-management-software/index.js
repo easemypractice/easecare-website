@@ -239,34 +239,35 @@ const PracticeManagement = () => {
               }
               // imageUrl={FeaturesPreviewImage}
             />
-            <HeroComp data={item.heroComp} />
-            {/* <PatientManagmentBanner data={practiceManagementData} /> */}
-            <CardsGroups data={item.benefitsOfTakingsoftware} />
-            {/* <BenefitPatients data={practiceBenefits} /> */}
+            {/* <HeroComp data={item.heroComp} /> */}
+            <PatientManagmentBanner data={practiceManagementData} />
+            {/* <CardsGroups data={item.benefitsOfTakingsoftware} /> */}
+            <BenefitPatients data={practiceBenefits} />
             <Divider />
-            {/* <ContactUsPatients
+            <ContactUsPatients
               image={contactImg}
               content="I’m sure you are also looking for a way how to make your clinic operations effective and seamless while reducing costs and enhancing profits."
               btnText="Contact us today"
               link={"contact"}
               alt="practice management software"
-            /> */}
-            <ContactSection data={item.contactFormOne} />
-            <CardsGroups data={item.reasonToImplementSoftware} />
-            {/* <VarientTypes TypesVarientData={TypesVarientData} /> */}
-            {/* <div className="my-6">
+            />
+            {/* <ContactSection data={item.contactFormOne} /> */}
+            {/* <CardsGroups data={item.reasonToImplementSoftware} /> */}
+            <VarientTypes TypesVarientData={TypesVarientData} />
+            <div className="my-6">
               <ContactUsPatients
                 image={featureImg}
                 content="While you have learned why your clinic needs practice management software. Know here how to get the best one"
                 btnText="Book a Demo"
                 link={"book-a-demo"}
               />
-            </div> */}
-            <ContactSection data={item.contactFormTwo} />
-            <TabsSelectCards data={item.benefitsOfPracticeManagemnent} />
-            <ContactSection data={item.contactFormThree} />
+            </div>
+            {/* <ContactSection data={item.contactFormTwo} /> */}
+            {/* <TabsSelectCards data={item.benefitsOfPracticeManagemnent} /> */}
+            <TabsSelectCards />
+            {/* <ContactSection data={item.contactFormThree} /> */}
             <BenefitPatients data={howToUseSoftware} />
-            {/* <div className="mb-2 mt-2">
+            <div style={{ margin: "50px 0px" }}>
               <ContactUsPatients
                 image={cuateImg}
                 content="Explore the optimum use of practice management software for your organization"
@@ -274,17 +275,17 @@ const PracticeManagement = () => {
                 link={"book-a-demo"}
                 alt="practice management software"
               />
-            </div> */}
-            {/* <div style={{ padding: "00px 0px 50px" }}>
+            </div>
+            <div style={{ padding: "00px 0px 50px" }}>
               <BenefitPatients data={howToUseSoftware} />
-            </div> */}
-            <NavDetailsSection data={item.UsersOfSoftware} />
-            {/* <SelectRight data={practiceRightsData} /> */}
-            {/* <div style={{ backgroundColor: "#FCFBF6", marginTop: "30px" }}>
+            </div>
+            {/* <NavDetailsSection data={item.UsersOfSoftware} /> */}
+            <SelectRight data={practiceRightsData} />
+            <div style={{ backgroundColor: "#FCFBF6", marginTop: "30px" }}>
               <BenefitPatients data={BestPracticeData} />
-            </div> */}
-            <BenefitPatients data={item.howUseFullForLargerPractice} />
-            {/* <div className="my-6">
+            </div>
+            {/* <BenefitPatients data={item.howUseFullForLargerPractice} /> */}
+            <div className="my-6">
               <ContactUsPatients
                 image={cuateImg}
                 content="Want to turn your clinic into a success story?  EaseCare - Clarity is here to help you with the best healthcare software solutions"
@@ -292,8 +293,8 @@ const PracticeManagement = () => {
                 link={"book-a-demo"}
                 alt="practice management software"
               />
-            </div> */}
-            <ContactSection data={item.contactFormFour} />
+            </div>
+            {/* <ContactSection data={item.contactFormFour} /> */}
           </Layout>
         </React.Fragment>
       ))}

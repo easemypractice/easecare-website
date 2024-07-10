@@ -110,7 +110,7 @@ const BestPracticeData = [
 const TypesVarientData = {
   HeadingFirst: "The Challenges in Managing a Clinic",
   HeadingSec: "Without a Clinic Management System",
-  HeadingClass: "max-width-full pb-40",
+  HeadingClass: "max-width-full",
   para: "A robust clinic management system software helps you overcome various challenges, some of them are as follows",
   cardType: "varient",
   CardData: [
@@ -336,13 +336,13 @@ const ClinicManagement = () => {
               }
               imageUrl={FeaturesPreviewImage}
             />
-            {/* <PatientManagmentBanner data={clinicBannerData} /> */}
-            <HeroComp data={item.heroComp} />
-            <CardsGroups data={item.whyImportantToStreamline} />
-            <CardsGroups data={item.challengesInManagingClinic} />
-            {/* <BenefitPatients data={clinicBenefits} /> */}
-            {/* <VarientTypes TypesVarientData={TypesVarientData} /> */}
-            {/* <div className="my-6">
+            <PatientManagmentBanner data={clinicBannerData} />
+            {/* <HeroComp data={item.heroComp} /> */}
+            {/* <CardsGroups data={item.whyImportantToStreamline} /> */}
+            {/* <CardsGroups data={item.challengesInManagingClinic} /> */}
+            <BenefitPatients data={clinicBenefits} />
+            <VarientTypes TypesVarientData={TypesVarientData} />
+            <div className="my-6">
               <ContactUsPatients
                 image={featureImg}
                 content="Want to know how clinic management software helps you manage your clinic"
@@ -350,17 +350,17 @@ const ClinicManagement = () => {
                 link={"book-a-demo"}
                 alt={"clinic management system software"}
               />
-            </div> */}
-            <ContactSection data={item.contactFormOne} />
-            <MultiColorCardSec data={item.whyNeedClinicManagement} />
-            <CardsGroups data={item.benefitsClinicManagement} />
-            {/* <FeaturesPatient data={whyClinicData} /> */}
-            {/* <VarientTypes TypesVarientData={BenefitClinicManagementData} /> */}
-            <NavDetailsSection data={item.featuresClinicManagemnt} />
-            {/* <div className="my-6">
+            </div>
+            {/* <ContactSection data={item.contactFormOne} /> */}
+            {/* <MultiColorCardSec data={item.whyNeedClinicManagement} /> */}
+            {/* <CardsGroups data={item.benefitsClinicManagement} /> */}
+            <FeaturesPatient data={whyClinicData} />
+            <VarientTypes TypesVarientData={BenefitClinicManagementData} />
+            {/* <NavDetailsSection data={item.featuresClinicManagemnt} /> */}
+            <div className="my-6">
               <SelectRight data={cinicManagementData} />
-            </div> */}
-            {/* <div className="my-6">
+            </div>
+            <div className="my-6">
               <ContactUsPatients
                 image={featureImg}
                 content="Revolutionize the workforce of your clinic with all these essential features in one software with EaseCare"
@@ -368,22 +368,22 @@ const ClinicManagement = () => {
                 link={"book-a-demo"}
                 alt={"clinic management system software"}
               />
-            </div> */}
-            <ContactSection data={item.contactFormTwo} />
-            <CardsGroups data={item.considerBeforeImplement} />
-            <MultiColorCardSec data={item.addOnPoints} />
-            <ContactSection data={item.contactFormThree} />
-            {/* <div style={{ backgroundColor: "#FCFBF6" }}>
+            </div>
+            {/* <ContactSection data={item.contactFormTwo} /> */}
+            {/* <CardsGroups data={item.considerBeforeImplement} /> */}
+            {/* <MultiColorCardSec data={item.addOnPoints} /> */}
+            {/* <ContactSection data={item.contactFormThree} /> */}
+            <div style={{ backgroundColor: "#FCFBF6" }}>
               <BenefitPatients data={BestPracticeData} />
-            </div> */}
-            {/* <div className="my-6">
+            </div>
+            <div className="my-6">
               <div className="container">
                 <div className={styles.CardGrp}>
                   <FeaturesCard data={AdvantageData} />
                 </div>
               </div>
-            </div> */}
-            {/* <div className="my-6">
+            </div>
+            <div className="my-6">
               <ContactUsPatients
                 image={featureImg}
                 content="Explore the best and most cost-effective clinic management software with us"
@@ -391,7 +391,7 @@ const ClinicManagement = () => {
                 link={"book-a-demo"}
                 alt={"clinic management system software"}
               />
-            </div> */}
+            </div>
           </Layout>
         </React.Fragment>
       ))}

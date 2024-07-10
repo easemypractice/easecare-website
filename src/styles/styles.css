@@ -60,6 +60,9 @@ body {
 .max-width-80{
   max-width: 80% !important;
 }
+.max-width-90{
+  max-width: 90% !important;
+}
 
 .heading-24 {
   color: var(--Clarity-Colors-Shark, #1d2026);
@@ -170,7 +173,7 @@ ul.navLinks li:hover {
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
 }
 
 .flex-align {
@@ -300,8 +303,9 @@ ul.navLinks li:hover {
 }
 
 .w-full {
-  width: 100%;
+  width: 100% !important;
 }
+
 
 .gap-3{
   gap: 12px;
@@ -466,6 +470,10 @@ header nav {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-black{
+  color:black !important
 }
 
 .banner-text {

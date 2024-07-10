@@ -514,17 +514,17 @@ const PatientAppoinmentScheduling = () => {
   };
   return (
     <React.Fragment>
-      {data.map((item) => (
-        <React.Fragment key={item?._id}>
-          <Layout>
-            <HeadPart
-              title={"Appointment Scheduling Software For Medical Practices"}
-              description={
-                "Attracting new target audiences or making your old patients keep coming back to you, our electronic health records software is here to help you manage your patients."
-              }
-              imageUrl={FeaturesPreviewImage}
-            />
-            <HeroComp data={item.heroComp} />
+      {/* {data.map((item) => (
+        <React.Fragment key={item?._id}> */}
+      <Layout>
+        <HeadPart
+          title={"Appointment Scheduling Software For Medical Practices"}
+          description={
+            "Attracting new target audiences or making your old patients keep coming back to you, our electronic health records software is here to help you manage your patients."
+          }
+          imageUrl={FeaturesPreviewImage}
+        />
+        {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.commonAppoinmentMethod} />
             <ContactSection data={item.contactFormOne} />
             <CardsGroups data={item.extraBenefits} />
@@ -538,95 +538,93 @@ const PatientAppoinmentScheduling = () => {
             <CardsGroups data={item.BenefitOfPatientSchedulingforPatients} />
             <ContactSection data={item.contactFormThree} />
             <CardsGroups data={item.featuresOfEaseCareAppoinment} />
-            <CardsGroups data={item.easyToSetup} />
-            {/* <PatientManagmentBanner data={AppoinmentScheduleBanner} /> */}
-            {/* <div style={{ paddingTop: "50px" }}>
-              <BenefitPatients data={MostCommonlyUsedAppoinmnetmethord} />
-            </div> */}
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Want to make it more productive? Here is how you can do it"
-                btnText="Get a free Demo"
-                alt="patient appointment scheduling software"
-              />
-            </div> */}
-            {/* <div
-              style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
-              className="mobileCol"
-            >
-              <div className="flex container mobileCol gap-20">
-                <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
-              </div>
-            </div> */}
-            {/* <FeaturesPatient data={GoodBuyToManualAppoinment} /> */}
-            {/* <div
-              style={{
-                paddingBottom: "70px",
-              }}
-            >
-              <BenefitPatients data={ExampleOfPatientScheduling} />
-            </div> */}
-            {/* <div className="grid grid-cols-2 container mobileGrid gap-20">
-              <BenefitCard cardType={"benefit"} data={EasyErrorFree} />
-            </div>
-            <div className="my-6">
-              <ContactUsPatients
-                image={cuateImg}
-                content="EaseCare’s patient appointment scheduling software will help you at its best to improve your practice"
-                btnText="Get a free Demo"
-                alt="patient appointment scheduling software"
-              />
-            </div> */}
-            {/* <SelectRight data={benefitOfPatientAppoinment} /> */}
-            {/* <div
-              style={{
-                paddingBottom: "70px",
-                backgroundColor: "#F8FFFA",
-              }}
-            >
-              <VarientTypes TypesVarientData={WhyLookForMadicalAppoinment} />
-            </div>
-            <div
-              style={{
-                paddingBottom: "70px",
-                backgroundColor: "#FCFBF6",
-              }}
-            >
-              <VarientTypes
-                TypesVarientData={BenefitOfPatientSchedulingSoftware}
-              />
-            </div> */}
-            {/* <div
-              style={{
-                paddingBottom: "70px",
-                backgroundColor: "#F8FFFA",
-              }}
-            >
-              <VarientTypes TypesVarientData={BenefitofPatient} />
-            </div> */}
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="While patient appointment scheduling software is profitable both for you and your patients."
-                btnText="Get a free Demo"
-                alt="patient appointment scheduling software"
-              />
-            </div>
-            <div
-              style={{
-                backgroundColor: "#F8FFFA",
-                paddingBottom: "35px",
-              }}
-            >
-              <BenefitPatients data={FeaturesOfEaseCareAppointmentSoftware} />
-            </div>
-            <div style={{ backgroundColor: "#FCFBF6" }}>
-              <BenefitPatients data={EasyToSetup} />
-            </div> */}
-          </Layout>
-        </React.Fragment>
-      ))}
+            <CardsGroups data={item.easyToSetup} /> */}
+        <PatientManagmentBanner data={AppoinmentScheduleBanner} />
+        <div style={{ paddingTop: "50px" }}>
+          <BenefitPatients data={MostCommonlyUsedAppoinmnetmethord} />
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Want to make it more productive? Here is how you can do it"
+            btnText="Get a free Demo"
+            alt="patient appointment scheduling software"
+          />
+        </div>
+        <div
+          style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
+          className="mobileCol"
+        >
+          <div className="flex container mobileCol gap-20">
+            <BenefitCard cardType={"practice"} data={whyChooseSoftware} />
+          </div>
+        </div>
+        <FeaturesPatient data={GoodBuyToManualAppoinment} />
+        <div
+          style={{
+            paddingBottom: "70px",
+          }}
+        >
+          <BenefitPatients data={ExampleOfPatientScheduling} />
+        </div>
+        <div className="grid grid-cols-2 container mobileGrid gap-20">
+          <BenefitCard cardType={"benefit"} data={EasyErrorFree} />
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={cuateImg}
+            content="EaseCare’s patient appointment scheduling software will help you at its best to improve your practice"
+            btnText="Get a free Demo"
+            alt="patient appointment scheduling software"
+          />
+        </div>
+        <SelectRight data={benefitOfPatientAppoinment} />
+        <div
+          style={{
+            paddingBottom: "70px",
+            backgroundColor: "#F8FFFA",
+          }}
+        >
+          <VarientTypes TypesVarientData={WhyLookForMadicalAppoinment} />
+        </div>
+        <div
+          style={{
+            paddingBottom: "70px",
+            backgroundColor: "#FCFBF6",
+          }}
+        >
+          <VarientTypes TypesVarientData={BenefitOfPatientSchedulingSoftware} />
+        </div>
+        <div
+          style={{
+            paddingBottom: "70px",
+            backgroundColor: "#F8FFFA",
+          }}
+        >
+          <VarientTypes TypesVarientData={BenefitofPatient} />
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="While patient appointment scheduling software is profitable both for you and your patients."
+            btnText="Get a free Demo"
+            alt="patient appointment scheduling software"
+          />
+        </div>
+        <div
+          style={{
+            backgroundColor: "#F8FFFA",
+            paddingBottom: "35px",
+          }}
+        >
+          <BenefitPatients data={FeaturesOfEaseCareAppointmentSoftware} />
+        </div>
+        <div style={{ backgroundColor: "#FCFBF6" }}>
+          <BenefitPatients data={EasyToSetup} />
+        </div>
+      </Layout>
+      {/* </React.Fragment>
+      ))} */}
     </React.Fragment>
   );
 };
