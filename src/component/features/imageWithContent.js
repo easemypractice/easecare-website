@@ -13,7 +13,6 @@ import CustomBlockText from "../customBlockText";
 import { urlFor } from "@/app/lib/sanity";
 import Link from "next/link";
 const ImageWithContent = ({ data }) => {
-  console.log(data);
   return (
     <div
       className="patient-management border-b-gray"
@@ -21,7 +20,7 @@ const ImageWithContent = ({ data }) => {
     >
       <div className="container">
         <div className="imageWithContent">
-          <div>
+          <div className="imageWithContentLeft">
             {/* <CustomBlockText blocks={data?.content} /> */}
             <Heading as="h2">{data.title}</Heading>
             <p>{data.description}</p>
@@ -47,7 +46,7 @@ const ImageWithContent = ({ data }) => {
               </Link>
             </div>
           </div>
-          <Image src={data?.image} />
+          <Image src={data?.image} className="FeatureImg" />
         </div>
       </div>
     </div>

@@ -211,19 +211,6 @@ const data = [
   },
 ];
 const FeaturesLayout = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   getFeaturesData(slug);
-  // }, [slug]);
-
-  // const getFeaturesData = async (slug) => {
-  //   await getFeatureData(slug).then((res) => {
-  //     setData(res);
-  //   });
-  // };
-  // console.log(data);
   return (
     <React.Fragment>
       {data.map((item, index) => (
