@@ -211,7 +211,7 @@ const keyAspectMadicalRecord = {
 };
 
 const BenefitOfEffectiveRecords = {
-  HeadingClass: "max-width-full",
+  HeadingClass: "max-width-full p-0",
   HeadingFirst: "Benefits of Effective Records",
   HeadingSec: "Management System",
   RightData: [
@@ -247,7 +247,7 @@ const BenefitOfEffectiveRecords = {
 };
 const ModuleHosptalManage = [
   {
-    // HeadingClass: "max-width-full py-10",
+    HeadingClass: "max-width-full py-10",
     HeadingFirst: "Modules of Hospital Management System",
     paraClass: "pb-40",
     para: "Below are various aspects or modules of hospital management, which are handled by a medical management system",
@@ -295,8 +295,9 @@ const ModuleHosptalManage = [
 ];
 const BestHealthCare = [
   {
-    maxWidth: "maxWidth-55r",
+    maxWidth: "max-width-80",
     HeadingClass: "py-10",
+    paraClass: "pb-40",
     HeadingFirst: "How to Choose the Best Health",
     HeadingSec: "Care Management Software?",
     cardType: "practice",
@@ -360,11 +361,11 @@ const HealthCareManagement = () => {
               }
               imageUrl={FeaturesPreviewImage}
             />
-            {/* <PatientManagmentBanner data={healthcareBannerData} /> */}
-            <HeroComp data={item.heroComp} />
-            {/* <BenefitPatients data={healthcareBenefits} /> */}
-            <CardsGroups data={item.benefitHealthCareManage} />
-            {/* <div className="my-6">
+            <PatientManagmentBanner data={healthcareBannerData} />
+            {/* <HeroComp data={item.heroComp} /> */}
+            <BenefitPatients data={healthcareBenefits} />
+            {/* <CardsGroups data={item.benefitHealthCareManage} /> */}
+            <div className="my-6">
               <ContactUsPatients
                 image={featureImg}
                 content="Want to explore this further? EaseCare-Clarity is here to guide you anytime"
@@ -372,14 +373,16 @@ const HealthCareManagement = () => {
                 link={"book-a-demo"}
                 alt="healthcare management software"
               />
-            </div> */}
-            <ContactSection data={item.contactFormOne} />
-            <MultiColorCardSec data={item.featuresOfHealthCare} />
-            {/* <FeaturesPatient data={FeatuesHealthCare} /> */}
-            <CardsGroups data={item.keyAspects} />
-            <CardsGroups data={item.scope} />
-            {/* <VarientTypes TypesVarientData={keyAspectMadicalRecord} /> */}
-            {/* <div
+            </div>
+            {/* <ContactSection data={item.contactFormOne} /> */}
+            {/* <MultiColorCardSec data={item.featuresOfHealthCare} /> */}
+            <FeaturesPatient data={FeatuesHealthCare} />
+            {/* <CardsGroups data={item.keyAspects} /> */}
+            {/* <CardsGroups data={item.scope} /> */}
+            <div style={{ backgroundColor: "#FCFEFF" }}>
+              <VarientTypes TypesVarientData={keyAspectMadicalRecord} />
+            </div>
+            <div
               style={{
                 backgroundColor: "#F2FEF8",
                 margin: "50px 0px 0px",
@@ -387,15 +390,23 @@ const HealthCareManagement = () => {
               }}
             >
               <BenefitPatients data={MedicalRecordScope} />
-            </div> */}
-            <NavDetailsSection data={item.benefitOfEffectiveRecords} />
-            <CardsGroups data={item.modulesOfHospitals} />
-            <CardsGroups data={item.howChooseBestPactice} />
-            {/* <SelectRight data={BenefitOfEffectiveRecords} /> */}
-            {/* <BenefitPatients data={ModuleHosptalManage} /> */}
-            {/* <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
+            </div>
+            {/* <NavDetailsSection data={item.benefitOfEffectiveRecords} /> */}
+            {/* <CardsGroups data={item.modulesOfHospitals} /> */}
+            {/* <CardsGroups data={item.howChooseBestPactice} /> */}
+            <SelectRight data={BenefitOfEffectiveRecords} />
+            <div style={{ margin: "20px 0px" }}>
+              <BenefitPatients data={ModuleHosptalManage} />
+            </div>
+            <div
+              style={{
+                backgroundColor: "#FCFBF6",
+                margin: "25px 0px 0px",
+                padding: "0px 0px 30px",
+              }}
+            >
               <BenefitPatients data={BestHealthCare} />
-            </div> */}
+            </div>
           </Layout>
         </React.Fragment>
       ))}

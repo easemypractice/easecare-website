@@ -270,76 +270,84 @@ const featureData = {
 };
 
 const PatientManagement = () => {
-  const router = useRouter();
-  const slug = router.pathname.replace("/", "");
-  const [patientData, setPatientData] = useState([]);
-  useEffect(() => {
-    getFeaturesData(slug);
-  }, [slug]);
+  // const router = useRouter();
+  // const slug = router.pathname.replace("/", "");
+  // const [patientData, setPatientData] = useState([]);
+  // useEffect(() => {
+  //   getFeaturesData(slug);
+  // }, [slug]);
 
-  const getFeaturesData = async (slug) => {
-    await getFeatureData(slug).then((res) => {
-      setPatientData(res);
-    });
-  };
+  // const getFeaturesData = async (slug) => {
+  //   await getFeatureData(slug).then((res) => {
+  //     setPatientData(res);
+  //   });
+  // };
   return (
     <React.Fragment>
-      {patientData.map((item) => (
-        <React.Fragment key={item?._id}>
-          <Layout>
-            <HeadPart
-              title={item?.metadata?.title}
-              description={item?.metadata?.description}
-              // imageUrl={FeaturesPreviewImage}
-            />
-            <HeroComp data={item.heroComp} />
-            {/* <PatientManagmentBanner data={patientBannerData} /> */}
-            {/* <BenefitPatients data={patientBenefits} /> */}
-            <CardsGroups data={item.PatientBenefits} />
-            <Divider />
-            {/* <ContactUsPatients
-              image={contactImg}
-              content="Want to explore the optimum benefits of the best patient data management system?"
-              btnText="Contact us today"
-              link={"contact"}
-              alt="Patient management software"
-            /> */}
-            <ContactSection data={item.ContactFormOne} />
-            <CardsGroups data={item.ExploringPatientManagement} />
-            {/* <VarientTypes TypesVarientData={TypesVarientData} /> */}
-            <MultiColorCardSec data={item.FeaturesOfPatientManagement} />
-            {/* <FeaturesPatient data={featureData} /> */}
-            {/* <ContactUsPatients
-              image={featureImg}
-              content="Want to explore more features? Contact EaseCare-Clarity today and get a free demo!"
-              btnText="Contact us today"
-              link={"contact"}
-              alt="Patient management software"
-            /> */}
-            <ContactSection data={item.ContactFormTwo} />
-            <ChallangeFaced data={item.challangeFaced} />
-            {/* <SelectRight data={patientRightData} /> */}
-            <NavDetailsSection data={item.selectRightPatient} />
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={cuateImg}
-                content="Finding the best clinic patient management system? EaseCare-Clarity is your destination. Reach out to us and you will not regret your decision!"
-                btnText="Get a free Demo"
-                link={"book-a-demo"}
-                alt="Patient management software"
-              />
-              
-            </div> */}
-            <ContactSection data={item.ContactFormThree} />
-            <CardsGroups data={item.WhyChoosePatientManagement} />
-            {/* <div style={{ backgroundColor: "#FCFBF6" }}>
-              <BenefitPatients data={BestPracticeData} />
-            </div> */}
-            {/* <FAQs /> */}
-            <AccordianSections data={item.accordienSec} />
-          </Layout>
-        </React.Fragment>
-      ))}
+      {/* {patientData.map((item) => (
+        <React.Fragment key={item?._id}> */}
+      <Layout>
+        <HeadPart
+          title={
+            "Patient Management System for Doctors & Clinics - EaseCare Clarity"
+          }
+          description={
+            "Patient Management Software for medical practices, clinic management, doctor profiles, patient records, and consultations. Discover how it can enhance your practice."
+          }
+          // imageUrl={FeaturesPreviewImage}
+        />
+        {/* <HeroComp data={item.heroComp} /> */}
+        <PatientManagmentBanner data={patientBannerData} />
+        <BenefitPatients data={patientBenefits} />
+        {/* <CardsGroups data={item.PatientBenefits} /> */}
+        <Divider />
+        <ContactUsPatients
+          image={contactImg}
+          content="Want to explore the optimum benefits of the best patient data management system?"
+          btnText="Contact us today"
+          link={"contact"}
+          alt="Patient management software"
+        />
+        {/* <ContactSection data={item.ContactFormOne} /> */}
+        {/* <CardsGroups data={item.ExploringPatientManagement} /> */}
+        <div style={{ margin: "50px 0px" }}>
+          <VarientTypes TypesVarientData={TypesVarientData} />
+        </div>
+        {/* <MultiColorCardSec data={item.FeaturesOfPatientManagement} /> */}
+        <FeaturesPatient data={featureData} />
+        <div style={{ margin: "30px 0px" }}>
+          <ContactUsPatients
+            image={featureImg}
+            content="Want to explore more features? Contact EaseCare-Clarity today and get a free demo!"
+            btnText="Contact us today"
+            link={"contact"}
+            alt="Patient management software"
+          />
+        </div>
+        {/* <ContactSection data={item.ContactFormTwo} /> */}
+        {/* <ChallangeFaced data={item.challangeFaced} /> */}
+        <ChallangeFaced />
+        <SelectRight data={patientRightData} />
+        {/* <NavDetailsSection data={item.selectRightPatient} /> */}
+        <div className="my-6">
+          <ContactUsPatients
+            image={cuateImg}
+            content="Finding the best clinic patient management system? EaseCare-Clarity is your destination. Reach out to us and you will not regret your decision!"
+            btnText="Get a free Demo"
+            link={"book-a-demo"}
+            alt="Patient management software"
+          />
+        </div>
+        {/* <ContactSection data={item.ContactFormThree} /> */}
+        {/* <CardsGroups data={item.WhyChoosePatientManagement} /> */}
+        <div style={{ backgroundColor: "#FCFBF6" }}>
+          <BenefitPatients data={BestPracticeData} />
+        </div>
+        <FAQs />
+        {/* <AccordianSections data={item.accordienSec} /> */}
+      </Layout>
+      {/* </React.Fragment>
+      ))} */}
     </React.Fragment>
   );
 };

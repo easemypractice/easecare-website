@@ -37,7 +37,7 @@ const VarientTypes = ({ TypesVarientData }) => {
       >
         <div className="flex justify-center flex-col items-center gap-20">
           <div
-            className={`${styles.Heading} ${styles.maxheadingWid} ${TypesVarientData?.HeadingClass}`}
+            className={`${TypesVarientData?.HeadingClass} ${styles.Heading} ${styles.maxheadingWid}`}
           >
             <span>{TypesVarientData?.HeadingFirst}</span>{" "}
             <div className={styles.GradHead}>

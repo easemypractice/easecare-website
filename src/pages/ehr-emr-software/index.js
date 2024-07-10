@@ -219,8 +219,8 @@ const TypesOfEHR = {
 const whyChooseSoftware = [
   {
     HeadingClass: "max-width-full",
-    HeadingFirst: "Benefits of Using EMR EHR Software",
-    HeadingSec: "for Patient and Clinic Management",
+    HeadingFirst: "Benefits of Using EMR EHR Software for",
+    HeadingSec: "Patient and Clinic Management",
     // paraClass: "pb-40",
     cardType: "practice",
     // cardClass: "grid-cols-3",
@@ -268,6 +268,7 @@ const whyChooseSoftware = [
   },
 ];
 const HowChooseBestBilling = {
+  HeadingClass: "max-width-full",
   containerClass: "#F8FFFA",
   HeadingFirst: "Finding the Best Electronic Medical",
   HeadingSec: "Records Software In India",
@@ -356,34 +357,34 @@ const differenceData = {
   ],
 };
 const EHREMR = () => {
-  const router = useRouter();
-  const slug = router.pathname.replace("/", "");
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    getFeaturesData(slug);
-  }, [slug]);
+  // const router = useRouter();
+  // const slug = router.pathname.replace("/", "");
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   getFeaturesData(slug);
+  // }, [slug]);
 
-  const getFeaturesData = async (slug) => {
-    await getFeatureData(slug).then((res) => {
-      setData(res);
-    });
-  };
+  // const getFeaturesData = async (slug) => {
+  //   await getFeatureData(slug).then((res) => {
+  //     setData(res);
+  //   });
+  // };
   return (
     <React.Fragment>
-      {data.map((item) => (
-        <React.Fragment key={item?._id}>
-          <Layout>
-            <HeadPart
-              title={
-                "EHR /EMR Software: Electronic Health Records Software Solutions"
-              }
-              description={
-                "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
-              }
-              imageUrl={FeaturesPreviewImage}
-            />
-            {/* <PatientManagmentBanner data={ehremrBannerData} /> */}
-            <HeroComp data={item.heroComp} />
+      {/* {data?.map((item) => ( */}
+      {/* <React.Fragment key={item?._id}> */}
+      <Layout>
+        <HeadPart
+          title={
+            "EHR /EMR Software: Electronic Health Records Software Solutions"
+          }
+          description={
+            "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
+          }
+          imageUrl={FeaturesPreviewImage}
+        />
+        <PatientManagmentBanner data={ehremrBannerData} />
+        {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.benefitsOfEHR} />
             <ContactSection data={item.ContactFormOne} />
             <MultiColorCardSec data={item.FeaturesEHR} />
@@ -392,45 +393,45 @@ const EHREMR = () => {
             <NavDetailsSection data={item.typesOfEHR} />
             <ContactSection data={item.ContactFormTwo} />
             <CardsGroups data={item.findingBestEHR} />
-            <CardsGroups data={item.benefitsOfUsingEHR} />
-            {/* <BenefitPatients data={BenefitEHR} /> */}
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Are you looking for an EHR/EMR software for managing patient data?"
-                btnText="Get a free Demo"
-                alt="electronic health records software"
-              />
-            </div> */}
-            {/* <FeaturesPatient data={featuresEHR} /> */}
-            {/* <div
-              style={{
-                paddingBottom: "70px",
-              }}
-            >
-              <VarientTypes TypesVarientData={whatEHRSystem} />
-            </div> */}
-            {/* <div style={{ paddingBottom: "30px" }}>
-              <DifferenceCard data={differenceData} />
-            </div> */}
-            {/* <SelectRight data={TypesOfEHR} /> */}
-            {/* <div className="my-6">
-              <ContactUsPatients
-                image={cuateImg}
-                content="Want to know which EMR system is best for your organization"
-                btnText="Get a free Demo"
-                alt="electronic health records software"
-              />
-            </div> */}
-            {/* <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
-              <VarientTypes TypesVarientData={HowChooseBestBilling} />
-            </div>
-            <div style={{ backgroundColor: "#FCFBF6" }}>
-              <BenefitPatients data={whyChooseSoftware} />
-            </div> */}
-          </Layout>
-        </React.Fragment>
-      ))}
+            <CardsGroups data={item.benefitsOfUsingEHR} /> */}
+        <BenefitPatients data={BenefitEHR} />
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Are you looking for an EHR/EMR software for managing patient data?"
+            btnText="Get a free Demo"
+            alt="electronic health records software"
+          />
+        </div>
+        <FeaturesPatient data={featuresEHR} />
+        <div
+          style={{
+            paddingBottom: "70px",
+          }}
+        >
+          <VarientTypes TypesVarientData={whatEHRSystem} />
+        </div>
+        <div style={{ paddingBottom: "30px" }}>
+          <DifferenceCard data={differenceData} />
+        </div>
+        <SelectRight data={TypesOfEHR} />
+        <div className="my-6">
+          <ContactUsPatients
+            image={cuateImg}
+            content="Want to know which EMR system is best for your organization"
+            btnText="Get a free Demo"
+            alt="electronic health records software"
+          />
+        </div>
+        <div style={{ backgroundColor: "#F8FFFA", paddingBottom: "35px" }}>
+          <VarientTypes TypesVarientData={HowChooseBestBilling} />
+        </div>
+        <div style={{ backgroundColor: "#FCFBF6", padding: "30px 0px" }}>
+          <BenefitPatients data={whyChooseSoftware} />
+        </div>
+      </Layout>
+      {/* </React.Fragment> */}
+      {/* ))} */}
     </React.Fragment>
   );
 };
