@@ -21,9 +21,9 @@ const HomeLayout = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity is a better way to manage practice"}
+        title={"Clarity is a better way to manage practice - EaseCare Clarity"}
         description={
-          "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
+          "Easecare Clarity is one of the best modern practice management systems. It provides a secure and hassle-free onboarding platform for clinics, doctors and Patients."
         }
         imageUrl={"/public/images/preview.jpg"}
       />

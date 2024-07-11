@@ -12,8 +12,10 @@ const AboutUsLayout = () => {
   return (
     <Layout>
       <HeadPart
-        title={"About - Clarity"}
-        description={"We’re bringing magic back to healthcare software."}
+        title={"Enhancing Healthcare Industry with EaseCare Clarity"}
+        description={
+          "Learn about our mission to innovate healthcare solutions. Discover Easecare Clarity's commitment to excellence in software and customer success."
+        }
         imageUrl={AboutPreviewImage}
       />
       <AboutBanner />

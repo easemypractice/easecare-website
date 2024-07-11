@@ -60,7 +60,10 @@ const HomeBanner = () => {
           allowFullScreen
         ></iframe> */}
         <div className="banner-image">
-          <Image src={HeroImag} alt={HeroImag} />
+          <Image
+            src={HeroImag}
+            alt="Snapshot of Easecare clarity clinic management software in real-time use."
+          />
         </div>
       </div>
     </div>

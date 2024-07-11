@@ -21,10 +21,10 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const AppoinmentScheduleBanner = [
   {
-    maxWidth: "max-width-full p-5",
+    maxWidth: "max-width-80 p-5",
     bannerStyle: "align-center",
     bgImg: bgImg,
-    HeadingFirst: "Appointment Scheduling Software",
+    HeadingFirst: "Patient Appointment Scheduling Software",
     description:
       "Scheduling an appointment is a brainstorming task where you have to give proper time to each patient without missing any because you don’t know which might turn into one of your potential customers. Does it take a long time, effort, and human resources for you to attract the attention of potential patients?",
   },
@@ -518,9 +518,9 @@ const PatientAppoinmentScheduling = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Appointment Scheduling Software For Medical Practices"}
+          title={"Best Patient Appointment Scheduling Software | Easecare"}
           description={
-            "Attracting new target audiences or making your old patients keep coming back to you, our electronic health records software is here to help you manage your patients."
+            "Accept your patient’s appointment 24/7 with our sophisticated Patient appointment scheduling software. Discover how our software makes managing appointments easy."
           }
           imageUrl={FeaturesPreviewImage}
         />

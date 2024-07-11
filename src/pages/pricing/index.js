@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import RootLayout from "@/app/layout";
 import CtaSection from "@/component/home/cta";
 import ClarityHospital from "@/component/pricing/clarityHospital";
@@ -12,9 +12,9 @@ const Pricing = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Pricing - Clarity"}
+        title={"How much does clinic management software cost?"}
         description={
-          "Use Easecare Clarity for free with your whole team. Upgrade to enable unlimited file uploads, patients and additional features.          "
+          "Discover clear and competitive pricing of our Clinic Management Software product. Free & Trial facility available for every Clinic & Doctor."
         }
         imageUrl={PricingPreview}
       />

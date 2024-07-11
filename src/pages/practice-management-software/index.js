@@ -233,9 +233,9 @@ const PracticeManagement = () => {
           {console.log(item)} */}
       <Layout>
         <HeadPart
-          title={"Medical practice management software for Clinics"}
+          title={"Practice Management Software for Clinic Success | Easecare"}
           description={
-            "Practice management software handles operations in medical. It captures patient demographics, schedules appointments, manages insurance, performs billing, and generates reports."
+            "Our Practice management software handles operations in health care. It captures patient demographics, schedules appointments, manages insurance, performs billing, and generates reports."
           }
           // imageUrl={FeaturesPreviewImage}
         />

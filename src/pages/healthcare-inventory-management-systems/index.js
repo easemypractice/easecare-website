@@ -311,9 +311,9 @@ const OfflineSoftwareForPractice = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Best Medical Inventory Management Software Solution"}
+          title={"Healthcare Inventory Management Systems | Easecare Clarity"}
           description={
-            "Manage complex billing seamlessly with our medical billing software. Focus on patient care, not paperwork. Simplify your process today."
+            "Get our healthcare inventory management systems for keeping your inventory in a more organised way. Manage orders, purchases, payments, sales etc with Easecare Clarity."
           }
           // imageUrl={FeaturesPreviewImage}
         />

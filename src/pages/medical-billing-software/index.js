@@ -17,10 +17,10 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const revenueCycleBannerData = [
   {
-    maxWidth: "maxWidth-55r p-5",
+    maxWidth: "max-width-full p-5",
     bgImg: bgImg,
     // subHeading: "Doctor Appointment Management Software",
-    HeadingFirst: "Revenue Cycle Management",
+    HeadingFirst: "Medical Billing Software Solutions",
     description:
       "A revenue cycle management is the complete financial process followed in the medical and healthcare industry to manage revenue and billing. It includes calculating the revenue right from registration to the final payment from the side of the patient for the service he is approaching the medical facility for. Revenue Cycle Management is based on the concept that when a patient schedules an appointment, all the efforts and measures of the medical setting should be focused on convincing the patient to try their services and finalize the claims and all the financial payments.",
   },
@@ -309,9 +309,11 @@ const MedicalBilling = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Efficient Medical Billing Software Solutions for Clinics"}
+          title={
+            "Efficient Medical Billing Software Solutions for Clinics | Easecare"
+          }
           description={
-            "Automate your clinic's operations with our doctor appointment software, an all-in-one solution for efficiently handling scheduling, patient registration, billing."
+            "Track your clinic bills and payments with Easecare Clarity Medical Billing Software. This software offers complete billing solutions for all healthcare providers."
           }
           imageUrl={FeaturesPreviewImage}
         />

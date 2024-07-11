@@ -15,7 +15,7 @@ const BrandLayout = () => {
       <HeadPart
         title={"Brand Guidelines - Clarity"}
         description={
-          "Resources for presenting the EaseCare Clarity brand consistently and professionally. "
+          "Explore our brand guidelines for healthcare software design, ensuring consistent visuals and messaging across platforms."
         }
         imageUrl={BrandPreiviewImage}
       />
