@@ -353,9 +353,9 @@ const HealthCareManagement = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Healthcare Management System Software -  EaseCare Clarity"}
+          title={"Healthcare Management System Software -  Easecare Clarity"}
           description={
-            "Healthcare management software digitally manages patient health information in facilities, offering expert solutions, automating operations."
+            "Our Healthcare management system software digitally manages patient health information in facilities, offering expert solutions, and automating operations. Explore Now!"
           }
           imageUrl={FeaturesPreviewImage}
         />

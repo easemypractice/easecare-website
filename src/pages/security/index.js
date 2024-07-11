@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import React from "react";
@@ -10,10 +10,10 @@ const Security = () => {
     <Layout>
       <HeadPart
         title={"Clarity - Security at Clarity"}
-        // description={
-        //   "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
-        // }
-        // imageUrl={AboutPreviewImage}
+        description={
+          "Learn about our robust security measures regarding safeguarding your healthcare data. Discover our commitment to privacy and compliance."
+        }
+        imageUrl={AboutPreviewImage}
       />
       <Box className="heading-box-security">
         <Box className="container-privacy">
@@ -41,7 +41,10 @@ const Security = () => {
               <Text as="p">
                 If you come across an issue that falls outside our predefined
                 scope, please reach out by emailing{" "}
-                <Link href="mailto:security@easecare.co." className="purple-color">
+                <Link
+                  href="mailto:security@easecare.co."
+                  className="purple-color"
+                >
                   security@easecare.co.
                 </Link>
                 <br />
@@ -59,9 +62,9 @@ const Security = () => {
               </ul>
               <Text as="p">
                 Upon receiving your email, our dedicated team will promptly
-                investigate the reported issue. We&apos;ll keep you informed of the
-                progress and may request additional details if necessary. Once
-                resolved, we will update our valued customers.
+                investigate the reported issue. We&apos;ll keep you informed of
+                the progress and may request additional details if necessary.
+                Once resolved, we will update our valued customers.
               </Text>
               <Text as="p">
                 We believe in recognizing your efforts; hence, for any valid
@@ -105,7 +108,8 @@ const Security = () => {
                 </li>
                 <li>Denial of Service attacks.</li>
                 <li>
-                  Attacks requiring physical access to the victim&apos;s computer.
+                  Attacks requiring physical access to the victim&apos;s
+                  computer.
                 </li>
                 <li>Theoretical attacks without proof of exploitability.</li>
                 <li>Man-in-the-middle attacks.</li>

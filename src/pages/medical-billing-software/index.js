@@ -309,9 +309,11 @@ const MedicalBilling = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Efficient Medical Billing Software Solutions for Clinics"}
+          title={
+            "Efficient Medical Billing Software Solutions for Clinics | Easecare"
+          }
           description={
-            "Automate your clinic's operations with our doctor appointment software, an all-in-one solution for efficiently handling scheduling, patient registration, billing."
+            "Track your clinic bills and payments with Easecare Clarity Medical Billing Software. This software offers complete billing solutions for all healthcare providers."
           }
           imageUrl={FeaturesPreviewImage}
         />

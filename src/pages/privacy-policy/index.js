@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import HeadPart from "@/component/Head/head";
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
@@ -8,10 +8,10 @@ const PrivacyPolicy = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Privacy Policy"}
-        // description={
-        //   "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
-        // }
+        title={"Privacy Policy - Clarity"}
+        description={
+          "Read our privacy policy outlining how we handle your healthcare information securely and responsibly."
+        }
         // imageUrl={AboutPreviewImage}
       />
       <Box className="heading-box">

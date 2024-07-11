@@ -10,11 +10,17 @@ const DownloadApp = () => {
     <div className="container">
       <div className="flex downloadEaseCare relative">
         <div className="relative">
-          <Image src={IphoneImg} width={205} height={305} />
+          <Image
+            src={IphoneImg}
+            width={205}
+            height={305}
+            alt="A doctor waiving in mobile screen"
+          />
           <Image
             src={call}
             width={205}
             height={"100%"}
+            alt="An old-woman smiling"
             className="easeCareBackGround"
           />
         </div>

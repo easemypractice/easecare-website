@@ -518,9 +518,9 @@ const PatientAppoinmentScheduling = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Appointment Scheduling Software For Medical Practices"}
+          title={"Best Patient Appointment Scheduling Software | Easecare"}
           description={
-            "Attracting new target audiences or making your old patients keep coming back to you, our electronic health records software is here to help you manage your patients."
+            "Accept your patient’s appointment 24/7 with our sophisticated Patient appointment scheduling software. Discover how our software makes managing appointments easy."
           }
           imageUrl={FeaturesPreviewImage}
         />

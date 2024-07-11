@@ -375,11 +375,9 @@ const EHREMR = () => {
       {/* <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={
-            "EHR /EMR Software: Electronic Health Records Software Solutions"
-          }
+          title={"EHR /EMR Software: Electronic Health Records Software"}
           description={
-            "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
+            "Boost your organisation's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
           }
           imageUrl={FeaturesPreviewImage}
         />

@@ -288,11 +288,9 @@ const PatientManagement = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={
-            "Patient Management System for Doctors & Clinics - EaseCare Clarity"
-          }
+          title={"Best Patient Management Software for Clinics | Easecare"}
           description={
-            "Patient Management Software for medical practices, clinic management, doctor profiles, patient records, and consultations. Discover how it can enhance your practice."
+            "Explore our Patient Management Software for medical practices, clinic management, doctor profiles, patient records, & consultations. Discover how it can enhance your practice."
           }
           // imageUrl={FeaturesPreviewImage}
         />

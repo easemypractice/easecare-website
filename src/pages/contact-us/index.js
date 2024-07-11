@@ -13,6 +13,7 @@ import axios from "axios";
 import checkedIcon from "@/images/checkedIcon.svg";
 import { Layout } from "@/app/layout";
 import { Icon } from "@iconify/react";
+import AboutPreviewImage from "../../../public/images/about-preview.svg";
 const Contact = () => {
   const [stateValue, setSatateValue] = useState("");
   const [ip4, setIP4] = useState({});
@@ -119,6 +120,13 @@ const Contact = () => {
   };
   return (
     <Layout>
+      <HeadPart
+        title={"Contact Us for Clinic Management software Enquiries"}
+        description={
+          "Reach out to us for inquiries, support, or free demo of Clinic Management Software Solutions. We are here to assist you with our dedicated expert."
+        }
+        imageUrl={AboutPreviewImage}
+      />
       <Box className="container">
         <Flex
           className={`${styles.demoLayout}  ${styles.formDemo}`}

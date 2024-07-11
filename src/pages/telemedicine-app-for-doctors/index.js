@@ -274,9 +274,9 @@ const TelemedicineApp = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Best Teleconsultation App for doctors and patients"}
+          title={"Best Telemedicine app for doctors and patients | Easecare"}
           description={
-            "EaseCare Clarity stands out as the premier video consultation app for doctors and patients. This telemedicine app helps patients book online appointments from anywhere."
+            "At Easecare, we develop the finest telemedicine app for doctors of every niche. Our telemedicine app helps patients book online appointments from anywhere."
           }
           // imageUrl={FeaturesPreviewImage}
         />

@@ -314,9 +314,9 @@ const OfflineSoftwareForPractice = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Offline clinic management software for Clinics and Doctors"}
+          title={"Offline Clinic Management Software | Easecare clarity"}
           description={
-            "The most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software is the solution to your every requirement."
+            "The most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software manages your practice offline to get shrink online."
           }
           imageUrl={FeaturesPreviewImage}
         />

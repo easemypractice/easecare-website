@@ -326,9 +326,11 @@ const DoctorAppoinment = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Online Doctor Appointment Scheduling Software"}
+          title={
+            "Best Doctor Appointment Scheduling Software in India | Easecare"
+          }
           description={
-            "Online doctor appointment scheduling software offers users a convenient way to book appointments. Easily schedule with your current doctor or connect with new healthcare"
+            "Our Doctor appointment scheduling software offers users a convenient way to book appointments. Empower patients to book 24/7 Easily with your doctors."
           }
           imageUrl={FeaturesPreviewImage}
         />

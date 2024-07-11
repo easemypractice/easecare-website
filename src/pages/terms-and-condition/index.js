@@ -9,10 +9,10 @@ const TermsAndCondition = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity - Terms & Conditions"}
-        // description={
-        //   "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
-        // }
+        title={"Terms & Conditions - Clarity"}
+        description={
+          "Read our terms and conditions regarding the use of our healthcare management software. Understand our guidelines and obligations."
+        }
         // imageUrl={AboutPreviewImage}
       />
       <Box className="heading-box">

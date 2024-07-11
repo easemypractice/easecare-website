@@ -328,9 +328,9 @@ const ClinicManagement = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Cloud Based Clinic Management Software for medical- Easecare"}
+          title={"Clinic Management Software for Automating Clinic Tasks"}
           description={
-            "EaseCare Clarity offers online clinic management software dedicated to enhancing healthcare efficiency. Explore its comprehensive features and benefits."
+            "Easecare Clarity offers online clinic management software to enhance healthcare efficiency. Explore its comprehensive features and benefits."
           }
           imageUrl={FeaturesPreviewImage}
         />
