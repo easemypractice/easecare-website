@@ -70,19 +70,20 @@ const Footer = () => {
                 <Link href="/about">About us</Link>
               </li>
               <li>
-                <Link href="/contact-us">Contact us</Link>
+                <Link href="/features">Features</Link>
               </li>
               <li>
                 <Link href="/pricing">Pricing</Link>
               </li>
               <li>
-                <Link href="/features">Features</Link>
+                <Link href="/contact-us">Contact us</Link>
               </li>
+
               <li>
                 <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link href="https://clarity.easecare.co/login">Log In</Link>
+                <Link href="/book-a-demo">Book a Demo</Link>
               </li>
             </ul>
           </Box>
@@ -90,7 +91,7 @@ const Footer = () => {
             <Heading as="h3">Important Links</Heading>
             <ul>
               <li>
-                <Link href="/patient-management">Clarity Method</Link>
+                <Link href="/clarity-method">Clarity Method</Link>
               </li>
               <li>
                 <Link href="/terms-and-condition">Terms & Conditions</Link>
@@ -104,11 +105,14 @@ const Footer = () => {
               <li>
                 <Link href="#">Brand Guidelines</Link>
               </li>
+              <li>
+                <Link href="https://clarity.easecare.co/login">Log In</Link>
+              </li>
             </ul>
           </Box>
           <Box className=" downloadApp">
             <Heading as="h4">Download the EaseCare Clarity App</Heading>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-3">
               <Link href="https://apps.apple.com/in/app/clarity-ehr/id6468764592">
                 <Image src={playStore} width={120} />
               </Link>

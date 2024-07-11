@@ -309,92 +309,90 @@ const AdvantageData = [
 ];
 
 const ClinicManagement = () => {
-  const router = useRouter();
-  const slug = router.pathname.replace("/", "");
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    getFeaturesData(slug);
-  }, [slug]);
+  // const router = useRouter();
+  // const slug = router.pathname.replace("/", "");
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   getFeaturesData(slug);
+  // }, [slug]);
 
-  const getFeaturesData = async (slug) => {
-    await getFeatureData(slug).then((res) => {
-      setData(res);
-    });
-  };
-  console.log(data);
+  // const getFeaturesData = async (slug) => {
+  //   await getFeatureData(slug).then((res) => {
+  //     setData(res);
+  //   });
+  // };
+  // console.log(data);
   return (
     <React.Fragment>
-      {data.map((item) => (
-        <React.Fragment key={item?._id}>
-          <Layout>
-            <HeadPart
-              title={
-                "Cloud Based Clinic Management Software for medical- Easecare"
-              }
-              description={
-                "EaseCare Clarity offers online clinic management software dedicated to enhancing healthcare efficiency. Explore its comprehensive features and benefits."
-              }
-              imageUrl={FeaturesPreviewImage}
-            />
-            <PatientManagmentBanner data={clinicBannerData} />
-            {/* <HeroComp data={item.heroComp} /> */}
-            {/* <CardsGroups data={item.whyImportantToStreamline} /> */}
-            {/* <CardsGroups data={item.challengesInManagingClinic} /> */}
-            <BenefitPatients data={clinicBenefits} />
-            <VarientTypes TypesVarientData={TypesVarientData} />
-            <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Want to know how clinic management software helps you manage your clinic"
-                btnText="Get a Free Demo"
-                link={"book-a-demo"}
-                alt={"clinic management system software"}
-              />
+      {/* {data.map((item) => (
+        <React.Fragment key={item?._id}> */}
+      <Layout>
+        <HeadPart
+          title={"Cloud Based Clinic Management Software for medical- Easecare"}
+          description={
+            "EaseCare Clarity offers online clinic management software dedicated to enhancing healthcare efficiency. Explore its comprehensive features and benefits."
+          }
+          imageUrl={FeaturesPreviewImage}
+        />
+        <PatientManagmentBanner data={clinicBannerData} />
+        {/* <HeroComp data={item.heroComp} /> */}
+        {/* <CardsGroups data={item.whyImportantToStreamline} /> */}
+        {/* <CardsGroups data={item.challengesInManagingClinic} /> */}
+        <BenefitPatients data={clinicBenefits} />
+        <VarientTypes TypesVarientData={TypesVarientData} />
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Want to know how clinic management software helps you manage your clinic"
+            btnText="Get a Free Demo"
+            link={"book-a-demo"}
+            alt={"clinic management system software"}
+          />
+        </div>
+        {/* <ContactSection data={item.contactFormOne} /> */}
+        {/* <MultiColorCardSec data={item.whyNeedClinicManagement} /> */}
+        {/* <CardsGroups data={item.benefitsClinicManagement} /> */}
+        <FeaturesPatient data={whyClinicData} />
+        <VarientTypes TypesVarientData={BenefitClinicManagementData} />
+        {/* <NavDetailsSection data={item.featuresClinicManagemnt} /> */}
+        <div className="my-6">
+          <SelectRight data={cinicManagementData} />
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Revolutionize the workforce of your clinic with all these essential features in one software with EaseCare"
+            btnText="Get a free Demo"
+            link={"book-a-demo"}
+            alt={"clinic management system software"}
+          />
+        </div>
+        {/* <ContactSection data={item.contactFormTwo} /> */}
+        {/* <CardsGroups data={item.considerBeforeImplement} /> */}
+        {/* <MultiColorCardSec data={item.addOnPoints} /> */}
+        {/* <ContactSection data={item.contactFormThree} /> */}
+        <div style={{ backgroundColor: "#FCFBF6" }}>
+          <BenefitPatients data={BestPracticeData} />
+        </div>
+        <div className="my-6">
+          <div className="container">
+            <div className={styles.CardGrp}>
+              <FeaturesCard data={AdvantageData} />
             </div>
-            {/* <ContactSection data={item.contactFormOne} /> */}
-            {/* <MultiColorCardSec data={item.whyNeedClinicManagement} /> */}
-            {/* <CardsGroups data={item.benefitsClinicManagement} /> */}
-            <FeaturesPatient data={whyClinicData} />
-            <VarientTypes TypesVarientData={BenefitClinicManagementData} />
-            {/* <NavDetailsSection data={item.featuresClinicManagemnt} /> */}
-            <div className="my-6">
-              <SelectRight data={cinicManagementData} />
-            </div>
-            <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Revolutionize the workforce of your clinic with all these essential features in one software with EaseCare"
-                btnText="Get a free Demo"
-                link={"book-a-demo"}
-                alt={"clinic management system software"}
-              />
-            </div>
-            {/* <ContactSection data={item.contactFormTwo} /> */}
-            {/* <CardsGroups data={item.considerBeforeImplement} /> */}
-            {/* <MultiColorCardSec data={item.addOnPoints} /> */}
-            {/* <ContactSection data={item.contactFormThree} /> */}
-            <div style={{ backgroundColor: "#FCFBF6" }}>
-              <BenefitPatients data={BestPracticeData} />
-            </div>
-            <div className="my-6">
-              <div className="container">
-                <div className={styles.CardGrp}>
-                  <FeaturesCard data={AdvantageData} />
-                </div>
-              </div>
-            </div>
-            <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Explore the best and most cost-effective clinic management software with us"
-                btnText="Get a free Demo"
-                link={"book-a-demo"}
-                alt={"clinic management system software"}
-              />
-            </div>
-          </Layout>
-        </React.Fragment>
-      ))}
+          </div>
+        </div>
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Explore the best and most cost-effective clinic management software with us"
+            btnText="Get a free Demo"
+            link={"book-a-demo"}
+            alt={"clinic management system software"}
+          />
+        </div>
+      </Layout>
+      {/* </React.Fragment>
+      ))} */}
     </React.Fragment>
   );
 };
