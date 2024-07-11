@@ -17,10 +17,10 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const revenueCycleBannerData = [
   {
-    maxWidth: "maxWidth-55r p-5",
+    maxWidth: "max-width-full p-5",
     bgImg: bgImg,
     // subHeading: "Doctor Appointment Management Software",
-    HeadingFirst: "Revenue Cycle Management",
+    HeadingFirst: "Medical Billing Software Solutions",
     description:
       "A revenue cycle management is the complete financial process followed in the medical and healthcare industry to manage revenue and billing. It includes calculating the revenue right from registration to the final payment from the side of the patient for the service he is approaching the medical facility for. Revenue Cycle Management is based on the concept that when a patient schedules an appointment, all the efforts and measures of the medical setting should be focused on convincing the patient to try their services and finalize the claims and all the financial payments.",
   },

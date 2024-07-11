@@ -14,6 +14,7 @@ import checkedIcon from "@/images/checkedIcon.svg";
 import { Layout } from "@/app/layout";
 import { Icon } from "@iconify/react";
 import AboutPreviewImage from "../../../public/images/about-preview.svg";
+import HeadPart from "@/component/Head/head";
 const Contact = () => {
   const [stateValue, setSatateValue] = useState("");
   const [ip4, setIP4] = useState({});

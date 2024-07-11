@@ -21,11 +21,11 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const Bannerdata = [
   {
-    maxWidth: "max-width-55r p-5",
+    maxWidth: "max-width-full p-5",
     bannerStyle: "align-center",
     bgImg: bgImg,
-    HeadingFirst: "Offline Software for",
-    HeadingSecound: "Practice Management",
+    HeadingFirst: "Offline Clinic Management Software",
+    // HeadingSecound: "Practice Management",
     description:
       "While cloud-based software and systems are getting popular in this fast-tech and digital world, you can sometimes have difficulty with them because of network issues. Therefore, EaseCare provides you with the best offline practice management software in India, to keep all your data not only safe but ready on the go",
   },

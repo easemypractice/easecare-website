@@ -19,10 +19,10 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const healthcareBannerData = [
   {
-    maxWidth: "max-width-full p-5",
+    maxWidth: "max-width-80 p-5",
     bgImg: bgImg,
     subHeading: "Healthcare Management Software",
-    HeadingFirst: "Healthcare Management Software",
+    HeadingFirst: "Healthcare Inventory Management System",
     // HeadingSecound: "Software System?",
     description:
       "Software for healthcare management is driving the ever-evolving sector of healthcare helping hospitals, healthcare professionals,  clinics, and various modern medical settings helping them throughout all the medical aspects from improving patient care, and efficient data management to streamlining various administration operations. From managing medical records to scheduling appointments to administrating billing and various financial operations, healthcare management software not only helps medical settings and hospitals improve efficiency but also takes over the tension of finding a professional and seasoned financial expert or accountant to look after their complex and intricate financial operations",

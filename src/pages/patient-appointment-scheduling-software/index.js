@@ -21,10 +21,10 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const AppoinmentScheduleBanner = [
   {
-    maxWidth: "max-width-full p-5",
+    maxWidth: "max-width-80 p-5",
     bannerStyle: "align-center",
     bgImg: bgImg,
-    HeadingFirst: "Appointment Scheduling Software",
+    HeadingFirst: "Patient Appointment Scheduling Software",
     description:
       "Scheduling an appointment is a brainstorming task where you have to give proper time to each patient without missing any because you don’t know which might turn into one of your potential customers. Does it take a long time, effort, and human resources for you to attract the attention of potential patients?",
   },

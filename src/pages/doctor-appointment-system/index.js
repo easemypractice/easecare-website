@@ -20,11 +20,10 @@ import ContactSection from "@/component/feature/contactSection";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const doctorAppBannerData = [
   {
-    maxWidth: "maxWidth-55r p-5",
+    maxWidth: "maxWidth-80 p-5",
     bgImg: bgImg,
-    subHeading: "Doctor Appointment Management Software",
-    HeadingFirst: "Doctor Appointment",
-    HeadingSecound: "Management Software",
+    HeadingFirst: "Doctor Appointment Scheduling Software",
+    // HeadingSecound: "Management Software",
     description:
       "Every hospital and clinic faces the problem of people lined up every day, pushing each other as they eagerly wait for their turn to get a consultation from healthcare professionals. The mere process of the appointment of the patients takes a long time as well as the energy and resources of the healthcare professionals and staff. Manage the appointments of your patients seamlessly with a doctor appointment management software. A doctor appointment management software is like the backbone of healthcare providers, hospitals, and clinics that encompasses various features.",
   },

@@ -21,10 +21,10 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const ehremrBannerData = [
   {
-    maxWidth: "max-width-full p-5",
+    maxWidth: "max-width-80 p-5",
     bgImg: bgImg,
     bannerStyle: "align-center",
-    HeadingFirst: "Electronic Health Records Software",
+    HeadingFirst: "Advanced Electronic Health Record Software",
     description:
       "An Electronic Health Record or EHR is the digital format of all the patient data from health conditions to demographics and all medical history. The reason why the EHR is promising is that it allows sharing the of patient data from one medical setting to another to enhance the efficiency and success in the treatment of the patient based on the overall overview.",
   },

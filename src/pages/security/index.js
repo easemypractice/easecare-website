@@ -13,7 +13,7 @@ const Security = () => {
         description={
           "Learn about our robust security measures regarding safeguarding your healthcare data. Discover our commitment to privacy and compliance."
         }
-        imageUrl={AboutPreviewImage}
+        // imageUrl={AboutPreviewImage}
       />
       <Box className="heading-box-security">
         <Box className="container-privacy">

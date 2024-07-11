@@ -24,7 +24,7 @@ const prescriptionBanner = [
     maxWidth: "max-width-full p-5",
     bannerStyle: "align-center",
     bgImg: bgImg,
-    HeadingFirst: "E-Prescribing",
+    HeadingFirst: "E-Prescribing software for Doctors",
     description:
       "Electronic Prescription is the computer-based digital medical prescription that replaces the place of paper and faxed prescriptions. Apart from reducing the paperwork of medical clinics and organizations, e-prescriptions are known for their ability to send error-free, accurate, and understandable prescriptions electronically. Digital prescription software is used to authorize or transmit an e-subscription electronically",
   },
