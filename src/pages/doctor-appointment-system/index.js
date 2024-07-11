@@ -309,74 +309,74 @@ const whyEaseCareDoctorAppoinSoftware = [
   },
 ];
 const DoctorAppoinment = () => {
-  const router = useRouter();
-  const slug = router.pathname.replace("/", "");
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    getFeaturesData(slug);
-  }, [slug]);
-  const getFeaturesData = async (slug) => {
-    await getFeatureData(slug).then((res) => {
-      setData(res);
-    });
-  };
+  // const router = useRouter();
+  // const slug = router.pathname.replace("/", "");
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   getFeaturesData(slug);
+  // }, [slug]);
+  // const getFeaturesData = async (slug) => {
+  //   await getFeatureData(slug).then((res) => {
+  //     setData(res);
+  //   });
+  // };
   return (
     <React.Fragment>
-      {data.map((item) => (
-        <React.Fragment key={item?._id}>
-          <Layout>
-            <HeadPart
-              title={"Online Doctor Appointment Scheduling Software"}
-              description={
-                "Online doctor appointment scheduling software offers users a convenient way to book appointments. Easily schedule with your current doctor or connect with new healthcare"
-              }
-              imageUrl={FeaturesPreviewImage}
-            />
-            <PatientManagmentBanner data={doctorAppBannerData} />
-            {/* <HeroComp data={item.heroComp} /> */}
-            <BenefitPatients data={OnlineDoctorAppoin} />
-            {/* <CardsGroups data={item.discoverEaseCareOnlineDoctors} /> */}
-            {/* <MultiColorCardSec data={item.featuresOfDoctorAppoinment} /> */}
-            <FeaturesPatient data={FeatuesDoctorAppoin} />
-            <div className="my-6">
-              <ContactUsPatients
-                image={featureImg}
-                content="Explore the features of EaseCare Doctor Appointments online"
-                btnText="Get a Free Demo"
-                link={"book-a-demo"}
-                alt="doctor appointmet system"
-              />
-            </div>
-            {/* <ContactSection data={item.ContactFormOne} /> */}
-            {/* <CardsGroups data={item.benefitsOfMedicalSoftware} /> */}
-            <div
-              style={{
-                paddingBottom: "70px",
-              }}
-            >
-              <BenefitPatients data={MedicalSechedulingBenefit} />
-            </div>
-            {/* <NavDetailsSection data={item.doctorAppoinmentManagement} /> */}
-            <SelectRight data={AppoinmentManagementSoftWare} />
-            {/* <ContactSection data={item.ContactFormTwo} /> */}
-            <div className="my-6">
-              <ContactUsPatients
-                image={cuateImg}
-                content="Discover how implementing EaseCare’s online doctor appointment system can help you manage your clinic"
-                btnText="Get a Free Demo"
-                link={"book-a-demo"}
-                alt="doctor appointmet system"
-              />
-            </div>
-            {/* <CardsGroups data={item.maximizingEfficiency} /> */}
-            {/* <CardsGroups data={item.whyEaseCare} /> */}
-            <VarientTypes TypesVarientData={maximizeEfficiency} />
-            <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
-              <BenefitPatients data={whyEaseCareDoctorAppoinSoftware} />
-            </div>
-          </Layout>
-        </React.Fragment>
-      ))}
+      {/* {data.map((item) => (
+        <React.Fragment key={item?._id}> */}
+      <Layout>
+        <HeadPart
+          title={"Online Doctor Appointment Scheduling Software"}
+          description={
+            "Online doctor appointment scheduling software offers users a convenient way to book appointments. Easily schedule with your current doctor or connect with new healthcare"
+          }
+          imageUrl={FeaturesPreviewImage}
+        />
+        <PatientManagmentBanner data={doctorAppBannerData} />
+        {/* <HeroComp data={item.heroComp} /> */}
+        <BenefitPatients data={OnlineDoctorAppoin} />
+        {/* <CardsGroups data={item.discoverEaseCareOnlineDoctors} /> */}
+        {/* <MultiColorCardSec data={item.featuresOfDoctorAppoinment} /> */}
+        <FeaturesPatient data={FeatuesDoctorAppoin} />
+        <div className="my-6">
+          <ContactUsPatients
+            image={featureImg}
+            content="Explore the features of EaseCare Doctor Appointments online"
+            btnText="Get a Free Demo"
+            link={"book-a-demo"}
+            alt="doctor appointmet system"
+          />
+        </div>
+        {/* <ContactSection data={item.ContactFormOne} /> */}
+        {/* <CardsGroups data={item.benefitsOfMedicalSoftware} /> */}
+        <div
+          style={{
+            paddingBottom: "70px",
+          }}
+        >
+          <BenefitPatients data={MedicalSechedulingBenefit} />
+        </div>
+        {/* <NavDetailsSection data={item.doctorAppoinmentManagement} /> */}
+        <SelectRight data={AppoinmentManagementSoftWare} />
+        {/* <ContactSection data={item.ContactFormTwo} /> */}
+        <div className="my-6">
+          <ContactUsPatients
+            image={cuateImg}
+            content="Discover how implementing EaseCare’s online doctor appointment system can help you manage your clinic"
+            btnText="Get a Free Demo"
+            link={"book-a-demo"}
+            alt="doctor appointmet system"
+          />
+        </div>
+        {/* <CardsGroups data={item.maximizingEfficiency} /> */}
+        {/* <CardsGroups data={item.whyEaseCare} /> */}
+        <VarientTypes TypesVarientData={maximizeEfficiency} />
+        <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
+          <BenefitPatients data={whyEaseCareDoctorAppoinSoftware} />
+        </div>
+      </Layout>
+      {/* </React.Fragment>
+      ))} */}
     </React.Fragment>
   );
 };
