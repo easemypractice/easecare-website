@@ -21,11 +21,11 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const Bannerdata = [
   {
-    maxWidth: "max-width-55r p-5",
+    maxWidth: "max-width-full p-5",
     bannerStyle: "align-center",
     bgImg: bgImg,
-    HeadingFirst: "Offline Software for",
-    HeadingSecound: "Practice Management",
+    HeadingFirst: "Offline Clinic Management Software",
+    // HeadingSecound: "Practice Management",
     description:
       "While cloud-based software and systems are getting popular in this fast-tech and digital world, you can sometimes have difficulty with them because of network issues. Therefore, EaseCare provides you with the best offline practice management software in India, to keep all your data not only safe but ready on the go",
   },
@@ -314,9 +314,9 @@ const OfflineSoftwareForPractice = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Offline clinic management software for Clinics and Doctors"}
+          title={"Offline Clinic Management Software | Easecare clarity"}
           description={
-            "The most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software is the solution to your every requirement."
+            "The most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software manages your practice offline to get shrink online."
           }
           imageUrl={FeaturesPreviewImage}
         />

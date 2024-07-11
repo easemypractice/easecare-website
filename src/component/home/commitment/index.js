@@ -16,7 +16,7 @@ const CommitmentSection = () => {
       <div className="container">
         <Grid columns="2" width="auto" className="data-security-inner">
           <Box className="mobile-demo-side ">
-            <Image src={HandsackIcon} alt={HandsackIcon} />
+            <Image src={HandsackIcon} alt="Handshake with doctor" />
           </Box>
           <Box className=" ">
             <Text as="p" className="headingup-16 mb-4">

@@ -22,11 +22,10 @@ import { useRouter } from "next/router";
 import MultiColorCardSec from "@/component/feature/multiColorCard";
 const clinicBannerData = [
   {
-    maxWidth: "max-width-full p-5",
+    maxWidth: "maxWidth-80 p-5",
     bgImg: bgImg,
-    subHeading: "Clinic Management System",
-    HeadingFirst: "Clinic Management System",
-    // HeadingSecound: "Software System?",
+    HeadingFirst: "Clinic Management",
+    HeadingSecound: "Software Solutions",
     description:
       "Do you have a clinic or are you a healthcare professional with a small team? Then you should surely know about this amazing software called Clinic Management System (CMS), which will change the whole scenario in which daily activities at your clinic go on. Clinic Management Software is a tool that automates all the operations that are the daily routine of your clinic. From appointment scheduling, patient registration, and medical billing, to inventory management.   So, if you are a small clinic, you don’t have to pay people for each different task when you can do all these things with the help of software",
   },
@@ -328,9 +327,9 @@ const ClinicManagement = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Cloud Based Clinic Management Software for medical- Easecare"}
+          title={"Clinic Management Software for Automating Clinic Tasks"}
           description={
-            "EaseCare Clarity offers online clinic management software dedicated to enhancing healthcare efficiency. Explore its comprehensive features and benefits."
+            "Easecare Clarity offers online clinic management software to enhance healthcare efficiency. Explore its comprehensive features and benefits."
           }
           imageUrl={FeaturesPreviewImage}
         />

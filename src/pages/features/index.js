@@ -217,9 +217,11 @@ const FeaturesLayout = () => {
         <React.Fragment key={index}>
           <Layout>
             <HeadPart
-              title={"Clarity - Features"}
+              title={
+                "Innovative and Trading features of Clinic Managment software"
+              }
               description={
-                "Easecare Clarity is a tool to remove barriers. Powerful yet simple to use, it helps you to manage clinic, make better decisions and execute faster."
+                "Discover exclusive features such as telemedicine, analytics, secure messaging etc. Revolutionize your healthcare experience with our advanced Clinic Management software."
               }
               imageUrl={FeaturesPreviewImage}
             />

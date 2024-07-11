@@ -237,9 +237,9 @@ const SoftwareForMultiChain = () => {
       {/* <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Clinic software solution for managing multi chain clinics"}
+          title={"India’s Best Software for Multiple Clinic Chain | Easecare"}
           description={
-            "We managing your multiple clinic chains and we are here to help with the best solution. Keep an eye on each of your clinic chains with our software multiple clinic chains."
+            "Keep an eye on each of your clinics with our effective software for multiple clinic chains. Manage your clinic chain effectively with Easecare powerful software."
           }
           imageUrl={FeaturesPreviewImage}
         />

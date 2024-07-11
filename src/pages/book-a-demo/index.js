@@ -8,9 +8,9 @@ const GetDemo = () => {
   return (
     <Layout>
       <HeadPart
-        title={"Clarity is a better way to manage practice"}
+        title={"Get FREE Clinic Management Software DEMO | Easecare"}
         description={
-          "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
+          "Take a FREE Demo of our latest clinic management softwares. Witness their capabilities and their impact on your business."
         }
         imageUrl={"/public/imags/priview.jpg"}
       />

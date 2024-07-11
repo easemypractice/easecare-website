@@ -31,9 +31,9 @@ const Blog = () => {
     <div className="blog">
       <Layout>
         <HeadPart
-          title={"Blog"}
+          title={"Learn more about Healthcare Technologies| Easecare blog"}
           description={
-            "Resources for presenting the EaseCare Clarity brand consistently and professionally. "
+            "Discover our engaging healthcare management blogs covering technology, best practices, and industry insights. Explore now!."
           }
           imageUrl={BrandPreiviewImage}
         />

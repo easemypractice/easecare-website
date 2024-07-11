@@ -21,10 +21,10 @@ import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 const ehremrBannerData = [
   {
-    maxWidth: "max-width-full p-5",
+    maxWidth: "max-width-80 p-5",
     bgImg: bgImg,
     bannerStyle: "align-center",
-    HeadingFirst: "Electronic Health Records Software",
+    HeadingFirst: "Advanced Electronic Health Record Software",
     description:
       "An Electronic Health Record or EHR is the digital format of all the patient data from health conditions to demographics and all medical history. The reason why the EHR is promising is that it allows sharing the of patient data from one medical setting to another to enhance the efficiency and success in the treatment of the patient based on the overall overview.",
   },
@@ -375,11 +375,9 @@ const EHREMR = () => {
       {/* <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={
-            "EHR /EMR Software: Electronic Health Records Software Solutions"
-          }
+          title={"EHR /EMR Software: Electronic Health Records Software"}
           description={
-            "Boost your organization's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
+            "Boost your organisation's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
           }
           imageUrl={FeaturesPreviewImage}
         />

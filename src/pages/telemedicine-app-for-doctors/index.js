@@ -24,7 +24,7 @@ const Bannerdata = [
     maxWidth: "max-width-80 p-5",
     bannerStyle: "align-center",
     bgImg: bgImg,
-    HeadingFirst: "Telemedicine Platform for Doctors",
+    HeadingFirst: "Customized Telemedicine app for doctors",
     description:
       "Are you concerned about your reach? While healthcare is a vast industry with a lot of competition we offer you a digital platform to take your business to the next level by not only attracting your target audience but also retaining your first-time visitors through various telemedicine software platforms",
   },
@@ -274,9 +274,9 @@ const TelemedicineApp = () => {
         <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
-          title={"Best Teleconsultation App for doctors and patients"}
+          title={"Best Telemedicine app for doctors and patients | Easecare"}
           description={
-            "EaseCare Clarity stands out as the premier video consultation app for doctors and patients. This telemedicine app helps patients book online appointments from anywhere."
+            "At Easecare, we develop the finest telemedicine app for doctors of every niche. Our telemedicine app helps patients book online appointments from anywhere."
           }
           // imageUrl={FeaturesPreviewImage}
         />
