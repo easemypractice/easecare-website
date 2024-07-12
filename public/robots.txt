@@ -1,0 +1,16 @@
+User-Agent: *
+Disallow: /cdn-cgi/
+Disallow: /our_features/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /themes/
+Disallow: /author/
+Disallow: /wp-admin/
+Disallow: /wp-login/
+Disallow: /thank-you
+Disallow: /wp-json/
+Disallow: /wp-login.php/
+Disallow: /admin-ajax.php/
+
+
+Sitemap: https://easecare.co/sitemap.xml

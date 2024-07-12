@@ -47,9 +47,9 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-/* html {
+html {
   scroll-behavior: auto;
-} */
+}
 
 /* @media (prefers-color-scheme: dark) {
   :root {
