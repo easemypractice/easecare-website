@@ -203,7 +203,6 @@ const TermsAndCondition = () => {
                   className="purple-color"
                   href={"mailto:hello@easecare.co"}
                 >
-                  {" "}
                   hello@easecare.co
                 </Link>
                 .
