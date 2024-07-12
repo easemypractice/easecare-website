@@ -41,7 +41,10 @@ const ImageWithContent = ({ data }) => {
               <Link href={"/book-a-demo"} className="purple-btn">
                 Get a Free Demo
               </Link>
-              <Link href="" className="purple-outline">
+              <Link
+                href={data?.urlToLearn ? data?.urlToLearn : ""}
+                className="purple-outline"
+              >
                 Learn more
               </Link>
             </div>

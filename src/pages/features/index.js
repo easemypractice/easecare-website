@@ -48,7 +48,7 @@ const data = [
           { list: "Multi-disciplinary consultation" },
           { list: "Increased functionality" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/telemedicine-app-for-doctors",
       },
       {
         title: "Appointment Booking",
@@ -62,7 +62,7 @@ const data = [
           { list: "Avoid Surprise Bookings" },
           { list: "Plan work and break times" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/patient-appointment-scheduling-software",
       },
       {
         title: "e-Prescription Software",
@@ -75,7 +75,7 @@ const data = [
           { list: "Patient Chart Integration" },
           { list: "Clinical Decision Support Tools" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/prescription-software-for-doctors",
       },
       {
         title: "Patient Records Software",
@@ -89,7 +89,7 @@ const data = [
           { list: "Patient Relationship Management" },
           { list: "Integration with Other Healthcare Systems" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/patient-management-software",
       },
       {
         title: "EHR/EMR Software",
@@ -102,7 +102,7 @@ const data = [
           { list: "Lab Results Integration" },
           { list: "Patient, Doctor, and Staff Portal" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/ehr-emr-software",
       },
       {
         title: "Child Vaccine Management",
@@ -116,7 +116,7 @@ const data = [
           { list: "Active and Passive Safety Checks" },
           { list: "EHR integration" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/healthcare-management-software",
       },
       {
         title: "Growth Chart Management",
@@ -129,7 +129,7 @@ const data = [
           { list: "Adult Height Predictor" },
           { list: "Body Mass Index Converter" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/healthcare-inventory-management-systems",
       },
       {
         title: "Doctors and Staff Management",
@@ -156,7 +156,7 @@ const data = [
           { list: "Analytics and Reporting" },
           { list: "Cloud Hosted Medical Billing" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/medical-billing-software",
       },
     ],
     cardGrp: [

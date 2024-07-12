@@ -53,16 +53,14 @@ const RecentBlogs = ({ data }) => {
                 .slice(0, 6)
                 .filter((blog) => blog?.type === "blog")
                 .map((item, index) => (
-                  <Link
-                    href={`/blog/${item?.currentSlug}`}
-                    className="box"
-                    key={index}
-                  >
-                    <div>
-                      <Text as="h2">{item?.title}</Text>
-                      <Text as="span">{formatDate(item?._createdAt)}</Text>
-                    </div>
-                  </Link>
+                  <React.Fragment key={index}>
+                    <Link href={`/blog/${item?.currentSlug}`} className="box">
+                      <div>
+                        <Text as="h2">{item?.title}</Text>
+                        <Text as="span">{formatDate(item?._createdAt)}</Text>
+                      </div>
+                    </Link>
+                  </React.Fragment>
                 ))}
           </Grid>
         </div>

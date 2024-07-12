@@ -14,8 +14,8 @@ import { GoogleTagManager } from "@next/third-parties/google";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <title>{"Clarity is a better way to manage practice"}</title>
+      {/* <head> */}
+      {/* <title>{"Clarity is a better way to manage practice"}</title>
         <meta
           name="description"
           content={
@@ -31,15 +31,14 @@ export default function RootLayout({ children }) {
           content={
             "Easecare Clarity streamline appointments, patients' health records, billing, and care tracking and is built for high-performance modern healthcare teams."
           }
-        />
-        {/* <meta property="og:image" content="../../public/images/preview.jpg" />
+        /> */}
+      {/* <meta property="og:image" content="../../public/images/preview.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="600" />
         <meta property="og:image:type" content="image/jpeg" /> */}
-      </head>
+      {/* </head> */}
       <body className={"body"}>
-        {/* heelo
-        <LoadingBar /> */}
+        {/* <LoadingBar /> */}
         <Layout> {children}</Layout>
       </body>
     </html>

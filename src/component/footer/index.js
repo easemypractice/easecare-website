@@ -67,7 +67,7 @@ const Footer = () => {
             <Heading as="h3">Company</Heading>
             <ul>
               <li>
-                <Link href="/about">About us</Link>
+                <Link href="/about-us">About us</Link>
               </li>
               <li>
                 <Link href="/features">Features</Link>
@@ -100,10 +100,10 @@ const Footer = () => {
                 <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <Link href="#">Security</Link>
+                <Link href="/security">Security</Link>
               </li>
               <li>
-                <Link href="#">Brand Guidelines</Link>
+                <Link href="/brand">Brand Guidelines</Link>
               </li>
               <li>
                 <Link href="https://clarity.easecare.co/login">Log In</Link>
