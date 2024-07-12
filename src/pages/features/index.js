@@ -116,7 +116,7 @@ const data = [
           { list: "Active and Passive Safety Checks" },
           { list: "EHR integration" },
         ],
-        urlToLearn: "/healthcare-management-software",
+        urlToLearn: "/contact-us",
       },
       {
         title: "Growth Chart Management",
@@ -129,7 +129,7 @@ const data = [
           { list: "Adult Height Predictor" },
           { list: "Body Mass Index Converter" },
         ],
-        urlToLearn: "/healthcare-inventory-management-systems",
+        urlToLearn: "/contact-us",
       },
       {
         title: "Doctors and Staff Management",
@@ -143,7 +143,7 @@ const data = [
           { list: "Billing and Invoicing" },
           { list: "Laboratory and Pharmacy Management" },
         ],
-        // urlToLearn: "",
+        urlToLearn: "/practice-management-software",
       },
       {
         title: "Medical Billing Software",
