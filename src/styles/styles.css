@@ -2574,6 +2574,7 @@ textarea::placeholder {
 .blog .recent-post .body img {
   border-radius: 12px;
   background: var(--Clarity-Colors-Athens-Gray, #ebeff2);
+  object-fit: contain;
 }
 
 .blog .recent-post .right-part {
@@ -2797,6 +2798,10 @@ textarea::placeholder {
 .content-image {
   object-fit: cover;
   border-radius: 14px;
+  margin: 30px 0px;
+}
+
+figure img{
   margin: 30px 0px;
 }
 
