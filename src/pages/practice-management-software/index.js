@@ -21,6 +21,8 @@ import HeroComp from "@/component/feature/HeroComp";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 import ContactSection from "@/component/feature/contactSection";
 import TabsSelectCards from "@/component/feature/tabsSelectCards";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const practiceManagementData = [
   {
     bgImg: bgImg,
@@ -295,6 +297,8 @@ const PracticeManagement = () => {
           />
         </div>
         {/* <ContactSection data={item.contactFormFour} /> */}
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment>
       ))} */}
