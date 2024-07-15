@@ -68,6 +68,9 @@ export default {
         },
         {
           type: "image",
+          options: {
+            hotspot: true,
+          },
           fields: [
             {
               type: "text",

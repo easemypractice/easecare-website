@@ -10,16 +10,18 @@ const PostBody = ({ content, className }) => {
 
   const SampleImageComponent = ({ value, isInline }) => {
     return (
-      <Image
-        src={urlBuilder(client).image(value).fit("max").auto("format").url()}
-        alt={value.alt || " "}
-        width={640}
-        height={320}
-        className="content-image"
-        style={{ height: "100%", width: "100%" }}
-        priority
-        quality={80}
-      />
+      <div className="content-image" style={{ height: "100%", width: "100%" }}>
+        <Image
+          src={urlBuilder(client).image(value).fit("max").auto("format").url()}
+          alt={value.alt || " "}
+          width={640}
+          height={320}
+          // className="content-image"
+          // style={{ height: "100%", width: "100%" }}
+          priority
+          quality={100}
+        />
+      </div>
     );
   };
 

@@ -39,6 +39,7 @@ const data = [
     imageWithContent: [
       {
         title: "Video Consultation",
+        featureDir: "featureDir",
         image: videoConsult,
         description:
           "In this fast-paced and competitive world, we value your time and thus we are here with the most advanced technology to enhance your customer service. Through high-quality telemedicine services like video consultation, we make sure that you don’t wait for patients to visit your clinic when you can reach out to them remotely. Offer your customers the best services as they will get a quick session with the healthcare professionals of your clinic and will not have to wait for hours for a session.",
@@ -66,6 +67,7 @@ const data = [
       },
       {
         title: "e-Prescription Software",
+        featureDir: "featureDir",
         image: prefrenceImg,
         description:
           "As e-prescription allows you to keep your patients’ data safe, it makes you reduce paperwork leading to increased efficiency and cost-effectiveness. It also allows you to market your brand with the name and logo on the prescriptions and customize it in your preferred templates, colors, and designs.",
@@ -94,6 +96,7 @@ const data = [
       {
         title: "EHR/EMR Software",
         image: EHRImgFeature,
+        featureDir: "featureDir",
         description:
           "EaseCare’s EHR and EMR software help you in a wide sphere of your organization to offer better services to your patients. This software provides extensive reports and analytics and keeps a 360-degree record of each patient's data.",
         listItem: [
@@ -121,6 +124,7 @@ const data = [
       {
         title: "Growth Chart Management",
         image: growthChartImg,
+        featureDir: "featureDir",
         description:
           "Growth Chart management plays an important role in helping healthcare providers track the health and growth development of children. Growth chart management helps healthcare professionals track and analyze the physical development of individuals with an extensive overview of each aspect.",
         listItem: [
@@ -148,6 +152,7 @@ const data = [
       {
         title: "Medical Billing Software",
         image: cuateFeatureImg,
+        featureDir: "featureDir",
         description:
           "Billing is one of the most complex things for your patients. Provide them with a  seamless. Apart from providing accurate and overall billing features, healthcare medical billing software has several additional benefits whether you want to customize your treatment catalogue with pricing so that it should be suitable and affordable for all patients or want an additional benefit of this healthcare medical billing software through which you can do your free marketing and branding on bills and receipts.",
         listItem: [
