@@ -799,6 +799,9 @@
 }
 .imageWithContentLeft div{
  margin-top: 20px !important;
+ flex-direction: column;
+ gap: 10px !important;
+ /* max-width: max-content; */
 }
 .imageWithContent{
   flex-direction: column;

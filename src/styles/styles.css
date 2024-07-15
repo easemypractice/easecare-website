@@ -3229,3 +3229,7 @@ li.footerCon{
 .CloudCard:hover .CardIcon{
   transform: translateX(5px);
 }
+
+.featureDir{
+  flex-direction: row-reverse;
+}
