@@ -19,6 +19,8 @@ import CardsGroups from "@/component/feature/benefitCards";
 import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 import ContactSection from "@/component/feature/contactSection";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const prescriptionBanner = [
   {
     maxWidth: "max-width-full p-5",
@@ -413,6 +415,8 @@ const PrescriptionSoftware = () => {
         <div style={{ backgroundColor: "#FCFBF6", padding: "50px 0px" }}>
           <BenefitPatients data={offerAdditionalSolution} />
         </div>
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment>
       ))} */}

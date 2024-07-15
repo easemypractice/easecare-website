@@ -28,6 +28,43 @@ const serializers = {
       <span className={styles.GradHead}>{children}</span>
     ),
   },
+  types: {
+    block: (props) => {
+      const { style } = props.node;
+      switch (style) {
+        case "h1":
+          return (
+            <h1 style={{ color: "blue" }} className="h1">
+              {props.children}
+            </h1>
+          );
+        case "h2":
+          return (
+            <h2 style={{ color: "blue" }} className="h2">
+              {props.children}
+            </h2>
+          );
+        case "h3":
+          return (
+            <h3 style={{ color: "blue" }} className="h3">
+              {props.children}
+            </h3>
+          );
+        case "h4":
+          return (
+            <h4 style={{ color: "blue" }} className="h4">
+              {props.children}
+            </h4>
+          );
+        default:
+          return (
+            <p style={{ color: "blue" }} className="Para">
+              {props.children}
+            </p>
+          );
+      }
+    },
+  },
 };
 
 const CustomBlockText = ({ blocks }) => {

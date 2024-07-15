@@ -15,7 +15,6 @@ async function getData() {
     smallDescription,
     "currentSlug":slug.current,
     titleImage,_createdAt
-    
 }`;
   const data = await client.fetch(query);
   return data;

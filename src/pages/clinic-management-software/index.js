@@ -20,6 +20,8 @@ import ContactSection from "@/component/feature/contactSection";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
 import { useRouter } from "next/router";
 import MultiColorCardSec from "@/component/feature/multiColorCard";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const clinicBannerData = [
   {
     maxWidth: "maxWidth-80 p-5",
@@ -389,6 +391,8 @@ const ClinicManagement = () => {
             alt={"clinic management system software"}
           />
         </div>
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment>
       ))} */}

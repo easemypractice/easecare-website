@@ -2,6 +2,8 @@ import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
 import DemoComp from "@/component/demo";
 import HeaderLayout from "@/component/header";
+import CtaSection from "@/component/home/cta";
+import Testimonail from "@/component/home/testimonial";
 import React from "react";
 
 const GetDemo = () => {
@@ -15,6 +17,8 @@ const GetDemo = () => {
         imageUrl={"/public/imags/priview.jpg"}
       />
       <DemoComp />
+      <Testimonail />
+      <CtaSection />
     </Layout>
   );
 };

@@ -18,6 +18,8 @@ import CardsGroups from "@/component/feature/benefitCards";
 import MultiColorCardSec from "@/component/feature/multiColorCard";
 import ContactSection from "@/component/feature/contactSection";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const doctorAppBannerData = [
   {
     maxWidth: "maxWidth-80 p-5",
@@ -375,6 +377,8 @@ const DoctorAppoinment = () => {
         <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
           <BenefitPatients data={whyEaseCareDoctorAppoinSoftware} />
         </div>
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment>
       ))} */}

@@ -18,6 +18,8 @@ import HeroComp from "@/component/feature/HeroComp";
 import CardsGroups from "@/component/feature/benefitCards";
 import ContactSection from "@/component/feature/contactSection";
 import MultiColorCardSec from "@/component/feature/multiColorCard";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const Bannerdata = [
   {
     maxWidth: "max-width-80 p-5",
@@ -383,6 +385,8 @@ const OfflineSoftwareForPractice = () => {
             alt="healthcare inventory management systems"
           />
         </div>
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment>
       ))} */}

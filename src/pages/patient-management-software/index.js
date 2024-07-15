@@ -27,6 +27,8 @@ import NavDetailsSection from "@/component/feature/navDetailsSection";
 import AccordianSections from "@/component/feature/accordianSections";
 import HeroComp from "@/component/feature/HeroComp";
 import ContactSection from "@/component/feature/contactSection";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const patientBannerData = [
   {
     bgImg: bgImg,
@@ -343,6 +345,8 @@ const PatientManagement = () => {
         </div>
         <FAQs />
         {/* <AccordianSections data={item.accordienSec} /> */}
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment>
       ))} */}

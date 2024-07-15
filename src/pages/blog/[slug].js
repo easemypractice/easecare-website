@@ -8,22 +8,37 @@ import React, { useEffect, useState } from "react";
 import { formatDate } from "@/utils/const";
 import PostBody from "@/component/sanity/post-body";
 import { useParams } from "next/navigation";
-async function getData(slug) {
-  if (slug) {
-    const query = `*[_type=="blog" && slug.current =='${slug}'] {
-     "currentSlug":slug.current,
-     title,smallDescription,
-     content,titleImage,_createdAt,_updatedAt ,'author':*[_type == "author"]{
-      title,about,image}
-     }[0]`;
-    const data = await client.fetch(query);
-    return data;
-  }
-}
 
 const RecentBlogArticle = () => {
   const params = useParams();
   const [data, setData] = useState();
+  const [author, setAuthor] = useState(null);
+  console.log(author);
+  async function getData(slug) {
+    if (slug) {
+      const query = `*[_type=="blog" && slug.current =='${slug}'] {
+       "currentSlug":slug.current,
+       title,smallDescription,
+       content,titleImage,_createdAt,_updatedAt , author
+       }[0]`;
+      const data = await client.fetch(query);
+      return data;
+    }
+  }
+
+  useEffect(() => {
+    const fetchAuthor = async () => {
+      const authorRef = data?.author?.author?._ref;
+      if (authorRef) {
+        const authorData = await client.fetch(
+          `*[_type == "author" && _id == $id][0]`,
+          { id: authorRef }
+        );
+        setAuthor(authorData);
+      }
+    };
+    fetchAuthor();
+  }, [data]);
   useEffect(() => {
     getData(params?.slug).then((item) => {
       setData(item);
@@ -42,17 +57,17 @@ const RecentBlogArticle = () => {
         <Box className="container">
           <Text as="h1">{data?.title}</Text>
           <Flex className="author-image">
-            {data && data?.author && (
+            {author && (
               <Image
-                src={urlFor(data?.author[0]?.image)?.url() || ""}
+                src={urlFor(author?.image)?.url() || ""}
                 width={60}
                 height={60}
                 alt="profile-picture"
               />
             )}
             <Flex direction="column" className="author">
-              <Text as="h4">{data?.author[0]?.title}</Text>
-              <Text as="span">{formatDate(data?._createdAt)}</Text>
+              <Text as="h4">{author?.title}</Text>
+              <Text as="span">{formatDate(author?._createdAt)}</Text>
             </Flex>
           </Flex>
           {data && data?.titleImage && (

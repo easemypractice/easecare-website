@@ -17,6 +17,8 @@ import CardsGroups from "@/component/feature/benefitCards";
 import ContactSection from "@/component/feature/contactSection";
 import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const healthcareBannerData = [
   {
     maxWidth: "max-width-80 p-5",
@@ -405,6 +407,8 @@ const HealthCareManagement = () => {
         >
           <BenefitPatients data={BestHealthCare} />
         </div>
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment>
       ))} */}
