@@ -1,9 +1,13 @@
 import { client } from "@/app/lib/sanity";
-import { PortableText } from "@portabletext/react";
 import urlBuilder from "@sanity/image-url";
 import Image from "next/image";
+import BlockContent from "@sanity/block-content-to-react";
+import styles from "@/styles/Patient.module.css";
 
 const PostBody = ({ content, className }) => {
+  const projectId = client.config().projectId;
+  const dataset = client.config().dataset;
+
   const SampleImageComponent = ({ value, isInline }) => {
     return (
       <Image
@@ -18,15 +22,23 @@ const PostBody = ({ content, className }) => {
       />
     );
   };
+
   const components = {
     types: {
       image: SampleImageComponent,
     },
   };
+
   return (
     <div className={`blog-content ${className}`}>
-      <PortableText value={content} components={components} />
+      <BlockContent
+        blocks={content}
+        projectId={projectId}
+        dataset={dataset}
+        components={components}
+      />
     </div>
   );
 };
+
 export default PostBody;

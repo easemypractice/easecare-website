@@ -19,6 +19,8 @@ import CardsGroups from "@/component/feature/benefitCards";
 import ContactSection from "@/component/feature/contactSection";
 import MultiColorCardSec from "@/component/feature/multiColorCard";
 import NavDetailsSection from "@/component/feature/navDetailsSection";
+import Testimonail from "@/component/home/testimonial";
+import CtaSection from "@/component/home/cta";
 const ehremrBannerData = [
   {
     maxWidth: "max-width-80 p-5",
@@ -427,6 +429,8 @@ const EHREMR = () => {
         <div style={{ backgroundColor: "#FCFBF6", padding: "30px 0px" }}>
           <BenefitPatients data={whyChooseSoftware} />
         </div>
+        <Testimonail />
+        <CtaSection />
       </Layout>
       {/* </React.Fragment> */}
       {/* ))} */}

@@ -869,6 +869,7 @@ header nav {
    text-align: center;
    letter-spacing: -0.44px;
    line-height: 88px;
+   color: white;
 }
 
 .footer ul li {
@@ -2760,7 +2761,7 @@ textarea::placeholder {
 }
 
 .blog-page h2 {
-  color: var(--Clarity-Colors-Black, #000);
+  /* color: var(--Clarity-Colors-Black, #000); */
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -2812,10 +2813,10 @@ textarea::placeholder {
 .blog-content li strong {
   display: block;
   color: var(--Clarity-Colors-Shark, #1d2026);
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 65px;
   margin-bottom: -18px;
 }
 
