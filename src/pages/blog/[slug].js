@@ -8,12 +8,23 @@ import React, { useEffect, useState } from "react";
 import { formatDate } from "@/utils/const";
 import PostBody from "@/component/sanity/post-body";
 import { useParams } from "next/navigation";
+import { PortableText } from "@portabletext/react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const RecentBlogArticle = () => {
   const params = useParams();
   const [data, setData] = useState();
   const [author, setAuthor] = useState(null);
-  console.log(author);
+  const [headings, setHeadings] = useState([]);
+
+  const blocksWithGradientText = headings.filter((block) =>
+    block.children.some(
+      (child) => child.marks && child.marks.includes("strongText")
+    )
+  );
+  const pageNav = blocksWithGradientText.map((block) => block.children[0]);
+
   async function getData(slug) {
     if (slug) {
       const query = `*[_type=="blog" && slug.current =='${slug}'] {
@@ -22,6 +33,10 @@ const RecentBlogArticle = () => {
        content,titleImage,_createdAt,_updatedAt , author
        }[0]`;
       const data = await client.fetch(query);
+      const headingBlocks = data.content.filter(
+        (block) => block._type === "block" && ["normal"].includes(block.style)
+      );
+      setHeadings(headingBlocks);
       return data;
     }
   }
@@ -44,6 +59,7 @@ const RecentBlogArticle = () => {
       setData(item);
     });
   }, [params]);
+
   return (
     <div className="blog-page">
       <Layout>
@@ -55,34 +71,51 @@ const RecentBlogArticle = () => {
           //   imageUrl={BrandPreiviewImage}
         />
         <Box className="container">
-          <Text as="h1">{data?.title}</Text>
-          <Flex className="author-image">
-            {author && (
-              <Image
-                src={urlFor(author?.image)?.url() || ""}
-                width={60}
-                height={60}
-                alt="profile-picture"
-              />
-            )}
-            <Flex direction="column" className="author">
-              <Text as="h4">{author?.title}</Text>
-              <Text as="span">{formatDate(author?._createdAt)}</Text>
-            </Flex>
-          </Flex>
-          {data && data?.titleImage && (
-            <Image
-              src={urlFor(data?.titleImage)?.url()}
-              width={640}
-              height={320}
-              style={{ height: "100%", width: "100%" }}
-              alt="image"
-              className="content-image"
-              priority
-              quality={80}
-            />
-          )}
-          <PostBody content={data?.content} className="blog-content" />
+          <Box className="blog-grp">
+            <Box className="blog-content">
+              <Text as="h1">{data?.title}</Text>
+              <Flex className="author-image">
+                {author && (
+                  <Image
+                    src={urlFor(author?.image)?.url() || ""}
+                    width={60}
+                    height={60}
+                    alt="profile-picture"
+                  />
+                )}
+                <Flex direction="column" className="author">
+                  <Text as="h4">{author?.title}</Text>
+                  <Text as="span">{formatDate(author?._createdAt)}</Text>
+                </Flex>
+              </Flex>
+              {data && data?.titleImage && (
+                <Image
+                  src={urlFor(data?.titleImage)?.url()}
+                  width={640}
+                  height={320}
+                  style={{ width: "100%" }}
+                  alt="image"
+                  className="content-image"
+                  priority
+                  quality={80}
+                />
+              )}
+              <PostBody content={data?.content} className="blog-content" />
+            </Box>
+            <Box className="blog-nav">
+              <h2>Table of Contents</h2>
+              <ol>
+                {pageNav.map((item, index) => (
+                  <Link
+                    key={index}
+                    href={`#${item.text.replace(/ /g, "-").replace(/:/g, "")}`}
+                  >
+                    <li>{item.text.replace(/:/g, "")}</li>
+                  </Link>
+                ))}
+              </ol>
+            </Box>
+          </Box>
         </Box>
       </Layout>
     </div>
