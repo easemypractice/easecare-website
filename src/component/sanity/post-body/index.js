@@ -3,6 +3,7 @@ import urlBuilder from "@sanity/image-url";
 import Image from "next/image";
 import BlockContent from "@sanity/block-content-to-react";
 import styles from "@/styles/Patient.module.css";
+import React from "react";
 
 const PostBody = ({ content, className }) => {
   const projectId = client.config().projectId;
@@ -10,19 +11,36 @@ const PostBody = ({ content, className }) => {
 
   const SampleImageComponent = ({ value, isInline }) => {
     return (
-      <div className="content-image" style={{ height: "100%", width: "100%" }}>
+      <div className="content-image" style={{ width: "100%" }}>
         <Image
           src={urlBuilder(client).image(value).fit("max").auto("format").url()}
           alt={value.alt || " "}
           width={640}
           height={320}
-          // className="content-image"
-          // style={{ height: "100%", width: "100%" }}
           priority
           quality={100}
         />
       </div>
     );
+  };
+  const serializers = {
+    marks: {
+      strongText: ({ children }) => {
+        const processedChildren = React.Children.toArray(children)
+          .map((child) => {
+            if (typeof child === "string") {
+              return child.replace(/ /g, "-").replace(/:/g, "");
+            }
+            return child;
+          })
+          .join("");
+        return (
+          <h5 id={processedChildren}>
+            <strong>{children}</strong>
+          </h5>
+        );
+      },
+    },
   };
 
   const components = {
@@ -38,6 +56,7 @@ const PostBody = ({ content, className }) => {
         projectId={projectId}
         dataset={dataset}
         components={components}
+        serializers={serializers}
       />
     </div>
   );
