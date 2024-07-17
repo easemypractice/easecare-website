@@ -128,6 +128,7 @@ const Contact = () => {
         description={
           "Reach out to us for inquiries, support, or free demo of Clinic Management Software Solutions. We are here to assist you with our dedicated expert."
         }
+        pageLink={"contact-us"}
         imageUrl={AboutPreviewImage}
       />
       <Box className="container">

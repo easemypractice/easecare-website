@@ -18,6 +18,7 @@ const BrandLayout = () => {
           "Explore our brand guidelines for healthcare software design, ensuring consistent visuals and messaging across platforms."
         }
         imageUrl={BrandPreiviewImage}
+        pageLink={"brand"}
       />
       <BrandBanner />
       <div className="box-clarity">

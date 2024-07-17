@@ -229,6 +229,7 @@ const FeaturesLayout = () => {
                 "Discover exclusive features such as telemedicine, analytics, secure messaging etc. Revolutionize your healthcare experience with our advanced Clinic Management software."
               }
               imageUrl={FeaturesPreviewImage}
+              pageLink={"features"}
             />
             <FeaturesBanner data={item.heroComp} />
             {item.imageWithContent.map((item, index) => (

@@ -359,8 +359,8 @@ const differenceData = {
   ],
 };
 const EHREMR = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -382,6 +382,7 @@ const EHREMR = () => {
             "Boost your organisation's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
           }
           imageUrl={FeaturesPreviewImage}
+          pageLink={slug}
         />
         <PatientManagmentBanner data={ehremrBannerData} />
         {/* <HeroComp data={item.heroComp} />

@@ -336,8 +336,8 @@ const offerAdditionalSolution = [
   },
 ];
 const PrescriptionSoftware = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -359,6 +359,7 @@ const PrescriptionSoftware = () => {
             "Enhance patient care with our e-prescribing software for doctors. Our software supports your practice and patients, providing seamless healthcare management and friendly reminders to your patients."
           }
           imageUrl={FeaturesPreviewImage}
+          pageLink={slug}
         />
         {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.exploreFeild} />

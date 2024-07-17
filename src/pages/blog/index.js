@@ -35,6 +35,7 @@ const Blog = () => {
             "Discover our engaging healthcare management blogs covering technology, best practices, and industry insights. Explore now!."
           }
           imageUrl={BrandPreiviewImage}
+          pageLink={"blog"}
         />
         <Box className="header">
           <Box className="container">

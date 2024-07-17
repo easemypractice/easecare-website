@@ -15,6 +15,7 @@ const GetDemo = () => {
           "Take a FREE Demo of our latest clinic management softwares. Witness their capabilities and their impact on your business."
         }
         imageUrl={"/public/imags/priview.jpg"}
+        pageLink={"book-a-demo"}
       />
       <DemoComp />
       <Testimonail />

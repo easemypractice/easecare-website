@@ -1984,6 +1984,7 @@ header nav {
   align-items: center;
   gap: 5px;
   justify-content: center;
+  text-align: center;
 }
 
 .pricing-sec {
@@ -1997,6 +1998,7 @@ header nav {
   font-weight: 400;
   font-family: "Roboto", sans-serif !important;
   line-height: 28px;
+  min-width: 200px;
 }
 
 .pricing-sec .left-heading {
@@ -2111,6 +2113,7 @@ header nav {
 .table-sub-head th,
 .table-sub-head td {
   border-bottom: 0px !important;
+  font-weight: 500 !important;
 }
 
 .table-sub-head .border-b-pricing {
@@ -2304,6 +2307,7 @@ a.clarity-header {
 
 .table-left-force .table-flexalign {
   /* min-width: 200px; */
+  text-align: start;
   justify-content: left;
 }
 

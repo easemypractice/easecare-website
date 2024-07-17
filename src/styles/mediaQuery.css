@@ -817,6 +817,7 @@
 }
 .blog-right{
   position: inherit;
+  margin-top: 25px;
 }
 
 .blog-grp {
@@ -835,6 +836,7 @@
     display: flex;
     align-items: flex-start;
     gap: 25px;
+    margin-top: 25px;
   }
   
   .blog-grp {

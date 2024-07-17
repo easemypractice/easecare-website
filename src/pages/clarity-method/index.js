@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Layout } from "@/app/layout";
 import { client } from "@/app/lib/sanity";
 import HeadPart from "@/component/Head/head";
@@ -35,6 +35,7 @@ const Clarity = () => {
             "Resources for presenting the EaseCare Clarity brand consistently and professionally. "
           }
           imageUrl={BrandPreiviewImage}
+          pageLink={"clarity-method"}
         />
         <Box className="container header">
           <Grid columns="2" width="auto" className="typography">

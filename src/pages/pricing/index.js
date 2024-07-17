@@ -8,7 +8,10 @@ import React from "react";
 import { Layout } from "../../app/layout";
 import HeadPart from "@/component/Head/head";
 import PricingPreview from "@/images/pricing-preview.jpg";
+import { useRouter } from "next/router";
 const Pricing = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   return (
     <Layout>
       <HeadPart
@@ -17,6 +20,7 @@ const Pricing = () => {
           "Discover clear and competitive pricing of our Clinic Management Software product. Free & Trial facility available for every Clinic & Doctor."
         }
         imageUrl={PricingPreview}
+        pageLink={slug}
       />
       <PricingBanner />
       <ClarityHospital />

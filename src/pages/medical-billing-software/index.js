@@ -293,8 +293,8 @@ const HowChooseBestBilling = {
   ],
 };
 const MedicalBilling = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -317,6 +317,7 @@ const MedicalBilling = () => {
           description={
             "Track your clinic bills and payments with Easecare Clarity Medical Billing Software. This software offers complete billing solutions for all healthcare providers."
           }
+          pageLink={slug}
           imageUrl={FeaturesPreviewImage}
         />
         {/* <HeroComp data={item.heroComp} /> */}
