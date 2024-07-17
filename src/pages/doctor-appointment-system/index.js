@@ -310,8 +310,8 @@ const whyEaseCareDoctorAppoinSoftware = [
   },
 ];
 const DoctorAppoinment = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -333,6 +333,7 @@ const DoctorAppoinment = () => {
           description={
             "Our Doctor appointment scheduling software offers users a convenient way to book appointments. Empower patients to book 24/7 Easily with your doctors."
           }
+          pageLink={slug}
           imageUrl={FeaturesPreviewImage}
         />
         <PatientManagmentBanner data={doctorAppBannerData} />

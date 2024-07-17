@@ -295,8 +295,8 @@ const HowToManageMadicalInventorySoftware = [
   },
 ];
 const OfflineSoftwareForPractice = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -317,6 +317,7 @@ const OfflineSoftwareForPractice = () => {
           description={
             "Get our healthcare inventory management systems for keeping your inventory in a more organised way. Manage orders, purchases, payments, sales etc with Easecare Clarity."
           }
+          pageLink={slug}
           // imageUrl={FeaturesPreviewImage}
         />
         {/* <HeroComp data={item.heroComp} />

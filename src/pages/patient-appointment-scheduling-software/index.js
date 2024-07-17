@@ -502,8 +502,8 @@ const EasyToSetup = [
   },
 ];
 const PatientAppoinmentScheduling = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -525,6 +525,7 @@ const PatientAppoinmentScheduling = () => {
             "Accept your patient’s appointment 24/7 with our sophisticated Patient appointment scheduling software. Discover how our software makes managing appointments easy."
           }
           imageUrl={FeaturesPreviewImage}
+          pageLink={slug}
         />
         {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.commonAppoinmentMethod} />
