@@ -240,7 +240,7 @@ const PracticeManagement = () => {
             "Our Practice management software handles operations in health care. It captures patient demographics, schedules appointments, manages insurance, performs billing, and generates reports."
           }
           pageLink={slug}
-          // imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/PracticeManagementSoftware.png"
         />
         {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={practiceManagementData} />

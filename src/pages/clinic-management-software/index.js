@@ -333,7 +333,7 @@ const ClinicManagement = () => {
           description={
             "Easecare Clarity offers online clinic management software to enhance healthcare efficiency. Explore its comprehensive features and benefits."
           }
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/ClinicManagementSoftware.png"
           pageLink={slug}
         />
         <PatientManagmentBanner data={clinicBannerData} />

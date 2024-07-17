@@ -321,7 +321,7 @@ const OfflineSoftwareForPractice = () => {
             "The most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software manages your practice offline to get shrink online."
           }
           pageLink={slug}
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/OfflineSoftwareforDoctorsClinic.png"
         />
         {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.simpleAppoinmentFixing} />

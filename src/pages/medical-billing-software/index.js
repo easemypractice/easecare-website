@@ -318,7 +318,7 @@ const MedicalBilling = () => {
             "Track your clinic bills and payments with Easecare Clarity Medical Billing Software. This software offers complete billing solutions for all healthcare providers."
           }
           pageLink={slug}
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/MedicalBillingSoftware.png"
         />
         {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={revenueCycleBannerData} />

@@ -360,7 +360,7 @@ const HealthCareManagement = () => {
           description={
             "Our Healthcare management system software digitally manages patient health information in facilities, offering expert solutions, and automating operations. Explore Now!"
           }
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/HospitalManagementSoftware.png"
           pageLink={slug}
         />
         <PatientManagmentBanner data={healthcareBannerData} />

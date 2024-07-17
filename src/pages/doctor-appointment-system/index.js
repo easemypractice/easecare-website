@@ -334,7 +334,7 @@ const DoctorAppoinment = () => {
             "Our Doctor appointment scheduling software offers users a convenient way to book appointments. Empower patients to book 24/7 Easily with your doctors."
           }
           pageLink={slug}
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/doctorAppointmentSystem.png"
         />
         <PatientManagmentBanner data={doctorAppBannerData} />
         {/* <HeroComp data={item.heroComp} /> */}

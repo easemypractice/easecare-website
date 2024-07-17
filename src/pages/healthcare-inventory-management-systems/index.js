@@ -318,7 +318,7 @@ const OfflineSoftwareForPractice = () => {
             "Get our healthcare inventory management systems for keeping your inventory in a more organised way. Manage orders, purchases, payments, sales etc with Easecare Clarity."
           }
           pageLink={slug}
-          // imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/HealthcareInventoryManagementSoftware.png"
         />
         {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.inventoryManagementImpForClinic} />

@@ -221,8 +221,8 @@ const whyChooseSoftware = [
   },
 ];
 const SoftwareForMultiChain = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -243,7 +243,8 @@ const SoftwareForMultiChain = () => {
           description={
             "Keep an eye on each of your clinics with our effective software for multiple clinic chains. Manage your clinic chain effectively with Easecare powerful software."
           }
-          imageUrl={FeaturesPreviewImage}
+          pageLink={slug}
+          imageUrl="images/ogImage/SoftwareForMultipleClinicChains.png"
         />
         {/* <HeroComp data={item.heroComp} /> */}
         {/* <CardsGroups data={item.advanceSolutions} /> */}
