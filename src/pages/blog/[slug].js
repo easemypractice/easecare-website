@@ -2,7 +2,7 @@
 import { Layout } from "@/app/layout";
 import { client, urlFor } from "@/app/lib/sanity";
 import HeadPart from "@/component/Head/head";
-import { Box, Flex, Text } from "@radix-ui/themes";
+import { Box, Flex, Heading, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { formatDate } from "@/utils/const";
@@ -13,10 +13,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const RecentBlogArticle = () => {
+  const router = useRouter();
   const params = useParams();
   const [data, setData] = useState();
   const [author, setAuthor] = useState(null);
   const [headings, setHeadings] = useState([]);
+  const [activeSection, setActiveSection] = useState("");
+  const [isScroll, setIsScroll] = useState(false);
+  // console.log(activeSection);
 
   const blocksWithGradientText = headings.filter((block) =>
     block.children.some(
@@ -60,6 +64,56 @@ const RecentBlogArticle = () => {
     });
   }, [params]);
 
+  // const sections = document.querySelectorAll("h5");
+  // console.log(sections);
+  const handleScroll = () => {
+    // console.log("Scroll event detected");
+    // setIsScroll(!isScroll);
+
+    const sections = document.querySelectorAll("h5");
+    // console.log("Sections found:", sections);
+    let active = "";
+    sections.forEach((section) => {
+      // console.log(-section.offsetHeight);
+      const rect = section.getBoundingClientRect();
+      if (rect.top < 100 && rect.top > -section.offsetHeight) {
+        active = section.id;
+        setActiveSection(active);
+      }
+    });
+    if (active) {
+      // console.log("Active section:", active);
+      setActiveSection(active);
+    }
+  };
+
+  useEffect(() => {
+    setIsScroll(!isScroll);
+    // debugger;
+    // console.log(typeof window);
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", handleScroll());
+
+      return () => {
+        window.addEventListener("scroll", handleScroll());
+      };
+    }
+    window.onscroll = () => {
+      console.log(heklo);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (activeSection) {
+      const sections = document.querySelectorAll("h5");
+      sections.forEach((section) => {
+        section.classList.remove("active-section");
+        if (section.id === activeSection) {
+          section.classList.add("active-section");
+        }
+      });
+    }
+  }, [activeSection]);
   return (
     <div className="blog-page">
       <Layout>
@@ -102,19 +156,35 @@ const RecentBlogArticle = () => {
               )}
               <PostBody content={data?.content} className="blog-content" />
             </Box>
-            <Box className="blog-nav">
-              <h2>Table of Contents</h2>
-              <ol>
-                {pageNav.map((item, index) => (
-                  <Link
-                    key={index}
-                    href={`#${item.text.replace(/ /g, "-").replace(/:/g, "")}`}
-                  >
-                    <li>{item.text.replace(/:/g, "")}</li>
+            {data && (
+              <Box className="blog-right">
+                <Box className="blog-nav">
+                  <h2>Table of Contents</h2>
+                  <ol>
+                    {pageNav.map((item, index) => (
+                      <Link
+                        className={
+                          activeSection ===
+                          item.text.replace(/ /g, "-").replace(/:/g, "")
+                            ? "active"
+                            : ""
+                        }
+                        key={index}
+                        href={`#${item.text.replace(/ /g, "-").replace(/:/g, "")}`}
+                      >
+                        <li>{item.text.replace(/:/g, "")}</li>
+                      </Link>
+                    ))}
+                  </ol>
+                </Box>
+                <Box className="blog-contact">
+                  <Heading as="h2">Are you looking for EHR Software</Heading>
+                  <Link href={"/book-a-demo"} className="purple-btn">
+                    Book a Free Demo
                   </Link>
-                ))}
-              </ol>
-            </Box>
+                </Box>
+              </Box>
+            )}
           </Box>
         </Box>
       </Layout>
