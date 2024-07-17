@@ -524,7 +524,7 @@ const PatientAppoinmentScheduling = () => {
           description={
             "Accept your patient’s appointment 24/7 with our sophisticated Patient appointment scheduling software. Discover how our software makes managing appointments easy."
           }
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/AppointmentSchedulingSoftware.png"
           pageLink={slug}
         />
         {/* <HeroComp data={item.heroComp} />

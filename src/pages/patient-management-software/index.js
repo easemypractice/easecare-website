@@ -295,7 +295,7 @@ const PatientManagement = () => {
             "Explore our Patient Management Software for medical practices, clinic management, doctor profiles, patient records, & consultations. Discover how it can enhance your practice."
           }
           pageLink={slug}
-          imageUrl="images/ogImage/aboutOg.jpg"
+          imageUrl="images/ogImage/PatientManagementSoftware.png"
         />
         {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={patientBannerData} />

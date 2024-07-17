@@ -358,7 +358,7 @@ const PrescriptionSoftware = () => {
           description={
             "Enhance patient care with our e-prescribing software for doctors. Our software supports your practice and patients, providing seamless healthcare management and friendly reminders to your patients."
           }
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/ePrescriptionSoftware.png"
           pageLink={slug}
         />
         {/* <HeroComp data={item.heroComp} />
