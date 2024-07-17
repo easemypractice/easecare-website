@@ -139,7 +139,7 @@ const RecentBlogArticle = () => {
                 )}
                 <Flex direction="column" className="author">
                   <Text as="h4">{author?.title}</Text>
-                  <Text as="span">{formatDate(author?._createdAt)}</Text>
+                  <Text as="span">{formatDate(data?._createdAt)}</Text>
                 </Flex>
               </Flex>
               {data && data?.titleImage && (
