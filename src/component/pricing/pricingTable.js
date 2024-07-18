@@ -349,7 +349,7 @@ const PricingTable = () => {
                 <TableColumnHeaderCell className="box-shadow-none"></TableColumnHeaderCell>
                 <TableColumnHeaderCell
                   className={clsx(
-                    ``,
+                    `column-two-head left`,
                     selectedPlan === "Free" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -357,11 +357,7 @@ const PricingTable = () => {
                     <Heading as="h3" className="table-top-heading">
                       Free{" "}
                     </Heading>
-                    <Link
-                      target="Blank"
-                      href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
-                      className="border-started-btn"
-                    >
+                    <Link href="/contact-us" className="border-started-btn">
                       Get Started
                     </Link>
                     {/* <Button className="border-started-btn">Get Started</Button> */}
@@ -380,19 +376,14 @@ const PricingTable = () => {
                     <Heading as="h3" className="table-top-heading">
                       Essential{" "}
                     </Heading>
-                    <Link
-                      target="Blank"
-                      href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
-                      className="started-btn"
-                    >
+                    <Link href="/contact-us" className="started-btn">
                       Get Started
                     </Link>
-                    {/* <Button className="started-btn">Get Started</Button> */}
                   </Box>
                 </TableColumnHeaderCell>
                 <TableColumnHeaderCell
                   className={clsx(
-                    ``,
+                    `column-two-head right`,
                     selectedPlan === "Growth" ? "mob-tab-visible" : "mob-none"
                   )}
                 >
@@ -401,11 +392,7 @@ const PricingTable = () => {
                     <Heading as="h3" className="table-top-heading">
                       Growth{" "}
                     </Heading>
-                    <Link
-                      target="Blank"
-                      href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
-                      className="border-started-btn"
-                    >
+                    <Link href="/contact-us" className="border-started-btn">
                       Get Started
                     </Link>
                   </Box>

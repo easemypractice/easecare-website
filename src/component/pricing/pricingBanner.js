@@ -75,14 +75,9 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn">
-                <Link
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
-                  className="border-gray-btn"
-                >
+                <Link href="/contact-us" className="border-gray-btn">
                   Request a callback
                 </Link>
-                {/* <Button className="border-gray-btn">Request a callback</Button> */}
               </Box>
             </Box>
             <Box className="plan-card plan-card-highlight">
@@ -148,14 +143,9 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn">
-                <Link
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
-                  className="purple-btn"
-                >
+                <Link href="/contact-us" className="purple-btn">
                   Request a callback
                 </Link>
-                {/* <Button className="purple-btn">Request a callback</Button> */}
               </Box>
             </Box>
             <Box className="plan-card">
@@ -212,14 +202,9 @@ const PricingBanner = () => {
                 </li>
               </ul>
               <Box className="req-btn growth-btn">
-                <Link
-                  target="_blank"
-                  href="https://docs.google.com/forms/d/1phpa-xOnZgWI6jfK7PQYHD8INBpGckTCebobHi67MiM/edit"
-                  className="border-gray-btn"
-                >
+                <Link href="/contact-us" className="border-gray-btn">
                   Request a callback
                 </Link>
-                {/* <Button className="border-gray-btn">Request a callback</Button> */}
               </Box>
             </Box>
           </Box>
