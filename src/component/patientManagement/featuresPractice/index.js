@@ -3,6 +3,7 @@ import styles from "@/styles/Patient.module.css";
 import { FeaturesCard } from "../featurePatients";
 import * as Tabs from "@radix-ui/react-tabs";
 import { styled } from "@stitches/react";
+import { Heading } from "@radix-ui/themes";
 const TabsRoot = styled(Tabs.Root, {
   display: "flex",
   flexDirection: "column",
@@ -263,10 +264,13 @@ const FeaturePractice = () => {
           {TabContantData.map((item, index) => (
             <TabsContent value={item.value} key={index}>
               <div className="flex justify-center flex-col items-center">
-                <div className={`${styles.Heading} max-width-full pt-6`}>
+                <Heading
+                  as="h2"
+                  className={`${styles.Heading} max-width-full pt-6`}
+                >
                   {item.headingFirst}{" "}
                   <span className={styles.GradHead}>{item.headingSec}</span>
-                </div>
+                </Heading>
                 <div className={styles.CardGrp}>
                   <FeaturesCard data={item.featureData} />
                 </div>

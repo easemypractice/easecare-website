@@ -13,7 +13,10 @@ const HeadPart = ({ title, description, imageUrl, pageLink }) => {
       {/* <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="600" /> */}
       {/* <meta property="og:image:type" content="image/svg" /> */}
-      <link rel="canonical" href={`https://www.easecare.co/${pageLink}`} />
+      <link
+        rel="canonical"
+        href={`https://easecare.co/${pageLink ? pageLink : ""}`}
+      />
       <meta
         name="google-site-verification"
         content="b744oLuFW6xcSOeBopr-I3Q7lYzAIg6IDHc--wnvpVI"

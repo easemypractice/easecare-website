@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/Patient.module.css";
 import BenefitCard from "./benefitCard";
+import { Heading } from "@radix-ui/themes";
 
 const BenefitPatients = ({ data }) => {
   return (
@@ -9,12 +10,13 @@ const BenefitPatients = ({ data }) => {
         data?.map((item, index) => (
           <div className="container" key={index}>
             <div className="flex justify-center flex-col items-center">
-              <div
+              <Heading
+                as="h2"
                 className={`${styles.Heading} ${item?.maxWidth} ${item?.HeadingClass}`}
               >
                 <span>{item.HeadingFirst}</span>{" "}
                 <span className={styles.GradHead}>{item?.HeadingSec}</span>
-              </div>
+              </Heading>
               <p className={`${styles.Para} ${item.paraClass}`}>{item?.para}</p>
               <div className={`${styles.CardGrp} ${item?.cardClass}`}>
                 <BenefitCard data={item.benefitData} cardType={item.cardType} />

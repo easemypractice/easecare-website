@@ -1,6 +1,7 @@
 import React from "react";
 import BenefitCard from "../banefits/benefitCard";
 import styles from "@/styles/Patient.module.css";
+import { Heading } from "@radix-ui/themes";
 const cardData = [
   {
     icon: "hugeicons:ai-innovation-01",
@@ -47,12 +48,14 @@ const BestPractice = () => {
         style={{ backgroundColor: "#FCFBF6" }}
       >
         <div className="flex justify-center flex-col items-center gap-20">
-          <div className={`${styles.Heading} ${styles.maxheadingWid}`}>
-            <span></span>{" "}
+          <Heading
+            as="h2"
+            className={`${styles.Heading} ${styles.maxheadingWid}`}
+          >
             <span className={styles.GradHead}>
               Software- Types and Variations
             </span>
-          </div>
+          </Heading>
           <p className={styles.Para}>
             Depending on the purpose and requirements, there are various types
             and variations of patient management software systems:
