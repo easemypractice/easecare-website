@@ -3,6 +3,7 @@ import styles from "@/styles/Patient.module.css";
 import * as Accordion from "@radix-ui/react-accordion";
 import { styled, keyframes } from "@stitches/react";
 import { Icon } from "@iconify/react";
+import { Heading } from "@radix-ui/themes";
 const accData = [
   {
     id: "1",
@@ -38,9 +39,12 @@ const accData = [
 const FAQs = () => {
   return (
     <div className={`${styles.FAQSection} container`}>
-      <div className={`${styles.Heading} text-start ${styles.headingPadding}`}>
+      <Heading
+        as="h2"
+        className={`${styles.Heading} text-start ${styles.headingPadding}`}
+      >
         FAQ:
-      </div>
+      </Heading>
       <AccordionComp />
     </div>
   );

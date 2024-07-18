@@ -1,16 +1,17 @@
 import React from "react";
 import styles from "@/styles/Patient.module.css";
 import { Icon } from "@iconify/react";
+import { Heading } from "@radix-ui/themes";
 
 const FeaturesPatient = ({ data }) => {
   return (
     <div style={{ backgroundColor: "#FCFBF6", paddingBottom: "78px" }}>
       <div className="container">
         <div className="flex justify-center flex-col items-center">
-          <div className={`${styles.Heading} ${data.HeadingClass}`}>
+          <Heading as="h2" className={`${styles.Heading} ${data.HeadingClass}`}>
             {data.HeadingFirst}{" "}
             <div className={styles.GradHead}>{data?.HeadingSec}</div>
-          </div>
+          </Heading>
           <p className={`${styles.Para} ${data?.ParaClass}`}>{data?.Para}</p>
           <div className={styles.CardGrp}>
             <FeaturesCard data={data.CardData} />

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@/styles/Patient.module.css";
 import BenefitCard from "../banefits/benefitCard";
 import contactImg from "@/images/contactPanaImg.svg";
+import { Heading } from "@radix-ui/themes";
 // const data = [
 //   {
 //     icon: "mage:health-square",
@@ -36,14 +37,15 @@ const VarientTypes = ({ TypesVarientData }) => {
         // style={{ backgroundColor: TypesVarientData?.containerClass }}
       >
         <div className="flex justify-center flex-col items-center gap-20">
-          <div
+          <Heading
+            as="h2"
             className={`${TypesVarientData?.HeadingClass} ${styles.Heading} ${styles.maxheadingWid}`}
           >
             <span>{TypesVarientData?.HeadingFirst}</span>{" "}
             <div className={styles.GradHead}>
               {TypesVarientData?.HeadingSec}
             </div>
-          </div>
+          </Heading>
           <p className={styles.Para}>{TypesVarientData?.para}</p>
           <div className={styles.CardGrp}>
             <BenefitCard

@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "@/styles/Patient.module.css";
 import { Icon } from "@iconify/react";
+import { Heading } from "@radix-ui/themes";
 const DifferenceCard = ({ data }) => {
   return (
     <div className={`container ${styles.VarComp}`}>
       <div className="flex justify-center flex-col items-center gap-20">
-        <div
+        <Heading
+          as="h2"
           className={`${styles.Heading} ${styles.maxheadingWid} ${data?.HeadingClass}`}
         >
           <span>{data?.HeadingFirst}</span>{" "}
           <div className={styles.GradHead}>{data?.HeadingSec}</div>
-        </div>
+        </Heading>
         <p className={styles.Para}>{data?.para}</p>
         <div className={styles.CardGrp}>
           {data.differenceCard.map((item, index) => (
