@@ -26,8 +26,8 @@ const tableData = [
   {
     type: "Doctors",
     free: "1",
-    essential: "₹800/doctor (Billed Yearly) and ₹1100/doctor (Billed Monthly)",
-    growth: "₹1440/doctor (Billed Yearly) and ₹1800/doctor (Billed Monthly)",
+    essential: "1",
+    growth: "1",
   },
   {
     type: "Staff members",
