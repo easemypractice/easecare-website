@@ -113,10 +113,16 @@ const Footer = () => {
           <Box className=" downloadApp">
             <Heading as="h4">Download the EaseCare Clarity App</Heading>
             <div className="flex flex-col gap-3">
-              <Link href="https://play.google.com/store/apps/details?id=com.easemypractice.atlas">
+              <Link
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.easemypractice.atlas"
+              >
                 <Image src={playStore} width={120} />
               </Link>
-              <Link href="https://apps.apple.com/in/app/clarity-ehr/id6468764592">
+              <Link
+                target="_blank"
+                href="https://apps.apple.com/in/app/clarity-ehr/id6468764592"
+              >
                 <Image src={appStore} width={120} />
               </Link>
             </div>
