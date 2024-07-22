@@ -3258,12 +3258,18 @@ li.footerCon{
 .blog-grp{
   display: flex;
   max-height:100vh;
+  width: 100vw;
+}
+
+.overflow-scroll{
+  overflow-y: scroll;
 }
 
 .blog-content{
   width: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   width: 50vw;
+  height: 100vh;
 }
 
 .blog-right{

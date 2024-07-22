@@ -67,7 +67,7 @@ const RecentBlogArticle = () => {
   // const sections = document.querySelectorAll("h5");
   // console.log(sections);
   const handleScroll = () => {
-    // console.log("Scroll event detected");
+    console.log("Scroll event detected");
     // setIsScroll(!isScroll);
 
     const sections = document.querySelectorAll("h5");
@@ -88,19 +88,19 @@ const RecentBlogArticle = () => {
   };
 
   useEffect(() => {
-    setIsScroll(!isScroll);
+    // setIsScroll(!isScroll);
     // debugger;
     // console.log(typeof window);
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", handleScroll());
+    const container = document.getElementById("blogContent1234");
+    container.addEventListener("scroll", handleScroll());
 
-      return () => {
-        window.addEventListener("scroll", handleScroll());
-      };
-    }
-    window.onscroll = () => {
-      console.log(heklo);
+    return () => {
+      container.removeEventListener("scroll", handleScroll());
     };
+
+    // window.onscroll = () => {
+    //   console.log(heklo);
+    // };
   }, []);
 
   useEffect(() => {
@@ -124,9 +124,10 @@ const RecentBlogArticle = () => {
           }
           //   imageUrl={BrandPreiviewImage}
         />
-        <Box className="container">
+
+        <Box className="container overflow-scroll">
           <Box className="blog-grp">
-            <Box className="blog-content">
+            <Box className="blog-content" id="blogContent1234">
               <Text as="h1">{data?.title}</Text>
               <Flex className="author-image">
                 {author && (
