@@ -1,8 +1,6 @@
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
 import DemoComp from "@/component/demo";
-import HeaderLayout from "@/component/header";
-import CtaSection from "@/component/home/cta";
 import Testimonail from "@/component/home/testimonial";
 import React from "react";
 
@@ -14,12 +12,11 @@ const GetDemo = () => {
         description={
           "Take a FREE Demo of our latest clinic management softwares. Witness their capabilities and their impact on your business."
         }
-        imageUrl={"/public/imags/priview.jpg"}
+        imageUrl={"images/ogImage/BookaDemoOg.png"}
         pageLink={"book-a-demo"}
       />
       <DemoComp />
       <Testimonail />
-      <CtaSection />
     </Layout>
   );
 };

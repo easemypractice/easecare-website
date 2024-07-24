@@ -25,7 +25,7 @@ const HomeLayout = () => {
         description={
           "Easecare Clarity is one of the best modern practice management systems. It provides a secure and hassle-free onboarding platform for clinics, doctors and Patients."
         }
-        imageUrl={"/public/images/preview.jpg"}
+        imageUrl={"images/ogImage/homePageOg.png"}
       />
       <HomeBanner />
       <CloudBased />
