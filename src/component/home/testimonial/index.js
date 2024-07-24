@@ -96,7 +96,7 @@ const Testimonail = () => {
             <div className="doctor-review pt-20">
               <div className="flex-col gap-20">
                 <p className="testi-review">
-                  We&apos;ve been using Easemypractice for our clinic&apos;s
+                  We&apos;ve been using Easecare clarity for our clinic&apos;s
                   Electronic Health Records, and it has truly streamlined our
                   workflow. The user-friendly interface makes it easy for our
                   doctors to access and update patient records efficiently.
@@ -229,7 +229,7 @@ const data = [
   },
   {
     review:
-      "We've been using Easemypractice for our clinic's Electronic Health Records, and it has truly streamlined our workflow. The user-friendly interface makes it easy for our doctors to access and update patient records efficiently.",
+      "We've been using Easecare clarity for our clinic's Electronic Health Records, and it has truly streamlined our workflow. The user-friendly interface makes it easy for our doctors to access and update patient records efficiently.",
     doctorName: "Dr. Vipin Mehra",
     specialization: "M.D. Physician",
     profile: PhysiotherapyImage,

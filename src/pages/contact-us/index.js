@@ -16,7 +16,6 @@ import { Icon } from "@iconify/react";
 import AboutPreviewImage from "../../../public/images/about-preview.svg";
 import HeadPart from "@/component/Head/head";
 import Testimonail from "@/component/home/testimonial";
-import CtaSection from "@/component/home/cta";
 const Contact = () => {
   const [stateValue, setSatateValue] = useState("");
   const [ip4, setIP4] = useState({});
@@ -387,7 +386,6 @@ const Contact = () => {
         </Flex>
       </Box>
       <Testimonail />
-      <CtaSection />
     </Layout>
   );
 };

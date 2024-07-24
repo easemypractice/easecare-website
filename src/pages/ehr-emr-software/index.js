@@ -381,7 +381,7 @@ const EHREMR = () => {
           description={
             "Boost your organisation's performance with our electronic health records software. Elevate services & reputation with streamlined data management."
           }
-          imageUrl="images/ogImage/EHREMRSoftware.png"
+          imageUrl="images/ogImage/ehr-emr-software.png"
           pageLink={slug}
         />
         <PatientManagmentBanner data={ehremrBannerData} />
