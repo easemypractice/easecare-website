@@ -170,7 +170,7 @@ const Footer = () => {
                 <li>
                   <Link
                     target="_blank"
-                    href={"https://www.facebook.com/easecareco"}
+                    href={"https://www.facebook.com/easecareclarity"}
                   >
                     <Icon icon="logos:facebook" height="27" width="27" />
                   </Link>
