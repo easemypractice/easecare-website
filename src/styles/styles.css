@@ -3269,7 +3269,7 @@ li.footerCon{
   width: 100%;
   /* overflow-y: scroll; */
   width: 50vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .blog-right{
@@ -3333,4 +3333,13 @@ li.footerCon{
 
 h5{
   scroll-margin-top: 80px; 
+}
+
+.sticky-sidebar{
+  position: sticky;
+  top: 100px;
+}
+
+.max-w-658{
+  max-width: 658px;
 }
