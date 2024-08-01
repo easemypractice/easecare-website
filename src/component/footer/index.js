@@ -106,7 +106,7 @@ const Footer = () => {
                 <Link href="/brand">Brand Guidelines</Link>
               </li>
               <li>
-                <Link href="https://clarity.easecare.co/login">Log In</Link>
+                <Link href="/clarity-guide">Clarity Guide</Link>
               </li>
             </ul>
           </Box>
