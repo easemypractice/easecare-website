@@ -16,7 +16,8 @@ const AboutUsLayout = () => {
         description={
           "Learn about our mission to innovate healthcare solutions. Discover Easecare Clarity's commitment to excellence in software and customer success."
         }
-        imageUrl={AboutPreviewImage}
+        pageLink={"about-us"}
+        imageUrl={"images/ogImage/AboutUsOg.png"}
       />
       <AboutBanner />
       <AboutInfo />

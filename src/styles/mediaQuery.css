@@ -653,6 +653,13 @@
 
   .content-image {
     margin: 20px 0px;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+  figure img{
+    margin: 10px 0px;
+    max-width: 100vw !important;
+    width: 100% !important;
   }
 
   .blog-content p,
@@ -665,7 +672,7 @@
   }
 
   .blog-content li strong {
-    line-height: 32px;
+    line-height: 58px;
   }
 
   .blog .recent-post {
@@ -792,6 +799,9 @@
 }
 .imageWithContentLeft div{
  margin-top: 20px !important;
+ flex-direction: column;
+ gap: 10px !important;
+ /* max-width: max-content; */
 }
 .imageWithContent{
   flex-direction: column;
@@ -801,9 +811,54 @@
 
 }
 
+.blog-content{
+  width: 90vw;
+  padding: 0px 6px;
+}
+.blog-right{
+  position: inherit;
+  margin-top: 25px;
+}
+
+.blog-grp {
+  max-height: 100%;
+  flex-direction: column-reverse;
+}
+.blog-page h1 {
+  font-size: 35px;
+}
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
+  .blog-right{
+    position: inherit;
+    max-width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-top: 25px;
+  }
+  
+  .blog-grp {
+    max-height: 100%;
+    flex-direction: column-reverse;
+  }
+  .blog-nav{
+    width: 100%;
+  }
+  .blog-page h1{
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .blog-page h2{
+    font-size: 30px;
+    line-height: 20px;
+    padding: 16px 0px 29px 0px;
+  }
+  .blog-content{
+    width: 90vw;
+    padding: 0px 30px;
+  }
   .contact-row {
     padding: 30px 0px;
   }
@@ -1128,6 +1183,11 @@
   .feature-banner h1{
     font-size: 50px;
     line-height: 60px;
+  }
+  figure img{
+    margin: 10px 0px;
+    max-width: 100vw !important;
+    width: 100% !important;
   }
 }
 

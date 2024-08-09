@@ -272,8 +272,8 @@ const featureData = {
 };
 
 const PatientManagement = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [patientData, setPatientData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -294,7 +294,8 @@ const PatientManagement = () => {
           description={
             "Explore our Patient Management Software for medical practices, clinic management, doctor profiles, patient records, & consultations. Discover how it can enhance your practice."
           }
-          // imageUrl={FeaturesPreviewImage}
+          pageLink={slug}
+          imageUrl="images/ogImage/PatientManagementSoftware.png"
         />
         {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={patientBannerData} />

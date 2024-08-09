@@ -3,8 +3,11 @@ import HeadPart from "@/component/Head/head";
 import { Box, Heading, Text } from "@radix-ui/themes";
 import Link from "next/link";
 import { Layout } from "../../app/layout";
+import { useRouter } from "next/router";
 
 const PrivacyPolicy = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   return (
     <Layout>
       <HeadPart
@@ -12,6 +15,7 @@ const PrivacyPolicy = () => {
         description={
           "Read our privacy policy outlining how we handle your healthcare information securely and responsibly."
         }
+        pageLink={slug}
         // imageUrl={AboutPreviewImage}
       />
       <Box className="heading-box">

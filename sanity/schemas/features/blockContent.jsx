@@ -3,17 +3,9 @@
 // Custom component to render gradient text in the editor
 export const GradientTextDecorator = ({ children }) => {
   return (
-    <span
-      style={{
-        background:
-          "linear-gradient(to right, #FFA80066, #19BB7D66, #0052CC66, #45A4EC66, #B85FFF66),linear-gradient(to bottom, #070624 100%, #07062400 0%",
-        WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-        color: "#070624",
-      }}
-    >
-      {children}
-    </span>
+    <h5 id={Math.random(15)}>
+      <strong>{children}</strong>
+    </h5>
   );
 };
 export const GradientTextDecoratorTwo = ({ children }) => {
@@ -52,6 +44,7 @@ export default {
     {
       type: "block",
       // Define the custom decorators
+
       marks: {
         decorators: [
           // ... other decorators

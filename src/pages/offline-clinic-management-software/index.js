@@ -298,8 +298,8 @@ const WhyOfflineClinic = [
   },
 ];
 const OfflineSoftwareForPractice = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -320,7 +320,8 @@ const OfflineSoftwareForPractice = () => {
           description={
             "The most specific features that would revolutionize the workforce of your clinic? Our offline clinic management software manages your practice offline to get shrink online."
           }
-          imageUrl={FeaturesPreviewImage}
+          pageLink={slug}
+          imageUrl="images/ogImage/OfflineSoftwareforDoctorsClinic.png"
         />
         {/* <HeroComp data={item.heroComp} />
             <CardsGroups data={item.simpleAppoinmentFixing} />

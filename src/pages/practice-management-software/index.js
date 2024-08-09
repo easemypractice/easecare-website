@@ -215,8 +215,8 @@ const BestPracticeData = [
 ];
 
 const PracticeManagement = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // console.log(data);
   // useEffect(() => {
@@ -239,7 +239,8 @@ const PracticeManagement = () => {
           description={
             "Our Practice management software handles operations in health care. It captures patient demographics, schedules appointments, manages insurance, performs billing, and generates reports."
           }
-          // imageUrl={FeaturesPreviewImage}
+          pageLink={slug}
+          imageUrl="images/ogImage/PracticeManagementSoftware.png"
         />
         {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={practiceManagementData} />

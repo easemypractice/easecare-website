@@ -15,22 +15,22 @@ const formSubmission = {
     },
     {
       name: "phoneNumber",
-      type: "text",
+      type: "string",
       title: "Phone Number",
     },
     {
       name: "client",
-      type: "text",
+      type: "string",
       title: "Clinic Name",
     },
     {
       name: "state",
-      type: "text",
+      type: "string",
       title: "State",
     },
     {
       name: "city",
-      type: "text",
+      type: "string",
       title: "City",
     },
     {

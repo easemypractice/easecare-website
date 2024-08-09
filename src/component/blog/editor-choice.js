@@ -18,24 +18,28 @@ const EditorChoice = ({ data }) => {
             <Text as="span">Editor’s Picks</Text>
           </Flex>
           <Flex className="body-container">
-            <Grid columns="3" width="auto" className="body">
-              {data &&
-                data.length > 0 &&
-                data
-                  .slice(0, 6)
-                  .filter((blog) => blog?.type === "editorial")
-                  .map((item, index) => (
-                    <Flex
-                      className="content"
-                      direction="column"
-                      onClick={() => handleBlogRoute(item)}
-                      key={index}
-                    >
-                      <Text as="span"> {item?.title}</Text>
-                      <Text as="h4"> {item?.smallDescription}</Text>
-                    </Flex>
-                  ))}
-            </Grid>
+            {data && data.length > 0 ? (
+              <Grid columns="3" width="auto" className="body">
+                {data &&
+                  data.length > 0 &&
+                  data
+                    .slice(0, 6)
+                    .filter((blog) => blog?.type === "editorial")
+                    .map((item, index) => (
+                      <Flex
+                        className="content"
+                        direction="column"
+                        onClick={() => handleBlogRoute(item)}
+                        key={index}
+                      >
+                        <Text as="span"> {item?.title}</Text>
+                        <Text as="h4"> {item?.smallDescription}</Text>
+                      </Flex>
+                    ))}
+              </Grid>
+            ) : (
+              "No Editor Blogs"
+            )}
           </Flex>
         </Box>
       </Box>

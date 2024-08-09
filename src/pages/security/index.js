@@ -4,8 +4,11 @@ import Link from "next/link";
 import React from "react";
 import { Layout } from "../../app/layout";
 import HeadPart from "@/component/Head/head";
+import { useRouter } from "next/router";
 
 const Security = () => {
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   return (
     <Layout>
       <HeadPart
@@ -13,6 +16,7 @@ const Security = () => {
         description={
           "Learn about our robust security measures regarding safeguarding your healthcare data. Discover our commitment to privacy and compliance."
         }
+        pageLink={slug}
         // imageUrl={AboutPreviewImage}
       />
       <Box className="heading-box-security">

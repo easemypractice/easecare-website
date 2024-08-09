@@ -1,4 +1,5 @@
 import { defineField } from "sanity";
+import { GradientTextDecorator } from "./features/blockContent";
 
 export default {
   name: "blog",
@@ -65,9 +66,29 @@ export default {
       of: [
         {
           type: "block",
+          marks: {
+            decorators: [
+              {
+                title: "Strong",
+                value: "strongText",
+                blockEditor: {
+                  icon: () => "B-id",
+                  render: GradientTextDecorator,
+                },
+              },
+              {
+                title: "Strong",
+                value: "strong",
+              },
+              // { title: "Gradient Text", value: "strongText" },
+            ],
+          },
         },
         {
           type: "image",
+          options: {
+            hotspot: true,
+          },
           fields: [
             {
               type: "text",

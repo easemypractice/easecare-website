@@ -40,6 +40,7 @@ import tabsSelectCards, {
   tabsContent,
 } from "./schemas/features/tabsSelectCards";
 import feature, { SideImageComponent } from "./schemas/features/feature";
+import clarityGuide from "./schemas/clarityGuide";
 export const schema = {
   types: [
     blog,
@@ -81,5 +82,6 @@ export const schema = {
     tabsContent,
     feature,
     SideImageComponent,
+    clarityGuide,
   ],
 };

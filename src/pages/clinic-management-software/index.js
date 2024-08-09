@@ -310,8 +310,8 @@ const AdvantageData = [
 ];
 
 const ClinicManagement = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -333,7 +333,8 @@ const ClinicManagement = () => {
           description={
             "Easecare Clarity offers online clinic management software to enhance healthcare efficiency. Explore its comprehensive features and benefits."
           }
-          imageUrl={FeaturesPreviewImage}
+          imageUrl="images/ogImage/ClinicManagementSoftware.png"
+          pageLink={slug}
         />
         <PatientManagmentBanner data={clinicBannerData} />
         {/* <HeroComp data={item.heroComp} /> */}

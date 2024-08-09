@@ -258,8 +258,8 @@ const FeaturesOfTelemedicine = {
   ],
 };
 const TelemedicineApp = () => {
-  // const router = useRouter();
-  // const slug = router.pathname.replace("/", "");
+  const router = useRouter();
+  const slug = router.pathname.replace("/", "");
   // const [data, setData] = useState([]);
   // useEffect(() => {
   //   getFeaturesData(slug);
@@ -280,6 +280,8 @@ const TelemedicineApp = () => {
           description={
             "At Easecare, we develop the finest telemedicine app for doctors of every niche. Our telemedicine app helps patients book online appointments from anywhere."
           }
+          pageLink={slug}
+          imageUrl="images/ogImage/TelemedicineAppforDoctors.png"
           // imageUrl={FeaturesPreviewImage}
         />
         {/* <HeroComp data={item.heroComp} />

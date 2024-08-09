@@ -19,7 +19,7 @@ const ImageWithContent = ({ data }) => {
       style={{ backgroundColor: data?.backgroundColor }}
     >
       <div className="container">
-        <div className="imageWithContent">
+        <div className={`imageWithContent ${data?.featureDir}`}>
           <div className="imageWithContentLeft">
             {/* <CustomBlockText blocks={data?.content} /> */}
             <Heading as="h2">{data.title}</Heading>

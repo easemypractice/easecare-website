@@ -106,17 +106,23 @@ const Footer = () => {
                 <Link href="/brand">Brand Guidelines</Link>
               </li>
               <li>
-                <Link href="https://clarity.easecare.co/login">Log In</Link>
+                <Link href="/clarity-guide">Clarity Guide</Link>
               </li>
             </ul>
           </Box>
           <Box className=" downloadApp">
             <Heading as="h4">Download the EaseCare Clarity App</Heading>
             <div className="flex flex-col gap-3">
-              <Link href="https://apps.apple.com/in/app/clarity-ehr/id6468764592">
+              <Link
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.easemypractice.atlas"
+              >
                 <Image src={playStore} width={120} />
               </Link>
-              <Link href="https://play.google.com/store/apps/details?id=com.easemypractice.atlas">
+              <Link
+                target="_blank"
+                href="https://apps.apple.com/in/app/clarity-ehr/id6468764592"
+              >
                 <Image src={appStore} width={120} />
               </Link>
             </div>
@@ -164,7 +170,7 @@ const Footer = () => {
                 <li>
                   <Link
                     target="_blank"
-                    href={"https://www.facebook.com/easecareco"}
+                    href={"https://www.facebook.com/easecareclarity"}
                   >
                     <Icon icon="logos:facebook" height="27" width="27" />
                   </Link>
@@ -196,7 +202,6 @@ const Footer = () => {
           </Box>
         </Box>
         <Box className="text-center footer-copyright">
-          {" "}
           <Text>
             <Link href={"/terms-and-condition"}>Terms & Conditions</Link> |{" "}
             <Link href={"/privacy-policy"}>Privacy Policy</Link>
