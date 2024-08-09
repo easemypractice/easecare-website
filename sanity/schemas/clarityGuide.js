@@ -66,23 +66,23 @@ export default {
       of: [
         {
           type: "block",
-          marks: {
-            decorators: [
-              {
-                title: "Strong",
-                value: "strongText",
-                blockEditor: {
-                  icon: () => "B-id",
-                  render: GradientTextDecorator,
-                },
-              },
-              {
-                title: "Strong",
-                value: "strong",
-              },
-              // { title: "Gradient Text", value: "strongText" },
-            ],
-          },
+          // marks: {
+          //   decorators: [
+          //     // {
+          //     //   title: "Strong",
+          //     //   value: "strongText",
+          //     //   blockEditor: {
+          //     //     icon: () => "B-id",
+          //     //     render: GradientTextDecorator,
+          //     //   },
+          //     // },
+          //     {
+          //       title: "Strong",
+          //       value: "strong",
+          //     },
+          //     // { title: "Gradient Text", value: "strongText" },
+          //   ],
+          // },
         },
         {
           type: "image",

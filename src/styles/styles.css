@@ -3330,6 +3330,9 @@ li.footerCon{
   text-align: center;
   line-height: 45px;
 }
+figure>img{
+ width: 100% !important;
+}
 
 h5{
   scroll-margin-top: 80px; 

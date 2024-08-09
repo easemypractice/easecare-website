@@ -33,6 +33,7 @@
     line-height: 72px;
     letter-spacing: -1.2px;
     color: #1D2026;
+    
   }
   .nav div{
     font-size: 20px;
@@ -40,12 +41,15 @@
     line-height: 35px;
     color: #5D6476;
     cursor: pointer;
+    max-width: 400px;
+    
   }
   .guideContainer{
     display: flex;
     justify-content: space-around;
     margin-bottom: 78px;
     margin-top: 20px;
+    
   }
 
   .active{
@@ -87,12 +91,14 @@
     }
     .nav h3{
       font-size: 20px;
-      line-height: 55px;
+      line-height: 40px;
+     
     }
     .nav div{
       line-height: 15px;
       font-size: 15px;
       padding-left: 15px;
+      margin-top: 8px !important;
     }
     .nav{
       border: 1px solid rgba(128, 128, 128, 0.334);
