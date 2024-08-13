@@ -1,5 +1,5 @@
 import { defineField } from "sanity";
-import { GradientTextDecorator } from "./features/blockContent";
+import { IdHeading } from "./features/blockContent";
 
 export default {
   name: "clarityGuide",
@@ -66,23 +66,21 @@ export default {
       of: [
         {
           type: "block",
-          // marks: {
-          //   decorators: [
-          //     // {
-          //     //   title: "Strong",
-          //     //   value: "strongText",
-          //     //   blockEditor: {
-          //     //     icon: () => "B-id",
-          //     //     render: GradientTextDecorator,
-          //     //   },
-          //     // },
-          //     {
-          //       title: "Strong",
-          //       value: "strong",
-          //     },
-          //     // { title: "Gradient Text", value: "strongText" },
-          //   ],
-          // },
+          marks: {
+            decorators: [
+              { title: "Strong", value: "strong" },
+              { title: "Emphasis", value: "em" },
+              { title: "Underline", value: "underline" },
+              {
+                title: "Strong",
+                value: "strongText",
+                blockEditor: {
+                  icon: () => "B-id",
+                  render: IdHeading,
+                },
+              },
+            ],
+          },
         },
         {
           type: "image",

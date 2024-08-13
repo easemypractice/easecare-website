@@ -1,6 +1,7 @@
 .guideHeadBg{
-    background-image: url(../images/guideBanner.png);
-    height: 240px;
+    /* background-image: url(../images/guideBanner.png); */
+    background-color: #E6FDF1;
+    height: 200px;
     width: 100%;
     /* text-align: center; */
     padding: 56px 96px ;
@@ -52,10 +53,26 @@
     
   }
 
+  .listIcons{
+    width: 10px;
+    height: 10px;
+    background-color: #5D6476;
+    border-radius: 100%;
+    margin-top: 12px;
+  }
+  .listContainor{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
   .active{
     color: #000000 !important;
   }
 
+  .activeIcon{
+    background-color: #000000 !important;
+  }
   @media (min-width: 600px) and (max-width: 999px) {
     .guideHeadBg{
       padding:56px 55px
@@ -89,6 +106,7 @@
       flex-direction: column;
       gap: 54px;
     }
+
     .nav h3{
       font-size: 20px;
       line-height: 40px;

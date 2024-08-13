@@ -8,6 +8,9 @@ export const GradientTextDecorator = ({ children }) => {
     </h5>
   );
 };
+export const IdHeading = ({ children }) => {
+  return <div id={Math.random(15)}>{children}</div>;
+};
 export const GradientTextDecoratorTwo = ({ children }) => {
   return (
     <span
