@@ -106,7 +106,9 @@ const Footer = () => {
                 <Link href="/brand">Brand Guidelines</Link>
               </li>
               <li>
-                <Link href="/clarity-guide">Clarity Guide</Link>
+                <Link href="/clarity-guide/how-to-get-started-with-clarity">
+                  Clarity Guide
+                </Link>
               </li>
             </ul>
           </Box>
