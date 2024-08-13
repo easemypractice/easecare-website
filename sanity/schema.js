@@ -35,7 +35,7 @@ import offlineSoftware from "./schemas/features/offlineSoftware";
 import inventoryManagement from "./schemas/features/inventoryManagement";
 import telemedicineApp from "./schemas/features/telemedicineApp";
 import electronicHealthRecord from "./schemas/features/electronicHealthRecord";
-import blockContent from "./schemas/features/blockContent";
+import blockContent, { IdHeading } from "./schemas/features/blockContent";
 import tabsSelectCards, {
   tabsContent,
 } from "./schemas/features/tabsSelectCards";
