@@ -298,7 +298,7 @@ const PatientManagement = () => {
           pageLink={slug}
           imageUrl="images/ogImage/PatientManagementSoftware.png"
         />
-        <Script type="application/ld+json">
+        <Script id="add-script-patient-management" type="application/ld+json">
           {{
             "@context": "https://schema.org/",
             "@type": "Product",
