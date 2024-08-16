@@ -29,6 +29,7 @@ import HeroComp from "@/component/feature/HeroComp";
 import ContactSection from "@/component/feature/contactSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
+import Script from "next/script";
 const patientBannerData = [
   {
     bgImg: bgImg,
@@ -297,6 +298,25 @@ const PatientManagement = () => {
           pageLink={slug}
           imageUrl="images/ogImage/PatientManagementSoftware.png"
         />
+        <Script id="add-script-patient-management" type="application/ld+json">
+          {{
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            name: "Patient Management Software",
+            image: "https://easecare.co/_next/static/media/logo.ab45f14b.svg",
+            description:
+              "Patient Management Software helps you manage all the things related to your patients for example - scheduling appointments, billing, evaluation, treatment, and discharge.",
+            brand: {
+              "@type": "Brand",
+              name: "EaseCare Clarity",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.8",
+              ratingCount: "151",
+            },
+          }}
+        </Script>
         {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={patientBannerData} />
         <BenefitPatients data={patientBenefits} />
