@@ -30,6 +30,7 @@ import ContactSection from "@/component/feature/contactSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 import Script from "next/script";
+import Head from "next/head";
 const patientBannerData = [
   {
     bgImg: bgImg,
@@ -290,33 +291,65 @@ const PatientManagement = () => {
       {/* {patientData.map((item) => (
         <React.Fragment key={item?._id}> */}
       <Layout>
-        <HeadPart
+        {/* <HeadPart
           title={"Best Patient Management Software for Clinics | Easecare"}
           description={
             "Explore our Patient Management Software for medical practices, clinic management, doctor profiles, patient records, & consultations. Discover how it can enhance your practice."
           }
           pageLink={slug}
           imageUrl="images/ogImage/PatientManagementSoftware.png"
-        />
-        <Script id="add-script-patient-management" type="application/ld+json">
-          {{
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            name: "Patient Management Software",
-            image: "https://easecare.co/_next/static/media/logo.ab45f14b.svg",
-            description:
-              "Patient Management Software helps you manage all the things related to your patients for example - scheduling appointments, billing, evaluation, treatment, and discharge.",
-            brand: {
-              "@type": "Brand",
-              name: "EaseCare Clarity",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.8",
-              ratingCount: "151",
-            },
-          }}
-        </Script>
+        /> */}
+        <Head>
+          <title>Best Patient Management Software for Clinics | Easecare</title>
+          <meta
+            name="description"
+            content={
+              "Explore our Patient Management Software for medical practices, clinic management, doctor profiles, patient records, & consultations. Discover how it can enhance your practice."
+            }
+          />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <meta
+            property="og:title"
+            content={"Best Patient Management Software for Clinics | Easecare"}
+          />
+          <meta
+            property="og:description"
+            content={
+              "Explore our Patient Management Software for medical practices, clinic management, doctor profiles, patient records, & consultations. Discover how it can enhance your practice."
+            }
+          />
+          <meta
+            property="og:image"
+            content={"images/ogImage/PatientManagementSoftware.png"}
+          />
+          <link rel="canonical" href={`https://easecare.co/${slug}`} />
+          <meta
+            name="google-site-verification"
+            content="b744oLuFW6xcSOeBopr-I3Q7lYzAIg6IDHc--wnvpVI"
+          />
+          <script type="application/ld+json">
+            {JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "Product",
+              name: "Patient Management Software",
+              image: "https://easecare.co/_next/static/media/logo.ab45f14b.svg",
+              description:
+                "Patient Management Software helps you manage all the things related to your patients for example - scheduling appointments, billing, evaluation, treatment, and discharge.",
+              brand: {
+                "@type": "Brand",
+                name: "EaseCare Clarity",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                ratingCount: "151",
+              },
+            })}
+          </script>
+        </Head>
         {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={patientBannerData} />
         <BenefitPatients data={patientBenefits} />
