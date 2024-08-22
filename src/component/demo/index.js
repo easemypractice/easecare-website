@@ -277,10 +277,11 @@ export default function DemoComp() {
                 />
               </div>
               <div className={styles.address}>
-                <label>Address</label>
-                <input
+                <label>Your message</label>
+                <textarea
+                  rows={4}
                   type="text"
-                  placeholder="Enter Address"
+                  placeholder="Enter your requirements"
                   {...register("address")}
                 />
               </div>
