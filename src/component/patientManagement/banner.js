@@ -17,7 +17,10 @@ const PatientManagmentBanner = ({ data }) => {
                 <span className="heading-white">{item?.HeadingFirst}</span>{" "}
                 <span className="heading-white">{item?.HeadingSecound}</span>
               </Heading>
-              <Text className="banner-description">{item?.description}</Text>
+              <Text className="banner-description">
+                {item?.description}
+                <strong>{item?.descriptionTwo}</strong>
+              </Text>
             </div>
           </div>
         </div>

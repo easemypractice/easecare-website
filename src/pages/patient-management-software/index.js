@@ -33,12 +33,14 @@ import Script from "next/script";
 import Head from "next/head";
 const patientBannerData = [
   {
+    bannerStyle: "align-center",
     bgImg: bgImg,
     subHeading: "Patient Management System",
     HeadingFirst: "Patient Management",
     HeadingSecound: "Software System",
     description:
-      "As the name suggests, Patient Management Software helps you manage all the things related to your patients for example - scheduling appointments, billing, evaluation, treatment, and discharge. But managing your patients is much more than this. A patient management software system helps you streamline your desk and administrative tasks along with providing you scalable and comprehensive reports on your medical operations which result in better efficiency, productivity, and customer satisfaction.",
+      "Manage Patient Appointments, EMRs, Billing & more with our powerful ",
+    descriptionTwo: "Patient Management Software",
   },
 ];
 
