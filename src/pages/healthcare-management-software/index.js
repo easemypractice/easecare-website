@@ -1,22 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 import bgImg from "@/images/healthcarebanner.png";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import featureImg from "@/images/featureImg.svg";
-import BenefitPatients from "@/component/patientManagement/banefits";
-import FeaturesPatient from "@/component/patientManagement/featurePatients";
-import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
-import { getFeatureData } from "@/utils/service";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import FeaturesPatient from "@/component/featuresComp/featurePatients";
+import ContactUsPatients from "@/component/featuresComp/contactUsPatient";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
 import { useRouter } from "next/router";
-import HeroComp from "@/component/feature/HeroComp";
-import CardsGroups from "@/component/feature/benefitCards";
-import ContactSection from "@/component/feature/contactSection";
-import MultiColorCardSec from "@/component/feature/multiColorCard";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const healthcareBannerData = [
@@ -32,7 +25,6 @@ const healthcareBannerData = [
 ];
 const healthcareBenefits = [
   {
-    // HeadingClass: "max-width-full py-10",
     HeadingFirst: "Benefits of Healthcare",
     HeadingSec: "Management System",
     paraClass: "pb-40",
@@ -340,20 +332,8 @@ const HealthCareManagement = () => {
   const router = useRouter();
   const slug = router.pathname.replace("/", "");
 
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   getFeaturesData(slug);
-  // }, [slug]);
-
-  // const getFeaturesData = async (slug) => {
-  //   await getFeatureData(slug).then((res) => {
-  //     setData(res);
-  //   });
-  // };
   return (
     <React.Fragment>
-      {/* {data.map((item) => (
-        <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
           title={"Healthcare Management System Software -  Easecare Clarity"}
@@ -364,9 +344,7 @@ const HealthCareManagement = () => {
           pageLink={slug}
         />
         <PatientManagmentBanner data={healthcareBannerData} />
-        {/* <HeroComp data={item.heroComp} /> */}
         <BenefitPatients data={healthcareBenefits} />
-        {/* <CardsGroups data={item.benefitHealthCareManage} /> */}
         <div className="my-6">
           <ContactUsPatients
             image={featureImg}
@@ -376,11 +354,7 @@ const HealthCareManagement = () => {
             alt="healthcare management software"
           />
         </div>
-        {/* <ContactSection data={item.contactFormOne} /> */}
-        {/* <MultiColorCardSec data={item.featuresOfHealthCare} /> */}
         <FeaturesPatient data={FeatuesHealthCare} />
-        {/* <CardsGroups data={item.keyAspects} /> */}
-        {/* <CardsGroups data={item.scope} /> */}
         <div style={{ backgroundColor: "#FCFEFF" }}>
           <VarientTypes TypesVarientData={keyAspectMadicalRecord} />
         </div>
@@ -393,9 +367,6 @@ const HealthCareManagement = () => {
         >
           <BenefitPatients data={MedicalRecordScope} />
         </div>
-        {/* <NavDetailsSection data={item.benefitOfEffectiveRecords} /> */}
-        {/* <CardsGroups data={item.modulesOfHospitals} /> */}
-        {/* <CardsGroups data={item.howChooseBestPactice} /> */}
         <SelectRight data={BenefitOfEffectiveRecords} />
         <div style={{ margin: "20px 0px" }}>
           <BenefitPatients data={ModuleHosptalManage} />
@@ -412,8 +383,6 @@ const HealthCareManagement = () => {
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment>
-      ))} */}
     </React.Fragment>
   );
 };

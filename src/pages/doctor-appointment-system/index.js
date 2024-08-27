@@ -1,23 +1,16 @@
 import { Layout } from "@/app/layout";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeadPart from "@/component/Head/head";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 import bgImg from "@/images/doctorAppoinmentBanner.png";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
-import BenefitPatients from "@/component/patientManagement/banefits";
-import FeaturesPatient from "@/component/patientManagement/featurePatients";
-import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import FeaturesPatient from "@/component/featuresComp/featurePatients";
+import ContactUsPatients from "@/component/featuresComp/contactUsPatient";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
 import { useRouter } from "next/router";
-import { getFeatureData } from "@/utils/service";
-import HeroComp from "@/component/feature/HeroComp";
-import CardsGroups from "@/component/feature/benefitCards";
-import MultiColorCardSec from "@/component/feature/multiColorCard";
-import ContactSection from "@/component/feature/contactSection";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const doctorAppBannerData = [
@@ -312,19 +305,9 @@ const whyEaseCareDoctorAppoinSoftware = [
 const DoctorAppoinment = () => {
   const router = useRouter();
   const slug = router.pathname.replace("/", "");
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   getFeaturesData(slug);
-  // }, [slug]);
-  // const getFeaturesData = async (slug) => {
-  //   await getFeatureData(slug).then((res) => {
-  //     setData(res);
-  //   });
-  // };
+
   return (
     <React.Fragment>
-      {/* {data.map((item) => (
-        <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
           title={
@@ -337,10 +320,7 @@ const DoctorAppoinment = () => {
           imageUrl="images/ogImage/doctorAppointmentSystem.png"
         />
         <PatientManagmentBanner data={doctorAppBannerData} />
-        {/* <HeroComp data={item.heroComp} /> */}
         <BenefitPatients data={OnlineDoctorAppoin} />
-        {/* <CardsGroups data={item.discoverEaseCareOnlineDoctors} /> */}
-        {/* <MultiColorCardSec data={item.featuresOfDoctorAppoinment} /> */}
         <FeaturesPatient data={FeatuesDoctorAppoin} />
         <div className="my-6">
           <ContactUsPatients
@@ -351,8 +331,6 @@ const DoctorAppoinment = () => {
             alt="doctor appointmet system"
           />
         </div>
-        {/* <ContactSection data={item.ContactFormOne} /> */}
-        {/* <CardsGroups data={item.benefitsOfMedicalSoftware} /> */}
         <div
           style={{
             paddingBottom: "70px",
@@ -360,9 +338,7 @@ const DoctorAppoinment = () => {
         >
           <BenefitPatients data={MedicalSechedulingBenefit} />
         </div>
-        {/* <NavDetailsSection data={item.doctorAppoinmentManagement} /> */}
         <SelectRight data={AppoinmentManagementSoftWare} />
-        {/* <ContactSection data={item.ContactFormTwo} /> */}
         <div className="my-6">
           <ContactUsPatients
             image={cuateImg}
@@ -372,8 +348,6 @@ const DoctorAppoinment = () => {
             alt="doctor appointmet system"
           />
         </div>
-        {/* <CardsGroups data={item.maximizingEfficiency} /> */}
-        {/* <CardsGroups data={item.whyEaseCare} /> */}
         <VarientTypes TypesVarientData={maximizeEfficiency} />
         <div style={{ backgroundColor: "#FCFBF6", margin: "25px 0px 0px" }}>
           <BenefitPatients data={whyEaseCareDoctorAppoinSoftware} />
@@ -381,8 +355,6 @@ const DoctorAppoinment = () => {
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment>
-      ))} */}
     </React.Fragment>
   );
 };

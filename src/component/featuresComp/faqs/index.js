@@ -3,21 +3,46 @@ import styles from "@/styles/Patient.module.css";
 import * as Accordion from "@radix-ui/react-accordion";
 import { styled, keyframes } from "@stitches/react";
 import { Icon } from "@iconify/react";
-import CustomBlockText from "../customBlockText";
-const AccordianSections = ({ data }) => {
+import { Heading } from "@radix-ui/themes";
+const accData = [
+  {
+    id: "1",
+    head: "Is the Follow-Up Facility Available in Clarity?",
+    details: "Yes, EaseCare Clarity also act as Patient follow up software",
+  },
+  {
+    id: "2",
+    head: "Is this patient scheduling software essential for managing appointments efficiently?",
+    details:
+      "Yes, Clarity's patient scheduling software manages appointments efficiently, reducing no-shows and improving workflow.",
+  },
+  {
+    id: "3",
+    head: "Does this patient record software simplify managing medical records?",
+    details:
+      "Yes, Clarity simplifies managing medical records with its patient record software.",
+  },
+  {
+    id: "4",
+    head: "Are medical history tracking features available?",
+    details:
+      "Yes, Clarity includes comprehensive medical history tracking features.",
+  },
+  {
+    id: "5",
+    head: "Can I operate Clarity without the Internet?",
+    details:
+      "Yes, it can operate without the internet. You can easily use it & once the internet connection is restored it syncs all data to the secured cloud automatically.",
+  },
+];
+const FAQs = () => {
   return (
-    <>
-      {data && (
-        <div className={`${styles.FAQSection} container`}>
-          <div
-            className={`${styles.Heading} text-start ${styles.headingPadding}`}
-          >
-            <CustomBlockText blocks={data?.heading} />
-          </div>
-          <AccordionComp data={data?.accor} />
-        </div>
-      )}
-    </>
+    <div className={`${styles.FAQSection} container`}>
+      <Heading as="h2" className={`${styles.Heading} text-start p-5`}>
+        FAQ
+      </Heading>
+      <AccordionComp />
+    </div>
   );
 };
 
@@ -109,17 +134,16 @@ const StyledContentText = styled("div", {
   padding: "5px 32px 15px",
 });
 
-const AccordionComp = ({ data }) => {
+const AccordionComp = () => {
   return (
     <AccordionRoot type="single" collapsible>
-      {data &&
-        data?.map((item, index) => (
-          <AccordionItem value={item?._key} key={index}>
-            <AccordionTrigger>{item?.accordienTitle}</AccordionTrigger>
-            <AccordionContent>{item?.accordienContent}</AccordionContent>
-          </AccordionItem>
-        ))}
+      {accData.map((item) => (
+        <AccordionItem value={item.id} key={item.id}>
+          <AccordionTrigger>{item.head}</AccordionTrigger>
+          <AccordionContent>{item.details}</AccordionContent>
+        </AccordionItem>
+      ))}
     </AccordionRoot>
   );
 };
-export default AccordianSections;
+export default FAQs;

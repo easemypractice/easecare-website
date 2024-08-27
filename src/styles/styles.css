@@ -25,8 +25,8 @@ body {
   cursor: pointer;
 }
 .flex-col{
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
 }
 .flex{
   display: flex;
@@ -57,11 +57,25 @@ body {
   max-width: 55rem !important;
 }
 
+.spacing-1{
+  letter-spacing: 1px !important;
+}
+
 .max-width-80{
   max-width: 80% !important;
 }
 .max-width-90{
   max-width: 90% !important;
+}
+.pb-20{
+  padding-bottom: 20px !important;
+}
+
+.videoPlayerClass{
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  min-height: 400px;
 }
 
 .heading-24 {
@@ -207,6 +221,14 @@ ul.navLinks li:hover {
   margin: 60px 0px;
 }
 
+.my-5{
+  margin: 20px 0px !important;
+}
+
+.rounded-14{
+  border-radius: 14px !important;
+}
+
 .pl-2 {
   padding-left: 40px !important;
 }
@@ -230,6 +252,7 @@ ul.navLinks li:hover {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
 
 .py-10{
   padding: 30px 0px !important;

@@ -1,20 +1,13 @@
 import { Layout } from "@/app/layout";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeadPart from "@/component/Head/head";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 import bgImg from "@/images/revenueCycleBanner.png";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
-import cuateImg from "@/images/cuateImg.svg";
-import BenefitPatients from "@/component/patientManagement/banefits";
-import FeaturesPatient from "@/component/patientManagement/featurePatients";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import FeaturesPatient from "@/component/featuresComp/featurePatients";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
 import { useRouter } from "next/router";
-import { getFeatureData } from "@/utils/service";
-import HeroComp from "@/component/feature/HeroComp";
-import CardsGroups from "@/component/feature/benefitCards";
-import MultiColorCardSec from "@/component/feature/multiColorCard";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const revenueCycleBannerData = [
@@ -295,20 +288,9 @@ const HowChooseBestBilling = {
 const MedicalBilling = () => {
   const router = useRouter();
   const slug = router.pathname.replace("/", "");
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   getFeaturesData(slug);
-  // }, [slug]);
 
-  // const getFeaturesData = async (slug) => {
-  //   await getFeatureData(slug).then((res) => {
-  //     setData(res);
-  //   });
-  // };
   return (
     <React.Fragment>
-      {/* {data.map((item) => (
-        <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
           title={
@@ -320,17 +302,11 @@ const MedicalBilling = () => {
           pageLink={slug}
           imageUrl="images/ogImage/MedicalBillingSoftware.png"
         />
-        {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={revenueCycleBannerData} />
         <div style={{ margin: "20px 0px" }}>
           <BenefitPatients data={whyRCMSoftware} />
         </div>
-        {/* <CardsGroups data={item.importantForHeathCare} /> */}
-        {/* <MultiColorCardSec data={item.benefitsOfHolisticRCM} /> */}
-        {/* <CardsGroups data={item.stepsForEffectiveRevenue} /> */}
-        {/* <NavDetailsSection data={item.benefitsOfRCM} /> */}
-        {/* <CardsGroups data={item.chooseBestMedicalBilling} /> */}
-        {/* <CardsGroups data={item.whyChooseUs} /> */}
+
         <FeaturesPatient data={benefitsOfHolisticRevenue} />
         <div
           style={{
@@ -347,8 +323,6 @@ const MedicalBilling = () => {
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment>
-      ))} */}
     </React.Fragment>
   );
 };

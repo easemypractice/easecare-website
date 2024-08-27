@@ -1,26 +1,20 @@
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
-import React, { useEffect, useState } from "react";
+import React from "react";
 // import FeaturesPreviewImage from "@/images/ogImage/practiceManageOg.svg";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 
-import BenefitPatients from "@/component/patientManagement/banefits";
-import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import Divider from "@/component/patientManagement/divider";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import ContactUsPatients from "@/component/featuresComp/contactUsPatient";
+import Divider from "@/component/featuresComp/divider";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
 import contactImg from "@/images/contactPanaImg.svg";
 import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
 import bgImg from "@/images/practiceBanner.png";
-import FeaturePractice from "@/component/patientManagement/featuresPractice";
 import { useRouter } from "next/router";
-import { getFeatureData } from "@/utils/service";
-import CardsGroups from "@/component/feature/benefitCards";
-import HeroComp from "@/component/feature/HeroComp";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
-import ContactSection from "@/component/feature/contactSection";
-import TabsSelectCards from "@/component/feature/tabsSelectCards";
+import TabsSelectCards from "@/component/featuresComp/tabsSelectCards";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const practiceManagementData = [
@@ -230,9 +224,6 @@ const PracticeManagement = () => {
   // };
   return (
     <React.Fragment>
-      {/* {data.map((item) => (
-        <React.Fragment key={item?._id}>
-          {console.log(item)} */}
       <Layout>
         <HeadPart
           title={"Practice Management Software for Clinic Success | Easecare"}
@@ -242,9 +233,7 @@ const PracticeManagement = () => {
           pageLink={slug}
           imageUrl="images/ogImage/PracticeManagementSoftware.png"
         />
-        {/* <HeroComp data={item.heroComp} /> */}
         <PatientManagmentBanner data={practiceManagementData} />
-        {/* <CardsGroups data={item.benefitsOfTakingsoftware} /> */}
         <BenefitPatients data={practiceBenefits} />
         <Divider />
         <ContactUsPatients
@@ -254,8 +243,6 @@ const PracticeManagement = () => {
           link={"contact"}
           alt="practice management software"
         />
-        {/* <ContactSection data={item.contactFormOne} /> */}
-        {/* <CardsGroups data={item.reasonToImplementSoftware} /> */}
         <VarientTypes TypesVarientData={TypesVarientData} />
         <div className="my-6">
           <ContactUsPatients
@@ -265,10 +252,7 @@ const PracticeManagement = () => {
             link={"book-a-demo"}
           />
         </div>
-        {/* <ContactSection data={item.contactFormTwo} /> */}
-        {/* <TabsSelectCards data={item.benefitsOfPracticeManagemnent} /> */}
         <TabsSelectCards />
-        {/* <ContactSection data={item.contactFormThree} /> */}
         <BenefitPatients data={howToUseSoftware} />
         <div style={{ margin: "50px 0px" }}>
           <ContactUsPatients
@@ -282,12 +266,10 @@ const PracticeManagement = () => {
         <div style={{ padding: "00px 0px 50px" }}>
           <BenefitPatients data={howToUseSoftware} />
         </div>
-        {/* <NavDetailsSection data={item.UsersOfSoftware} /> */}
         <SelectRight data={practiceRightsData} />
         <div style={{ backgroundColor: "#FCFBF6", marginTop: "30px" }}>
           <BenefitPatients data={BestPracticeData} />
         </div>
-        {/* <BenefitPatients data={item.howUseFullForLargerPractice} /> */}
         <div className="my-6">
           <ContactUsPatients
             image={cuateImg}
@@ -297,12 +279,9 @@ const PracticeManagement = () => {
             alt="practice management software"
           />
         </div>
-        {/* <ContactSection data={item.contactFormFour} /> */}
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment>
-      ))} */}
     </React.Fragment>
   );
 };

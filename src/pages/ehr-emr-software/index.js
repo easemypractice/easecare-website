@@ -1,24 +1,17 @@
 import { Layout } from "@/app/layout";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeadPart from "@/component/Head/head";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 import bgImg from "@/images/ehrbannerbg.png";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
 import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
-import BenefitPatients from "@/component/patientManagement/banefits";
-import FeaturesPatient from "@/component/patientManagement/featurePatients";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
-import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import DifferenceCard from "@/component/patientManagement/differenceCard";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import FeaturesPatient from "@/component/featuresComp/featurePatients";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
+import ContactUsPatients from "@/component/featuresComp/contactUsPatient";
+import DifferenceCard from "@/component/featuresComp/differenceCard";
 import { useRouter } from "next/router";
-import { getFeatureData } from "@/utils/service";
-import HeroComp from "@/component/feature/HeroComp";
-import CardsGroups from "@/component/feature/benefitCards";
-import ContactSection from "@/component/feature/contactSection";
-import MultiColorCardSec from "@/component/feature/multiColorCard";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const ehremrBannerData = [
@@ -361,20 +354,8 @@ const differenceData = {
 const EHREMR = () => {
   const router = useRouter();
   const slug = router.pathname.replace("/", "");
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   getFeaturesData(slug);
-  // }, [slug]);
-
-  // const getFeaturesData = async (slug) => {
-  //   await getFeatureData(slug).then((res) => {
-  //     setData(res);
-  //   });
-  // };
   return (
     <React.Fragment>
-      {/* {data?.map((item) => ( */}
-      {/* <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
           title={"EHR /EMR Software: Electronic Health Records Software"}
@@ -385,16 +366,7 @@ const EHREMR = () => {
           pageLink={slug}
         />
         <PatientManagmentBanner data={ehremrBannerData} />
-        {/* <HeroComp data={item.heroComp} />
-            <CardsGroups data={item.benefitsOfEHR} />
-            <ContactSection data={item.ContactFormOne} />
-            <MultiColorCardSec data={item.FeaturesEHR} />
-            <CardsGroups data={item.WhatIsEHR} />
-            <MultiColorCardSec data={item.EHRvsEMR} />
-            <NavDetailsSection data={item.typesOfEHR} />
-            <ContactSection data={item.ContactFormTwo} />
-            <CardsGroups data={item.findingBestEHR} />
-            <CardsGroups data={item.benefitsOfUsingEHR} /> */}
+
         <BenefitPatients data={BenefitEHR} />
         <div className="my-6">
           <ContactUsPatients
@@ -433,8 +405,6 @@ const EHREMR = () => {
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment> */}
-      {/* ))} */}
     </React.Fragment>
   );
 };
