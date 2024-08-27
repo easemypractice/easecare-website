@@ -1,24 +1,16 @@
 import { Layout } from "@/app/layout";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeadPart from "@/component/Head/head";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 import bgImg from "@/images/ePrescription.png";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
-import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
-import BenefitPatients from "@/component/patientManagement/banefits";
-import FeaturesPatient from "@/component/patientManagement/featurePatients";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
-import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import BenefitCard from "@/component/patientManagement/banefits/benefitCard";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import FeaturesPatient from "@/component/featuresComp/featurePatients";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
+import ContactUsPatients from "@/component/featuresComp/contactUsPatient";
+import BenefitCard from "@/component/featuresComp/banefits/benefitCard";
 import { useRouter } from "next/router";
-import { getFeatureData } from "@/utils/service";
-import HeroComp from "@/component/feature/HeroComp";
-import CardsGroups from "@/component/feature/benefitCards";
-import MultiColorCardSec from "@/component/feature/multiColorCard";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
-import ContactSection from "@/component/feature/contactSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const prescriptionBanner = [
@@ -350,8 +342,6 @@ const PrescriptionSoftware = () => {
   // };
   return (
     <React.Fragment>
-      {/* {data.map((item) => (
-        <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
           title={"Premium E-Prescribing Software for Doctors | Easecare"}
@@ -361,16 +351,6 @@ const PrescriptionSoftware = () => {
           imageUrl="images/ogImage/ePrescriptionSoftware.png"
           pageLink={slug}
         />
-        {/* <HeroComp data={item.heroComp} />
-            <CardsGroups data={item.exploreFeild} />
-            <MultiColorCardSec data={item.whyGoodForAnyMedicalOrg} />
-            <CardsGroups data={item.controlledSubstancesAndDrugs} />
-            <CardsGroups data={item.whyPrescriptionWritingSoftware} />
-            <NavDetailsSection data={item.featuresOfEPrescription} />
-            <ContactSection data={item.contactFormOne} />
-            <CardsGroups data={item.enhancePatientSafty} />
-            <ContactSection data={item.contactFormOne} />
-            <CardsGroups data={item.offeringAdditionalSolutions} /> */}
         <PatientManagmentBanner data={prescriptionBanner} />
         <div
           style={{ backgroundColor: "#FCFBF6", padding: "50px" }}
@@ -419,8 +399,6 @@ const PrescriptionSoftware = () => {
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment>
-      ))} */}
     </React.Fragment>
   );
 };

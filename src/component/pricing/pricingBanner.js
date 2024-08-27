@@ -35,7 +35,7 @@ const PricingBanner = () => {
                     className="icon-tick-plan"
                     color="#19BB7D"
                   />{" "}
-                  Unlimited Doctors
+                  Limited Doctors
                 </li>
                 <li>
                   <Icon
@@ -53,7 +53,7 @@ const PricingBanner = () => {
                     className="icon-tick-plan"
                     color="#19BB7D"
                   />{" "}
-                  Unlimited Patients
+                  Limited Patients
                 </li>
                 <li>
                   <Icon
@@ -113,15 +113,6 @@ const PricingBanner = () => {
                     color="#19BB7D"
                   />{" "}
                   Multi Clinic Management
-                </li>
-                <li>
-                  <Icon
-                    icon="solar:check-square-bold"
-                    width={"24"}
-                    className="icon-tick-plan"
-                    color="#19BB7D"
-                  />{" "}
-                  Unlimited Patients
                 </li>
                 <li>
                   <Icon

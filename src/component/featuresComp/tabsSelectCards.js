@@ -1,10 +1,8 @@
 import React from "react";
-import styles from "@/styles/Patient.module.css";
 // import { FeaturesCard } from "../featurePatients";
 import * as Tabs from "@radix-ui/react-tabs";
 import { styled } from "@stitches/react";
-import MultiColorCardSec from "./multiColorCard";
-import FeaturesPatient from "../patientManagement/featurePatients";
+import FeaturesPatient from "./featurePatients";
 const TabsRoot = styled(Tabs.Root, {
   display: "flex",
   flexDirection: "column",
@@ -242,7 +240,6 @@ const TabsSelectCards = () => {
   const defaultValue = data ? data.map((item) => item.tabTitle) : [];
   return (
     <React.Fragment>
-      {/* {data && ( */}
       <div style={{ backgroundColor: "#FCFBF6", padding: "50px 0px 0px" }}>
         <div className="container">
           <TabsRoot defaultValue={defaultValue[0]}>
@@ -267,7 +264,6 @@ const TabsSelectCards = () => {
           </TabsRoot>
         </div>
       </div>
-      {/* )} */}
     </React.Fragment>
   );
 };

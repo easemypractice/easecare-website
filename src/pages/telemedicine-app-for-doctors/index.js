@@ -1,24 +1,18 @@
 import { Layout } from "@/app/layout";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeadPart from "@/component/Head/head";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 import bgImg from "@/images/telemedicineImg.png";
 // import FeaturesPreviewImage from "";
 import featureImg from "@/images/featureImg.svg";
 import cuateImg from "@/images/cuateImg.svg";
-import BenefitPatients from "@/component/patientManagement/banefits";
-import FeaturesPatient from "@/component/patientManagement/featurePatients";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
-import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import BenefitCard from "@/component/patientManagement/banefits/benefitCard";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import FeaturesPatient from "@/component/featuresComp/featurePatients";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
+import ContactUsPatients from "@/component/featuresComp/contactUsPatient";
+import BenefitCard from "@/component/featuresComp/banefits/benefitCard";
 import { useRouter } from "next/router";
-import { getFeatureData } from "@/utils/service";
-import HeroComp from "@/component/feature/HeroComp";
-import CardsGroups from "@/component/feature/benefitCards";
-import ContactSection from "@/component/feature/contactSection";
-import MultiColorCardSec from "@/component/feature/multiColorCard";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const Bannerdata = [
@@ -272,8 +266,6 @@ const TelemedicineApp = () => {
   // };
   return (
     <React.Fragment>
-      {/* {data.map((item) => (
-        <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
           title={"Best Telemedicine app for doctors and patients | Easecare"}
@@ -282,18 +274,8 @@ const TelemedicineApp = () => {
           }
           pageLink={slug}
           imageUrl="images/ogImage/TelemedicineAppforDoctors.png"
-          // imageUrl={FeaturesPreviewImage}
         />
-        {/* <HeroComp data={item.heroComp} />
-            <CardsGroups data={item.attractMorePatients} />
-            <CardsGroups data={item.extraBenefits} />
-            <CardsGroups data={item.givePatientsWhatTheyWant} />
-            <ContactSection data={item.contactFormOne} />
-            <MultiColorCardSec data={item.improvePatientsCare} />
-            <CardsGroups data={item.simplifyMedicalPractice} />
-            <ContactSection data={item.contactFormTwo} />
-            <NavDetailsSection data={item.featuresOfTelemedicine} />
-            <ContactSection data={item.contactFormThree} /> */}
+
         <PatientManagmentBanner data={Bannerdata} />
         <div style={{ paddingTop: "50px" }}>
           <BenefitPatients data={AttractMorePatients} />
@@ -356,8 +338,6 @@ const TelemedicineApp = () => {
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment>
-      ))} */}
     </React.Fragment>
   );
 };

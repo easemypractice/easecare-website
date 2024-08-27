@@ -231,7 +231,55 @@
     color: white;
 }
 
+.StandOutImgList{
+    display: flex;
+    flex-direction: column;
+    gap: 12px !important;
+}
+
+.listGrpStand{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.listGrpStand span{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.listGrpStand .BenefitIcon{
+    width: 60px !important;
+    height: 60px !important;
+}
+.point{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #1D2026;
+}
+
+
 @media (min-width: 600px) and (max-width: 999px) {
+    .HeadingComp{
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 100% !important;
+    }
+    .ParaComp{
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 95% !important;
+    }
+    .listGrpStand span{
+        font-size: 15px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
     .contactSec{
         gap: 30px;
     }
@@ -244,6 +292,17 @@
     }
     .CardGrp{
         grid-template-columns: auto auto !important;
+    }
+    .listGrpStand{
+        flex-direction: column;
+    }
+    .standCard{
+        grid-template-columns: auto !important;
+        justify-items: center !important;
+    }
+    .StandImage{
+        width: 250px;
+        height: 150px;
     }
 }
 
@@ -300,4 +359,18 @@
     /* .BenefitCard{
         flex-direction: column !important;
     } */
+    .listGrpStand{
+        flex-direction: column;
+    }
+    .standCard{
+        grid-template-columns: auto !important;
+        justify-items: center !important;
+    }
+    .listGrpStand span{
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
 }

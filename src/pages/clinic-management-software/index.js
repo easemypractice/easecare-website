@@ -1,25 +1,18 @@
 import { Layout } from "@/app/layout";
 import HeadPart from "@/component/Head/head";
-import React, { useEffect, useState } from "react";
-import FeaturesPreviewImage from "@/images/features-preview.jpg";
-import PatientManagmentBanner from "@/component/patientManagement/banner";
+import React from "react";
+import PatientManagmentBanner from "@/component/featuresComp/banner";
 import styles from "@/styles/Patient.module.css";
-import BenefitPatients from "@/component/patientManagement/banefits";
-import ContactUsPatients from "@/component/patientManagement/contactUsPatient";
-import VarientTypes from "@/component/patientManagement/varientsTypes";
+import BenefitPatients from "@/component/featuresComp/banefits";
+import ContactUsPatients from "@/component/featuresComp/contactUsPatient";
+import VarientTypes from "@/component/featuresComp/varientsTypes";
 import FeaturesPatient, {
   FeaturesCard,
-} from "@/component/patientManagement/featurePatients";
+} from "@/component/featuresComp/featurePatients";
 import featureImg from "@/images/featureImg.svg";
-import SelectRight from "@/component/patientManagement/selectRightPatient";
+import SelectRight from "@/component/featuresComp/selectRightPatient";
 import bgImg from "@/images/ClinicBg.png";
-import { getFeatureData } from "@/utils/service";
-import CardsGroups from "@/component/feature/benefitCards";
-import HeroComp from "@/component/feature/HeroComp";
-import ContactSection from "@/component/feature/contactSection";
-import NavDetailsSection from "@/component/feature/navDetailsSection";
 import { useRouter } from "next/router";
-import MultiColorCardSec from "@/component/feature/multiColorCard";
 import Testimonail from "@/component/home/testimonial";
 import CtaSection from "@/component/home/cta";
 const clinicBannerData = [
@@ -312,21 +305,9 @@ const AdvantageData = [
 const ClinicManagement = () => {
   const router = useRouter();
   const slug = router.pathname.replace("/", "");
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   getFeaturesData(slug);
-  // }, [slug]);
 
-  // const getFeaturesData = async (slug) => {
-  //   await getFeatureData(slug).then((res) => {
-  //     setData(res);
-  //   });
-  // };
-  // console.log(data);
   return (
     <React.Fragment>
-      {/* {data.map((item) => (
-        <React.Fragment key={item?._id}> */}
       <Layout>
         <HeadPart
           title={"Clinic Management Software for Automating Clinic Tasks"}
@@ -337,9 +318,6 @@ const ClinicManagement = () => {
           pageLink={slug}
         />
         <PatientManagmentBanner data={clinicBannerData} />
-        {/* <HeroComp data={item.heroComp} /> */}
-        {/* <CardsGroups data={item.whyImportantToStreamline} /> */}
-        {/* <CardsGroups data={item.challengesInManagingClinic} /> */}
         <BenefitPatients data={clinicBenefits} />
         <VarientTypes TypesVarientData={TypesVarientData} />
         <div className="my-6">
@@ -351,12 +329,8 @@ const ClinicManagement = () => {
             alt={"clinic management system software"}
           />
         </div>
-        {/* <ContactSection data={item.contactFormOne} /> */}
-        {/* <MultiColorCardSec data={item.whyNeedClinicManagement} /> */}
-        {/* <CardsGroups data={item.benefitsClinicManagement} /> */}
         <FeaturesPatient data={whyClinicData} />
         <VarientTypes TypesVarientData={BenefitClinicManagementData} />
-        {/* <NavDetailsSection data={item.featuresClinicManagemnt} /> */}
         <div className="my-6">
           <SelectRight data={cinicManagementData} />
         </div>
@@ -369,10 +343,6 @@ const ClinicManagement = () => {
             alt={"clinic management system software"}
           />
         </div>
-        {/* <ContactSection data={item.contactFormTwo} /> */}
-        {/* <CardsGroups data={item.considerBeforeImplement} /> */}
-        {/* <MultiColorCardSec data={item.addOnPoints} /> */}
-        {/* <ContactSection data={item.contactFormThree} /> */}
         <div style={{ backgroundColor: "#FCFBF6" }}>
           <BenefitPatients data={BestPracticeData} />
         </div>
@@ -395,8 +365,6 @@ const ClinicManagement = () => {
         <Testimonail />
         <CtaSection />
       </Layout>
-      {/* </React.Fragment>
-      ))} */}
     </React.Fragment>
   );
 };
