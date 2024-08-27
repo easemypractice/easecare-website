@@ -32,6 +32,8 @@ const patientBannerData = [
     description:
       "Manage Patient Appointments, EMRs, Billing & more with our powerful ",
     descriptionTwo: "Patient Management Software",
+    btnText: "Book Free Demo",
+    btnLink: "/book-a-demo",
   },
 ];
 
@@ -198,7 +200,7 @@ const FeaturesOfPatientManagement = [
           "With tools like automated reminders, messaging, whatsapp etc our patient management software enhances communication b/w you & your patient.",
       },
       {
-        icon: "eos-icons:secure-data-outlined",
+        icon: "icon-park-outline:bill",
         iconColor: "#10576B",
         heading: "Billing",
         description:
@@ -281,6 +283,8 @@ const patientRightData = {
       ListData:
         "If you face any problem while using Clarity, we are just a call or message away. Our Highly experienced support team will solve your problem asap.",
       Icon: "fluent:person-support-20-regular",
+      btnText: "Get a free demo",
+      btnLink: "/book-a-demo",
     },
     {
       path: "Security",
@@ -288,6 +292,8 @@ const patientRightData = {
       ListData:
         "As discussed above, What separates EaseCare Clarity from other software is our top-rated security measures in the software. Your Data is 100% safe. It's our Guarantee.",
       Icon: "carbon:security",
+      btnText: "Get a free demo",
+      btnLink: "/book-a-demo",
     },
     {
       path: "software-feature",
@@ -295,6 +301,8 @@ const patientRightData = {
       ListData:
         "Other software are very uncomplicated and unclear, usually filled with a lot of trash options. Here comes Clarity Patient management system with easy to use interface & only with necessary options.",
       Icon: "mdi:feature-search-outline",
+      btnText: "Get a free demo",
+      btnLink: "/book-a-demo",
     },
     {
       path: "friendliness",
@@ -302,6 +310,8 @@ const patientRightData = {
       ListData:
         "Unlike other options, EaseCare Clarity has been prepared by keeping the doctor point of view in mind. From Billing to appointment everything has been made doctor centric, therefore this leads to clinic success in every operation.",
       Icon: "healthicons:doctor-male-outline",
+      btnText: "Get a free demo",
+      btnLink: "/book-a-demo",
     },
     {
       path: "cloud-based",
@@ -309,6 +319,8 @@ const patientRightData = {
       ListData:
         "Our company runs around your satisfaction only. That’s why we are giving an exclusive 1-Month FREE use of our software. If you are satisfied then you continue further or If not then you can leave without any question. No Credit Card Required!",
       Icon: "tabler:free-rights",
+      btnText: "Get a free demo",
+      btnLink: "/book-a-demo",
     },
   ],
 };

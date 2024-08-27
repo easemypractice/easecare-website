@@ -70,6 +70,9 @@ body {
 .pb-20{
   padding-bottom: 20px !important;
 }
+.max-w-content{
+  max-width: max-content !important;
+}
 
 .videoPlayerClass{
   width: 100%;
