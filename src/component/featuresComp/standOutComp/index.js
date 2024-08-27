@@ -4,6 +4,7 @@ import LaptopImg from "@/images/lapStandOut.png";
 import { Heading, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 const StandOutComp = ({ data }) => {
   return (
     <>
@@ -79,6 +80,14 @@ const StandOutComp = ({ data }) => {
                   </div>
                 </div>
                 <Image src={LaptopImg} className="desktop-hidden mob-visible" />
+
+                <Link href={"/book-a-demo"}>
+                  <button
+                    className={`purple-btn w-full desktop-hidden mob-visible`}
+                  >
+                    Book Free Demo
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

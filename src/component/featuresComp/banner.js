@@ -1,4 +1,5 @@
 import { Heading, Text } from "@radix-ui/themes";
+import Link from "next/link";
 const PatientManagmentBanner = ({ data }) => {
   return (
     <>
@@ -21,6 +22,13 @@ const PatientManagmentBanner = ({ data }) => {
                 {item?.description}
                 <strong>{item?.descriptionTwo}</strong>
               </Text>
+              {item?.btnText && (
+                <Link href={item?.btnLink}>
+                  <button className={`purple-btn w-full`}>
+                    {item?.btnText}
+                  </button>
+                </Link>
+              )}
             </div>
           </div>
         </div>
