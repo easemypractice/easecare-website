@@ -338,122 +338,116 @@ const PatientManagement = () => {
             name="google-site-verification"
             content="b744oLuFW6xcSOeBopr-I3Q7lYzAIg6IDHc--wnvpVI"
           />
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org/",
-              "@type": "Product",
-              name: "Patient Management Software",
-              image: "https://easecare.co/_next/static/media/logo.ab45f14b.svg",
-              description:
-                "Patient Management Software helps you manage all the things related to your patients for example - scheduling appointments, billing, evaluation, treatment, and discharge.",
-              brand: {
-                "@type": "Brand",
-                name: "EaseCare Clarity",
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.8",
-                ratingCount: "151",
-              },
-            })}
-          </script>
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "http://schema.org",
-              "@type": "VideoObject",
-              name: "EaseCare Clarity Patient Management Software",
-              description:
-                "Discover how EaseCare Clarity's Patient Management Software can help you effortlessly manage your clinic's patients, appointments, and medical records. In this quick video, you'll see how easy it is to streamline patient care, improve efficiency, and enhance the patient experience. Use it for FREE for 1 Month! Learn more at easecare.co This aligns with your software’s value and includes your free trial offer",
-              thumbnailUrl: "https://i.ytimg.com/vi/0zN_Ku-Golo/default.jpg",
-              uploadDate: "2024-08-26T07:40:04Z",
-              duration: "PT33S",
-              embedUrl: "https://www.youtube.com/embed/0zN_Ku-Golo",
-              interactionCount: "4",
-            })}
-          </script>
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "http://schema.org",
-              "@type": "Organization",
-              name: "EaseCare",
-              description:
-                "We make powerful clinic management software for Clinics & Hospital.",
-              url: "https://easecare.co",
-              logo: "https://easecare.co/_next/static/media/logo.ab45f14b.svg",
-              foundingDate: "2024",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "3rd floor Usha Towers",
-                addressLocality: "Kedarpuram, New Canal Road, Mothrowala",
-                addressRegion: "Dehradun",
-                postalCode: "248001",
-                addressCountry: "IN",
-              },
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+91 8006777110",
-                  contactType: "Customer Service ( Call Center)",
-                  email: "hello@easecare.co",
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                name: "Patient Management Software",
+                image:
+                  "https://easecare.co/_next/static/media/logo.ab45f14b.svg",
+                description:
+                  "Patient Management Software helps you manage all the things related to your patients for example - scheduling appointments, billing, evaluation, treatment, and discharge.",
+                brand: {
+                  "@type": "Brand",
+                  name: "EaseCare Clarity",
                 },
-              ],
-              sameAs: [
-                "https://www.facebook.com/easecareclarity",
-                "https://twitter.com/easecare_co",
-                "https://www.instagram.com/easecare_co/",
-                "https://www.youtube.com/@easecare_co",
-                "https://www.linkedin.com/company/easecareco/",
-              ],
-            })}
-          </script>
-          <script type="application/ld+json">
-            {JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: [
-                {
-                  "@type": "Question",
-                  name: "Is the Follow-Up Facility Available in Clarity?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, EaseCare Clarity also act as Patient follow up software",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: "4.8",
+                  ratingCount: "151",
+                },
+              }),
+            }}
+          />
+
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                name: "EaseCare Clarity Patient Management Software",
+                description:
+                  "Discover how EaseCare Clarity's Patient Management Software can help you effortlessly manage your clinic's patients, appointments, and medical records. In this quick video, you'll see how easy it is to streamline patient care, improve efficiency, and enhance the patient experience. Use it for FREE for 1 Month! Learn more at easecare.co This aligns with your software’s value and includes your free trial offer",
+                thumbnailUrl: "https://i.ytimg.com/vi/0zN_Ku-Golo/default.jpg",
+                uploadDate: "2024-08-26T07:40:04Z",
+                duration: "PT33S",
+                embedUrl: "https://www.youtube.com/embed/0zN_Ku-Golo",
+                interactionCount: "4",
+              }),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "http://schema.org",
+                "@type": "VideoObject",
+                name: "EaseCare Clarity Patient Management Software",
+                description:
+                  "Discover how EaseCare Clarity's Patient Management Software can help you effortlessly manage your clinic's patients, appointments, and medical records. In this quick video, you'll see how easy it is to streamline patient care, improve efficiency, and enhance the patient experience. Use it for FREE for 1 Month! Learn more at easecare.co This aligns with your software’s value and includes your free trial offer",
+                thumbnailUrl: "https://i.ytimg.com/vi/0zN_Ku-Golo/default.jpg",
+                uploadDate: "2024-08-26T07:40:04Z",
+                duration: "PT33S",
+                embedUrl: "https://www.youtube.com/embed/0zN_Ku-Golo",
+                interactionCount: "4",
+              }),
+            }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Is the Follow-Up Facility Available in Clarity?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, EaseCare Clarity also act as Patient follow up software",
+                    },
                   },
-                },
-                {
-                  "@type": "Question",
-                  name: "Is this patient scheduling software essential for managing appointments efficiently?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, Clarity's patient scheduling software manages appointments efficiently, reducing no-shows and improving workflow.",
+                  {
+                    "@type": "Question",
+                    name: "Is this patient scheduling software essential for managing appointments efficiently?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, Clarity's patient scheduling software manages appointments efficiently, reducing no-shows and improving workflow.",
+                    },
                   },
-                },
-                {
-                  "@type": "Question",
-                  name: "Does this patient record software simplify managing medical records?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, Clarity simplifies managing medical records with its patient record software.",
+                  {
+                    "@type": "Question",
+                    name: "Does this patient record software simplify managing medical records?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, Clarity simplifies managing medical records with its patient record software.",
+                    },
                   },
-                },
-                {
-                  "@type": "Question",
-                  name: "Are medical history tracking features available?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, Clarity includes comprehensive medical history tracking features.",
+                  {
+                    "@type": "Question",
+                    name: "Are medical history tracking features available?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, Clarity includes comprehensive medical history tracking features.",
+                    },
                   },
-                },
-                {
-                  "@type": "Question",
-                  name: "Can I operate Clarity without the Internet?",
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, it can operate without the internet. You can easily use it & once the internet connection is restored it syncs all data to the secured cloud automatically.",
+                  {
+                    "@type": "Question",
+                    name: "Can I operate Clarity without the Internet?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, it can operate without the internet. You can easily use it & once the internet connection is restored it syncs all data to the secured cloud automatically.",
+                    },
                   },
-                },
-              ],
-            })}
-          </script>
+                ],
+              }),
+            }}
+          />
         </Head>
         <PatientManagmentBanner data={patientBannerData} />
         <div style={{ marginBottom: "50px" }}>
