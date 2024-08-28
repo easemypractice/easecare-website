@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import styles from "@/styles/Patient.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const BenefitCard = ({ data, cardType }) => {
   // console.log(data);
@@ -37,7 +38,14 @@ const BenefitCard = ({ data, cardType }) => {
                 style={{ strokeWidth: item.strockWidth || "1" }}
               />
             </div>
-            <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>
+            {item.headingLink && (
+              <Link href={item.headingLink}>
+                <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>
+              </Link>
+            )}
+            {!item.headingLink && (
+              <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>
+            )}
           </div>
           {cardType === "benefit" && (
             <>

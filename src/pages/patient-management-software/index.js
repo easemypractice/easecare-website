@@ -40,7 +40,7 @@ const patientBannerData = [
 const VideoDemo = [
   {
     HeadingFirst: "How EaseCare Clarity Works in Real Time?",
-    para: "Take a quick look at our Patient Management Software with this video",
+    para: "Take a quick look at our Patient Management Software with this video:",
     maxWidth: "max-width-90 p-5",
     paraClass: "pb-50",
   },
@@ -163,7 +163,8 @@ const ClearityInMobileNumber = [
   {
     HeadingFirst: "Want to Use EaseCare Clarity in your",
     HeadingSec: "Mobile Phone?",
-    para: "If you want to use our patient management software in Mobile Phone, then don’t worry we also have a Mobile app. Just Download our fast running Clarity App from Play Store & App Store.",
+    para: "If you want to use our patient management software in Mobile Phone, then don’t worry we also have a Mobile app. Just Download our fast running Clarity App from ",
+    wantAppInMobilePhone: true,
     maxWidth: "max-width-80 p-5",
     cardType: "benefit",
     backgroundColor: "#FCFBF6",
@@ -184,6 +185,8 @@ const FeaturesOfPatientManagement = [
         heading: "Appointment Scheduling",
         description:
           "Walk-In/Video appointments booking by doctor, staff or Patient.",
+        headingLink:
+          "https://easecare.co/patient-appointment-scheduling-software",
       },
       {
         icon: "hugeicons:google-doc",
@@ -234,48 +237,15 @@ const FeaturesOfPatientManagement = [
         heading: "Prescription Management",
         description:
           "Easily manage and renew prescriptions with just a few clicks using EaseCare Clarity. Our software ensures accurate, safe, and efficient medication management for your patients.",
+        headingLink: "https://easecare.co/prescription-software-for-doctors",
       },
     ],
   },
 ];
 
-const TypesVarientData = {
-  HeadingFirst: "Exploring Patient Management",
-  HeadingSec: "Software - Types and Variations",
-  para: "Depending on the purpose and requirements, there are various types and variations of patient management software systems:",
-  cardType: "varient",
-  CardData: [
-    {
-      icon: "mage:health-square",
-      heading: "Electronic Health Records (EHR) Systems",
-      description:
-        "Electronic Health Records popularly known as EHR software digitalize all patient data enhance decision-making and seamless access to all medical records in the future.",
-    },
-    {
-      icon: "oui:app-monitoring",
-      heading: "Telemedicine and Remote Patient Monitoring Solutions",
-      description:
-        "This type of software allows for remote consultation for the comfort of patients as they can connect to any doctor regardless of their location.",
-    },
-    {
-      icon: "fluent-mdl2:medical",
-      heading: "Medical Practice Management Software",
-      description:
-        "These types of software help you in enhancing patient experiences as they streamline all the operations within the medical settings.",
-    },
-    {
-      icon: "ph:hospital",
-      heading: "Hospital Management Software",
-      description:
-        "Specifically designed for hospitals, this type of software helps hospitals to increase efficiency and productivity by managing overall hospital operations from administrative tasks to managing patient records.",
-    },
-  ],
-};
-
 const patientRightData = {
-  Heading:
-    "Why Choose EaseCare Clarity for Best Patient Management Software in India",
-  Para: "If you want to use our patient management software in Mobile Phone, then don’t worry we also have a Mobile app. Just Download our fast running Clarity App from Play Store & App Store.",
+  Heading: "Why Choose us for Best Patient Management Software in India",
+  Para: "If you have decided to have a patient management software for your clinic or Hospital then Opting EaseCare Clarity should be a no brainer for you. Here are some reasons:",
   RightData: [
     {
       path: "access-requirement",
@@ -310,6 +280,11 @@ const patientRightData = {
       ListData:
         "Unlike other options, EaseCare Clarity has been prepared by keeping the doctor point of view in mind. From Billing to appointment everything has been made doctor centric, therefore this leads to clinic success in every operation.",
       Icon: "healthicons:doctor-male-outline",
+      contentLink: "",
+      contentLinkText: "Billing",
+      ListDataAfterLink:
+        " to appointment everything has been made doctor centric, therefore this leads to clinic success in every operation.",
+      Icon: "healthicons:doctor-male-outline",
       btnText: "Get a free demo",
       btnLink: "/book-a-demo",
     },
@@ -321,61 +296,6 @@ const patientRightData = {
       Icon: "tabler:free-rights",
       btnText: "Get a free demo",
       btnLink: "/book-a-demo",
-    },
-  ],
-};
-
-const featureData = {
-  HeadingFirst: "Features of Patient",
-  HeadingSec: "Management Software",
-  CardData: [
-    {
-      icon: "teenyicons:appointments-outline",
-      bgColor: "#E8D2F9",
-      IconbgColor: "#8512E01A",
-      heading: "Appointment Scheduling",
-      description:
-        "Scheduling the appointments automatically, quickly, and seamlessly whenever it is confirmed from the side of the patients",
-    },
-    {
-      icon: "material-symbols-light:patient-list-outline",
-      bgColor: "#D0F4FF",
-      IconbgColor: "#08C7FB1A",
-      heading: "Patient Records Management",
-      description:
-        "Keep the whole record of every patient with the help of a patient record management system to connect better with them when they visit you again",
-    },
-    {
-      icon: "healthicons:communication-outline",
-      bgColor: "#D3F2E6",
-      IconbgColor: "#19BB7D1A",
-      heading: "Communication Tools",
-      description:
-        "PMS facilitates effective and secure communication between patients and service providers",
-    },
-    {
-      icon: "carbon:report",
-      bgColor: "#FFF2DD",
-      IconbgColor: "#FAE2BB",
-      heading: "Inventory Management",
-      description:
-        "Keep track of the stock of each and every single thing in your clinic through accurate inventory management",
-    },
-    {
-      icon: "carbon:dashboard",
-      bgColor: "#FFE9E2",
-      IconbgColor: "#8512E01A",
-      heading: "Patient Portal",
-      description:
-        "Offer your patients maximum convenience through a patient portal to access test results, prescriptions, and medical history",
-    },
-    {
-      icon: "carbon:document-requirements",
-      bgColor: "#E0E1FD",
-      IconbgColor: "#08C7FB1A",
-      heading: "Analytics and Reporting",
-      description:
-        "Through detailed insights into the practice performance, patient demographics, and outcomes professionals make better decisions",
     },
   ],
 };
@@ -572,6 +492,8 @@ const PatientManagement = () => {
         <div style={{ margin: "20px 0px" }}>
           <FAQs />
         </div>
+        <Testimonail />
+        <CtaSection />
       </Layout>
     </React.Fragment>
   );
