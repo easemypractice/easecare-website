@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/styles/Patient.module.css";
 import { Heading } from "@radix-ui/themes";
+import Link from "next/link";
 const HeadingDescComp = ({ data }) => {
   return (
     <>
@@ -23,6 +24,23 @@ const HeadingDescComp = ({ data }) => {
                 className={`${styles.Para} ${styles.ParaComp} ${item.paraClass}`}
               >
                 {item?.para}
+                {item?.wantAppInMobilePhone && (
+                  <Link
+                    className={`${styles.Para} ${styles.ParaComp} ${item.paraClass}`}
+                    href="https://play.google.com/store/apps/details?id=com.easemypractice.atlas"
+                  >
+                    Play Store
+                  </Link>
+                )}
+                {item?.wantAppInMobilePhone && " & "}
+                {item?.wantAppInMobilePhone && (
+                  <Link
+                    className={`${styles.Para} ${styles.ParaComp} ${item.paraClass}`}
+                    href="https://apps.apple.com/in/app/easecare-clarity/id6468764592"
+                  >
+                    App Store.
+                  </Link>
+                )}
               </p>
             </div>
           </div>

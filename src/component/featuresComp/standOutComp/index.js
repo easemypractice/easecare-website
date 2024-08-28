@@ -56,6 +56,7 @@ const StandOutComp = ({ data }) => {
                   </div>
                   <Image
                     src={LaptopImg}
+                    alt="Features of EaseCare Clarity Patient Management Software"
                     className={`mob-none ${styles.StandImage}`}
                   />
                   <div className={styles.StandOutImgList}>
@@ -79,7 +80,11 @@ const StandOutComp = ({ data }) => {
                     ))}
                   </div>
                 </div>
-                <Image src={LaptopImg} className="desktop-hidden mob-visible" />
+                <Image
+                  src={LaptopImg}
+                  className="desktop-hidden mob-visible"
+                  alt="Features of EaseCare Clarity Patient Management Software"
+                />
 
                 <Link href={"/book-a-demo"}>
                   <button
