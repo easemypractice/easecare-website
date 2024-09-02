@@ -180,7 +180,7 @@ const Footer = () => {
                 <li>
                   <Link
                     target="_blank"
-                    href={"https://www.instagram.com/easecare_co/"}
+                    href={"https://www.instagram.com/easecareclarity/"}
                   >
                     <Icon
                       // icon="arcticons:x-twitter"
