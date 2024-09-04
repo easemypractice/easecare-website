@@ -3322,6 +3322,13 @@ li.footerCon{
   font-size: 15px;
   font-weight: 400;
 }
+
+.list-style-none{
+  list-style: none !important;
+}
+.pl-5{
+  padding-left: 15px !important;
+}
 .blog-nav li:hover{
   color: #a15fdc;
   font-weight: 500;
