@@ -8,7 +8,6 @@ import React, { useEffect, useState } from "react";
 import { formatDate } from "@/utils/const";
 import PostBody from "@/component/sanity/post-body";
 import { useParams } from "next/navigation";
-import { PortableText } from "@portabletext/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -16,6 +15,7 @@ const RecentBlogArticle = () => {
   const router = useRouter();
   const params = useParams();
   const [data, setData] = useState();
+  console.log(data);
   const [author, setAuthor] = useState(null);
   const [headings, setHeadings] = useState([]);
   const [activeSection, setActiveSection] = useState("");
@@ -38,7 +38,8 @@ const RecentBlogArticle = () => {
        }[0]`;
       const data = await client.fetch(query);
       const headingBlocks = data.content.filter(
-        (block) => block._type === "block" && ["normal"].includes(block.style)
+        (block) =>
+          block._type === "block" && ["normal", "h2"].includes(block.style)
       );
       setHeadings(headingBlocks);
       return data;
@@ -67,7 +68,6 @@ const RecentBlogArticle = () => {
   // const sections = document.querySelectorAll("h5");
   // console.log(sections);
   const handleScroll = () => {
-    console.log("Scroll event detected");
     // setIsScroll(!isScroll);
 
     const sections = document.querySelectorAll("h5");
@@ -159,9 +159,19 @@ const RecentBlogArticle = () => {
             </Box>
             {data && (
               <Box className="blog-right">
-                <Box className="blog-nav">
+                <Box
+                  className={`blog-nav ${
+                    data?.currentSlug === "best-physiotherapists-in-dehradun" &&
+                    "pl-5"
+                  }`}
+                >
                   <h2>Table of Contents</h2>
-                  <ol>
+                  <ol
+                    className={
+                      data?.currentSlug ===
+                        "best-physiotherapists-in-dehradun" && "list-style-none"
+                    }
+                  >
                     {pageNav.map((item, index) => (
                       <Link
                         className={
