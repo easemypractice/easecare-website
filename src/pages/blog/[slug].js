@@ -122,7 +122,7 @@ const RecentBlogArticle = () => {
           description={data?.seo?.metaDescription}
         />
 
-        <Box className="container overflow-scroll">
+        <Box className="container ">
           <Box className="blog-grp">
             <Box className="blog-content" id="blogContent1234">
               <Text as="h1">{data?.title}</Text>

@@ -3285,8 +3285,9 @@ li.footerCon{
 
 .blog-grp{
   display: flex;
-  max-height:100vh;
   width: 100vw;
+  gap: 6rem;
+  margin-bottom: 30px;
 }
 
 .overflow-scroll{
@@ -3295,15 +3296,13 @@ li.footerCon{
 
 .blog-content{
   width: 100%;
-  /* overflow-y: scroll; */
   width: 50vw;
-  /* height: 100vh; */
 }
 
 .blog-right{
-  margin-top: 80px;
-  position: absolute;
-  right: 100px;
+  height: max-content;
+  position: sticky;
+  top: 120px;
   max-width: 350px;
   width: 100%;
 }
