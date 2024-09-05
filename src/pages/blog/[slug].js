@@ -34,7 +34,7 @@ const RecentBlogArticle = () => {
       const query = `*[_type=="blog" && slug.current =='${slug}'] {
        "currentSlug":slug.current,
        title,smallDescription,
-       content,titleImage,_createdAt,_updatedAt , author
+       content,titleImage,_createdAt,_updatedAt , author, seo
        }[0]`;
       const data = await client.fetch(query);
       const headingBlocks = data.content.filter(
@@ -118,11 +118,8 @@ const RecentBlogArticle = () => {
     <div className="blog-page">
       <Layout>
         <HeadPart
-          title={data?.title}
-          description={
-            "Resources for presenting the EaseCare Clarity brand consistently and professionally. "
-          }
-          //   imageUrl={BrandPreiviewImage}
+          title={data?.seo?.metaTitle}
+          description={data?.seo?.metaDescription}
         />
 
         <Box className="container overflow-scroll">
