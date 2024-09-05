@@ -15,7 +15,6 @@ const RecentBlogArticle = () => {
   const router = useRouter();
   const params = useParams();
   const [data, setData] = useState();
-  console.log(data);
   const [author, setAuthor] = useState(null);
   const [headings, setHeadings] = useState([]);
   const [activeSection, setActiveSection] = useState("");
@@ -28,7 +27,6 @@ const RecentBlogArticle = () => {
     )
   );
   const pageNav = blocksWithGradientText.map((block) => block.children[0]);
-
   async function getData(slug) {
     if (slug) {
       const query = `*[_type=="blog" && slug.current =='${slug}'] {
@@ -65,42 +63,37 @@ const RecentBlogArticle = () => {
     });
   }, [params]);
 
-  // const sections = document.querySelectorAll("h5");
-  // console.log(sections);
-  const handleScroll = () => {
-    // setIsScroll(!isScroll);
-
-    const sections = document.querySelectorAll("h5");
-    // console.log("Sections found:", sections);
-    let active = "";
-    sections.forEach((section) => {
-      // console.log(-section.offsetHeight);
-      const rect = section.getBoundingClientRect();
-      if (rect.top < 100 && rect.top > -section.offsetHeight) {
-        active = section.id;
-        setActiveSection(active);
-      }
-    });
-    if (active) {
-      // console.log("Active section:", active);
-      setActiveSection(active);
-    }
-  };
-
   useEffect(() => {
-    // setIsScroll(!isScroll);
-    // debugger;
-    // console.log(typeof window);
-    const container = document.getElementById("blogContent1234");
-    container.addEventListener("scroll", handleScroll());
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const headings = document.querySelectorAll("h5");
+      // Adjust selectors as needed
+      let newActiveId = "";
+      headings.forEach((heading) => {
+        const rect = heading.getBoundingClientRect();
+        const headingTop = rect.top + window.scrollY;
+        const headingBottom = headingTop + rect.height;
 
-    return () => {
-      container.removeEventListener("scroll", handleScroll());
+        if (
+          scrollPosition - 100 >= headingTop &&
+          scrollPosition - 50 <= headingBottom
+        ) {
+          newActiveId = heading.id;
+        }
+      });
+
+      console.log(newActiveId);
+      setActiveSection(newActiveId);
     };
 
-    // window.onscroll = () => {
-    //   console.log(heklo);
-    // };
+    // Add event listener for scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial check
+    handleScroll();
+
+    // Cleanup on component unmount
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -120,6 +113,7 @@ const RecentBlogArticle = () => {
         <HeadPart
           title={data?.seo?.metaTitle}
           description={data?.seo?.metaDescription}
+          pageLink={`blog/${params?.slug}`}
         />
 
         <Box className="container ">
