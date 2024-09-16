@@ -49,6 +49,7 @@ const Testimonail = () => {
                     width={50}
                     height={50}
                     className="rounded-full"
+                    alt="Dr. Sandeep Dathik"
                   />
                   <div>
                     <div className="flex ">
@@ -108,6 +109,7 @@ const Testimonail = () => {
                     width={50}
                     height={50}
                     className="rounded-full"
+                    alt="Dr. Vipin Mehra"
                   />
                   <div>
                     <div className="flex ">
@@ -163,6 +165,7 @@ const Testimonail = () => {
                 <div className="flex flex-align-end gap-6">
                   <Image
                     src={PediatricianImage}
+                    alt="Dr. Shantanu Patil"
                     width={50}
                     height={50}
                     className="rounded-full"
@@ -226,6 +229,7 @@ const data = [
     doctorName: "Dr. Sandeep Dathik",
     specialization: "Orthopedic Surgeon",
     profile: TestiDemoImage,
+    alt: "Dr. Sandeep Dathik",
   },
   {
     review:
@@ -233,6 +237,7 @@ const data = [
     doctorName: "Dr. Vipin Mehra",
     specialization: "M.D. Physician",
     profile: PhysiotherapyImage,
+    alt: "Dr. Vipin Mehra",
   },
   {
     review:
@@ -240,6 +245,7 @@ const data = [
     doctorName: "Dr. Shantanu Patil",
     specialization: "Pediatrician",
     profile: PediatricianImage,
+    alt: "Dr. Shantanu Patil",
   },
 ];
 
@@ -257,6 +263,7 @@ const TestimonialCard = () => {
                 width={50}
                 height={50}
                 className="rounded-full"
+                alt={item?.alt ? item?.alt : ""}
               />
               <div>
                 <div className="flex ">

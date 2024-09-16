@@ -16,7 +16,7 @@ const ContactUsPatients = ({
       <div
         className={`${styles.contactSec} ${purpleCard && styles.purpleCard}`}
       >
-        <Image src={image} alt="" />
+        <Image src={image} alt={alt ? alt : "Contact US"} />
         <div className={styles.right}>
           <h3>{content}</h3>
           <p>{description}</p>
@@ -33,7 +33,7 @@ const ContactUsPatients = ({
         {!purpleCard && (
           <Image
             src={bg}
-            alt={alt ? alt : ""}
+            alt={alt ? alt : "Contact US"}
             width={400}
             className={styles.bgPosition}
           />
