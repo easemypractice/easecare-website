@@ -9,12 +9,17 @@ const PostBody = ({ content, className }) => {
   const projectId = client.config().projectId;
   const dataset = client.config().dataset;
 
-  const SampleImageComponent = ({ value, isInline }) => {
+  const builder = urlBuilder(client);
+
+  const urlFor = (source) => builder.image(source).auto("format").url();
+  const SampleImageComponent = ({ node }) => {
+    const { alt, asset } = node;
+    const imageUrl = urlFor(asset);
     return (
       <div className="content-image" style={{ width: "100%" }}>
         <Image
-          src={urlBuilder(client).image(value).fit("max").auto("format").url()}
-          alt={value.alt || " "}
+          src={imageUrl}
+          alt={alt}
           width={640}
           height={320}
           priority
@@ -41,11 +46,8 @@ const PostBody = ({ content, className }) => {
         );
       },
     },
-  };
-
-  const components = {
     types: {
-      image: SampleImageComponent,
+      image: SampleImageComponent, // Use custom image serializer
     },
   };
 
@@ -55,7 +57,7 @@ const PostBody = ({ content, className }) => {
         blocks={content}
         projectId={projectId}
         dataset={dataset}
-        components={components}
+        // components={components}
         serializers={serializers}
       />
     </div>
