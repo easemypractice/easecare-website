@@ -39,29 +39,29 @@ const IntegrationsMigrations = () => {
             <Box className="flex-align mb-6 flex-end">
               <Box className="logo-box">
                 {" "}
-                <Image src={HealthPlixLogo} alt={HealthPlixLogo} />
+                <Image src={HealthPlixLogo} alt={"HealthPlix"} />
               </Box>
               <Box className="logo-box">
                 {" "}
-                <Image src={DoconLogo} alt={DoconLogo} />
+                <Image src={DoconLogo} alt={"docon"} />
               </Box>
               <Box className="logo-box">
                 {" "}
-                <Image src={SrlLogo} alt={SrlLogo} />
+                <Image src={SrlLogo} alt={"SRL Diagnostics"} />
               </Box>
             </Box>
             <Box className="flex-align flex-end">
               <Box className="logo-box">
                 {" "}
-                <Image src={PractoLogo} alt={PractoLogo} />
+                <Image src={PractoLogo} alt={"Practo"} />
               </Box>
               <Box className="logo-box">
                 {" "}
-                <Image src={KivLogo} alt={KivLogo} />
+                <Image src={KivLogo} alt={"Kiv Health"} />
               </Box>
               <Box className="logo-box">
                 {" "}
-                <Image src={EvitalLogo} alt={EvitalLogo} />
+                <Image src={EvitalLogo} alt={"E-Vital RX"} />
               </Box>
             </Box>
           </Box>

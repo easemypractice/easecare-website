@@ -454,13 +454,15 @@ const PatientManagement = () => {
           <StandOutComp data={standOut} />
         </div>
         <BenefitPatients data={patientBenefits} />
-        <ContactUsPatients
-          image={contactImg}
-          content="Want to explore the optimum benefits of our patient management system?"
-          btnText="Contact us today"
-          link={"contact"}
-          alt="Patient management software"
-        />
+        <div style={{ margin: "30px 0px" }}>
+          <ContactUsPatients
+            image={contactImg}
+            content="Want to explore the optimum benefits of our patient management system?"
+            btnText="Contact us today"
+            link={"contact"}
+            alt="Patient management software"
+          />
+        </div>
         <div style={{ margin: "20px 0px" }}>
           <VideoComp data={VideoDemo} />
         </div>
