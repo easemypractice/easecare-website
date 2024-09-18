@@ -40,11 +40,11 @@ const BenefitCard = ({ data, cardType }) => {
             </div>
             {item.headingLink && (
               <Link href={item.headingLink}>
-                <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>
+                <h3 className={`${item.HeadingWidth}`}>{item.heading}</h3>
               </Link>
             )}
             {!item.headingLink && (
-              <h4 className={`${item.HeadingWidth}`}>{item.heading}</h4>
+              <h3 className={`${item.HeadingWidth}`}>{item.heading}</h3>
             )}
           </div>
           {cardType === "benefit" && (
