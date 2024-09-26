@@ -37,7 +37,8 @@ const RecentBlogArticle = () => {
       const data = await client.fetch(query);
       const headingBlocks = data.content.filter(
         (block) =>
-          block._type === "block" && ["normal", "h2"].includes(block.style)
+          block._type === "block" &&
+          ["normal", "h2", "h3"].includes(block.style)
       );
       setHeadings(headingBlocks);
       return data;
@@ -65,10 +66,9 @@ const RecentBlogArticle = () => {
 
   // useEffect(() => {
   const handleScroll = (e) => {
-
     const scrollPosition = window.scrollY + window.innerHeight;
-    const headings = document.querySelectorAll("h5");
- 
+    const headings = document.querySelectorAll(".table-content");
+    console.log(headings);
     let newActiveId = "";
     headings.forEach((heading) => {
       const rect = heading.getBoundingClientRect();
@@ -84,8 +84,6 @@ const RecentBlogArticle = () => {
     });
     setActiveSection(newActiveId);
   };
-
-
 
   useEffect(() => {
     if (activeSection) {

@@ -1,9 +1,9 @@
 import { Box, Flex, Grid, Heading, Text, Button } from "@radix-ui/themes";
 import React from "react";
-import EvitalLogo from "@/images/evital2.svg";
+import EvitalLogo from "@/images/clinicealogo.svg";
 import HealthPlixLogo from "@/images/halthplix2.svg";
 import DoconLogo from "@/images/docon2.svg";
-import SrlLogo from "@/images/srl2.svg";
+import SrlLogo from "@/images/Eka.carelogo.svg";
 import PractoLogo from "@/images/practo2.svg";
 import KivLogo from "@/images/kiv2.svg";
 import MobileDemoImage from "@/images/mob.png";
@@ -47,7 +47,7 @@ const IntegrationsMigrations = () => {
               </Box>
               <Box className="logo-box">
                 {" "}
-                <Image src={SrlLogo} alt={"SRL Diagnostics"} />
+                <Image src={SrlLogo} alt={"Eka care"} />
               </Box>
             </Box>
             <Box className="flex-align flex-end">
