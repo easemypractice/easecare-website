@@ -61,7 +61,7 @@ const IntegrationsMigrations = () => {
               </Box>
               <Box className="logo-box">
                 {" "}
-                <Image src={EvitalLogo} alt={"E-Vital RX"} />
+                <Image src={EvitalLogo} alt={"Clinicea logo"} />
               </Box>
             </Box>
           </Box>
