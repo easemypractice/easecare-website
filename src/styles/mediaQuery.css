@@ -833,6 +833,13 @@
 .mob-gap-30{
   gap: 70px !important;
 }
+.logo-box-2 img{
+  width: 50px;
+}
+.logo-box-2{
+  width: 150px;
+  height: 100px;
+}
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
@@ -1203,6 +1210,13 @@
   }
   .tab-gap-30{
     gap: 30px !important;
+  }
+  .logo-box-2 img{
+    width: 40px;
+  }
+  .logo-box-2{
+    width: 150px;
+    height: 100px;
   }
 }
 

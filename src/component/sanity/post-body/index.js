@@ -40,9 +40,9 @@ const PostBody = ({ content, className }) => {
           })
           .join("");
         return (
-          <h5 id={processedChildren}>
-            <strong>{children}</strong>
-          </h5>
+          <strong className="table-content" id={processedChildren}>
+            {children}
+          </strong>
         );
       },
     },
