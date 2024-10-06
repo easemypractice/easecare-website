@@ -142,19 +142,14 @@ const RecentBlogArticle = () => {
               </Box>
               {data && (
                 <Box className="blog-right">
-                  <Box
-                    className={`blog-nav ${
-                      data?.currentSlug ===
-                        "best-physiotherapists-in-dehradun" && "pl-5"
-                    }`}
-                  >
+                  <Box className={`blog-nav `}>
                     <h2>Table of Contents</h2>
                     <ol
-                      className={
-                        data?.currentSlug ===
-                          "best-physiotherapists-in-dehradun" &&
-                        "list-style-none"
-                      }
+                    // className={
+                    //   data?.currentSlug ===
+                    //     "best-physiotherapists-in-dehradun" &&
+                    //   "list-style-none"
+                    // }
                     >
                       {pageNav.map((item, index) => (
                         <Link
