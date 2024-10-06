@@ -167,7 +167,9 @@ const RecentBlogArticle = () => {
                           key={index}
                           href={`#${item.text.replace(/ /g, "-").replace(/:/g, "")}`}
                         >
-                          <li>{item.text.replace(/:/g, "")}</li>
+                          <li>
+                            {item.text.replace(/:/g, "").replace(/#\d+/g, "")}
+                          </li>
                         </Link>
                       ))}
                     </ol>
