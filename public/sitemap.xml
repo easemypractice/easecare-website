@@ -4,136 +4,143 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
-  <loc>https://easecare.co/</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/</loc>
+  <lastmod>2024-10-07T03:11:09+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://easecare.co/about-us</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/about-us</loc>
+  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/features</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/features</loc>
+  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/pricing</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/pricing</loc>
+  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/book-a-demo</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/book-a-demo</loc>
+  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/patient-management-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/patient-management-software</loc>
+  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/practice-management-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/practice-management-software</loc>
+  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/clinic-management-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/clinic-management-software</loc>
+  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/healthcare-management-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/healthcare-management-software</loc>
+  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/doctor-appointment-system</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/doctor-appointment-system</loc>
+  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/medical-billing-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/medical-billing-software</loc>
+  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/ehr-emr-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/ehr-emr-software</loc>
+  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/software-for-multiple-clinic-chain</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/software-for-multiple-clinic-chain</loc>
+  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/patient-appointment-scheduling-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/patient-appointment-scheduling-software</loc>
+  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/prescription-software-for-doctors</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/prescription-software-for-doctors</loc>
+  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/offline-clinic-management-software</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/offline-clinic-management-software</loc>
+  <lastmod>2024-10-06T17:09:46+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/healthcare-inventory-management-systems</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/healthcare-inventory-management-systems</loc>
+  <lastmod>2024-10-07T20:02:14+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/telemedicine-app-for-doctors</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/telemedicine-app-for-doctors</loc>
+  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/contact-us</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/contact-us</loc>
+  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/blog</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/blog</loc>
+  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/clarity-method</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/clarity-method</loc>
+  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/terms-and-condition</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/terms-and-condition</loc>
+  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/privacy-policy</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/privacy-policy</loc>
+  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/security</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/security</loc>
+  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://easecare.co/brand</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/brand</loc>
+  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://clarity.easecare.co/login</loc>
-  <lastmod>2024-07-12T07:17:25+00:00</lastmod>
+  <loc>https://www.easecare.co/clarity-guide/how-to-get-started-with-clarity</loc>
+  <lastmod>2024-10-17T12:49:34+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.easecare.co/clarity-guide/video-appointments-in-clarity</loc>
+  <lastmod>2024-10-17T12:49:34+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
