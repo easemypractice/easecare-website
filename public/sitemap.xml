@@ -1,147 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
-  <loc>https://www.easecare.co/</loc>
-  <lastmod>2024-10-07T03:11:09+00:00</lastmod>
-  <priority>1.00</priority>
+  <loc>http://easecare.co/</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/about-us</loc>
-  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/about-us</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/features</loc>
-  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/features</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/pricing</loc>
-  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/pricing</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/book-a-demo</loc>
-  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/book-a-demo</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/patient-management-software</loc>
-  <lastmod>2024-10-10T12:29:46+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/patient-management-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/practice-management-software</loc>
-  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/practice-management-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/clinic-management-software</loc>
-  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/clinic-management-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/healthcare-management-software</loc>
-  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/healthcare-management-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/doctor-appointment-system</loc>
-  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/doctor-appointment-system</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/medical-billing-software</loc>
-  <lastmod>2024-10-10T12:29:47+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/medical-billing-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/ehr-emr-software</loc>
-  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/ehr-emr-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/software-for-multiple-clinic-chain</loc>
-  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/software-for-multiple-clinic-chain</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/patient-appointment-scheduling-software</loc>
-  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/patient-appointment-scheduling-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/prescription-software-for-doctors</loc>
-  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/prescription-software-for-doctors</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/offline-clinic-management-software</loc>
-  <lastmod>2024-10-06T17:09:46+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/offline-clinic-management-software</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/healthcare-inventory-management-systems</loc>
-  <lastmod>2024-10-07T20:02:14+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/healthcare-inventory-management-systems</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/telemedicine-app-for-doctors</loc>
-  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/telemedicine-app-for-doctors</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/contact-us</loc>
-  <lastmod>2024-10-10T12:29:48+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/tel:+91-8006777110</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/blog</loc>
-  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/contact-us</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/clarity-method</loc>
-  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/blog</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/terms-and-condition</loc>
-  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/clarity-method</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/privacy-policy</loc>
-  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/terms-and-condition</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/security</loc>
-  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/privacy-policy</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/brand</loc>
-  <lastmod>2024-10-10T12:29:49+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/security</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/clarity-guide/how-to-get-started-with-clarity</loc>
-  <lastmod>2024-10-17T12:49:34+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>http://easecare.co/brand</loc>
 </url>
 <url>
-  <loc>https://www.easecare.co/clarity-guide/video-appointments-in-clarity</loc>
-  <lastmod>2024-10-17T12:49:34+00:00</lastmod>
-  <priority>0.64</priority>
+  <loc>http://easecare.co/clarity-guide/how-to-get-started-with-clarity</loc>
 </url>
-
-
+<url>
+  <loc>https://easecare.co/patient-appointment-scheduling-software</loc>
+</url>
+<url>
+  <loc>https://easecare.co/prescription-software-for-doctors</loc>
+</url>
+<url>
+  <loc>http://easecare.co/clarity-guide/video-appointments-in-clarity</loc>
+</url>
 </urlset>
